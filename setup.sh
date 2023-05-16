@@ -2,7 +2,7 @@
 set -e
 pwd
 # Clean the build dir which is base for all ospc projects..
-make clean -C ./docs-cloud-files/api-docs
+rm -rf ospc/docs/*
 # Build the individual ospc sphinx projects
 make html -C ./docs-cloud-files/api-docs
 make html -C ./docs-cloud-load-balancers/api-docs/cloud-load-balancers-v1
