@@ -28,7 +28,7 @@ Now we can add our project to the setup script:
 * `In 'docs-ospc/setup.sh' add a make line that maps to your project, usually in 'myproject/api-docs' but not always, example: make html -C ./docs-cloud-load-balancers/api-docs/cloud-load-balancers-v1`
 
 The migration and setup is done for the most part... but there is one more thing(so far) that needs to be done to fix some of the relative links:
-* `In 'myproject/api-docs/_templates/header.html update any occurances of '/docs' of a relative path to '/docs-ospc'. In files and clb case it was one instance on line 43 for Developer Documentation: '<li class="nav-item "><a href="/docs-ospc" class="nav-link">Developer Documentation</a></li>'`
+* `In 'myproject/api-docs/_templates/header.html update any occurances of '/docs' of a relative path to '/' which should work with custom domain. In files and clb case it was one instance on line 43 for Developer Documentation: '<li class="nav-item "><a href="/" class="nav-link">Developer Documentation</a></li>'`
 
 
 ### TBD...
