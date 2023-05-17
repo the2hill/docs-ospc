@@ -5,6 +5,7 @@ pwd
 rm -rf ospc/docs/*
 
 # Build the individual ospc sphinx projects
+make html -C ./docs-cloud-images/api-docs/
 make html -C ./docs-cloud-cdn/api-docs/
 make html -C ./docs-cloud-block-storage/api-docs/
 make html -C ./docs-cloud-orchestration/api-docs/
