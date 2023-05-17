@@ -11,6 +11,7 @@ Following the below steps should get your project included in the build with min
 * `Clone or checkout the latest of this repo(docs-ospc)`
 * `Clone or checkout the latest for the product repo being migrated`
 * `Within the docs-ospc repo copy the repo to be migrated over, example: $docs-ospc cp -R /some/path/to/repo .`
+* `Once copied over, cd into the project folder and remove related .git/hub dirs, example: $docs-ospc/myproject rm -rf .git .github`
 
 Now that your repo has been pulled in to docs-ospc we can make a few needed changes starting with the makefile:
 
@@ -25,7 +26,7 @@ The href in the list items should map to the output file defined in the Makefile
 * `Similarly near line 191 of 'docs-ospc/index.html' add the first list item, example: '<li><a class="reference internal" href="cloud-load-balancers/v1/index.html"><span class="std std-ref">Cloud Load Balancers</span></a></li>'`
 
 Now we can add our project to the setup script:
-* `In 'docs-ospc/setup.sh' add a make line that maps to your project, usually in 'myproject/api-docs' but not always, example: make html -C ./docs-cloud-load-balancers/api-docs/cloud-load-balancers-v1`
+* `In 'docs-ospc/setup.sh' add a make line that maps to your project where the makefile lives, usually in 'myproject/api-docs' but not always, example: make html -C ./docs-cloud-load-balancers/api-docs/cloud-load-balancers-v1`
 
 The migration and setup is done for the most part... but there is one more thing(so far) that needs to be done to fix some of the relative links:
 * `In 'myproject/api-docs/_templates/header.html update any occurances of '/docs' of a relative path to '/' which should work with custom domain. In files and clb case it was one instance on line 43 for Developer Documentation: '<li class="nav-item "><a href="/" class="nav-link">Developer Documentation</a></li>'`

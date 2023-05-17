@@ -7,7 +7,7 @@ rm -rf ospc/docs/*
 # Build the individual ospc sphinx projects
 make html -C ./docs-cloud-files/api-docs
 make html -C ./docs-cloud-load-balancers/api-docs/cloud-load-balancers-v1
-make html -C ./rackconnect/v3/developer-guide
+make html -C ./docs-cloud-rackconnect/api-docs
 
 # Copy the landing page to the build dir
 cp index.html ospc/docs
