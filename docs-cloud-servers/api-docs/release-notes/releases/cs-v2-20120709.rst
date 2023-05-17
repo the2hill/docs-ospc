@@ -1,0 +1,22 @@
+.. _cs-v2-20120709:
+
+API |contract version| updates, July 9, 2012
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+What's new
+----------
+
+A new authentication endpoint has been added and changes have been made to the service
+catalog. For detailed information about authentication through the Identity service v2.0,
+see the
+:rax-devdocs:`Identity API Guide <cloud-identity/v2/getting-started/>`.
+
+Resolved issues
+---------------
+
+|no changes|
+
+Known issues
+------------
+
+|no changes|

@@ -37,7 +37,7 @@ The migration and setup is done for the most part... but there is one more thing
 To verify that the project builds with your new additions simply run the setup.sh script, example:
 * `$docs-ospc ./setup.sh`
 
-This will trigger sphinx builds for all projects and update the landing page. This can then be viewed from your browser by navigating to the index.html in the root of docs-ospc and opening it in your browser of choice. 
+This will trigger sphinx builds for all projects and update the landing page. This can then be viewed from your browser by navigating to the index.html in the build dir of docs-ospc(docs-ospc/ospc/docs) and opening it in your browser of choice. 
 
 If sphinx failed for any reason or things aren't showing up as expected some debugging is required after this point. 
 
