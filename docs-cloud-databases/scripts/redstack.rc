@@ -1,0 +1,43 @@
+# Paths inside the VM.
+REDDWARF_SOURCE=/opt/stack/reddwarf_lite
+PATH_INTEGRATION_CONF="/tmp/integration"
+
+# devstack is either a shared folder or is downloaded by reddwarf-ci install.
+PATH_DEVSTACK_SRC=~/devstack
+PATH_DEVSTACK_OUTPUT=/opt/stack
+REPO_DEVSTACK=git://github.com/openstack-dev/devstack.git
+
+PATH_GLANCE=/opt/stack/glance
+
+PATH_KEYSTONE=/opt/stack/keystone
+PATH_KEYSTONECLIENT=/opt/stack/python-keystoneclient
+
+# Path to Nova and python-novaclient (installed by devstack).
+PATH_NOVA=/opt/stack/nova
+PATH_PYTHON_NOVACLIENT=/opt/stack/python-novaclient
+
+# reddwarf lite information
+REPO_REDDWARF=https://github.com/hub-cap/reddwarf_lite.git
+BRANCH_REDDWARF=master
+PATH_REDDWARF=/opt/stack/reddwarf_lite
+
+# reddwarfclient information
+REPO_REDDWARFCLIENT=https://github.com/hub-cap/python-reddwarfclient.git
+BRANCH_REDDWARFCLIENT=master
+PATH_PYTHON_REDDWARFCLIENT=/opt/stack/python-reddwarfclient
+
+# Openstack Github paths
+OPENSTACK_GITHUB=git://github.com/openstack
+
+PATH_ENV_CONF="$PATH_INTEGRATION_CONF/env.rc"
+
+# Package repo directory
+PACKAGES_DIR=/var/lib/packages/debian/
+BUILD_DIR=/tmp/build/
+
+# Passwords used by devstack.
+MYSQL_PASSWORD=e1a2c042c828d3566d0a
+RABBIT_PASSWORD=f7999d1955c5014aa32c
+SERVICE_TOKEN=be19c524ddc92109a224
+ADMIN_PASSWORD=3de4922d8b6ac5a1aad9
+SERVICE_PASSWORD=7de4162d826bc5a11ad9

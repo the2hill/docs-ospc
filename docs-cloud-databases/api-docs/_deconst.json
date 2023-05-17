@@ -1,0 +1,8 @@
+{
+  "contentIDBase": "https://github.com/rackerlabs/docs-cloud-databases/v1/",
+  "githubUrl": "https://github.com/rackerlabs/docs-cloud-databases/",
+  "githubBranch": "master",
+  "meta": {
+    "preferGithubIssues": true
+  }
+}
