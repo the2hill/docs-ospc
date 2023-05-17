@@ -1,0 +1,22 @@
+
+[build.environment]
+  NPM_VERSION = "7.10.0"
+  NODE_VERSION = "16"
+
+[build]
+  publish = "_build/html"
+  command = "make clean html"
+
+[context.production]
+  publish = "_build/html"
+  command = "make clean html"
+
+[context.deploy-preview]
+  publish = "_build/html"
+  command = "make clean html"
+
+[[redirects]]
+  from = "/*"
+  to = "/docs/autoscale/v1/developer-guide/:splat"
+  status = 301
+  force = false

@@ -1,0 +1,8 @@
+{
+  "contentIDBase": "https://github.com/rackerlabs/otter/",
+  "githubUrl": "https://github.com/rackerlabs/otter/",
+  "githubBranch": "master",
+  "meta": {
+    "preferGithubIssues": true
+  }
+}
