@@ -1,0 +1,930 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Authenticate to the Rackspace Cloud &mdash; Rackspace Cloud Queues v1.r0 documentation</title>
+      
+    <meta name="description" property="og:description" content="The Rackspace Cloud Queues service is an open source, scalable, and highly available message and notifications service based on the OpenStack Marconi project. It supports a variety of messaging patterns and enables customers to create and manage a producer-consumer or a publish-subscriber model (Messaging patterns) from one simple API. Unlimited queues and messages give Cloud Queues users the flexibility they need to create powerful web applications in the cloud.
+
+    This guide is intended to assist software developers who want to develop applications by using the REST application programming interface (API) for the Cloud Queues service."/>
+    <meta name="category" property="article:section" content="Guides" />
+    <meta name="keywords" property="article:tag" content="Rackspace Cloud Queues API 1.0"/>    
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../_static/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="https://docs.rackspace.com/style.css"/>
+    
+    
+    <link rel="shortcut icon" href="https://docs.rackspace.com/favicons/favicon.ico"/>
+    
+  
+    
+    
+  
+    
+    
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MW68KW');
+  </script>
+  <!-- End Google Tag Manager -->
+  <!--[if lt IE 9]>
+      <script src="../_static/js/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4"></script>
+    
+      
+        <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+          <script type="text/javascript" src="../_static/jquery.js"></script>
+          <script type="text/javascript" src="../_static/underscore.js"></script>
+          <script type="text/javascript" src="../_static/doctools.js"></script>
+          <script type="text/javascript" src="../_static/language_data.js"></script>
+      
+  
+      
+      <link rel="index" title="Index" href="../genindex.html" />
+      <link rel="search" title="Search" href="../search.html" />
+      <link rel="copyright" title="Copyright" href="../copyright.html" />
+      <link rel="next" title="Rackspace Cloud Queues Concepts" href="concepts.html" />
+      <link rel="prev" title="Send API requests to Rackspace Cloud Queues" href="send-request-ovw.html" />
+    
+  </head>
+<body class="wy-body-for-nav docs">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MW68KW" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  
+  <header class="header buttons-header" data-nosnippet>
+    <nav class="nav navbar navbar-light bg-light justify-content-end buttons-nav-items">
+        <div class="nav-item buttons-nav-item buy-now" data-signed-out="true">
+            <a class="buynow-button button small primary" href="/">Buy Now</a>
+            <ul>
+                <li><a href="https://cart.rackspace.com/cloud">Rackspace Cloud</a></li>
+                <li><a href="https://cart.rackspace.com/apps">Email &amp; Apps</a></li>
+                <li><a href="https://cart.rackspace.com/aws">Fanatical Support for AWS</a></li>
+                <li><a href="https://cart.rackspace.com/gcp">Managed Google Cloud Platform</a></li>
+                <li><a href="https://cart.rackspace.com/office365">Office 365</a></li>
+            </ul>
+        </div>
+        <div class="nav-item buttons-nav-item login" data-signed-out="true">
+            <a class="login-button button small secondary" href="/">Login</a>
+            <ul>
+                <li><a href="https://my.rackspace.com/portal/auth/login">MyRackspace Portal</a></li>
+                <li><a href="https://mycloud.rackspace.com">Cloud Control Panel</a></li>
+                <li><a href="https://apps.rackspace.com">Rackspace Webmail Login</a></li>
+                <li><a href="https://cp.rackspace.com">Cloud Office Control Panel</a></li>
+            </ul>
+        </div>
+        <div class="nav-item buttons-nav-item" data-signed-out="true">
+          <span data-tooltip="Click Here for Search" data-tooltip-position="top" class="mobile-search">
+            <button type="button" class="btn btn-white" data-toggle="modal" data-placement="top"
+              data-target="#searchModal">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </span>
+        </div>
+    </nav>
+</header>
+
+<header class="header" data-nosnippet>
+    <nav class="nav navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="https://www.rackspace.com/" title="Go to homepage" class="logo navbar-brand"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="main-nav-items navbar-nav mr-auto">
+                <li class="nav-item "><a href="https://docs.rackspace.com/" class="nav-link">Developer Home</a></li>
+                <li class="nav-item "><a href="/" class="nav-link">Developer Documentation</a></li>
+                <li class="nav-item  blog-nav dropdown "><a class="nav-link dropdown-toggle" href='#'
+                        id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        &nbsp;Blogs&nbsp;
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <ul class="main-nav-items navbar-nav mr-auto">
+                            <li class="nav-item "><a href="https://docs.rackspace.com/blog" class="nav-link">Expert
+                                    Insights Tech Blog</a></li>
+                            <li class="nav-item "><a href="https://www.rackspace.com/blog" class="nav-link">Rackspace
+                                    Blog</a></li>
+                            <li class="nav-item "><a href="https://www.rackspace.com/solve" class="nav-link">Solve:
+                                    Thought Leadership</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item "><a href="https://support.rackspace.com/" class="nav-link">Support
+                        Documentation</a></li>
+            </ul>
+            <span data-tooltip="Click Here for Search" data-tooltip-position="top" class="desktop-search">
+                <button type="button" class="btn btn-white" data-toggle="modal" data-placement="top"
+                    data-target="#searchModal">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </span>
+        </div>
+    </nav>
+</header>
+
+<div id="root"></div>
+<div id="modal-root"></div>
+<nav class="docs-header-headline-container" data-nosnippet>
+    <h1>Developer Docs</h1>
+    <br>
+    <p class="tagline">Let's build something powerful together!</p>
+</nav>
+
+<section class="announcement" data-nosnippet>
+    <div class="header-announcement">
+        <div class="banner">
+            <p>End-to-End Multicloud Solutions.&nbsp;&nbsp;&nbsp;<strong>Solving
+                    Together.™</strong>&nbsp;&nbsp;&nbsp;Learn more at <a
+                    href="https://www.rackspace.com/">Rackspace.com</a></p>
+        </div>
+    </div>
+</section>
+  
+<main>
+  <div class="container-fluid">
+    <div class="row">
+     <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div id="search"></div>
+      <div id="crawler-search" style="display: none;"></div>
+    </div>
+  </div>
+</div>
+    
+    <div class="col-sm-12 col-md-12 col-lg-3">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side sidebar">
+      <div class="wy-side-scroll" data-drc-global-sidebar="">
+
+        
+        <div class="wy-menu wy-menu-vertical sidebar-container ng-isolate-scope sticky-top" data-drc-sticky="" data-offset-top="321" data-drc-flex-height="" data-flex-bottom="443" data-drc-collapsible-nav="" data-spy="affix" role="navigation" aria-label="main navigation">
+          <a href="https://github.com/rackerlabs/docs-cloud-queues/issues" target="_blank" class="github-link">
+            <span class="icon fa fa-github"></span>
+            <span class="link-text">Submit an issue</span>
+          </a>
+          
+          
+    
+          
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Cloud Queues 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Getting started</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="get-credentials-include.html">Get your credentials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="send-request-ovw.html">Send API requests to Rackspace Cloud Queues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="send-request-ovw.html#convert-curl-examples-to-run-on-windows">Convert cURL examples to run on Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Authenticate to the Rackspace Cloud</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#authenticate-by-using-curl">Authenticate by using cURL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#send-an-authentication-request">Send an authentication request</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#review-the-authentication-response">Review the authentication response</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configure-environment-variables">Configure environment variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="concepts.html">Rackspace Cloud Queues Concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="concepts.html#how-cloud-queues-works">How Cloud Queues works</a></li>
+<li class="toctree-l3"><a class="reference internal" href="concepts.html#messaging-patterns">Messaging patterns</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="concepts.html#producer-consumer">Producer-consumer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="concepts.html#publish-subscribe">Publish-subscribe</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="concepts.html#use-cases">Use cases</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="using-cloud-queues.html">Manage queues and process messages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="using-cloud-queues.html#creating-a-queue">Creating a queue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="using-cloud-queues.html#posting-messages">Posting messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="using-cloud-queues.html#claiming-messages-for-processing">Claiming messages for processing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="using-cloud-queues.html#deleting-messages">Deleting messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="using-cloud-queues.html#releasing-a-claim">Releasing a claim</a></li>
+<li class="toctree-l3"><a class="reference internal" href="using-cloud-queues.html#deleting-a-queue">Deleting a queue</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../general-api-info/index.html">General API information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../general-api-info/service-access.html">Service access endpoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general-api-info/request-response.html">Request and response types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general-api-info/limits.html">Limits</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../general-api-info/limits.html#rate-limits">Rate limits</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../general-api-info/limits.html#absolute-limits">Absolute limits</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../general-api-info/faults.html">Faults</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general-api-info/date-time-format.html">Date and time format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general-api-info/role-based-access-control.html">Role-based access control (RBAC)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../general-api-info/role-based-access-control.html#assigning-roles-to-account-users">Assigning roles to account users</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../general-api-info/role-based-access-control.html#roles-available-for-product-name">Roles available for Cloud Queues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../general-api-info/role-based-access-control.html#multiproduct-global-roles-and-permissions">Multiproduct global roles and permissions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../general-api-info/role-based-access-control.html#resolving-conflicts-between-rbac-multi-product-vs-custom-product-specific-roles">Resolving conflicts between RBAC multi-product vs. custom (product-specific) roles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../general-api-info/role-based-access-control.html#rbac-permissions-cross-reference-to-product-name-api-operations">RBAC permissions cross-reference to Cloud Queues API operations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../api-reference/index.html">API reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../api-reference/home-document.html">Home document</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../api-reference/home-document.html#get-home-document">Get home document</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/home-document.html#request">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/home-document.html#response">Response</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api-reference/queues-operations.html">Queues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../api-reference/queues-operations.html#list-queues">List queues</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/queues-operations.html#request">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/queues-operations.html#response">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../api-reference/queues-operations.html#create-queue">Create queue</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/queues-operations.html#id2">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/queues-operations.html#id3">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../api-reference/queues-operations.html#delete-queue">Delete queue</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/queues-operations.html#id5">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/queues-operations.html#id6">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../api-reference/queues-operations.html#check-queue-existence">Check queue existence</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/queues-operations.html#id8">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/queues-operations.html#id9">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../api-reference/queues-operations.html#set-queue-metadata">Set queue metadata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/queues-operations.html#id11">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/queues-operations.html#id12">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../api-reference/queues-operations.html#show-queue-metadata">Show queue metadata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/queues-operations.html#id14">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/queues-operations.html#id15">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../api-reference/queues-operations.html#show-queue-stats">Show queue stats</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/queues-operations.html#id17">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/queues-operations.html#id18">Response</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api-reference/messages-operations.html">Messages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../api-reference/messages-operations.html#post-message">Post message</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/messages-operations.html#request">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/messages-operations.html#response">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../api-reference/messages-operations.html#get-messages">Get messages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/messages-operations.html#id3">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/messages-operations.html#id4">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../api-reference/messages-operations.html#get-messages-by-id">Get messages by ID</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/messages-operations.html#id6">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/messages-operations.html#id7">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../api-reference/messages-operations.html#bulk-delete-messages-by-id">Bulk-delete messages by ID</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/messages-operations.html#id8">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/messages-operations.html#id9">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../api-reference/messages-operations.html#show-message-details">Show message details</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/messages-operations.html#id11">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/messages-operations.html#id12">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../api-reference/messages-operations.html#delete-message">Delete message</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/messages-operations.html#id14">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/messages-operations.html#id15">Response</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api-reference/claims-operations.html">Claims</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../api-reference/claims-operations.html#claim-messages">Claim messages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/claims-operations.html#request">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/claims-operations.html#response">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../api-reference/claims-operations.html#query-claim">Query claim</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/claims-operations.html#id2">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/claims-operations.html#id3">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../api-reference/claims-operations.html#update-claim">Update claim</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/claims-operations.html#id4">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/claims-operations.html#id5">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../api-reference/claims-operations.html#release-claim">Release claim</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/claims-operations.html#id7">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api-reference/claims-operations.html#id8">Response</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../release-notes/index.html">Release Notes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../release-notes/index.html#api-contract-version-updates-march-4-2015">API 1.0 updates, March 4, 2015</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#what-s-new">What’s new</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#resolved-issues">Resolved issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#known-issues">Known issues</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../release-notes/index.html#api-contract-version-updates-january-19-2015">API 1.0 updates, January 19, 2015</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id1">What’s new</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id2">Resolved issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id3">Known issues</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../release-notes/index.html#api-contract-version-updates-march-4-2014">API 1.0 updates - March 4, 2014</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id4">What’s new</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id5">Resolved issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id6">Known issues</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../release-notes/index.html#api-contract-version-updates-january-22-2014">API 1.0 updates, January 22, 2014</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id7">What’s new</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id8">Resolved issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id9">Known issues</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../release-notes/index.html#api-contract-version-updates-december-19-2013">API 1.0 updates, December 19, 2013</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id10">What’s new</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id11">Resolved issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id12">Known issues</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../release-notes/index.html#api-contract-version-updates-december-12-2013">API 1.0 updates, December 12, 2013</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id13">What’s new</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id14">Resolved issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id15">Known issues</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../release-notes/index.html#api-contract-version-ua-release-november-4-2013">API 1.0 UA release, November 4, 2013</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id16">What’s new</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id17">Resolved issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id18">Known issues</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../release-notes/index.html#api-contract-version-la-release-october-9-2013">API 1.0 LA release, October 9, 2013</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id19">What’s new</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id20">Resolved issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id21">Known issues</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../service-updates.html">Service updates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../additional-resources.html">Additional resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Disclaimer</a></li>
+</ul>
+
+          
+        
+        </div>
+        
+      </div>
+    </nav>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 col-lg-9 content">
+      <div class="wy-nav-content docs-section">
+        <div class="rst-content">
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="authenticate-to-the-rackspace-cloud">
+<span id="authenticate-to-cloud"></span><h1>Authenticate to the Rackspace Cloud<a class="headerlink" href="#authenticate-to-the-rackspace-cloud" title="Permalink to this headline">#</a></h1>
+<p>Whether you use cURL, a REST client, or a command-line client (CLI) to send
+requests to the Rackspace Cloud Queues API, you need an authentication token to include in
+the <code class="docutils literal notranslate"><span class="pre">X-Auth-Token</span></code> header of each request. You get a token by submitting an
+authentication request with valid account credentials to the following
+Identity API service endpoint:</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">identity</span><span class="o">.</span><span class="n">api</span><span class="o">.</span><span class="n">rackspacecloud</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">v2</span><span class="o">.</span><span class="mi">0</span>
+</pre></div>
+</div>
+<p>With a valid token, you can send API requests to any of the API service
+endpoints that you are authorized to use. The authentication response includes
+a token expiration date. When a token expires, you can send another
+authentication request to get a new one.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>For more information about authentication tokens, see the following topics
+in the Identity API documentation:</p>
+<ul class="last">
+<li><p class="first"><a class="reference external" href="https://developer.rackspace.com/docs/cloud-identity/v2/api-reference/token-operations/">Authentication token operations</a></p>
+<p>The examples in this API guide show how to authenticate by
+using username and API key credentials, which is a more secure way to
+communicate with API services. The authentication token operations
+reference in the Identity API documentation describes
+other types of credentials that you can use for authentication.</p>
+</li>
+<li><p class="first"><a class="reference external" href="https://developer.rackspace.com/docs/cloud-identity/v2/getting-started/manage-auth-tokens">Manage authentication tokens</a></p>
+</li>
+</ul>
+</div>
+<div class="section" id="authenticate-by-using-curl">
+<span id="authenticate-using-curl"></span><h2>Authenticate by using cURL<a class="headerlink" href="#authenticate-by-using-curl" title="Permalink to this headline">#</a></h2>
+<p>Follow these steps to authenticate to the Rackspace Cloud by
+<a class="reference internal" href="send-request-ovw.html#how-curl-commands-work"><span class="std std-ref">using cURL</span></a>.</p>
+<ul class="simple">
+<li><a class="reference internal" href="#send-auth-req-curl"><span class="std std-ref">Send an authentication request</span></a></li>
+<li><a class="reference internal" href="#review-auth-resp"><span class="std std-ref">Review the authentication response</span></a></li>
+<li><a class="reference internal" href="#configure-environment-variables"><span class="std std-ref">Configure environment variables</span></a></li>
+</ul>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">The cURL examples in this guide are provided for reference only. Because
+the use of cURL has environmental dependencies, copying and pasting the
+examples might not work in your environment.</p>
+</div>
+</div>
+<div class="section" id="send-an-authentication-request">
+<span id="send-auth-req-curl"></span><h2>Send an authentication request<a class="headerlink" href="#send-an-authentication-request" title="Permalink to this headline">#</a></h2>
+<p>From a command prompt, send a <strong>POST tokens</strong> request to the Rackspace Cloud
+Identity service.  Include your username and <a class="reference internal" href="get-credentials-include.html#get-credentials"><span class="std std-ref">API key</span></a>,
+as shown in the following example.</p>
+<div class="code highlight-default notranslate" id="auth-curl-request"><div class="highlight"><pre><span></span>$ curl https://identity.api.rackspacecloud.com/v2.0/tokens  \
+ -X POST \
+ -d &#39;{&quot;auth&quot;:{&quot;RAX-KSKEY:apiKeyCredentials&quot;:{&quot;username&quot;:&quot;yourUserName&quot;,&quot;apiKey&quot;:&quot;$apiKey&quot;}}}&#39; \
+ -H &quot;Content-type: application/json&quot; \
+ | python -m json.tool
+</pre></div>
+</div>
+</div>
+<div class="section" id="review-the-authentication-response">
+<span id="review-auth-resp"></span><h2>Review the authentication response<a class="headerlink" href="#review-the-authentication-response" title="Permalink to this headline">#</a></h2>
+<p>If your credentials are valid, the Identity service returns an authentication
+response that includes the following information:</p>
+<ul class="simple">
+<li>An authentication token</li>
+<li>A service catalog with information about the services that you can access</li>
+<li>User information and role assignments</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">For detailed information about the authentication response, see the
+<a class="reference external" href="https://developer.rackspace.com/docs/cloud-identity/v2/general-api-info/authentication-info/sample-auth-req-response/#annotated-auth-req-resp">Annotated authentication request and response</a>
+in the Rackspace Cloud API documentation.</p>
+</div>
+<p>In the following example, the ellipsis (…)  represents other service
+endpoints, which are not shown. The values shown in this and other examples
+vary because the information returned is specific to your account.</p>
+<p><strong>Example: Authentication response</strong></p>
+<div class="code highlight-default notranslate" id="auth-response-example"><div class="highlight"><pre><span></span><span class="p">{</span>
+        <span class="s2">&quot;access&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;token&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;expires&quot;</span><span class="p">:</span> <span class="s2">&quot;2014-11-24T22:05:39.115Z&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;tenant&quot;</span><span class="p">:</span> <span class="p">{</span>
+                                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;110011&quot;</span><span class="p">,</span>
+                                <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;110011&quot;</span>
+                        <span class="p">},</span>
+                        <span class="s2">&quot;RAX-AUTH:authenticatedBy&quot;</span><span class="p">:</span> <span class="p">[</span>
+                                <span class="s2">&quot;APIKEY&quot;</span>
+                        <span class="p">]</span>
+                 <span class="p">},</span>
+                <span class="s2">&quot;serviceCatalog&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                                <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;cloudDatabases&quot;</span><span class="p">,</span>
+                                <span class="s2">&quot;endpoints&quot;</span><span class="p">:</span> <span class="p">[</span>
+                                        <span class="p">{</span>
+                                        <span class="s2">&quot;publicURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://syd.databases.api.rackspacecloud.com/v1.0/110011&quot;</span><span class="p">,</span>
+                                        <span class="s2">&quot;region&quot;</span><span class="p">:</span> <span class="s2">&quot;SYD&quot;</span><span class="p">,</span>
+                                        <span class="s2">&quot;tenantId&quot;</span><span class="p">:</span> <span class="s2">&quot;110011&quot;</span>
+                                        <span class="p">},</span>
+                                        <span class="p">{</span>
+                                                <span class="s2">&quot;publicURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://dfw.databases.api.rackspacecloud.com/v1.0/110011&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;region&quot;</span><span class="p">:</span> <span class="s2">&quot;DFW&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;tenantId&quot;</span><span class="p">:</span> <span class="s2">&quot;110011&quot;</span>
+                                        <span class="p">},</span>
+                                        <span class="p">{</span>
+                                                <span class="s2">&quot;publicURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://ord.databases.api.rackspacecloud.com/v1.0/110011&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;region&quot;</span><span class="p">:</span> <span class="s2">&quot;ORD&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;tenantId&quot;</span><span class="p">:</span> <span class="s2">&quot;110011&quot;</span>
+                                        <span class="p">},</span>
+                                        <span class="p">{</span>
+                                                <span class="s2">&quot;publicURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://iad.databases.api.rackspacecloud.com/v1.0/110011&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;region&quot;</span><span class="p">:</span> <span class="s2">&quot;IAD&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;tenantId&quot;</span><span class="p">:</span> <span class="s2">&quot;110011&quot;</span>
+                                        <span class="p">},</span>
+                                        <span class="p">{</span>
+                                                <span class="s2">&quot;publicURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://hkg.databases.api.rackspacecloud.com/v1.0/110011&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;region&quot;</span><span class="p">:</span> <span class="s2">&quot;HKG&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;tenantId&quot;</span><span class="p">:</span> <span class="s2">&quot;110011&quot;</span>
+                                        <span class="p">}</span>
+                                <span class="p">],</span>
+                                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;rax:database&quot;</span>
+                        <span class="p">},</span>
+
+                        <span class="o">...</span>
+
+                        <span class="p">{</span>
+                                <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;cloudDNS&quot;</span><span class="p">,</span>
+                                <span class="s2">&quot;endpoints&quot;</span><span class="p">:</span> <span class="p">[</span>
+                                        <span class="p">{</span>
+                                                <span class="s2">&quot;publicURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://dns.api.rackspacecloud.com/v1.0/110011&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;tenantId&quot;</span><span class="p">:</span> <span class="s2">&quot;110011&quot;</span>
+                                        <span class="p">}</span>
+                                <span class="p">],</span>
+                                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;rax:dns&quot;</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                                <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;rackCDN&quot;</span><span class="p">,</span>
+                                <span class="s2">&quot;endpoints&quot;</span><span class="p">:</span> <span class="p">[</span>
+                                        <span class="p">{</span>
+                                                <span class="s2">&quot;internalURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://global.cdn.api.rackspacecloud.com/v1.0/110011&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;publicURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://global.cdn.api.rackspacecloud.com/v1.0/110011&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;tenantId&quot;</span><span class="p">:</span> <span class="s2">&quot;110011&quot;</span>
+                                        <span class="p">}</span>
+                                <span class="p">],</span>
+
+                                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;rax:cdn&quot;</span>
+                        <span class="p">}</span>
+                <span class="p">],</span>
+                <span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;123456&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;roles&quot;</span><span class="p">:</span> <span class="p">[</span>
+                                <span class="p">{</span>
+                                        <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;A Role that allows a user access to keystone Service methods&quot;</span><span class="p">,</span>
+                                        <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;6&quot;</span><span class="p">,</span>
+                                        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;compute:default&quot;</span><span class="p">,</span>
+                                        <span class="s2">&quot;tenantId&quot;</span><span class="p">:</span> <span class="s2">&quot;110011&quot;</span>
+                                <span class="p">},</span>
+                                <span class="p">{</span>
+                                        <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;User Admin Role.&quot;</span><span class="p">,</span>
+                                        <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;3&quot;</span><span class="p">,</span>
+                                        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;identity:user-admin&quot;</span>
+                                <span class="p">}</span>
+                        <span class="p">],</span>
+                        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;jsmith&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;RAX-AUTH:defaultRegion&quot;</span><span class="p">:</span> <span class="s2">&quot;ORD&quot;</span>
+                <span class="p">}</span>
+        <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>If the request was successful, it returns the following values that you need to
+include when you make service requests to the Rackspace product API:</p>
+<dl class="docutils">
+<dt>token ID</dt>
+<dd><p class="first">The token ID value is required to confirm your identity each
+time you access the service. Include it in the <code class="docutils literal notranslate"><span class="pre">X-Auth-Token</span></code> header
+for each API request.</p>
+<p class="last">The <code class="docutils literal notranslate"><span class="pre">expires</span></code> attribute indicates the date and time that the token will
+expire, unless it is revoked before the expiration. To get a new token,
+submit another authentication request. For more information, see
+<a class="reference external" href="https://developer.rackspace.com/docs/cloud-identity/v2/getting-started/manage-auth-tokens">Manage authentication tokens</a>.</p>
+</dd>
+<dt>tenant ID</dt>
+<dd>The tenant ID provides your account number. For most Rackspace Cloud
+service APIs, the tenant ID is appended to the API endpoint in the service
+catalog automatically. For Rackspace Cloud services, the tenant ID has the
+same value as the tenant name.</dd>
+<dt>endpoint</dt>
+<dd>The API endpoint provides the URL that you use to access the API service.
+For guidance on choosing an endpoint, see
+<a class="reference internal" href="../general-api-info/service-access.html#service-access"><span class="std std-ref">Service access</span></a>.</dd>
+</dl>
+<p>If the request failed, review the response message and
+the following error message descriptions to determine next steps.</p>
+<ul>
+<li><p class="first">If you see the following error message, review the authentication request
+for syntax or coding errors. If you are using cURL, see
+<a class="reference internal" href="send-request-ovw.html#how-curl-commands-work"><span class="std std-ref">Using cURL</span></a>.</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">400</span> <span class="n">Invalid</span> <span class="n">request</span> <span class="n">body</span><span class="p">:</span> <span class="n">unable</span> <span class="n">to</span> <span class="n">parse</span> <span class="n">Auth</span> <span class="n">data</span><span class="o">.</span> <span class="n">Please</span> <span class="n">review</span> <span class="n">XML</span> <span class="ow">or</span>
+<span class="n">JSON</span> <span class="n">formatting</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">If you see the following error message, verify the authentication credentials
+submitted in the authentication request. If necessary, contact your Rackspace
+Cloud Administrator or Rackspace Support to get valid credentials.</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">401</span> <span class="n">Unable</span> <span class="n">to</span> <span class="n">authenticate</span> <span class="n">user</span> <span class="k">with</span> <span class="n">credentials</span> <span class="n">provided</span><span class="o">.</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">For additional information about authentication errors, see the
+<a class="reference external" href="https://developer.rackspace.com/docs/cloud-identity/v2/general-api-info/http-status-codes/">Identity API Reference documentation</a>.</p>
+</div>
+</div>
+<div class="section" id="configure-environment-variables">
+<span id="id1"></span><h2>Configure environment variables<a class="headerlink" href="#configure-environment-variables" title="Permalink to this headline">#</a></h2>
+<p>To make it easier to include the token ID, tenant ID, endpoint, and other
+values in API requests, use the <code class="docutils literal notranslate"><span class="pre">export</span></code> command to create environment
+variables that can be substituted for the
+actual values. For example, you can create an <code class="docutils literal notranslate"><span class="pre">ENDPOINT</span></code> variable to
+store the URL for accessing an API service. To reference the value in an API
+request, prefix the variable name with a <code class="docutils literal notranslate"><span class="pre">$</span></code>, for example <code class="docutils literal notranslate"><span class="pre">$ENDPOINT</span></code>.</p>
+<div class="admonition note" id="env-variables">
+<p class="first admonition-title">Note</p>
+<p>The environment variables created with the <code class="docutils literal notranslate"><span class="pre">export</span></code> command are
+valid only for the current terminal session. If you start a new session,
+run the export commands again.</p>
+<p class="last">To reuse the variables across sessions, update the configuration file for
+your shell environment to include the export statements. For details
+about using and managing environment variables on different systems, see
+the <a class="reference external" href="http://environmentvariables.org/">environment variables wiki</a>.</p>
+</div>
+<p><strong>Create environment variables</strong></p>
+<ol class="arabic">
+<li><p class="first">In the <code class="docutils literal notranslate"><span class="pre">token</span></code> section of the authentication response, copy the
+token <code class="docutils literal notranslate"><span class="pre">id</span></code> and tenant <code class="docutils literal notranslate"><span class="pre">id</span></code> values from the token object. The
+following example shows example values only.</p>
+<blockquote>
+<div><div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+          <span class="s2">&quot;access&quot;</span><span class="p">:</span> <span class="p">{</span>
+                  <span class="s2">&quot;token&quot;</span><span class="p">:</span> <span class="p">{</span>
+                          <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;AA2345631l1NVdD6D1OCauKA0e9fioquZqVlS-hpbCqQ5Yx1zLOREGf4efBh10CfB5AvjC1yld4ZNJUouE7DA0QB0n5nRbdDsYADA-ORICIqHNqOVS_kYmedqDh75c_PLe123456789101&quot;</span><span class="p">,</span>
+                          <span class="s2">&quot;expires&quot;</span><span class="p">:</span> <span class="s2">&quot;2015-11-18T18:35:45.013Z&quot;</span><span class="p">,</span>
+                          <span class="s2">&quot;tenant&quot;</span><span class="p">:</span> <span class="p">{</span>
+                                  <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;123456&quot;</span><span class="p">,</span>
+                                  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;123456&quot;</span>
+                          <span class="p">},</span>
+                          <span class="s2">&quot;RAX-AUTH:authenticatedBy&quot;</span><span class="p">:</span> <span class="p">[</span>
+                                  <span class="s2">&quot;APIKEY&quot;</span>
+                          <span class="p">]</span>
+  <span class="p">},</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Export the token ID to an environment variable
+that can be supplied in the <code class="docutils literal notranslate"><span class="pre">X-Auth-Token</span></code> header required in each
+API request.</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>$ export AUTH_TOKEN=&quot;token-id&quot;
+</pre></div>
+</div>
+<p>Replace <code class="docutils literal notranslate"><span class="pre">token-id</span></code> with the authentication token <code class="docutils literal notranslate"><span class="pre">id</span></code> value returned
+in the authentication response.</p>
+</li>
+<li><p class="first">Export the tenant ID to an environment variable
+that can be supplied in requests that require you to specify a tenant ID or
+tenant name.</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>$ export TENANT_ID=&quot;tenant-id&quot;
+</pre></div>
+</div>
+<p>Replace <code class="docutils literal notranslate"><span class="pre">tenant-id</span></code> with the authentication token <code class="docutils literal notranslate"><span class="pre">id</span></code> value returned
+in the authentication response.</p>
+</li>
+<li><p class="first">In the <code class="docutils literal notranslate"><span class="pre">service</span> <span class="pre">catalog</span></code> section of the authentication response, copy the
+<code class="docutils literal notranslate"><span class="pre">publicURL</span></code> value for the Rackspace Cloud Queues API, version, and region that you want
+to access.</p>
+<p>This example shows the endpoints available for the Rackspace Cloud Queues API.</p>
+<div class="code json highlight-default notranslate" id="authentication-response-examples"><div class="highlight"><pre><span></span><span class="p">{</span>
+                <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;cloudQueues&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;endpoints&quot;</span><span class="p">:</span> <span class="p">[</span>
+                                <span class="p">{</span>
+                                                <span class="s2">&quot;region&quot;</span><span class="p">:</span> <span class="s2">&quot;HKG&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;tenantId&quot;</span><span class="p">:</span> <span class="s2">&quot;123456&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;publicURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://hkg.queues.api.rackspacecloud.com/v1/123456&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;internalURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://snet-hkg.queues.api.rackspacecloud.com/v1/123456&quot;</span>
+                                <span class="p">},</span>
+                                <span class="p">{</span>
+                                                <span class="s2">&quot;region&quot;</span><span class="p">:</span> <span class="s2">&quot;SYD&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;tenantId&quot;</span><span class="p">:</span> <span class="s2">&quot;123456&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;publicURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://syd.queues.api.rackspacecloud.com/v1/123456&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;internalURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://snet-syd.queues.api.rackspacecloud.com/v1/123456&quot;</span>
+                                <span class="p">},</span>
+                                <span class="p">{</span>
+                                                <span class="s2">&quot;region&quot;</span><span class="p">:</span> <span class="s2">&quot;DFW&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;tenantId&quot;</span><span class="p">:</span> <span class="s2">&quot;123456&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;publicURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://dfw.queues.api.rackspacecloud.com/v1/123456&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;internalURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://snet-dfw.queues.api.rackspacecloud.com/v1/123456&quot;</span>
+                                <span class="p">},</span>
+                                <span class="p">{</span>
+                                                <span class="s2">&quot;region&quot;</span><span class="p">:</span> <span class="s2">&quot;IAD&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;tenantId&quot;</span><span class="p">:</span> <span class="s2">&quot;123456&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;publicURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://iad.queues.api.rackspacecloud.com/v1/123456&quot;</span><span class="p">,</span>
+                                                <span class="s2">&quot;internalURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://snet-iad.queues.api.rackspacecloud.com/v1/123456&quot;</span>
+                                <span class="p">}</span>
+                <span class="p">],</span>
+                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;rax:queues&quot;</span>
+<span class="p">},</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">For some services, the <code class="docutils literal notranslate"><span class="pre">publicURL</span></code> value for the API consists of
+the endpoint URL with the tenant ID for your account
+appended after the final <code class="docutils literal notranslate"><span class="pre">/</span></code>.</p>
+</div>
+</li>
+<li><p class="first">Export the URL to an environment variable, as shown in the following
+example:</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>$ export API_ENDPOINT=&quot;publicURL&quot;
+</pre></div>
+</div>
+<p>Replace <code class="docutils literal notranslate"><span class="pre">publicURL</span></code> with the <code class="docutils literal notranslate"><span class="pre">publicURL</span></code> value listed in the service
+catalog.</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+        </div>
+      <div class="rst-footer-buttons row justify-content-between" role="navigation" aria-label="footer navigation">
+        <div class="prev col-sm-12 col-md-6 col-lg-6 float-left">
+        <span class="label" aria-hidden="true">Previous</span>
+        <a href="send-request-ovw.html" title="Send API requests to Rackspace Cloud Queues" accesskey="p" rel="prev">Send API requests to Rackspace Cloud Queues</a>
+        </div>
+        <div class="next col-sm-12 col-md-6 col-lg-6 float-right">
+          <span class="label" aria-hidden="true">Next</span>
+          <a href="concepts.html" title="Rackspace Cloud Queues Concepts" accesskey="n" rel="next">Rackspace Cloud Queues Concepts</a>
+        </div>
+      </div>
+  
+  
+      </div>
+      </div>
+    </div>
+</div></main>
+<footer class="footer" data-nosnippet>
+  <nav class="upper-footer">
+    <div class="row"><div class="col-sm-12 col-md-6 col-lg-4">
+        <span class="footer-title">Developer Network</span><ul><li><a href="https://docs.rackspace.com/">Developer Center</a></li><li><a href="/docs">API Documentation and User Guides</a></li><li><a href="https://support.rackspace.com/how-to/">Rackspace How-To</a></li></ul></div><div class="col-sm-12 col-md-6 col-lg-4">
+        <span class="footer-title">Blogs</span><ul><li><a href="https://docs.rackspace.com/blog">Expert Insights Tech Blog</a></li><li><a href="https://www.rackspace.com/blog">Rackspace Blog</a></li><li><a href="https://www.rackspace.com/solve">Solve: Thought Leadership</a></li></ul></div><div class="col-sm-12 col-md-6 col-lg-4">
+        <span class="footer-title">Other Information</span><ul><li><a href="https://www.rackspace.com/customer-stories">Customer Stories</a></li><li><a href="https://www.rackspace.com/events">Events</a></li><li><a href="https://www.rackspace.com/responsibility">Programs</a></li><li><a href="https://jobs.jobvite.com/rackspace/">Careers</a></li><li><a href="https://docs.rackspace.com/docs/style-guide/">Style Guide for Technical Content</a></li></ul></div></div>
+  </nav>
+  <nav class="lower-footer">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4"><span>©2020 Rackspace US, Inc.</span></div>
+        <div class="text-link col-sm-12 col-md-6 col-lg-2"><a href="https://www.rackspace.com/about/">About
+            Rackspace</a></div>
+        <div class="text-link col-sm-12 col-md-6 col-lg-2"><a
+            href="http://www.rackspace.com/information/legal/privacystatement">Privacy Statement</a></div>
+        <div class="text-link col-sm-12 col-md-6 col-lg-2"><a
+            href="http://www.rackspace.com/information/legal/websiteterms">Website Terms</a></div>
+        <div class="text-link col-sm-12 col-md-6 col-lg-2"><a
+            href="http://www.rackspace.com/information/legal/copyrights_trademarks">Trademarks</a></div>
+      </div>
+    </nav>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.0.0/dist/algoliasearch-lite.umd.js" integrity="sha256-MfeKq2Aw9VAkaE9Caes2NOxQf6vUa8Av0JqcUXUGkd0=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.js"></script>
+<script type="text/javascript">
+    var TxtRotate = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+      };
+      
+      TxtRotate.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+      
+        if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+      
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+      
+        var that = this;
+        var delta = 300 - Math.random() * 100;
+      
+        if (this.isDeleting) { delta /= 2; }
+      
+        if (!this.isDeleting && this.txt === fullTxt) {
+          delta = this.period;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+          this.isDeleting = false;
+          this.loopNum++;
+          delta = 500;
+        }
+      
+        setTimeout(function() {
+          that.tick();
+        }, delta);
+      };
+    
+    function openTab(evt, tabName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("product-type");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.parentElement.className += " active";
+    }
+    window.onload = function () {
+        if (document.getElementById("gs-ctrl") != undefined) {
+            document.getElementById("gs-ctrl").className += " active"
+        }
+        if (!window.location.href.includes("faq") && !window.location.href.includes("all-articles") && (document
+                .getElementById("acc-man") != undefined)) {
+            document.getElementById("acc-man").className += " active";
+        }
+        if (window.location.href.includes("faq") && (document.getElementById("acc-faq") != undefined)) {
+            document.getElementById("acc-faq").className += " active";
+        }
+        if (window.location.href.includes("all-articles") && (document.getElementById("acc-all") != undefined)) {
+            document.getElementById("acc-all").className += " active";
+        }
+        if (window.location.href.includes("faq")) {
+            var elements = document.getElementsByClassName("panel-group");
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].className += " faq-list"
+            }
+            $('a[data-toggle="collapse"]').addClass('inactive');
+        }
+        $("table").addClass(["table", "table-striped", "table-bordered"]);
+    
+        var arrOfPtags = document.getElementsByTagName("p");
+        for (var i = 0; i < arrOfPtags.length; i++) {
+            if (arrOfPtags[i].innerHTML.toLowerCase().includes("<strong>note</strong>") || arrOfPtags[i].innerHTML
+                .toLowerCase().includes("<strong>note:</strong>")) {
+                arrOfPtags[i].className += "callout-note";
+            }
+            if (arrOfPtags[i].innerHTML.toLowerCase().includes("<strong>important</strong>") || arrOfPtags[i]
+                .innerHTML.toLowerCase().includes("<strong>important:</strong>")) {
+                arrOfPtags[i].className += "callout-important";
+            }
+            if (arrOfPtags[i].innerHTML.toLowerCase().includes("<strong>warning</strong>") || arrOfPtags[i]
+                .innerHTML.toLowerCase().includes("<strong>warning:</strong>")) {
+                arrOfPtags[i].className += "callout-warning";
+            }
+            if (arrOfPtags[i].innerHTML.toLowerCase().includes("<strong>tip</strong>") || arrOfPtags[i].innerHTML
+                .toLowerCase().includes("<strong>tip:</strong>")) {
+                arrOfPtags[i].className += "callout-tip";
+            }
+        }
+        $('#searchModal').on("shown.bs.modal", function() {
+            $('.ais-SearchBox-input').focus();
+        })
+        var elements = document.getElementsByClassName('txt-rotate');
+        for (var i=0; i<elements.length; i++) {
+          var toRotate = elements[i].getAttribute('data-rotate');
+          var period = elements[i].getAttribute('data-period');
+          if (toRotate) {
+            new TxtRotate(elements[i], JSON.parse(toRotate), period);
+          }
+        }
+        
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+        document.body.appendChild(css);
+    }
+</script>
+<script src="https://docs.rackspace.com/assets/bundle.js"></script>
+<script
+    src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CArray.prototype.includes%2CPromise%2CObject.assign%2CObject.entries">
+</script>
+</body>
+</html>

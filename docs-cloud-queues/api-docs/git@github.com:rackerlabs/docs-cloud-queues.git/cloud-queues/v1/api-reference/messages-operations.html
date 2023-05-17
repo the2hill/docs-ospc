@@ -1,0 +1,1851 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Messages &mdash; Rackspace Cloud Queues v1.r0 documentation</title>
+      
+    <meta name="description" property="og:description" content="The Rackspace Cloud Queues service is an open source, scalable, and highly available message and notifications service based on the OpenStack Marconi project. It supports a variety of messaging patterns and enables customers to create and manage a producer-consumer or a publish-subscriber model (Messaging patterns) from one simple API. Unlimited queues and messages give Cloud Queues users the flexibility they need to create powerful web applications in the cloud.
+
+    This guide is intended to assist software developers who want to develop applications by using the REST application programming interface (API) for the Cloud Queues service."/>
+    <meta name="category" property="article:section" content="Guides" />
+    <meta name="keywords" property="article:tag" content="Rackspace Cloud Queues API 1.0"/>    
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../_static/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="https://docs.rackspace.com/style.css"/>
+    
+    
+    <link rel="shortcut icon" href="https://docs.rackspace.com/favicons/favicon.ico"/>
+    
+  
+    
+    
+  
+    
+    
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MW68KW');
+  </script>
+  <!-- End Google Tag Manager -->
+  <!--[if lt IE 9]>
+      <script src="../_static/js/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4"></script>
+    
+      
+        <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+          <script type="text/javascript" src="../_static/jquery.js"></script>
+          <script type="text/javascript" src="../_static/underscore.js"></script>
+          <script type="text/javascript" src="../_static/doctools.js"></script>
+          <script type="text/javascript" src="../_static/language_data.js"></script>
+      
+  
+      
+      <link rel="index" title="Index" href="../genindex.html" />
+      <link rel="search" title="Search" href="../search.html" />
+      <link rel="copyright" title="Copyright" href="../copyright.html" />
+      <link rel="next" title="Claims" href="claims-operations.html" />
+      <link rel="prev" title="Queues" href="queues-operations.html" />
+    
+  </head>
+<body class="wy-body-for-nav docs">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MW68KW" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  
+  <header class="header buttons-header" data-nosnippet>
+    <nav class="nav navbar navbar-light bg-light justify-content-end buttons-nav-items">
+        <div class="nav-item buttons-nav-item buy-now" data-signed-out="true">
+            <a class="buynow-button button small primary" href="/">Buy Now</a>
+            <ul>
+                <li><a href="https://cart.rackspace.com/cloud">Rackspace Cloud</a></li>
+                <li><a href="https://cart.rackspace.com/apps">Email &amp; Apps</a></li>
+                <li><a href="https://cart.rackspace.com/aws">Fanatical Support for AWS</a></li>
+                <li><a href="https://cart.rackspace.com/gcp">Managed Google Cloud Platform</a></li>
+                <li><a href="https://cart.rackspace.com/office365">Office 365</a></li>
+            </ul>
+        </div>
+        <div class="nav-item buttons-nav-item login" data-signed-out="true">
+            <a class="login-button button small secondary" href="/">Login</a>
+            <ul>
+                <li><a href="https://my.rackspace.com/portal/auth/login">MyRackspace Portal</a></li>
+                <li><a href="https://mycloud.rackspace.com">Cloud Control Panel</a></li>
+                <li><a href="https://apps.rackspace.com">Rackspace Webmail Login</a></li>
+                <li><a href="https://cp.rackspace.com">Cloud Office Control Panel</a></li>
+            </ul>
+        </div>
+        <div class="nav-item buttons-nav-item" data-signed-out="true">
+          <span data-tooltip="Click Here for Search" data-tooltip-position="top" class="mobile-search">
+            <button type="button" class="btn btn-white" data-toggle="modal" data-placement="top"
+              data-target="#searchModal">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </span>
+        </div>
+    </nav>
+</header>
+
+<header class="header" data-nosnippet>
+    <nav class="nav navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="https://www.rackspace.com/" title="Go to homepage" class="logo navbar-brand"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="main-nav-items navbar-nav mr-auto">
+                <li class="nav-item "><a href="https://docs.rackspace.com/" class="nav-link">Developer Home</a></li>
+                <li class="nav-item "><a href="/" class="nav-link">Developer Documentation</a></li>
+                <li class="nav-item  blog-nav dropdown "><a class="nav-link dropdown-toggle" href='#'
+                        id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        &nbsp;Blogs&nbsp;
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <ul class="main-nav-items navbar-nav mr-auto">
+                            <li class="nav-item "><a href="https://docs.rackspace.com/blog" class="nav-link">Expert
+                                    Insights Tech Blog</a></li>
+                            <li class="nav-item "><a href="https://www.rackspace.com/blog" class="nav-link">Rackspace
+                                    Blog</a></li>
+                            <li class="nav-item "><a href="https://www.rackspace.com/solve" class="nav-link">Solve:
+                                    Thought Leadership</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item "><a href="https://support.rackspace.com/" class="nav-link">Support
+                        Documentation</a></li>
+            </ul>
+            <span data-tooltip="Click Here for Search" data-tooltip-position="top" class="desktop-search">
+                <button type="button" class="btn btn-white" data-toggle="modal" data-placement="top"
+                    data-target="#searchModal">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </span>
+        </div>
+    </nav>
+</header>
+
+<div id="root"></div>
+<div id="modal-root"></div>
+<nav class="docs-header-headline-container" data-nosnippet>
+    <h1>Developer Docs</h1>
+    <br>
+    <p class="tagline">Let's build something powerful together!</p>
+</nav>
+
+<section class="announcement" data-nosnippet>
+    <div class="header-announcement">
+        <div class="banner">
+            <p>End-to-End Multicloud Solutions.&nbsp;&nbsp;&nbsp;<strong>Solving
+                    Together.™</strong>&nbsp;&nbsp;&nbsp;Learn more at <a
+                    href="https://www.rackspace.com/">Rackspace.com</a></p>
+        </div>
+    </div>
+</section>
+  
+<main>
+  <div class="container-fluid">
+    <div class="row">
+     <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div id="search"></div>
+      <div id="crawler-search" style="display: none;"></div>
+    </div>
+  </div>
+</div>
+    
+    <div class="col-sm-12 col-md-12 col-lg-3">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side sidebar">
+      <div class="wy-side-scroll" data-drc-global-sidebar="">
+
+        
+        <div class="wy-menu wy-menu-vertical sidebar-container ng-isolate-scope sticky-top" data-drc-sticky="" data-offset-top="321" data-drc-flex-height="" data-flex-bottom="443" data-drc-collapsible-nav="" data-spy="affix" role="navigation" aria-label="main navigation">
+          <a href="https://github.com/rackerlabs/docs-cloud-queues/issues" target="_blank" class="github-link">
+            <span class="icon fa fa-github"></span>
+            <span class="link-text">Submit an issue</span>
+          </a>
+          
+          
+    
+          
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Cloud Queues 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting-started/get-credentials-include.html">Get your credentials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting-started/send-request-ovw.html">Send API requests to Rackspace Cloud Queues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/send-request-ovw.html#convert-curl-examples-to-run-on-windows">Convert cURL examples to run on Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../getting-started/authenticate.html">Authenticate to the Rackspace Cloud</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/authenticate.html#authenticate-by-using-curl">Authenticate by using cURL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/authenticate.html#send-an-authentication-request">Send an authentication request</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/authenticate.html#review-the-authentication-response">Review the authentication response</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/authenticate.html#configure-environment-variables">Configure environment variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../getting-started/concepts.html">Rackspace Cloud Queues Concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/concepts.html#how-cloud-queues-works">How Cloud Queues works</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/concepts.html#messaging-patterns">Messaging patterns</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../getting-started/concepts.html#producer-consumer">Producer-consumer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../getting-started/concepts.html#publish-subscribe">Publish-subscribe</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/concepts.html#use-cases">Use cases</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../getting-started/using-cloud-queues.html">Manage queues and process messages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/using-cloud-queues.html#creating-a-queue">Creating a queue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/using-cloud-queues.html#posting-messages">Posting messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/using-cloud-queues.html#claiming-messages-for-processing">Claiming messages for processing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/using-cloud-queues.html#deleting-messages">Deleting messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/using-cloud-queues.html#releasing-a-claim">Releasing a claim</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../getting-started/using-cloud-queues.html#deleting-a-queue">Deleting a queue</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../general-api-info/index.html">General API information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../general-api-info/service-access.html">Service access endpoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general-api-info/request-response.html">Request and response types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general-api-info/limits.html">Limits</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../general-api-info/limits.html#rate-limits">Rate limits</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../general-api-info/limits.html#absolute-limits">Absolute limits</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../general-api-info/faults.html">Faults</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general-api-info/date-time-format.html">Date and time format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general-api-info/role-based-access-control.html">Role-based access control (RBAC)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../general-api-info/role-based-access-control.html#assigning-roles-to-account-users">Assigning roles to account users</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../general-api-info/role-based-access-control.html#roles-available-for-product-name">Roles available for Cloud Queues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../general-api-info/role-based-access-control.html#multiproduct-global-roles-and-permissions">Multiproduct global roles and permissions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../general-api-info/role-based-access-control.html#resolving-conflicts-between-rbac-multi-product-vs-custom-product-specific-roles">Resolving conflicts between RBAC multi-product vs. custom (product-specific) roles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../general-api-info/role-based-access-control.html#rbac-permissions-cross-reference-to-product-name-api-operations">RBAC permissions cross-reference to Cloud Queues API operations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="home-document.html">Home document</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="home-document.html#get-home-document">Get home document</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="home-document.html#request">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="home-document.html#response">Response</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="queues-operations.html">Queues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="queues-operations.html#list-queues">List queues</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="queues-operations.html#request">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="queues-operations.html#response">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="queues-operations.html#create-queue">Create queue</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="queues-operations.html#id2">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="queues-operations.html#id3">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="queues-operations.html#delete-queue">Delete queue</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="queues-operations.html#id5">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="queues-operations.html#id6">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="queues-operations.html#check-queue-existence">Check queue existence</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="queues-operations.html#id8">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="queues-operations.html#id9">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="queues-operations.html#set-queue-metadata">Set queue metadata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="queues-operations.html#id11">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="queues-operations.html#id12">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="queues-operations.html#show-queue-metadata">Show queue metadata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="queues-operations.html#id14">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="queues-operations.html#id15">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="queues-operations.html#show-queue-stats">Show queue stats</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="queues-operations.html#id17">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="queues-operations.html#id18">Response</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Messages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#post-message">Post message</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#request">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#response">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#get-messages">Get messages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id3">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#get-messages-by-id">Get messages by ID</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id6">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id7">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#bulk-delete-messages-by-id">Bulk-delete messages by ID</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id8">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#show-message-details">Show message details</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id11">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id12">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#delete-message">Delete message</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id14">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id15">Response</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="claims-operations.html">Claims</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="claims-operations.html#claim-messages">Claim messages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="claims-operations.html#request">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="claims-operations.html#response">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="claims-operations.html#query-claim">Query claim</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="claims-operations.html#id2">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="claims-operations.html#id3">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="claims-operations.html#update-claim">Update claim</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="claims-operations.html#id4">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="claims-operations.html#id5">Response</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="claims-operations.html#release-claim">Release claim</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="claims-operations.html#id7">Request</a></li>
+<li class="toctree-l4"><a class="reference internal" href="claims-operations.html#id8">Response</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../release-notes/index.html">Release Notes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../release-notes/index.html#api-contract-version-updates-march-4-2015">API 1.0 updates, March 4, 2015</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#what-s-new">What’s new</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#resolved-issues">Resolved issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#known-issues">Known issues</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../release-notes/index.html#api-contract-version-updates-january-19-2015">API 1.0 updates, January 19, 2015</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id1">What’s new</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id2">Resolved issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id3">Known issues</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../release-notes/index.html#api-contract-version-updates-march-4-2014">API 1.0 updates - March 4, 2014</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id4">What’s new</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id5">Resolved issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id6">Known issues</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../release-notes/index.html#api-contract-version-updates-january-22-2014">API 1.0 updates, January 22, 2014</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id7">What’s new</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id8">Resolved issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id9">Known issues</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../release-notes/index.html#api-contract-version-updates-december-19-2013">API 1.0 updates, December 19, 2013</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id10">What’s new</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id11">Resolved issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id12">Known issues</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../release-notes/index.html#api-contract-version-updates-december-12-2013">API 1.0 updates, December 12, 2013</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id13">What’s new</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id14">Resolved issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id15">Known issues</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../release-notes/index.html#api-contract-version-ua-release-november-4-2013">API 1.0 UA release, November 4, 2013</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id16">What’s new</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id17">Resolved issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id18">Known issues</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../release-notes/index.html#api-contract-version-la-release-october-9-2013">API 1.0 LA release, October 9, 2013</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id19">What’s new</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id20">Resolved issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../release-notes/index.html#id21">Known issues</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../service-updates.html">Service updates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../additional-resources.html">Additional resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Disclaimer</a></li>
+</ul>
+
+          
+        
+        </div>
+        
+      </div>
+    </nav>
+  </div>
+
+
+<div class="col-sm-12 col-md-12 col-lg-9 content">
+      <div class="wy-nav-content docs-section">
+        <div class="rst-content">
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="messages">
+<span id="messages-operations"></span><h1>Messages<a class="headerlink" href="#messages" title="Permalink to this headline">#</a></h1>
+<p>This section describes message operations that are supported by the
+Rackspace Cloud Queues API.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">All message-related operations require that Client-ID be included in the
+headers. This is to ensure that messages are not echoed back to the
+client that posted them unless the client explicitly requests this.</p>
+</div>
+<div class="section" id="post-message">
+<span id="id1"></span><h2>Post message<a class="headerlink" href="#post-message" title="Permalink to this headline">#</a></h2>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">POST</span> <span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="p">{</span><span class="n">project_id</span><span class="p">}</span><span class="o">/</span><span class="n">queues</span><span class="o">/</span><span class="p">{</span><span class="n">queue_name</span><span class="p">}</span><span class="o">/</span><span class="n">messages</span>
+</pre></div>
+</div>
+<p>This operation posts the specified message or messages.</p>
+<p>You can submit up to 10 messages in a single request, but you must
+always encapsulate the messages in a collection container
+(an array in JSON, even for a single message - without the JSON array,
+you receive the “Invalid request body” message). The resulting
+value of the Location header or response body might be used to
+retrieve the created messages for further processing.</p>
+<p>The client specifies only the body and TTL for the message.
+The server inserts metadata, such as ID and age.</p>
+<p>The response body contains a list of resource paths that correspond
+to each message submitted in the request, in the order of the messages.
+If a server-side error occurs during the processing of the submitted
+messages, a partial list is returned, the partial parameter is set
+to true, and the client tries to post the remaining messages again.
+If the server cannot enqueue any messages, the server returns
+a <code class="docutils literal notranslate"><span class="pre">503</span> <span class="pre">Service</span> <span class="pre">Unavailable</span></code> error message.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">body</span></code> parameter specifies an arbitrary document that constitutes
+the body of the message being sent.</p>
+<p>The following rules apply for the maximum size:</p>
+<ul class="simple">
+<li>The maximum size of posted messages is the maximum size of the entire
+request document (rather than the sum of the individual message body
+field values as it was in earlier releases). On error, the
+client will now be notified of how much it exceeded the limit.</li>
+<li>The size is limited to 256 KB, including whitespace.</li>
+</ul>
+<p>The document must be valid JSON. (Cloud Queues validates it.)</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">ttl</span></code> parameter specifies how long the server waits before
+marking the message as expired and removing it from the queue.
+The value of <code class="docutils literal notranslate"><span class="pre">ttl</span></code> must be between 60 and 1209600 seconds (14 days).
+Note that the server might not actually delete the message until
+its age has reached up to (ttl + 60) seconds, to allow for
+flexibility in storage implementations.</p>
+<p>The following table shows the possible response codes for this operation:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Response Code</th>
+<th class="head">Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>200</td>
+<td>OK</td>
+<td>The URI might have
+invalid parameters, but
+the invalid parameters
+are ignored.</td>
+</tr>
+<tr class="row-odd"><td>201</td>
+<td>Created</td>
+<td>Success. With “partial”:
+true, multiple messages
+were posted in a single
+request and some of them
+succeeded.</td>
+</tr>
+<tr class="row-even"><td>400</td>
+<td>Bad request</td>
+<td>An attempt was made to
+post more than 100
+messages with a single
+request.</td>
+</tr>
+<tr class="row-odd"><td>400</td>
+<td>Bad request</td>
+<td>An attempt was made to
+post with a TTL greater
+than 1209600.</td>
+</tr>
+<tr class="row-even"><td>400</td>
+<td>Bad request</td>
+<td>An attempt was made to
+post with a TTL less
+than 60.</td>
+</tr>
+<tr class="row-odd"><td>400</td>
+<td>Bad request</td>
+<td>An attempt was made to
+post with a negative
+value for TTL.</td>
+</tr>
+<tr class="row-even"><td>400</td>
+<td>Bad request</td>
+<td>An attempt was made to
+post with a non-JSON
+message.</td>
+</tr>
+<tr class="row-odd"><td>400</td>
+<td>Bad request</td>
+<td>An attempt was made to
+post with a non-integer
+value for TTL.</td>
+</tr>
+<tr class="row-even"><td>400</td>
+<td>Bad request</td>
+<td>An attempt was made to
+post with messages
+encapsulated in multiple
+arrays.</td>
+</tr>
+<tr class="row-odd"><td>400</td>
+<td>Bad request</td>
+<td>An attempt was made to
+post with no request
+body.</td>
+</tr>
+<tr class="row-even"><td>400</td>
+<td>Bad request</td>
+<td>An attempt was made to
+post with request body
+greater than 4 KB.</td>
+</tr>
+<tr class="row-odd"><td>400</td>
+<td>Bad request</td>
+<td>An attempt was made to
+post without TTL in the
+request body.</td>
+</tr>
+<tr class="row-even"><td>400</td>
+<td>Bad request</td>
+<td>An attempt was made to
+post without the body
+parameter in request
+body.</td>
+</tr>
+<tr class="row-odd"><td>400</td>
+<td>Bad request</td>
+<td>The post request
+included a non-JSON body.</td>
+</tr>
+<tr class="row-even"><td>400</td>
+<td>Bad request</td>
+<td>The post request
+included an invalid JSON
+body.</td>
+</tr>
+<tr class="row-odd"><td>400</td>
+<td>Bad request</td>
+<td>The request header has
+missing fields.</td>
+</tr>
+<tr class="row-even"><td>401</td>
+<td>Unauthorized</td>
+<td>The request header has
+an invalid auth token.</td>
+</tr>
+<tr class="row-odd"><td>404</td>
+<td>Not found</td>
+<td>An attempt was made to
+post a message to a non-
+existing queue.</td>
+</tr>
+<tr class="row-even"><td>406</td>
+<td>Not acceptable</td>
+<td>The request header has
+Accept
+!=”application/json”.</td>
+</tr>
+<tr class="row-odd"><td>429</td>
+<td>Too many requests</td>
+<td>Too many requests.</td>
+</tr>
+<tr class="row-even"><td>503</td>
+<td>Service unavailable</td>
+<td>An attempt was made to
+post multiple messages
+in a single request and
+all of them failed.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="request">
+<h3>Request<a class="headerlink" href="#request" title="Permalink to this headline">#</a></h3>
+<p>The following table shows the URI parameters for the request:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="9%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>{project_id}</td>
+<td>String</td>
+<td>The project ID for the user. If you do not set the <code class="docutils literal notranslate"><span class="pre">X-</span>
+<span class="pre">Project-Id</span> <span class="pre">header</span></code> in the request, use <code class="docutils literal notranslate"><span class="pre">project_id</span></code> in
+the URI. For example: <code class="docutils literal notranslate"><span class="pre">GET</span>
+<span class="pre">https://ord.queues.api.rackspacecloud.com/v1/{project_id}</span></code></td>
+</tr>
+<tr class="row-odd"><td>{queue_name}</td>
+<td>String</td>
+<td>The name of the queue. <code class="docutils literal notranslate"><span class="pre">queue_name</span></code> is the name that you
+give to the queue. The name must not exceed 64 bytes in
+length, and it is limited to US-ASCII letters, digits,
+underscores, and hyphens.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example Post message: JSON request</strong></p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">POST</span> <span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">queues</span><span class="o">/</span><span class="n">demoqueue</span><span class="o">/</span><span class="n">messages</span> <span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span>
+<span class="n">Host</span><span class="p">:</span> <span class="nb">ord</span><span class="o">.</span><span class="n">queues</span><span class="o">.</span><span class="n">api</span><span class="o">.</span><span class="n">rackspacecloud</span><span class="o">.</span><span class="n">com</span>
+<span class="n">Content</span><span class="o">-</span><span class="nb">type</span><span class="p">:</span> <span class="n">application</span><span class="o">/</span><span class="n">json</span>
+<span class="n">Client</span><span class="o">-</span><span class="n">ID</span><span class="p">:</span> <span class="n">e58668fc</span><span class="o">-</span><span class="mi">26</span><span class="n">eb</span><span class="o">-</span><span class="mf">11e3</span><span class="o">-</span><span class="mi">8270</span><span class="o">-</span><span class="mi">5</span><span class="n">b3128d43830</span>
+<span class="n">X</span><span class="o">-</span><span class="n">Auth</span><span class="o">-</span><span class="n">Token</span><span class="p">:</span> <span class="mi">0</span><span class="n">f6e9f63600142f0a970911583522217</span>
+<span class="n">Accept</span><span class="p">:</span> <span class="n">application</span><span class="o">/</span><span class="n">json</span>
+<span class="n">X</span><span class="o">-</span><span class="n">Project</span><span class="o">-</span><span class="n">Id</span><span class="p">:</span> <span class="mi">806067</span>
+</pre></div>
+</div>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+   <span class="p">{</span>
+      <span class="s2">&quot;ttl&quot;</span><span class="p">:</span><span class="mi">300</span><span class="p">,</span>
+      <span class="s2">&quot;body&quot;</span><span class="p">:{</span>
+         <span class="s2">&quot;event&quot;</span><span class="p">:</span><span class="s2">&quot;BackupStarted&quot;</span>
+      <span class="p">}</span>
+   <span class="p">},</span>
+   <span class="p">{</span>
+      <span class="s2">&quot;ttl&quot;</span><span class="p">:</span><span class="mi">60</span><span class="p">,</span>
+      <span class="s2">&quot;body&quot;</span><span class="p">:{</span>
+         <span class="s2">&quot;play&quot;</span><span class="p">:</span><span class="s2">&quot;hockey&quot;</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="response">
+<h3>Response<a class="headerlink" href="#response" title="Permalink to this headline">#</a></h3>
+<p><strong>Example Post message: JSON response</strong></p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>HTTP/1.1 201 Created
+Content-Length: 149
+Content-Type: application/json; charset=utf-8
+Location: /v1/queues/demoqueue/messages?ids=51db6f78c508f17ddc924357,51db6f78c508f17ddc924358
+</pre></div>
+</div>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+   <span class="s2">&quot;partial&quot;</span><span class="p">:</span><span class="n">false</span><span class="p">,</span>
+   <span class="s2">&quot;resources&quot;</span><span class="p">:[</span>
+      <span class="s2">&quot;/v1/queues/demoqueue/messages/51db6f78c508f17ddc924357&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;/v1/queues/demoqueue/messages/51db6f78c508f17ddc924358&quot;</span>
+   <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="get-messages">
+<span id="id2"></span><h2>Get messages<a class="headerlink" href="#get-messages" title="Permalink to this headline">#</a></h2>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">GET</span> <span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="p">{</span><span class="n">project_id</span><span class="p">}</span><span class="o">/</span><span class="n">queues</span><span class="o">/</span><span class="p">{</span><span class="n">queue_name</span><span class="p">}</span><span class="o">/</span><span class="n">messages</span>
+</pre></div>
+</div>
+<p>This operation gets the message or messages in the specified queue.</p>
+<p>Message IDs and markers are opaque strings. Clients should make no
+assumptions about their format or length. Furthermore, clients
+should assume that there is no relationship between markers
+and message IDs (that is, one cannot be derived from the other).
+This allows for a wide variety of storage driver implementations.</p>
+<p>Results are ordered by age, oldest message first.</p>
+<p>A request to list messages when the queue is not found or when
+messages are not found returns 204, instead of 200, because
+there was no information to send back. Messages with malformed
+IDs or messages that are not found by ID are ignored.</p>
+<p>The following table shows the possible response codes for this operation:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Response Code</th>
+<th class="head">Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>200</td>
+<td>OK</td>
+<td>Success. One or more
+messages were found. The
+request might have
+included an invalid
+parameter (something
+other than marker,
+limit, echo, or
+include_claimed).</td>
+</tr>
+<tr class="row-odd"><td>204</td>
+<td>No content</td>
+<td>A message with a non-
+existing marker was
+requested.</td>
+</tr>
+<tr class="row-even"><td>204</td>
+<td>No content</td>
+<td>Success, but no messages
+matched the request. Or,
+a message with a non-
+existing marker was
+requested.</td>
+</tr>
+<tr class="row-odd"><td>400</td>
+<td>Bad request</td>
+<td>An attempt was made to
+request messages with a
+limit greater than 100.</td>
+</tr>
+<tr class="row-even"><td>400</td>
+<td>Bad request</td>
+<td>An attempt was made to
+request messages with a
+limit less than or equal
+to 0.</td>
+</tr>
+<tr class="row-odd"><td>400</td>
+<td>Bad request</td>
+<td>An attempt was made to
+request messages with a
+non-boolean value for
+echo.</td>
+</tr>
+<tr class="row-even"><td>401</td>
+<td>Unauthorized</td>
+<td>The request header has
+an invalid auth token.</td>
+</tr>
+<tr class="row-odd"><td>404</td>
+<td>Not found</td>
+<td>An attempt was made to
+request a message from a
+non-existing queue.</td>
+</tr>
+<tr class="row-even"><td>406</td>
+<td>Not acceptable</td>
+<td>The request header has
+Accept
+!=”application/json”.</td>
+</tr>
+<tr class="row-odd"><td>429</td>
+<td>Too many requests</td>
+<td>Too many requests.</td>
+</tr>
+<tr class="row-even"><td>503</td>
+<td>Service unavailable</td>
+<td>The server is currently
+unavailable.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id3">
+<h3>Request<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
+<p>The following table shows the URI parameters for the request:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="9%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>{project_id}</td>
+<td>String</td>
+<td>The project ID for the user. If you do not set the <code class="docutils literal notranslate"><span class="pre">X-</span>
+<span class="pre">Project-Id</span> <span class="pre">header</span></code> in the request, use <code class="docutils literal notranslate"><span class="pre">project_id</span></code> in
+the URI. For example: <code class="docutils literal notranslate"><span class="pre">GET</span>
+<span class="pre">https://ord.queues.api.rackspacecloud.com/v1/{project_id}</span></code></td>
+</tr>
+<tr class="row-odd"><td>{queue_name}</td>
+<td>String</td>
+<td>The name of the queue. <code class="docutils literal notranslate"><span class="pre">queue_name</span></code> is the name that you
+give to the queue. The name must not exceed 64 bytes in
+length, and it is limited to US-ASCII letters, digits,
+underscores, and hyphens.</td>
+</tr>
+</tbody>
+</table>
+<p>The following table shows the query parameters for the request:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>marker</td>
+<td>String <em>(Optional)</em></td>
+<td>Specifies an opaque
+string that the client
+can use to request the
+next batch of messages.
+The <code class="docutils literal notranslate"><span class="pre">marker</span></code> parameter
+communicates to the
+server which messages
+the client has already
+received. If you do not
+specify a value, the API
+returns all messages at
+the head of the queue
+(up to the limit).</td>
+</tr>
+<tr class="row-odd"><td>limit</td>
+<td>Integer <em>(Optional)</em></td>
+<td>When more messages are
+available than can be
+returned in a single
+request, the client can
+pick up the next batch
+of messages by simply
+using the URI template
+parameters returned from
+the previous call in the
+“next” field. Specifies
+up to 10 messages (the
+default value) to
+return. If you do not
+specify a value for the
+limit parameter, the
+default value of 10 is
+used.</td>
+</tr>
+<tr class="row-even"><td>echo</td>
+<td>Boolean <em>(Optional)</em></td>
+<td>Determines whether the
+API returns a client’s
+own messages. The
+<code class="docutils literal notranslate"><span class="pre">echo</span></code> parameter is a
+Boolean value (<code class="docutils literal notranslate"><span class="pre">true</span></code>
+or``false``) that
+determines whether the
+API returns a client’s
+own messages, as
+determined by the
+<code class="docutils literal notranslate"><span class="pre">uuid</span></code> portion of the
+User-Agent header. If
+you do not specify a
+value,``echo`` uses the
+default value
+of``false``. If you are
+experimenting with the
+API, you might want to
+set``echo=true`` in
+order to see the
+messages that you posted.</td>
+</tr>
+<tr class="row-odd"><td>include_claimed</td>
+<td>Boolean <em>(Optional)</em></td>
+<td>Determines whether the
+API returns claimed
+messages and unclaimed
+messages.
+The``include_claimed``
+parameter is a Boolean
+value (<code class="docutils literal notranslate"><span class="pre">true</span></code>
+or``false``) that
+determines whether the
+API returns claimed
+messages and unclaimed
+messages. If you do not
+specify a value,
+<code class="docutils literal notranslate"><span class="pre">include_claimed</span></code> uses
+the default value of
+<code class="docutils literal notranslate"><span class="pre">false</span></code> (only
+unclaimed messages are
+returned).</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This operation does not accept a request body.</p>
+</div>
+<p><strong>Example Get messages: JSON request</strong></p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>GET /v1/queues/demoqueue/messages?echo=true HTTP/1.1
+Host: ord.queues.api.rackspacecloud.com
+Content-type: application/json
+Client-ID: e58668fc-26eb-11e3-8270-5b3128d43830
+X-Auth-Token: 0f6e9f63600142f0a970911583522217
+Accept: application/json
+X-Project-Id: 806067
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h3>Response<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
+<p><strong>Example Get messages: JSON response</strong></p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span> <span class="mi">204</span> <span class="n">No</span> <span class="n">Content</span>
+</pre></div>
+</div>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>HTTP/1.1 200 OK
+Content-Length: 602
+Content-Type: application/json; charset=utf-8
+Content-Location: /v1/queues/demoqueue/messages?echo=true
+</pre></div>
+</div>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+   <span class="s2">&quot;messages&quot;</span><span class="p">:[</span>
+      <span class="p">{</span>
+         <span class="s2">&quot;body&quot;</span><span class="p">:{</span>
+            <span class="s2">&quot;event&quot;</span><span class="p">:</span><span class="s2">&quot;BackupStarted&quot;</span>
+         <span class="p">},</span>
+         <span class="s2">&quot;age&quot;</span><span class="p">:</span><span class="mi">198</span><span class="p">,</span>
+         <span class="s2">&quot;href&quot;</span><span class="p">:</span><span class="s2">&quot;/v1/queues/demoqueue/messages/51db6ecac508f17ddc9242ad&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;ttl&quot;</span><span class="p">:</span><span class="mi">300</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+         <span class="s2">&quot;body&quot;</span><span class="p">:{</span>
+            <span class="s2">&quot;event&quot;</span><span class="p">:</span><span class="s2">&quot;BackupStarted&quot;</span>
+         <span class="p">},</span>
+         <span class="s2">&quot;age&quot;</span><span class="p">:</span><span class="mi">97</span><span class="p">,</span>
+         <span class="s2">&quot;href&quot;</span><span class="p">:</span><span class="s2">&quot;/v1/queues/demoqueue/messages/51db6f2f821e727dc24df623&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;ttl&quot;</span><span class="p">:</span><span class="mi">300</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+         <span class="s2">&quot;body&quot;</span><span class="p">:{</span>
+            <span class="s2">&quot;event&quot;</span><span class="p">:</span><span class="s2">&quot;BackupStarted&quot;</span>
+         <span class="p">},</span>
+         <span class="s2">&quot;age&quot;</span><span class="p">:</span><span class="mi">24</span><span class="p">,</span>
+         <span class="s2">&quot;href&quot;</span><span class="p">:</span><span class="s2">&quot;/v1/queues/demoqueue/messages/51db6f78c508f17ddc924357&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;ttl&quot;</span><span class="p">:</span><span class="mi">300</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+         <span class="s2">&quot;body&quot;</span><span class="p">:{</span>
+            <span class="s2">&quot;play&quot;</span><span class="p">:</span><span class="s2">&quot;hockey&quot;</span>
+         <span class="p">},</span>
+         <span class="s2">&quot;age&quot;</span><span class="p">:</span><span class="mi">24</span><span class="p">,</span>
+         <span class="s2">&quot;href&quot;</span><span class="p">:</span><span class="s2">&quot;/v1/queues/demoqueue/messages/51db6f78c508f17ddc924358&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;ttl&quot;</span><span class="p">:</span><span class="mi">60</span>
+      <span class="p">}</span>
+   <span class="p">],</span>
+   <span class="s2">&quot;links&quot;</span><span class="p">:[</span>
+      <span class="p">{</span>
+         <span class="s2">&quot;href&quot;</span><span class="p">:</span><span class="s2">&quot;/v1/queues/demoqueue/messages?marker=8&amp;echo=true&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;rel&quot;</span><span class="p">:</span><span class="s2">&quot;next&quot;</span>
+      <span class="p">}</span>
+   <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="get-messages-by-id">
+<span id="id5"></span><h2>Get messages by ID<a class="headerlink" href="#get-messages-by-id" title="Permalink to this headline">#</a></h2>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">GET</span> <span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="p">{</span><span class="n">project_id</span><span class="p">}</span><span class="o">/</span><span class="n">queues</span><span class="o">/</span><span class="p">{</span><span class="n">queue_name</span><span class="p">}</span><span class="o">/</span><span class="n">messages</span>
+</pre></div>
+</div>
+<p>This operation provides a more efficient way to query multiple
+messages compared to using a series of individual <code class="docutils literal notranslate"><span class="pre">GET</span></code> s.
+Note that the list of IDs cannot exceed 20. If a malformed ID
+or a nonexistent message ID is provided, it is ignored, and the
+remaining messages are returned.</p>
+<p>Unlike the get messages operation, a client’s own messages are always
+returned in this operation. If you use the ids parameter,
+the echo parameter is not used and is ignored if it is specified.</p>
+<p>The message body parameters are defined as follows:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">href</span></code> is an opaque relative URI that the client can use to uniquely
+identify a message resource and interact with it.</li>
+<li><code class="docutils literal notranslate"><span class="pre">ttl</span></code> is the TTL that was set on the message when it was posted.
+The message expires after (ttl - age) seconds.</li>
+<li><code class="docutils literal notranslate"><span class="pre">age</span></code> is the number of seconds relative to the server’s clock.</li>
+<li><code class="docutils literal notranslate"><span class="pre">body</span></code> is the arbitrary document that was submitted with the
+original request to post the message.</li>
+</ul>
+<p>The following table shows the possible response codes for this operation:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Response Code</th>
+<th class="head">Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>200</td>
+<td>OK</td>
+<td>Success. The URI might
+have invalid parameters,
+but invalid parameters
+are ignored.</td>
+</tr>
+<tr class="row-odd"><td>400</td>
+<td>Bad request</td>
+<td>An attempt was made to
+request messages with a
+limit greater than 100.</td>
+</tr>
+<tr class="row-even"><td>401</td>
+<td>Unauthorized</td>
+<td>The request header has
+an invalid auth token.</td>
+</tr>
+<tr class="row-odd"><td>404</td>
+<td>Not found</td>
+<td>An attempt was made to
+request a message from a
+non-existing queue.</td>
+</tr>
+<tr class="row-even"><td>404</td>
+<td>Not found</td>
+<td>An attempt was made to
+request messages with a
+limit less than or equal
+to 0.</td>
+</tr>
+<tr class="row-odd"><td>404</td>
+<td>Not found</td>
+<td>An attempt was made to
+request messages with a
+non-boolean value for
+echo.</td>
+</tr>
+<tr class="row-even"><td>406</td>
+<td>Not acceptable</td>
+<td>The request header has
+Accept
+!=”application/json”.</td>
+</tr>
+<tr class="row-odd"><td>429</td>
+<td>Too many requests</td>
+<td>Too many requests.</td>
+</tr>
+<tr class="row-even"><td>503</td>
+<td>Service unavailable</td>
+<td>The server is currently
+unavailable.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id6">
+<h3>Request<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h3>
+<p>The following table shows the URI parameters for the request:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="9%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>{project_id}</td>
+<td>String</td>
+<td>The project ID for the user. If you do not set the <code class="docutils literal notranslate"><span class="pre">X-</span>
+<span class="pre">Project-Id</span> <span class="pre">header</span></code> in the request, use <code class="docutils literal notranslate"><span class="pre">project_id</span></code> in
+the URI. For example: <code class="docutils literal notranslate"><span class="pre">GET</span>
+<span class="pre">https://ord.queues.api.rackspacecloud.com/v1/{project_id}</span></code></td>
+</tr>
+<tr class="row-odd"><td>{queue_name}</td>
+<td>String</td>
+<td>The name of the queue. <code class="docutils literal notranslate"><span class="pre">queue_name</span></code> is the name that you
+give to the queue. The name must not exceed 64 bytes in
+length, and it is limited to US-ASCII letters, digits,
+underscores, and hyphens.</td>
+</tr>
+</tbody>
+</table>
+<p>The following table shows the query parameters for the request:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>ids</td>
+<td>String <em>(Optional)</em></td>
+<td>Specifies the IDs of the
+messages to get. Format
+multiple message ID
+values by separating
+them with commas (comma-
+separated).</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This operation does not accept a request body.</p>
+</div>
+<p><strong>Example Get messages by ID: JSON request</strong></p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>GET /v1/queues/demoqueue/messages?ids=51db6f78c508f17ddc924357,51db6ecac508f17ddc9242ad HTTP/1.1
+Host: ord.queues.api.rackspacecloud.com
+Content-type: application/json
+X-Auth-Token: 0f6e9f63600142f0a970911583522217
+Client-ID: e58668fc-26eb-11e3-8270-5b3128d43830
+Accept: application/json
+X-Project-Id: 806067
+</pre></div>
+</div>
+</div>
+<div class="section" id="id7">
+<h3>Response<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h3>
+<p><strong>Example Get messages by ID: JSON response</strong></p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>HTTP/1.1 200 OK
+Content-Location: /v1/queues/fizbat/messages?ids=50b68a50d6f5b8c8a7c62b01,f5b8c8a7c62b0150b68a50d6
+</pre></div>
+</div>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+   <span class="p">{</span>
+      <span class="s2">&quot;href&quot;</span><span class="p">:</span><span class="s2">&quot;/v1/queues/fizbit/messages/50b68a50d6f5b8c8a7c62b01&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;ttl&quot;</span><span class="p">:</span><span class="mi">800</span><span class="p">,</span>
+      <span class="s2">&quot;age&quot;</span><span class="p">:</span><span class="mi">32</span><span class="p">,</span>
+      <span class="s2">&quot;body&quot;</span><span class="p">:{</span>
+         <span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;EncodeVideo&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;jobid&quot;</span><span class="p">:</span><span class="mi">58229</span>
+      <span class="p">}</span>
+   <span class="p">},</span>
+   <span class="p">{</span>
+      <span class="s2">&quot;href&quot;</span><span class="p">:</span><span class="s2">&quot;/v1/queues/fizbit/messages/f5b8c8a7c62b0150b68a50d6&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;ttl&quot;</span><span class="p">:</span><span class="mi">800</span><span class="p">,</span>
+      <span class="s2">&quot;age&quot;</span><span class="p">:</span><span class="mi">790</span><span class="p">,</span>
+      <span class="s2">&quot;body&quot;</span><span class="p">:{</span>
+         <span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;EncodeAudio&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;jobid&quot;</span><span class="p">:</span><span class="mi">58201</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="bulk-delete-messages-by-id">
+<span id="delete-bulk-messages-by-id"></span><h2>Bulk-delete messages by ID<a class="headerlink" href="#bulk-delete-messages-by-id" title="Permalink to this headline">#</a></h2>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">DELETE</span> <span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="p">{</span><span class="n">project_id</span><span class="p">}</span><span class="o">/</span><span class="n">queues</span><span class="o">/</span><span class="p">{</span><span class="n">queue_name</span><span class="p">}</span><span class="o">/</span><span class="n">messages</span>
+</pre></div>
+</div>
+<p>This operation immediately deletes the specified messages. If any of
+the message IDs are malformed or non-existent, they are ignored.
+The remaining valid messages IDs are deleted.</p>
+<p>The following table shows the possible response codes for this operation:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Response Code</th>
+<th class="head">Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>204</td>
+<td>No content</td>
+<td>Success.</td>
+</tr>
+<tr class="row-odd"><td>204</td>
+<td>No content</td>
+<td>The request attempts to
+delete a message from a
+non-existing queue.</td>
+</tr>
+<tr class="row-even"><td>204</td>
+<td>No content</td>
+<td>The request attempts to
+delete a non-existing
+message.</td>
+</tr>
+<tr class="row-odd"><td>400</td>
+<td>Bad request</td>
+<td>The header has missing
+fields.</td>
+</tr>
+<tr class="row-even"><td>401</td>
+<td>Unauthorized</td>
+<td>The request header has
+an invalid auth token.</td>
+</tr>
+<tr class="row-odd"><td>403</td>
+<td>Forbidden</td>
+<td>An attempt was made to
+delete a claimed message
+without providing a
+claim ID.</td>
+</tr>
+<tr class="row-even"><td>403</td>
+<td>Forbidden</td>
+<td>An attempt was made to
+delete messages with an
+expired claim ID.</td>
+</tr>
+<tr class="row-odd"><td>403</td>
+<td>Forbidden</td>
+<td>An attempt was made to
+delete messages with non-
+existing claim ID.</td>
+</tr>
+<tr class="row-even"><td>406</td>
+<td>Not acceptable</td>
+<td>The request header has
+Accept
+!=”application/json”.</td>
+</tr>
+<tr class="row-odd"><td>429</td>
+<td>Too many requests</td>
+<td>Too many requests.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id8">
+<h3>Request<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h3>
+<p>The following table shows the URI parameters for the request:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="9%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>{project_id}</td>
+<td>String</td>
+<td>The project ID for the user. If you do not set the <code class="docutils literal notranslate"><span class="pre">X-</span>
+<span class="pre">Project-Id</span> <span class="pre">header</span></code> in the request, use <code class="docutils literal notranslate"><span class="pre">project_id</span></code> in
+the URI. For example: <code class="docutils literal notranslate"><span class="pre">GET</span>
+<span class="pre">https://ord.queues.api.rackspacecloud.com/v1/{project_id}</span></code></td>
+</tr>
+<tr class="row-odd"><td>{queue_name}</td>
+<td>String</td>
+<td>The name of the queue. <code class="docutils literal notranslate"><span class="pre">queue_name</span></code> is the name that you
+give to the queue. The name must not exceed 64 bytes in
+length, and it is limited to US-ASCII letters, digits,
+underscores, and hyphens.</td>
+</tr>
+</tbody>
+</table>
+<p>The following table shows the query parameters for the request:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>ids</td>
+<td>String <em>(Required)</em></td>
+<td>Specifies the IDs of the
+messages to delete.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This operation does not accept a request body.</p>
+</div>
+<p><strong>Example Bulk-delete messages by ID: JSON request</strong></p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>DELETE /v1/queues/demoqueue/messages?ids=50b68a50d6f5b8c8a7c62b01,50b68a50d6f5b8c8a7c62b02 HTTP/1.1
+Host: ord.queues.api.rackspacecloud.com
+Content-type: application/json
+X-Auth-Token: 0f6e9f63600142f0a970911583522217
+Client-ID: e58668fc-26eb-11e3-8270-5b3128d43830
+Accept: application/json
+X-Project-Id: 806067
+</pre></div>
+</div>
+</div>
+<div class="section" id="id9">
+<h3>Response<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h3>
+<p><strong>Example Bulk-delete messages by ID: JSON response</strong></p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span> <span class="mi">204</span> <span class="n">No</span> <span class="n">Content</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="show-message-details">
+<span id="id10"></span><h2>Show message details<a class="headerlink" href="#show-message-details" title="Permalink to this headline">#</a></h2>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">GET</span> <span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="p">{</span><span class="n">project_id</span><span class="p">}</span><span class="o">/</span><span class="n">queues</span><span class="o">/</span><span class="p">{</span><span class="n">queue_name</span><span class="p">}</span><span class="o">/</span><span class="n">messages</span><span class="o">/</span><span class="p">{</span><span class="n">messageId</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>This operation shows details for the specified message from the specified
+queue.</p>
+<p>If either the message ID is malformed or nonexistent, no message is returned.</p>
+<p>Message body parameters are defined as follows:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">href</span></code> is an opaque relative URI that the client can use to uniquely
+identify a message resource and interact with it.</li>
+<li><code class="docutils literal notranslate"><span class="pre">ttl</span></code> is the TTL that was set on the message when it was posted.
+The message expires after (ttl - age) seconds.</li>
+<li><code class="docutils literal notranslate"><span class="pre">age</span></code> is the number of seconds relative to the server’s clock.</li>
+<li><code class="docutils literal notranslate"><span class="pre">body</span></code> is the arbitrary document that was submitted with the original
+request to post the message.</li>
+</ul>
+<p>The following table shows the possible response codes for this operation:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Response Code</th>
+<th class="head">Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>200</td>
+<td>OK</td>
+<td>Success. The request
+found a matching
+message. The URI might
+have invalid parameters,
+but the invalid
+parameters are ignored.</td>
+</tr>
+<tr class="row-odd"><td>400</td>
+<td>Bad request</td>
+<td>The header has missing
+fields.</td>
+</tr>
+<tr class="row-even"><td>401</td>
+<td>Unauthorized</td>
+<td>The request header has
+an invalid auth token.</td>
+</tr>
+<tr class="row-odd"><td>404</td>
+<td>Not found</td>
+<td>An attempt was made to
+request a message from a
+non-existing queue.</td>
+</tr>
+<tr class="row-even"><td>404</td>
+<td>Not found</td>
+<td>An attempt was made to
+request a non-existing
+message.</td>
+</tr>
+<tr class="row-odd"><td>404</td>
+<td>Not found</td>
+<td>An attempt was made to
+request an expired
+message.</td>
+</tr>
+<tr class="row-even"><td>406</td>
+<td>Not acceptable</td>
+<td>The request header has
+Accept
+!=”application/json”.</td>
+</tr>
+<tr class="row-odd"><td>429</td>
+<td>Too many requests</td>
+<td>Too many requests.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id11">
+<h3>Request<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h3>
+<p>The following table shows the URI parameters for the request:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="9%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>{project_id}</td>
+<td>String</td>
+<td>The project ID for the user. If you do not set the <code class="docutils literal notranslate"><span class="pre">X-</span>
+<span class="pre">Project-Id</span> <span class="pre">header</span></code> in the request, use <code class="docutils literal notranslate"><span class="pre">project_id</span></code> in
+the URI. For example: <code class="docutils literal notranslate"><span class="pre">GET</span>
+<span class="pre">https://ord.queues.api.rackspacecloud.com/v1/{project_id}</span></code></td>
+</tr>
+<tr class="row-odd"><td>{queue_name}</td>
+<td>String</td>
+<td>The name of the queue. <code class="docutils literal notranslate"><span class="pre">queue_name</span></code> is the name that you
+give to the queue. The name must not exceed 64 bytes in
+length, and it is limited to US-ASCII letters, digits,
+underscores, and hyphens.</td>
+</tr>
+<tr class="row-even"><td>{messageId}</td>
+<td>String</td>
+<td>The message ID.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This operation does not accept a request body.</p>
+</div>
+<p><strong>Example Show message details: JSON request</strong></p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">GET</span> <span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">queues</span><span class="o">/</span><span class="n">demoqueue</span><span class="o">/</span><span class="n">messages</span><span class="o">/</span><span class="mi">51</span><span class="n">db6ecac508f17ddc9242ad</span> <span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span>
+<span class="n">Host</span><span class="p">:</span> <span class="nb">ord</span><span class="o">.</span><span class="n">queues</span><span class="o">.</span><span class="n">api</span><span class="o">.</span><span class="n">rackspacecloud</span><span class="o">.</span><span class="n">com</span>
+<span class="n">Content</span><span class="o">-</span><span class="nb">type</span><span class="p">:</span> <span class="n">application</span><span class="o">/</span><span class="n">json</span>
+<span class="n">X</span><span class="o">-</span><span class="n">Auth</span><span class="o">-</span><span class="n">Token</span><span class="p">:</span> <span class="mi">0</span><span class="n">f6e9f63600142f0a970911583522217</span>
+<span class="n">Client</span><span class="o">-</span><span class="n">ID</span><span class="p">:</span> <span class="n">e58668fc</span><span class="o">-</span><span class="mi">26</span><span class="n">eb</span><span class="o">-</span><span class="mf">11e3</span><span class="o">-</span><span class="mi">8270</span><span class="o">-</span><span class="mi">5</span><span class="n">b3128d43830</span>
+<span class="n">Accept</span><span class="p">:</span> <span class="n">application</span><span class="o">/</span><span class="n">json</span>
+<span class="n">X</span><span class="o">-</span><span class="n">Project</span><span class="o">-</span><span class="n">Id</span><span class="p">:</span> <span class="mi">806067</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id12">
+<h3>Response<a class="headerlink" href="#id12" title="Permalink to this headline">#</a></h3>
+<p><strong>Example Show message details: JSON response</strong></p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span> <span class="mi">200</span> <span class="n">OK</span>
+<span class="n">Content</span><span class="o">-</span><span class="n">Length</span><span class="p">:</span> <span class="mi">126</span>
+<span class="n">Content</span><span class="o">-</span><span class="n">Type</span><span class="p">:</span> <span class="n">application</span><span class="o">/</span><span class="n">json</span><span class="p">;</span> <span class="n">charset</span><span class="o">=</span><span class="n">utf</span><span class="o">-</span><span class="mi">8</span>
+<span class="n">Content</span><span class="o">-</span><span class="n">Location</span><span class="p">:</span> <span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">queues</span><span class="o">/</span><span class="n">demoqueue</span><span class="o">/</span><span class="n">messages</span><span class="o">/</span><span class="mi">51</span><span class="n">db6ecac508f17ddc9242ad</span>
+</pre></div>
+</div>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+   <span class="s2">&quot;body&quot;</span><span class="p">:{</span>
+      <span class="s2">&quot;event&quot;</span><span class="p">:</span><span class="s2">&quot;BackupStarted&quot;</span>
+   <span class="p">},</span>
+   <span class="s2">&quot;age&quot;</span><span class="p">:</span><span class="mi">240</span><span class="p">,</span>
+   <span class="s2">&quot;href&quot;</span><span class="p">:</span><span class="s2">&quot;/v1/queues/demoqueue/messages/51db6ecac508f17ddc9242ad&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;ttl&quot;</span><span class="p">:</span><span class="mi">300</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="delete-message">
+<span id="id13"></span><h2>Delete message<a class="headerlink" href="#delete-message" title="Permalink to this headline">#</a></h2>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">DELETE</span> <span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="p">{</span><span class="n">project_id</span><span class="p">}</span><span class="o">/</span><span class="n">queues</span><span class="o">/</span><span class="p">{</span><span class="n">queue_name</span><span class="p">}</span><span class="o">/</span><span class="n">messages</span><span class="o">/</span><span class="p">{</span><span class="n">messageId</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>This operation immediately deletes the specified message.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">claim_id</span></code> parameter specifies that the message is deleted only if
+it has the specified claim ID and that claim has not expired.
+This specification is useful for ensuring only one worker processes any
+given message. When a worker’s claim expires before it can delete
+a message that it has processed, the worker must roll back any actions
+it took based on that message because another worker can now claim and
+process the same message.</p>
+<p>If you do not specify <code class="docutils literal notranslate"><span class="pre">claim_id</span></code>, but the message is claimed,
+the operation fails. You can only delete claimed messages by
+providing an appropriate <code class="docutils literal notranslate"><span class="pre">claim_id</span></code>.</p>
+<p>The following table shows the possible response codes for this operation:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Response Code</th>
+<th class="head">Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>200</td>
+<td>OK</td>
+<td>The URI has invalid
+parameters. The invalid
+parameters are ignored.</td>
+</tr>
+<tr class="row-odd"><td>204</td>
+<td>No content</td>
+<td>Success.</td>
+</tr>
+<tr class="row-even"><td>204</td>
+<td>No content</td>
+<td>The request attempts to
+delete a message from a
+non-existing queue.</td>
+</tr>
+<tr class="row-odd"><td>204</td>
+<td>No content</td>
+<td>The request attempts to
+delete a non-existing
+message.</td>
+</tr>
+<tr class="row-even"><td>400</td>
+<td>Bad request</td>
+<td>The header has missing
+fields.</td>
+</tr>
+<tr class="row-odd"><td>401</td>
+<td>Unauthorized</td>
+<td>The request header has
+an invalid auth token.</td>
+</tr>
+<tr class="row-even"><td>403</td>
+<td>Forbidden</td>
+<td>An attempt was made to
+delete a claimed message
+without providing a
+claim ID.</td>
+</tr>
+<tr class="row-odd"><td>403</td>
+<td>Forbidden</td>
+<td>An attempt was made to
+delete a message with an
+expired claim ID.</td>
+</tr>
+<tr class="row-even"><td>403</td>
+<td>Forbidden</td>
+<td>An attempt was made to
+delete a message with
+non-existing claim ID.</td>
+</tr>
+<tr class="row-odd"><td>406</td>
+<td>Not acceptable</td>
+<td>The request header has
+Accept
+!=”application/json”.</td>
+</tr>
+<tr class="row-even"><td>429</td>
+<td>Too many requests</td>
+<td>Too many requests.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id14">
+<h3>Request<a class="headerlink" href="#id14" title="Permalink to this headline">#</a></h3>
+<p>The following table shows the URI parameters for the request:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="9%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>{project_id}</td>
+<td>String</td>
+<td>The project ID for the user. If you do not set the <code class="docutils literal notranslate"><span class="pre">X-</span>
+<span class="pre">Project-Id</span> <span class="pre">header</span></code> in the request, use <code class="docutils literal notranslate"><span class="pre">project_id</span></code> in
+the URI. For example: <code class="docutils literal notranslate"><span class="pre">GET</span>
+<span class="pre">https://ord.queues.api.rackspacecloud.com/v1/{project_id}</span></code></td>
+</tr>
+<tr class="row-odd"><td>{queue_name}</td>
+<td>String</td>
+<td>The name of the queue. <code class="docutils literal notranslate"><span class="pre">queue_name</span></code> is the name that you
+give to the queue. The name must not exceed 64 bytes in
+length, and it is limited to US-ASCII letters, digits,
+underscores, and hyphens.</td>
+</tr>
+<tr class="row-even"><td>{messageId}</td>
+<td>String</td>
+<td>The message ID.</td>
+</tr>
+</tbody>
+</table>
+<p>The following table shows the query parameters for the request:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>claim_id</td>
+<td>String <em>(Optional)</em></td>
+<td>Identifies the claim.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This operation does not accept a request body.</p>
+</div>
+<p><strong>Example Delete message: JSON request</strong></p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">DELETE</span> <span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">queues</span><span class="o">/</span><span class="n">demoqueue</span><span class="o">/</span><span class="n">messages</span><span class="o">/</span><span class="mi">51</span><span class="n">db6f78c508f17ddc924358</span> <span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span>
+<span class="n">Host</span><span class="p">:</span> <span class="nb">ord</span><span class="o">.</span><span class="n">queues</span><span class="o">.</span><span class="n">api</span><span class="o">.</span><span class="n">rackspacecloud</span><span class="o">.</span><span class="n">com</span>
+<span class="n">Content</span><span class="o">-</span><span class="nb">type</span><span class="p">:</span> <span class="n">application</span><span class="o">/</span><span class="n">json</span>
+<span class="n">X</span><span class="o">-</span><span class="n">Auth</span><span class="o">-</span><span class="n">Token</span><span class="p">:</span> <span class="mi">0</span><span class="n">f6e9f63600142f0a970911583522217</span>
+<span class="n">Client</span><span class="o">-</span><span class="n">ID</span><span class="p">:</span> <span class="n">e58668fc</span><span class="o">-</span><span class="mi">26</span><span class="n">eb</span><span class="o">-</span><span class="mf">11e3</span><span class="o">-</span><span class="mi">8270</span><span class="o">-</span><span class="mi">5</span><span class="n">b3128d43830</span>
+<span class="n">Accept</span><span class="p">:</span> <span class="n">application</span><span class="o">/</span><span class="n">json</span>
+<span class="n">X</span><span class="o">-</span><span class="n">Project</span><span class="o">-</span><span class="n">Id</span><span class="p">:</span> <span class="mi">806067</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id15">
+<h3>Response<a class="headerlink" href="#id15" title="Permalink to this headline">#</a></h3>
+<p><strong>Example Delete message: JSON response</strong></p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span> <span class="mi">204</span> <span class="n">No</span> <span class="n">Content</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+        </div>
+      <div class="rst-footer-buttons row justify-content-between" role="navigation" aria-label="footer navigation">
+        <div class="prev col-sm-12 col-md-6 col-lg-6 float-left">
+        <span class="label" aria-hidden="true">Previous</span>
+        <a href="queues-operations.html" title="Queues" accesskey="p" rel="prev">Queues</a>
+        </div>
+        <div class="next col-sm-12 col-md-6 col-lg-6 float-right">
+          <span class="label" aria-hidden="true">Next</span>
+          <a href="claims-operations.html" title="Claims" accesskey="n" rel="next">Claims</a>
+        </div>
+      </div>
+  
+  
+      </div>
+      </div>
+    </div>
+</div></main>
+<footer class="footer" data-nosnippet>
+  <nav class="upper-footer">
+    <div class="row"><div class="col-sm-12 col-md-6 col-lg-4">
+        <span class="footer-title">Developer Network</span><ul><li><a href="https://docs.rackspace.com/">Developer Center</a></li><li><a href="/docs">API Documentation and User Guides</a></li><li><a href="https://support.rackspace.com/how-to/">Rackspace How-To</a></li></ul></div><div class="col-sm-12 col-md-6 col-lg-4">
+        <span class="footer-title">Blogs</span><ul><li><a href="https://docs.rackspace.com/blog">Expert Insights Tech Blog</a></li><li><a href="https://www.rackspace.com/blog">Rackspace Blog</a></li><li><a href="https://www.rackspace.com/solve">Solve: Thought Leadership</a></li></ul></div><div class="col-sm-12 col-md-6 col-lg-4">
+        <span class="footer-title">Other Information</span><ul><li><a href="https://www.rackspace.com/customer-stories">Customer Stories</a></li><li><a href="https://www.rackspace.com/events">Events</a></li><li><a href="https://www.rackspace.com/responsibility">Programs</a></li><li><a href="https://jobs.jobvite.com/rackspace/">Careers</a></li><li><a href="https://docs.rackspace.com/docs/style-guide/">Style Guide for Technical Content</a></li></ul></div></div>
+  </nav>
+  <nav class="lower-footer">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4"><span>©2020 Rackspace US, Inc.</span></div>
+        <div class="text-link col-sm-12 col-md-6 col-lg-2"><a href="https://www.rackspace.com/about/">About
+            Rackspace</a></div>
+        <div class="text-link col-sm-12 col-md-6 col-lg-2"><a
+            href="http://www.rackspace.com/information/legal/privacystatement">Privacy Statement</a></div>
+        <div class="text-link col-sm-12 col-md-6 col-lg-2"><a
+            href="http://www.rackspace.com/information/legal/websiteterms">Website Terms</a></div>
+        <div class="text-link col-sm-12 col-md-6 col-lg-2"><a
+            href="http://www.rackspace.com/information/legal/copyrights_trademarks">Trademarks</a></div>
+      </div>
+    </nav>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.0.0/dist/algoliasearch-lite.umd.js" integrity="sha256-MfeKq2Aw9VAkaE9Caes2NOxQf6vUa8Av0JqcUXUGkd0=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.js"></script>
+<script type="text/javascript">
+    var TxtRotate = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+      };
+      
+      TxtRotate.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+      
+        if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+      
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+      
+        var that = this;
+        var delta = 300 - Math.random() * 100;
+      
+        if (this.isDeleting) { delta /= 2; }
+      
+        if (!this.isDeleting && this.txt === fullTxt) {
+          delta = this.period;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+          this.isDeleting = false;
+          this.loopNum++;
+          delta = 500;
+        }
+      
+        setTimeout(function() {
+          that.tick();
+        }, delta);
+      };
+    
+    function openTab(evt, tabName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("product-type");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.parentElement.className += " active";
+    }
+    window.onload = function () {
+        if (document.getElementById("gs-ctrl") != undefined) {
+            document.getElementById("gs-ctrl").className += " active"
+        }
+        if (!window.location.href.includes("faq") && !window.location.href.includes("all-articles") && (document
+                .getElementById("acc-man") != undefined)) {
+            document.getElementById("acc-man").className += " active";
+        }
+        if (window.location.href.includes("faq") && (document.getElementById("acc-faq") != undefined)) {
+            document.getElementById("acc-faq").className += " active";
+        }
+        if (window.location.href.includes("all-articles") && (document.getElementById("acc-all") != undefined)) {
+            document.getElementById("acc-all").className += " active";
+        }
+        if (window.location.href.includes("faq")) {
+            var elements = document.getElementsByClassName("panel-group");
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].className += " faq-list"
+            }
+            $('a[data-toggle="collapse"]').addClass('inactive');
+        }
+        $("table").addClass(["table", "table-striped", "table-bordered"]);
+    
+        var arrOfPtags = document.getElementsByTagName("p");
+        for (var i = 0; i < arrOfPtags.length; i++) {
+            if (arrOfPtags[i].innerHTML.toLowerCase().includes("<strong>note</strong>") || arrOfPtags[i].innerHTML
+                .toLowerCase().includes("<strong>note:</strong>")) {
+                arrOfPtags[i].className += "callout-note";
+            }
+            if (arrOfPtags[i].innerHTML.toLowerCase().includes("<strong>important</strong>") || arrOfPtags[i]
+                .innerHTML.toLowerCase().includes("<strong>important:</strong>")) {
+                arrOfPtags[i].className += "callout-important";
+            }
+            if (arrOfPtags[i].innerHTML.toLowerCase().includes("<strong>warning</strong>") || arrOfPtags[i]
+                .innerHTML.toLowerCase().includes("<strong>warning:</strong>")) {
+                arrOfPtags[i].className += "callout-warning";
+            }
+            if (arrOfPtags[i].innerHTML.toLowerCase().includes("<strong>tip</strong>") || arrOfPtags[i].innerHTML
+                .toLowerCase().includes("<strong>tip:</strong>")) {
+                arrOfPtags[i].className += "callout-tip";
+            }
+        }
+        $('#searchModal').on("shown.bs.modal", function() {
+            $('.ais-SearchBox-input').focus();
+        })
+        var elements = document.getElementsByClassName('txt-rotate');
+        for (var i=0; i<elements.length; i++) {
+          var toRotate = elements[i].getAttribute('data-rotate');
+          var period = elements[i].getAttribute('data-period');
+          if (toRotate) {
+            new TxtRotate(elements[i], JSON.parse(toRotate), period);
+          }
+        }
+        
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+        document.body.appendChild(css);
+    }
+</script>
+<script src="https://docs.rackspace.com/assets/bundle.js"></script>
+<script
+    src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CArray.prototype.includes%2CPromise%2CObject.assign%2CObject.entries">
+</script>
+</body>
+</html>
