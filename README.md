@@ -32,6 +32,15 @@ The migration and setup is done for the most part... but there is one more thing
 * `In 'myproject/api-docs/_templates/header.html update any occurances of '/docs' of a relative path to '/' which should work with custom domain. In files and clb case it was one instance on line 43 for Developer Documentation: '<li class="nav-item "><a href="/" class="nav-link">Developer Documentation</a></li>'`
 
 
+### Verify things...
+
+To verify that the project builds with your new additions simply run the setup.sh script, example:
+* `$docs-ospc ./setup.sh`
+
+This will trigger sphinx builds for all projects and update the landing page. This can then be viewed from your browser by navigating to the index.html in the root of docs-ospc and opening it in your browser of choice. 
+
+If sphinx failed for any reason or things aren't showing up as expected some debugging is required after this point. 
+
 ### TBD...
 
 There's probably plenty of things we can tweak and fix but this should get us going. If other's discover issues/bugs/fixes 
