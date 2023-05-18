@@ -1,0 +1,22 @@
+
+[build.environment]
+  NPM_VERSION = "7.9.0"
+  NODE_VERSION = "15.0.1"
+
+[build]
+  publish = "_build/html"
+  command = "make clean html"
+
+[context.production]
+  publish = "_build/html"
+  command = "make clean html"
+
+[context.deploy-preview]
+  publish = "_build/html"
+  command = "make clean html"
+
+[[redirects]]
+  from = "/*"
+  to = "/docs/user-guides/infrastructure/:splat"
+  status = 301
+  force = false

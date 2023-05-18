@@ -1,19 +1,39 @@
+
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rackspace OSPC Documentation &mdash; Rackspace OSPC Documentation</title>
-    <meta name="description" property="og:description" content="The Rackspace Cloud Load Balancers service enables customers to quickly load-balance multiple cloud servers or external servers for optimal resource utilization through a simple Representational State Transfer (REST) web service interface.
-         This guide is intended to assist software developers who want to develop applications by using the REST application programming interface (API) for the Rackspace Cloud Load Balancers service."/>
-    <meta name="category" property="article:section" content="Guides" />
-    <meta name="keywords" property="article:tag" content="Rackspace Cloud Load Balancers API 1.0"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="_static/css/styles.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="https://docs.rackspace.com/style.css"/>
-    <link rel="shortcut icon" href="https://docs.rackspace.com/favicons/favicon.ico"/>
-    <!-- Google Tag Manager -->
+<html lang="en-us" >
+
+<head><title>Rackspace Developer Center - Rackspace Developer Center</title><meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Accept-CH" content="DPR,Width,Viewport-Width" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="apple-mobile-web-app-title" content="Rackspace Developer Center" />
+    <meta name="application-name" content="Rackspace Developer Center" />
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" property="og:description" content="Rackspace Developer Center"/>
+    <meta name="category" property="product:category" content="Guides" />
+    <meta name="Algolia crawler" content="noindex">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://docs.rackspace.com/style.css" />
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="https://docs.rackspace.com/favicons/favicon.ico" />
+    <link rel="icon" type="image/png" href="https://docs.rackspace.com/favicons/favicon.ico"
+          sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://docs.rackspace.com/favicons/favicon.ico"
+          sizes="16x16" />
+    <link rel="mask-icon" href="https://docs.rackspace.com/favicons/favicon.ico" color="#00c7b7" />
+
+
     <script>
         (function (w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -30,61 +50,53 @@
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-MW68KW');
     </script>
-    <!-- End Google Tag Manager -->
-    <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-    <![endif]-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4"></script>
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="copyright" title="Copyright" href="copyright.html" />
-    <link rel="next" title="Getting started" href="getting-started/index.html" />
-</head>
-<body class="wy-body-for-nav docs">
-<!-- Google Tag Manager (noscript) -->
+    <!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
+    <script type='text/javascript'>
+        (function(){var g=function(e,h,f,g){
+            this.get=function(a){for(var a=a+"=",c=document.cookie.split(";"),b=0,e=c.length;b<e;b++){for(var d=c[b];" "==d.charAt(0);)d=d.substring(1,d.length);if(0==d.indexOf(a))return d.substring(a.length,d.length)}return null};
+            this.set=function(a,c){var b="",b=new Date;b.setTime(b.getTime()+6048E5);b="; expires="+b.toGMTString();document.cookie=a+"="+c+b+"; path=/; "};
+            this.check=function(){var a=this.get(f);if(a)a=a.split(":");else if(100!=e)"v"==h&&(e=Math.random()>=e/100?0:100),a=[h,e,0],this.set(f,a.join(":"));else return!0;var c=a[1];if(100==c)return!0;switch(a[0]){case "v":return!1;case "r":return c=a[2]%Math.floor(100/c),a[2]++,this.set(f,a.join(":")),!c}return!0};
+            this.go=function(){if(this.check()){var a=document.createElement("script");a.type="text/javascript";a.src=g;document.body&&document.body.appendChild(a)}};
+            this.start=function(){var t=this;"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",function(){t.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){t.go()}):t.go()};};
+            try{(new g(100,"r","QSI_S_ZN_bqI2UdYr6jaMxMh","https://znbqi2udyr6jamxmh-rackspacecx.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_bqI2UdYr6jaMxMh")).start()}catch(i){}})();
+    </script><div id='ZN_bqI2UdYr6jaMxMh'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+    <!--END WEBSITE FEEDBACK SNIPPET--></head>
+
+<body
+        class="kind-home type-page home">
+
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MW68KW" height="0" width="0"
                   style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 <header class="header buttons-header" data-nosnippet>
     <nav class="nav navbar navbar-light bg-light justify-content-end buttons-nav-items">
         <div class="nav-item buttons-nav-item buy-now" data-signed-out="true">
             <a class="buynow-button button small primary" href="/">Buy Now</a>
             <ul>
-                <li><a href="https://cart.rackspace.com/cloud">Rackspace Cloud</a></li>
+
                 <li><a href="https://cart.rackspace.com/apps">Email &amp; Apps</a></li>
-                <li><a href="https://cart.rackspace.com/aws">Fanatical Support for AWS</a></li>
-                <li><a href="https://cart.rackspace.com/gcp">Managed Google Cloud Platform</a></li>
+
+
                 <li><a href="https://cart.rackspace.com/office365">Office 365</a></li>
             </ul>
-        </div>
-        <div class="nav-item buttons-nav-item login" data-signed-out="true">
-            <a class="login-button button small secondary" href="/">Login</a>
-            <ul>
-                <li><a href="https://my.rackspace.com/portal/auth/login">MyRackspace Portal</a></li>
-                <li><a href="https://mycloud.rackspace.com">Cloud Control Panel</a></li>
-                <li><a href="https://apps.rackspace.com">Rackspace Webmail Login</a></li>
-                <li><a href="https://cp.rackspace.com">Cloud Office Control Panel</a></li>
-            </ul>
-        </div>
+        </div><div class="nav-item buttons-nav-item login" data-signed-out="true">
+        <a class="login-button button small secondary" href="/">Login</a>
+        <ul>
+            <li><a href="https://my.rackspace.com/portal/auth/login">MyRackspace Portal</a></li>
+            <li><a href="https://mycloud.rackspace.com">Cloud Control Panel</a></li>
+            <li><a href="https://apps.rackspace.com">Rackspace Webmail Login</a></li>
+            <li><a href="https://cp.rackspace.com">Cloud Office Control Panel</a></li>
+        </ul>
+    </div>
         <div class="nav-item buttons-nav-item" data-signed-out="true">
-               <span data-tooltip="Click Here for Search" data-tooltip-position="top" class="mobile-search">
-               <button type="button" class="btn btn-white" data-toggle="modal" data-placement="top"
-                       data-target="#searchModal">
-               <i class="fa fa-search" aria-hidden="true"></i>
-               </button>
-               </span>
-        </div>
-    </nav>
+        <span data-tooltip="Click Here for Search" data-tooltip-position="top" class="mobile-search">
+          <button type="button" class="btn btn-white" data-toggle="modal" data-placement="top"
+                  data-target="#searchModal">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </span>
+        </div></nav>
 </header>
+
 <header class="header" data-nosnippet>
     <nav class="nav navbar navbar-expand-lg navbar-dark bg-dark">
         <a href="https://www.rackspace.com/" title="Go to homepage" class="logo navbar-brand"></a>
@@ -92,182 +104,541 @@
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="main-nav-items navbar-nav mr-auto">
-                <li class="nav-item "><a href="https://docs.rackspace.com/" class="nav-link">Developer Home</a></li>
-                <li class="nav-item "><a href="/" class="nav-link">Developer Documentation</a></li>
-                <li class="nav-item  blog-nav dropdown ">
-                    <a class="nav-link dropdown-toggle" href='#'
-                       id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                       aria-expanded="false">
-                        &nbsp;Blogs&nbsp;
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <ul class="main-nav-items navbar-nav mr-auto">
-                            <li class="nav-item "><a href="https://docs.rackspace.com/blog" class="nav-link">Expert
-                                Insights Tech Blog</a>
-                            </li>
-                            <li class="nav-item "><a href="https://www.rackspace.com/blog" class="nav-link">Rackspace
-                                Blog</a>
-                            </li>
-                            <li class="nav-item "><a href="https://www.rackspace.com/solve" class="nav-link">Solve:
-                                Thought Leadership</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item "><a href="https://support.rackspace.com/" class="nav-link">Support
-                    Documentation</a>
-                </li>
-            </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="main-nav-items navbar-nav mr-auto"><li class="nav-item "><a href="https://docs.rackspace.com/" class="nav-link">Developer Home</a></li><li class="nav-item "><a href="/docs" class="nav-link">Developer Documentation</a></li><li class="nav-item  blog-nav dropdown "><a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            &nbsp;Blogs&nbsp;
+        </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown"><ul class="main-nav-items navbar-nav mr-auto"><li class="nav-item "><a href="https://docs.rackspace.com/blog" class="nav-link">Expert Insights Tech Blog</a></li><li class="nav-item "><a href="https://www.rackspace.com/blog" class="nav-link">Rackspace Blog</a></li><li class="nav-item "><a href="https://www.rackspace.com/solve" class="nav-link">Solve: Thought Leadership</a></li></ul>
+            </div></li><li class="nav-item "><a href="https://support.rackspace.com/" class="nav-link">Support Documentation</a></li></ul>
             <span data-tooltip="Click Here for Search" data-tooltip-position="top" class="desktop-search">
-               <button type="button" class="btn btn-white" data-toggle="modal" data-placement="top"
-                       data-target="#searchModal">
-               <i class="fa fa-search" aria-hidden="true"></i>
-               </button>
-               </span>
+        <button type="button" class="btn btn-white" data-toggle="modal" data-placement="top" data-target="#searchModal">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </span>
         </div>
     </nav>
 </header>
+
 <div id="root"></div>
-<div id="modal-root"></div>
-<nav class="docs-header-headline-container" data-nosnippet>
+<div id="modal-root"></div><nav class="docs-header-headline-container" data-nosnippet>
     <h1>Developer Docs</h1>
     <br>
     <p class="tagline">Let's build something powerful together!</p>
-</nav>
-<section class="announcement" data-nosnippet>
-    <div class="header-announcement">
-        <div class="banner">
-            <p>End-to-End Multicloud Solutions.&nbsp;&nbsp;&nbsp;<strong>Solving
-                Together.™</strong>&nbsp;&nbsp;&nbsp;Learn more at <a
-                    href="https://www.rackspace.com/">Rackspace.com</a>
-            </p>
+</nav><div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div id="search"></div>
+            <div id="crawler-search" style="display: none;"></div>
+
         </div>
     </div>
-</section>
-<main>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div id="search"></div>
-                        <div id="crawler-search" style="display: none;"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-3">
-                <nav data-toggle="wy-nav-shift" class="wy-nav-side sidebar">
-                    <div class="wy-side-scroll" data-drc-global-sidebar="">
-                        <div class="wy-menu wy-menu-vertical sidebar-container ng-isolate-scope sticky-top" data-drc-sticky="" data-offset-top="321" data-drc-flex-height="" data-flex-bottom="443" data-drc-collapsible-nav="" data-spy="affix" role="navigation" aria-label="main navigation">
-                            <a href="https://github.com/rackerlabs/docs-cloud-load-balancers/issues" target="_blank" class="github-link">
-                                <span class="icon fa fa-github"></span>
-                                <span class="link-text">Submit an issue</span>
-                            </a>
-                            <ul>
-                                <li class="toctree-l1"><a class="reference internal" href="index.html">OSPC Documentation</a></li>
-                                <li class="toctree-l1"><a class="reference internal" href="autoscale/v1/developer-guide/index.html">Rackspace Auto Scale</a></li>
-                                <li class="toctree-l1"><a class="reference internal" href="cdn/v1/index.html">Rackspace CDN</a></li>
-                                <li class="toctree-l1"><a class="reference internal" href="rackconnect/v3/developer-guide/index.html">Rackspace RackConnect</a></li>
-                                <li class="toctree-l1"><a class="reference internal" href="cloud-block-storage/v1/index.html">Cloud Block Storage</a></li>
-                                <li class="toctree-l1"><a class="reference internal" href="cloud-databases/v1/index.html">Cloud Databases</a></li>
-                                <li class="toctree-l1"><a class="reference internal" href="cloud-files/v1/index.html">Cloud Files</a></li>
-                                <li class="toctree-l1"><a class="reference internal" href="cloud-images/v2/index.html">Cloud Images</a></li>
-                                <li class="toctree-l1"><a class="reference internal" href="cloud-load-balancers/v1/index.html">Cloud Load Balancers</a></li>
-                                <li class="toctree-l1"><a class="reference internal" href="cloud-networks/v2/index.html">Cloud Networks</a></li>
-                                <li class="toctree-l1"><a class="reference internal" href="cloud-orchestration/v1/index.html">Cloud Orchestration</a></li>
-                                <li class="toctree-l1"><a class="reference internal" href="cloud-queues/v1/index.html">Cloud Queues</a></li>
-                                <li class="toctree-l1"><a class="reference internal" href="cloud-servers/v2/index.html">Cloud Servers</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-9 content">
-                <div class="wy-nav-content docs-section">
-                    <div class="rst-content">
-                        <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-                            <div itemprop="articleBody">
-                                <div class="section" id="rackspace-cloud-load-balancers-api-contract-version">
-                                    <h1>Rackspace OSPC Documentation<a class="headerlink" href="#rackspace-ospc-documentation" title="Permalink to this headline">¶</a></h1>
-                                    <p><em>Last updated:</em> May 16, 2023</p>
-                                    <p>Rackspace OSPC Documentation
-                                    </p>
-                                    <p>Use the following links to jump directly to user and reference information for using the
-                                        Rackspace OSPC products.
-                                    </p>
-                                    <ul class="simple">
-                                        <li><a class="reference internal" href="autoscale/v1/developer-guide/index.html"><span class="std std-ref">Rackspace Auto Scale</span></a></li>
-                                        <li><a class="reference internal" href="cdn/v1/index.html"><span class="std std-ref">Rackspace CDN</span></a></li>
-                                        <li><a class="reference internal" href="rackconnect/v3/developer-guide/index.html"><span class="std std-ref">Rackspace RackConnect</span></a></li>
-                                        <li><a class="reference internal" href="cloud-block-storage/v1/index.html"><span class="std std-ref">Cloud Block Storage</span></a></li>
-                                        <li><a class="reference internal" href="cloud-databases/v1/index.html"><span class="std std-ref">Cloud Databases</span></a></li>
-                                        <li><a class="reference internal" href="cloud-files/v1/index.html"><span class="std std-ref">Cloud Files</span></a></li>
-                                        <li><a class="reference internal" href="cloud-images/v2/index.html"><span class="std std-ref">Cloud Images</span></a></li>
-                                        <li><a class="reference internal" href="cloud-load-balancers/v1/index.html"><span class="std std-ref">Cloud Load Balancers</span></a></li>
-                                        <li><a class="reference internal" href="cloud-networks/v2/index.html"><span class="std std-ref">Cloud Networks</span></a></li>
-                                        <li><a class="reference internal" href="cloud-orchestration/v1/index.html"><span class="std std-ref">Cloud Orchestration</span></a></li>
-                                        <li><a class="reference internal" href="cloud-queues/v1/index.html"><span class="std std-ref">Cloud Queues</span></a></li>
-                                        <li><a class="reference internal" href="cloud-servers/v2/index.html"><span class="std std-ref">Cloud Servers</span></a></li>
-                                    </ul>
+</div><section class="announcement" data-nosnippet>
+    <div class="header-announcement">
+        <div class="banner">
+            <p>End-to-End Multicloud Solutions.&nbsp;&nbsp;&nbsp;<strong>Solving Together.™</strong>&nbsp;&nbsp;&nbsp;Learn more at <a href="https://www.rackspace.com/">Rackspace.com</a></p>
+        </div>
+    </div>
+</section><div class="container-fluid">
+    <div class="row "><div class="docs-home col-sm-12 col-md-4 col-lg-3 sidebar">
+        <div class="sidebar-container">
+            <h5>Filter by Product:</h5>
+            <ul class="product-filters" data-ng-controller="DocsHomeSidebarCtrl">
+                <li class="all" data-ng-click="clickFilter('*')" data-ng-class="{'active': isFilterActive('*')}">
+                    <a href="">
+                        <span class="label">All</span>
+                        <span class="indicator fa fa-check"></span>
+                    </a>
+                </li>
+                <li class="" data-ng-click="clickFilter('cloud')" data-ng-class="{'active': isFilterActive('cloud')}">
+                    <a href="">
+                        <span class="label">Cloud</span>
+                        <span class="indicator fa fa-check"></span>
+                    </a>
+                </li>
+                <li class="compute" data-ng-click="clickFilter('compute')" data-ng-class="{'active': isFilterActive('compute')}">
+                    <a href="">
+                        <span class="label">Compute</span>
+                        <span class="indicator fa fa-check"></span>
+                    </a>
+                </li>
+                <li class="network" data-ng-click="clickFilter('network')" data-ng-class="{'active': isFilterActive('network')}">
+                    <a href="">
+                        <span class="label">Network</span>
+                        <span class="indicator fa fa-check"></span>
+                    </a>
+                </li>
+                <li class="storagedata" data-ng-click="clickFilter('storagedata')" data-ng-class="{'active': isFilterActive('storagedata')}">
+                    <a href="">
+                        <span class="label">Storage &amp; Data</span>
+                        <span class="indicator fa fa-check"></span>
+                    </a>
+                </li>
+                <li class="infra" data-ng-click="clickFilter('infra')" data-ng-class="{'active': isFilterActive('infra')}">
+                    <a href="">
+                        <span class="label">Infrastructure &amp; Developer Services</span>
+                        <span class="indicator fa fa-check"></span>
+                    </a>
+                </li>
 
-                                    <div class="toctree-wrapper compound">
+            </ul>
+
+
+        </div>
+    </div>
+        <div class="docs-content col-sm-12 col-md-8 col-lg-9">
+
+            <div data-ng-controller="DocsHomeServicesCtrl" class="ng-scope">
+
+                <section class="docs-category compute" data-ng-show="isSectionActive('compute')">
+                    <h2>Compute Services</h2>
+                    <p>Cloud Servers, powered by OpenStack, are virtual machines running Linux or Windows Server in the
+                        Rackspace Cloud. You can scale resources like CPU, memory, and storage up or down, depending on your
+                        needs. Best of all, you can pay as you go.</p>
+                    <div class="product-list">
+                        <div class="product">
+                            <div class="card green">
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <h4 id="docs-cloud-servers">Cloud Servers</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="list">
+                                            <div class="list-column">
+                                                <ul>
+                                                    <li><a href="/cloud-servers/quickstart/">Quickstart</a></li>
+                                                    <li><a href="/cloud-servers/v2/getting-started">API Getting Started</a>
+                                                    </li>
+                                                    <li><a href="/cloud-servers/v2/api-reference">API Reference</a></li>
+                                                    <li><a href="/cloud-servers/v2/release-notes">Release Notes</a></li>
+                                                    <li><a href="/user-guides/infrastructure/cloud-config/compute/">User
+                                                        Guide</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="card green">
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <h4 id="docs-cloud-images">Cloud Images</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="list">
+                                            <div class="list-column">
+                                                <ul>
+                                                    <li><a href="/cloud-images/quickstart/">Quickstart</a></li>
+                                                    <li><a href="/cloud-images/v2/getting-started">API Getting Started</a>
+                                                    </li>
+                                                    <li><a href="/cloud-images/v2/api-reference">API Reference</a></li>
+                                                    <li><a href="/cloud-images/v2/release-notes/">Release Notes</a></li>
+                                                    <li><a
+                                                            href="/user-guides/infrastructure/cloud-config/compute/cloud-images-product-concepts/">User
+                                                        Guide</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="rst-footer-buttons row justify-content-between" role="navigation" aria-label="footer navigation">
-                        <div class="prev col-sm-12 col-md-6 col-lg-6 float-left">
+                </section>
+
+                <section class="docs-category network" data-ng-show="isSectionActive('network')">
+                    <h2>Network Services</h2>
+                    <p>Cloud networking services are on-demand and scalable, and provide
+                        technology-agnostic network abstraction, load balancing, and DNS
+                        management. Protect your infrastructure with Cloud Load Balancers by
+                        distributing traffic efficiently. Use Cloud DNS to manage domains and subdomains.</p>
+                    <div class="product-list">
+                        <div class="product">
+                            <div class="card yellow">
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <h4 id="docs-cloud-networks">Cloud Networks</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="list">
+                                            <div class="list-column">
+                                                <ul>
+                                                    <li><a href="/cloud-networks/quickstart">Quickstart</a></li>
+                                                    <li><a href="/cloud-networks/v2/getting-started">API Getting
+                                                        Started</a></li>
+                                                    <li><a href="/cloud-networks/v2/api-reference">API Reference</a></li>
+                                                    <li><a href="/cloud-networks/v2/release-notes/">Release Notes</a></li>
+                                                    <li><a href="/user-guides/infrastructure/cloud-config/network/">User
+                                                        Guide</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="next col-sm-12 col-md-6 col-lg-6 float-right">
-                            <span class="label" aria-hidden="true">Next</span>
-                            <a href="getting-started/index.html" title="Getting started" accesskey="n" rel="next">Getting started</a>
+                        <div class="product">
+                            <div class="card yellow">
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <h4 id="docs-cloud-load-balancers">Cloud Load Balancers v1.0</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="list">
+                                            <div class="list-column">
+                                                <ul>
+                                                    <li><a href="/cloud-load-balancers/quickstart/">Quickstart</a></li>
+                                                    <li><a href="/cloud-load-balancers/v1/getting-started">API Getting
+                                                        Started</a></li>
+                                                    <li><a href="/cloud-load-balancers/v1/api-reference">API Reference</a>
+                                                    </li>
+                                                    <li><a href="/cloud-load-balancers/v1/release-notes">Release Notes</a>
+                                                    </li>
+                                                    <li><a href="https://support.rackspace.com/how-to/cloud-load-balancers/">How-To
+                                                        Articles</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="card yellow">
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <h4 id="docs-cloud-dns">Cloud DNS</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="list">
+                                            <div class="list-column">
+                                                <ul>
+                                                    <li><a href="/cloud-dns/quickstart/">Quickstart</a></li>
+                                                    <li><a href="/cloud-dns/v1/getting-started/">API Getting Started</a>
+                                                    </li>
+                                                    <li><a href="/cloud-dns/v1/api-reference">API Reference</a></li>
+                                                    <li><a href="/cloud-dns/v1/release-notes">Release Notes</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="card yellow">
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <h4 id="docs-cloud-rackconnect">Rackspace RackConnect</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="list">
+                                            <div class="list-column">
+                                                <ul>
+                                                    <li><a href="https://support.rackspace.com/how-to/rackconnect-faq/">FAQ</a>
+                                                    </li>
+                                                    <li><a href="http://docs.rcv3.apiary.io">API Reference</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
+                <section class="docs-category storagedata" data-ng-show="isSectionActive('storagedata')">
+                    <h2>Storage and Data Services</h2>
+                    <p>With our storage services, you can get dependable and high-performing
+                        block storage, object storage, and backup solutions for Cloud Servers.
+                        You can scale your storage independently from your compute resources
+                        while using high-performance storage for I/O-intensive applications or
+                        to serve databases. Plus, with Cloud Files, you can store and retrieve
+                        content over a Content Delivery Network (CDN). If you want to enable CDN
+                        for your website resources beyond Cloud Files you can use the Rackspace
+                        CDN service which has finer control on caching rules, purging content,
+                        and specifying origins.</p>
+                    <p>Our database platform services enable powerful applications and data
+                        analysis.</p>
+                    <div class="product-list">
+                        <div class="product">
+                            <div class="card teal">
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <h4 id="docs-cloud-block-storage">Cloud Block Storage</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="list">
+                                            <div class="list-column">
+                                                <ul>
+                                                    <li><a href="/cloud-block-storage/quickstart/">Quickstart</a></li>
+                                                    <li><a href="/cloud-block-storage/v1/getting-started">API Getting
+                                                        Started</a></li>
+                                                    <li><a href="/cloud-block-storage/v1/api-reference">API Reference</a>
+                                                    </li>
+                                                    <li><a href="/cloud-block-storage/v1/release-notes">Release Notes</a>
+                                                    </li>
+                                                    <li><a href="https://support.rackspace.com/how-to/cloud-block-storage/">How-To
+                                                        Articles</a></li>
+                                                    <li><a href="/user-guides/infrastructure/">User Guide</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="card teal">
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <h4 id="docs-cloud-backup">Cloud Backup</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="list">
+                                            <div class="list-column">
+                                                <ul>
+                                                    <li><a href="/cloud-backup/v1/getting-started">API Getting Started</a>
+                                                    </li>
+                                                    <li><a href="/cloud-backup/v1/api-reference">API Reference</a></li>
+                                                    <li><a href="/cloud-backup/v1/release-notes">Release Notes</a></li>
+                                                    <li><a href="https://support.rackspace.com/how-to/cloud-backup/">How-To
+                                                        Articles</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="card teal">
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <h4 id="docs-cloud-files">Cloud Files</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="list">
+                                            <div class="list-column">
+                                                <ul>
+                                                    <li><a href="/cloud-files/quickstart/">Quickstart</a></li>
+                                                    <li><a href="/cloud-files/v1/getting-started">API Getting Started</a>
+                                                    </li>
+                                                    <li><a href="/cloud-files/v1/use-cases">Use cases</a></li>
+                                                    <li><a href="/cloud-files/v1/storage-api-reference">Storage API
+                                                        Reference</a></li>
+                                                    <li><a href="/cloud-files/v1/cdn-api-reference">CDN API Reference</a>
+                                                    </li>
+                                                    <li><a href="/cloud-files/v1/release-notes">Release Notes</a></li>
+                                                    <li><a href="https://support.rackspace.com/how-to/cloud-files/">How-To
+                                                        Articles</a></li>
+                                                    <li><a href="/user-guides/infrastructure/">User Guide</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="card teal">
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <h4 id="docs-cdn">Rackspace CDN</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="list">
+                                            <div class="list-column">
+                                                <ul>
+                                                    <li><a href="/cdn/quickstart/">Quickstart</a></li>
+                                                    <li><a href="/cdn/v1/getting-started">API Getting Started</a></li>
+                                                    <li><a href="/cdn/v1/api-reference">API Reference</a></li>
+                                                    <li><a href="/cdn/v1/release-notes">Release Notes</a></li>
+                                                    <li><a href="https://support.rackspace.com/how-to/rackspace-cdn/">How-To
+                                                        Articles</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="card teal">
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <h4 id="docs-cloud-databases">Cloud Databases</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul>
+                                            <li><a href="/cloud-databases/quickstart/">Quickstart</a></li>
+                                            <li><a href="/cloud-databases/v1/getting-started">API Getting Started</a></li>
+                                            <li><a href="/cloud-databases/v1/api-reference">API Reference</a></li>
+                                            <li><a href="/cloud-databases/v1/release-notes">Release Notes</a></li>
+                                            <li><a href="https://support.rackspace.com/how-to/cloud-databases/">How-To
+                                                Articles</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="card teal">
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <h4 id="objectrocket-documentation">ObjectRocket</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul>
+                                            <li><a href="https://docs.objectrocket.com/getting_started.html">Getting Started</a>
+                                            </li>
+                                            <li><a href='https://docs.objectrocket.com/'>Documentation</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="card teal">
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <h4 id="redis-to-go-doc">Redis To Go</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul>
+                                            <li><a href="http://redistogo.com/documentation">Documentation</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="card teal">
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <h4 id="docs-dba-solutions">DBA Solutions Guide</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="list">
+                                            <div class="list-column">
+                                                <ul>
+                                                    <li><a href="https://docs.rackspace.com/docs/dba-solutions-guide/">DBA
+                                                        Solutions Guide</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="docs-category infra" data-ng-show="isSectionActive('infra')">
+                    <h2>Infrastructure &amp; Developer Services</h2>
+                    <p>This collection of powerful services offers multiple utilities that
+                        work well with Rackspace Cloud resources. The Identity service is your
+                        starting
+                        point for accessing any cloud resource. Use Auto Scale to provide
+                        automatic scaling based on Cloud Monitoring information, in response to
+                        an increase or decrease of overall workload, defined by your policies.
+                        Cloud Orchestration provides templates for building entire applications
+                        that are highly available and scalable. Use Cloud Queues as a
+                        notifications service, with basic components offering the flexibility to
+                        use different messaging patterns. Mailgun provides your application
+                        access to send or receive email, either through SMTP or the Mailgun API,
+                        while verifying the domain and helping to protect email reputation.</p>
+                    <div class="product-list">
+                        <div class="product">
+                            <div class="card purple">
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <h4 id="otter-doc">Auto Scale</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="list">
+                                            <div class="list-column">
+                                                <ul>
+                                                    <li><a href="/auto-scale/quickstart/">Quickstart</a></li>
+                                                    <li><a href="/autoscale/v1/developer-guide/#document-api-reference">API
+                                                        Reference</a></li>
+                                                    <li><a href="/autoscale/v1/developer-guide/">Developer Guide</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="card purple">
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <h4 id="docs-cloud-queues">Cloud Queues</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="list">
+                                            <div class="list-column">
+                                                <ul>
+                                                    <li><a href="/cloud-queues/quickstart">Quickstart</a></li>
+                                                    <li><a href="/cloud-queues/v1/getting-started">API Getting Started</a>
+                                                    </li>
+                                                    <li><a href="/cloud-queues/v1/api-reference">API Reference</a></li>
+                                                    <li><a href="/cloud-queues/v1/release-notes">Release Notes</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="card purple">
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <h4 id="docs-cloud-orchestration">Cloud Orchestration</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="list">
+                                            <div class="list-column">
+                                                <ul>
+                                                    <li><a href="/orchestration/quickstart/">Quickstart</a></li>
+                                                    <li><a href="/cloud-orchestration/v1/getting-started">API Getting
+                                                        Started</a></li>
+                                                    <li><a href="/cloud-orchestration/v1/api-reference">API Reference</a>
+                                                    </li>
+                                                    <li><a href="/cloud-orchestration/v1/release-notes">Release Notes</a>
+                                                    </li>
+                                                    <li><a href="/user-guides/orchestration/">Template User Guide</a></li>
+                                                    <li><a href="/cloud-orchestration/v1/resources-reference/">Resource
+                                                        Reference</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
             </div>
+
         </div>
     </div>
-</main>
-<footer class="footer" data-nosnippet>
+</div><footer class="footer" data-nosnippet>
     <nav class="upper-footer">
-        <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <span class="footer-title">Developer Network</span>
-                <ul>
-                    <li><a href="https://docs.rackspace.com/">Developer Center</a></li>
-                    <li><a href="/docs">API Documentation and User Guides</a></li>
-                    <li><a href="https://support.rackspace.com/how-to/">Rackspace How-To</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <span class="footer-title">Blogs</span>
-                <ul>
-                    <li><a href="https://docs.rackspace.com/blog">Expert Insights Tech Blog</a></li>
-                    <li><a href="https://www.rackspace.com/blog">Rackspace Blog</a></li>
-                    <li><a href="https://www.rackspace.com/solve">Solve: Thought Leadership</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <span class="footer-title">Other Information</span>
-                <ul>
-                    <li><a href="https://www.rackspace.com/customer-stories">Customer Stories</a></li>
-                    <li><a href="https://www.rackspace.com/events">Events</a></li>
-                    <li><a href="https://www.rackspace.com/responsibility">Programs</a></li>
-                    <li><a href="https://jobs.jobvite.com/rackspace/">Careers</a></li>
-                    <li><a href="https://docs.rackspace.com/docs/style-guide/">Style Guide for Technical Content</a></li>
-                </ul>
-            </div>
-        </div>
+        <div class="row"><div class="col-sm-12 col-md-6 col-lg-4">
+            <span class="footer-title">Developer Network</span><ul><li><a href="https://docs.rackspace.com/">Developer Center</a></li><li><a href="/docs">API Documentation and User Guides</a></li><li><a href="https://support.rackspace.com/how-to/">Rackspace How-To</a></li></ul></div><div class="col-sm-12 col-md-6 col-lg-4">
+            <span class="footer-title">Blogs</span><ul><li><a href="https://docs.rackspace.com/blog">Expert Insights Tech Blog</a></li><li><a href="https://www.rackspace.com/blog">Rackspace Blog</a></li><li><a href="https://www.rackspace.com/solve">Solve: Thought Leadership</a></li></ul></div><div class="col-sm-12 col-md-6 col-lg-4">
+            <span class="footer-title">Other Information</span><ul><li><a href="https://www.rackspace.com/customer-stories">Customer Stories</a></li><li><a href="https://www.rackspace.com/events">Events</a></li><li><a href="https://www.rackspace.com/responsibility">Programs</a></li><li><a href="https://jobs.jobvite.com/rackspace/">Careers</a></li><li><a href="https://docs.rackspace.com/docs/style-guide/">Style Guide for Technical Content</a></li></ul></div></div>
     </nav>
     <nav class="lower-footer">
         <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-4"><span>©2020 Rackspace US, Inc.</span></div>
             <div class="text-link col-sm-12 col-md-6 col-lg-2"><a href="https://www.rackspace.com/about/">About
-                Rackspace</a>
-            </div>
+                Rackspace</a></div>
             <div class="text-link col-sm-12 col-md-6 col-lg-2"><a
                     href="http://www.rackspace.com/information/legal/privacystatement">Privacy Statement</a></div>
             <div class="text-link col-sm-12 col-md-6 col-lg-2"><a
@@ -276,8 +647,7 @@
                     href="http://www.rackspace.com/information/legal/copyrights_trademarks">Trademarks</a></div>
         </div>
     </nav>
-</footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+</footer><script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.0.0/dist/algoliasearch-lite.umd.js" integrity="sha256-MfeKq2Aw9VAkaE9Caes2NOxQf6vUa8Av0JqcUXUGkd0=" crossorigin="anonymous"></script>
@@ -399,6 +769,8 @@
 </script>
 <script src="https://docs.rackspace.com/assets/bundle.js"></script>
 <script
-        src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CArray.prototype.includes%2CPromise%2CObject.assign%2CObject.entries"></script>
+        src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CArray.prototype.includes%2CPromise%2CObject.assign%2CObject.entries">
+</script>
 </body>
+
 </html>
