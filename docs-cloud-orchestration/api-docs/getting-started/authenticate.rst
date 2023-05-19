@@ -23,7 +23,7 @@ request to get a new one.
      For more information about authentication tokens, see the following topics
      in the Identity API documentation.
 
-     - :rax-devdocs:`Authentication token operations<cloud-identity/v2/developer-guide/#document-api-operations/token-operations>`
+     - :rax-devdocs:`Authentication token operations<cloud-identity/v2/api-reference/token-operations/>`
 
         The examples in the Getting Started Guide show how to authenticate by
         using username and API key credentials, which is a more secure way to
@@ -31,7 +31,7 @@ request to get a new one.
         reference describes other types of credentials that you can use for
         authentication.
 
-     - :rax-devdocs:`Manage tokens and token expiration<cloud-identity/v2/developer-guide/#manage-authentication-tokens>`
+     - :rax-devdocs:`Manage tokens and token expiration<cloud-identity/v2/getting-started/manage-auth-tokens>`
 
 To start using the API and run the examples in this section, you need the
 following items:

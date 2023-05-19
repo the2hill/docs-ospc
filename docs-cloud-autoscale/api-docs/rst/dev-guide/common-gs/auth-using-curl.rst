@@ -41,7 +41,7 @@ returned is specific to your account.
 
 .. note::
      For detailed information about the authentication response, see the
-     :rax-devdocs:`annotated authentication request and response<cloud-identity/v2/developer-guide/#document-authentication-info/sample-auth-req-response>` in the Rackspace Cloud API documentation.
+     :rax-devdocs:`annotated authentication request and response<cloud-identity/v2/general-api-info/authentication-info/sample-auth-req-response>` in the Rackspace Cloud API documentation.
 
 **Example: Authentication response**
 
@@ -70,7 +70,7 @@ the following error message descriptions to determine next steps.
 
 ..  note::
        For additional information about authentication errors, see the
-       :rax-devdocs:`Identity API Reference documentation <cloud-identity/v2/developer-guide/#document-api-operations/token-operations>`.
+       :rax-devdocs:`Identity API Reference documentation <cloud-identity/v2/api-reference/token-operations>`.
 
 
 .. _configure-environment-variables:
@@ -89,7 +89,7 @@ token ID
     expiration. To get a new token, submit another authentication request. For more
     information, see
     :rax-devdocs:`Manage tokens and token expiration
-    <cloud-identity/v2/developer-guide/#manage-authentication-tokens>`.
+    <cloud-identity/v2/getting-started/manage-auth-tokens>`.
 
 tenant ID
     The tenant ID provides your account number. For most Rackspace Cloud service APIs, the

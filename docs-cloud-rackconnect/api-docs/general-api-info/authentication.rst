@@ -16,4 +16,4 @@ For details see the following information:
 
 - :ref:`Authenticate to the Rackspace Cloud<authenticate-to-cloud>`
 - :rax-devdocs:`Identity API developer documentation
-  <cloud-identity/v2/developer-guide/>`
+  <cloud-identity/v2/>`
