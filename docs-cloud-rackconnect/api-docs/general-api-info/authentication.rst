@@ -15,5 +15,5 @@ the following Identity API service endpoint:
 For details see the following information:
 
 - :ref:`Authenticate to the Rackspace Cloud<authenticate-to-cloud>`
-- :rax-devdocs:`Identity API developer documentation
+- :rax-identity:`Identity API developer documentation
   <cloud-identity/v2/>`

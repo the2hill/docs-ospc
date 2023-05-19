@@ -19,7 +19,7 @@ When Rackspace makes a new service generally available,
 all customers are given access to that service.
 When a new service is made available to you,
 its endpoint is added to the
-:rax-dev-devguide:`service catalog <cloud-identity/v2/general-api-info/svc-catalog-ovw/#suggested-work-flow-for-processing-a-service-catalog-response>`
+:rax-identity:`service catalog <cloud-identity/v2/general-api-info/svc-catalog-ovw/#suggested-work-flow-for-processing-a-service-catalog-response>`
 that is returned when you authenticate before using an API or CLI.
 
 If you meet eligibility criteria,

@@ -18,15 +18,15 @@ owner, and that role is assigned by default to any Rackspace Cloud
 account when the account is created.
 
 For more information about RBAC, see the
-:rax-devdocs:`RBAC<cloud-identity/v2/general-api-info/role-based-access-control>`
+:rax-identity:`RBAC<cloud-identity/v2/general-api-info/role-based-access-control>`
 section in the "Identity Client Developer Guide". See the following links for information
 about how to manage users and roles by using the Identity service:
 
--  :rax-devdocs:`Add account user<cloud-identity/v2/api-reference/user-operations/#add-user>`
+-  :rax-identity:`Add account user<cloud-identity/v2/api-reference/user-operations/#add-user>`
 
--  :rax-devdocs:`Assign roles to account users<cloud-identity/v2/api-reference/role-operations/#add-role-to-user>`
+-  :rax-identity:`Assign roles to account users<cloud-identity/v2/api-reference/role-operations/#add-role-to-user>`
 
--  :rax-devdocs:`Delete roles from account users<cloud-identity/v2/api-reference/role-operations/#delete-global-role-from-user>`
+-  :rax-identity:`Delete roles from account users<cloud-identity/v2/api-reference/role-operations/#delete-global-role-from-user>`
 
 ..  note::
     The account owner (identity:user-admin) role cannot hold any additional

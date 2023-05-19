@@ -120,9 +120,10 @@ extlinks = {
     'rax-cloud': ('http://www.rackspace.com/cloud/%s', ''),
     'rax-docs': ('http://docs.rackspace.com/%s', ''),
     'rax-dev': ('https://developer.rackspace.com/%s', ''),
-    'rax-devdocs': ('https://developer.rackspace.com/docs/%s', ''),
+    'rax-identity': ('https://developer.rackspace.com/docs/%s', ''),
+    'rax-devdocs': ('https://docs-ospc.rackspace.com/%s', ''),
     'rax-devguide': (
-        'http:/developer.rackspace.com/docs/%s/developer-guide/', ''),
+        'https://docs-ospc.rackspace.com/%s/developer-guide/', ''),
     'rax-api': (
         'http:/developer.rackspace.com/docs/%s/developer-guide/#api-reference',
         ''),

@@ -40,7 +40,7 @@ response that includes the following information:
 .. note::
 
    For detailed information about the authentication response, see the
-   :rax-devdocs:`Annotated authentication request and response
+   :rax-identity:`Annotated authentication request and response
    <cloud-identity/v2/general-api-info/authentication-info/sample-auth-req-response/#annotated-auth-req-resp>`
    in the Rackspace Cloud API documentation.
 
@@ -64,7 +64,7 @@ token ID
     The ``expires`` attribute indicates the date and time that the token will
     expire, unless it is revoked before the expiration. To get a new token,
     submit another authentication request. For more information, see
-    :rax-devdocs:`Manage authentication tokens
+    :rax-identity:`Manage authentication tokens
     <cloud-identity/v2/getting-started/manage-auth-tokens/>`.
 
 tenant ID

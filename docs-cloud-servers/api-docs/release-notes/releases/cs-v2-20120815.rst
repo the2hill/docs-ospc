@@ -52,7 +52,7 @@ What's new
 
    For detailed information about authentication through the Identity service
    v2.0, see the
-   :rax-devdocs:`Identity Client Developer Guide <cloud-identity/v2/getting-started/>`.
+   :rax-identity:`Identity Client Developer Guide <cloud-identity/v2/getting-started/>`.
 
 Resolved issues
 ---------------

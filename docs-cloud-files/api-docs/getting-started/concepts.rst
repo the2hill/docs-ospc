@@ -30,7 +30,7 @@ authentication token. The token must be passed to Cloud Files operations
 during the time that it is valid.
 
 For more information about authentication, see the
-:rax-devdocs:`Identity API Reference documentation <cloud-identity/v2>`.
+:rax-identity:`Identity API Reference documentation <cloud-identity/v2>`.
 
 .. note::
    The language-specific APIs handle authentication, token passing, and
