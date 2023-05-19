@@ -42,7 +42,7 @@ Rackspace Cloud Load Balancers service REST API.
    :maxdepth: 3
 
 
-   Cloud Load Balancers 1.0 <https://developer.rackspace.com/docs/cloud-load-balancers/v1/>
+   Cloud Load Balancers 1.0 <self>
    getting-started/index
    general-api-info/index
    api-reference/index

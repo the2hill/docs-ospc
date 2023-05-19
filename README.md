@@ -2,6 +2,18 @@
 
 This repository contains the source files for ospc products that generate the OSPC documentation
 
+### Build and Verify...
+
+To verify that the project builds with your new additions simply run the setup.sh script, example:
+* `$docs-ospc ./setup.sh`
+
+This will trigger sphinx builds for all projects and update the landing page. This can then be viewed from your browser
+by navigating to the index.html in the build dir of docs-ospc(docs-ospc/ospc/docs) and opening it in your browser of choice.
+
+If sphinx failed for any reason or things aren't showing up as expected some debugging is required after this point. 
+Note: relative links likely won't work in a local deployment, view/verify the specific project indexes in such a scenario.
+
+
 
 ## Migration steps
 The objective is to migrate from individual ospc documentation repos to a single repo that will be hosted on github pages.
@@ -32,14 +44,7 @@ The migration and setup is done for the most part... but there is one more thing
 * `In 'myproject/api-docs/_templates/header.html update any occurances of '/docs' of a relative path to '/' which should work with custom domain. In files and clb case it was one instance on line 43 for Developer Documentation: '<li class="nav-item "><a href="/" class="nav-link">Developer Documentation</a></li>'`
 
 
-### Verify things...
 
-To verify that the project builds with your new additions simply run the setup.sh script, example:
-* `$docs-ospc ./setup.sh`
-
-This will trigger sphinx builds for all projects and update the landing page. This can then be viewed from your browser by navigating to the index.html in the build dir of docs-ospc(docs-ospc/ospc/docs) and opening it in your browser of choice. 
-
-If sphinx failed for any reason or things aren't showing up as expected some debugging is required after this point. 
 
 ### TBD...
 
