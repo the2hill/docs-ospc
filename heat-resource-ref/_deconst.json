@@ -1,0 +1,8 @@
+{
+  "contentIDBase": "https://github.com/rackerlabs/heat-resource-ref/",
+  "githubUrl": "https://github.com/rackerlabs/heat-resource-ref/",
+  "githubBranch": "master",
+  "meta": {
+    "preferGithubIssues": false
+  }
+}

@@ -1,0 +1,24 @@
+
+[build.environment]
+  HUGO_VERSION = "0.77.0"
+  NPM_VERSION = "7.9.0"
+  NODE_VERSION = "15.0.1"
+
+[build]
+  publish = "_build/html"
+  command = "make clean html"
+
+[context.production]
+  publish = "_build/html"
+  command = "make clean html"
+
+[context.deploy-preview]
+  publish = "_build/html"
+  command = "make clean html"
+
+
+[[redirects]]
+  from = "/*"
+  to = "/docs/cloud-orchestration/v1/resources-reference/:splat"
+  status = 301
+  force = false
