@@ -1,0 +1,22 @@
+
+[build.environment]
+  NPM_VERSION = "7.9.0"
+  NODE_VERSION = "15.0.1"
+
+[build]
+  publish = "api-docs/cloud-backup-v1/_build/html"
+  command = "cd api-docs/cloud-backup-v1 && make clean html && cd .. && cd .."
+
+[context.production]
+  publish = "api-docs/cloud-backup-v1/_build/html"
+  command = "cd api-docs/cloud-backup-v1 && make clean html && cd .. && cd .."
+
+[context.deploy-preview]
+  publish = "api-docs/cloud-backup-v1/_build/html"
+  command = "cd api-docs/cloud-backup-v1 && make clean html && cd .. && cd .."
+
+[[redirects]]
+  from = "/*"
+  to = "/docs/cloud-backup/v1/:splat"
+  status = 301
+  force = false

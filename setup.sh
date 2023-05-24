@@ -5,6 +5,7 @@ pwd
 rm -rf ospc/docs/*
 
 # Build the individual ospc sphinx projects
+make html -C ./docs-cloud-backup/api-docs/cloud-backup-v1
 make html -C ./heat-resource-ref
 make html -C ./docs-core-infra-user-guide
 make html -C ./quickstart
