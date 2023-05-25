@@ -25,4 +25,7 @@ make html -C ./docs-cloud-rackconnect/api-docs
 
 # Copy the landing page to the build dir
 cp index.html ospc/docs
+
+# Copy assets folder to the build dir
+cp -r assets ospc/docs
 :
