@@ -74,4 +74,4 @@ After the volume is attached, the new volume appears as another device
 on the Next Generation Cloud Server. The volume can then be partitioned,
 formatted, and mounted for use on the system.
 
-.. _Next Generation Cloud Servers API reference: https://docs-ospc.rackspace.com/cloud-servers/v2/api-reference/svr-basic-operations/#attach-volume-to-server
+.. _Next Generation Cloud Servers API reference: https://docs-ospc.rackspace.com/cloud-servers/v2/api-reference/svr-basic-operations.html#attach-volume-to-server
