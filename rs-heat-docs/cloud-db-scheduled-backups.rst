@@ -97,6 +97,6 @@ Reference documentation
 =======================
 
 - You can always view the full template for this guide at `<https://github.com/rackerlabs/rs-heat-docs/tree/master/templates/cloud_db_backups.yaml>`__
-- `OS::Trove::Instance <https://developer.rackspace.com/docs/cloud-orchestration/v1/resources-reference/openstack/#os-trove-instance>`__
-- `Rackspace::CloudDatabase::ScheduledBackup <https://developer.rackspace.com/docs/cloud-orchestration/v1/resources-reference/openstack/#rackspace-clouddatabase-scheduledbackup>`__
-- `Rackspace Cloud Databases Developer Guide <https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/>`__
+- `OS::Trove::Instance <https://docs-ospc.rackspace.com/cloud-orchestration/v1/resources-reference/openstack/#os-trove-instance>`__
+- `Rackspace::CloudDatabase::ScheduledBackup <https://docs-ospc.rackspace.com/cloud-orchestration/v1/resources-reference/openstack/#rackspace-clouddatabase-scheduledbackup>`__
+- `Rackspace Cloud Databases Developer Guide <https://docs-ospc.rackspace.com/cloud-databases/v1/developer-guide/>`__

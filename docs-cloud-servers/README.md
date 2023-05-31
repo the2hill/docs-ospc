@@ -4,9 +4,9 @@
 
 This repository contains the source files that generate the following Cloud Servers API documentation:
 
-* [Quickstart Guide](https://developer.rackspace.com/docs/cloud-servers/v2/developer-guide/#document-quickstart-guide)
-* [Developer Guide](https://developer.rackspace.com/docs/cloud-servers/v2/developer-guide/#document-developer-guide)
-* [API Reference](https://developer.rackspace.com/docs/cloud-servers/v2/developer-guide/#api-reference)
+* [Quickstart Guide](https://docs-ospc.rackspace.com/cloud-servers/v2/developer-guide/#document-quickstart-guide)
+* [Developer Guide](https://docs-ospc.rackspace.com/cloud-servers/v2/developer-guide/#document-developer-guide)
+* [API Reference](https://docs-ospc.rackspace.com/cloud-servers/v2/developer-guide/#api-reference)
 
 When you commit changes to the master branch of this repository, the
 [Strider CI/CD build job](https://build.developer.rackspace.com/rackerlabs/docs-cloud-servers/)

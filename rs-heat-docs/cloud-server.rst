@@ -308,7 +308,7 @@ Reference
 -  `Cloud servers getting started
    guide <https://docs.rackspace.com/servers/api/v2/cs-gettingstarted/content/overview.html>`__
 -  `Cloud servers API developer
-   guide <https://developer.rackspace.com/docs/cloud-servers/v2/developer-guide/>`__
+   guide <https://docs-ospc.rackspace.com/cloud-servers/v2/developer-guide/>`__
 -  `Cloud servers
    FAQs <http://www.rackspace.com/knowledge_center/product-faq/cloud-servers>`__
 -  `Cloud servers How to articles and other

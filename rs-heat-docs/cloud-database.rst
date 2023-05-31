@@ -159,4 +159,4 @@ Reference documentation
 =======================
 
 - `OS::Trove::Instance <http://docs.openstack.org/hot-reference/content/OS__Trove__Instance.html>`__
-- `Rackspace Cloud Databases Developer Guide <https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/>`__
+- `Rackspace Cloud Databases Developer Guide <https://docs-ospc.rackspace.com/cloud-databases/v1/developer-guide/>`__
