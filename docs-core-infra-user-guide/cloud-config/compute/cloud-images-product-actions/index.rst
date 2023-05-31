@@ -27,7 +27,7 @@ image can also assist in restoring a server from a saved image.
   `here <http://www.rackspace.com/knowledge_center/article/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image>`__.
 
 * To find out how to create an image by using the API click
-  `here <https://developer.rackspace.com/docs/cloud-servers/v2/api-reference/svr-basic-operations/#create-image-of-specified-server>`__.
+  `here <https://docs-ospc.rackspace.com/cloud-servers/v2/api-reference/svr-basic-operations/#create-image-of-specified-server>`__.
 
 
 Update an image

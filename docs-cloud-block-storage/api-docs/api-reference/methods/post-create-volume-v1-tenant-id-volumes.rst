@@ -239,4 +239,4 @@ This operation can have the following response codes.
 +--------------------------+-------------------------+------------------------+
 
 
-.. _Next Generation Cloud Servers API reference: https://developer.rackspace.com/docs/cloud-servers/v2/api-reference/svr-basic-operations/#attach-volume-to-server
+.. _Next Generation Cloud Servers API reference: https://docs-ospc.rackspace.com/cloud-servers/v2/api-reference/svr-basic-operations/#attach-volume-to-server
