@@ -22,6 +22,7 @@ make html -C ./docs-cloud-databases/api-docs
 make html -C ./docs-cloud-files/api-docs
 make html -C ./docs-cloud-load-balancers/api-docs/cloud-load-balancers-v1
 make html -C ./docs-cloud-rackconnect/api-docs
+make html -C ./support-how-to/content
 
 # Copy the landing page to the build dir
 cp index.html ospc/docs
