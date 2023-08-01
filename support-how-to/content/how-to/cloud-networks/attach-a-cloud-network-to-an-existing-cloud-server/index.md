@@ -15,7 +15,7 @@ When you create a new cloud server, you can attach an isolated network
 to it. You can also attach an isolated network to an existing server by
 using one of the following methods:
 
--   By using the [Cloud Networks API](https://docs.rackspace.com/docs/cloud-networks/v2/developer-guide/)
+-   By using the [Cloud Networks API](https://docs.rackspace.com/docs/cloud-networks/v2/api-reference/)
 -   By creating an image of the server and building a new server based
     on that image in the Cloud Control Panel
 
@@ -63,7 +63,7 @@ in the Cloud Control Panel, perform the following steps:
     PublicNet (the Internet) and ServiceNet (the Rackspace data center
     network) networks. Before removing these networks from the server,
     we strongly recommend that you read
-    [Removing Networks from a Cloud Server](/support/how-to/removing-networks-from-a-cloud-server)
+    [Removing Networks from a Cloud Server](https://docs-ospc.rackspace.com/support/how-to/cloud-networks/removing-networks-from-a-cloud-server)
     to fully understand the limitations on this server if you remove
     these networks.
 
@@ -74,10 +74,10 @@ addresses and attach it to your selected networks.
 
 ### More information about Cloud Networks
 
-[Create an Isolated Cloud Network](/support/how-to/create-an-isolated-cloud-network-and-attach-it-to-a-server)
+[Create an Isolated Cloud Network](https://docs-ospc.rackspace.com/support/how-to/cloud-networks/create-an-isolated-cloud-network-and-attach-it-to-a-server)
 
-[Removing Networks from a Cloud Server](/support/how-to/removing-networks-from-a-cloud-server)
+[Removing Networks from a Cloud Server](https://docs-ospc.rackspace.com/support/how-to/cloud-networks/removing-networks-from-a-cloud-server)
 
-[Using CIDR notation in Cloud Networks](/support/how-to/using-cidr-notation-in-cloud-networks)
+[Using CIDR notation in Cloud Networks](https://docs-ospc.rackspace.com/support/how-to/cloud-networks/using-cidr-notation-in-cloud-networks)
 
 [Cloud Networks Developer Guide](https://docs.rackspace.com/docs/cloud-networks/v2/)

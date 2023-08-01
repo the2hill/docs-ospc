@@ -11,7 +11,7 @@ product: Cloud Backup
 product_url: cloud-backup
 ---
 
-**Previous section:** [Cloud Backup actions](/support/how-to/rackspace-cloud-backup-backup-actions)
+**Previous section:** [Cloud Backup actions](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/rackspace-cloud-backup-backup-actions)
 
 **Warning**: The system actions are for users who are familiar with Rackspace Cloud Backup. Users with Managed Cloud Service Level accounts might want to contact their account manager before performing any of the following actions.
 
@@ -36,7 +36,7 @@ The **Actions** menu offers the following actions:
 
 ### Create Backup
 
-Clicking **Create Backup** from the **Actions** menu is the same as clicking **Create Backup** from the gear icon on the **Cloud Backups Systems** page. For complete instructions, see [Create a Backup](/support/how-to/rackspace-cloud-backup-create-a-backup).
+Clicking **Create Backup** from the **Actions** menu is the same as clicking **Create Backup** from the gear icon on the **Cloud Backups Systems** page. For complete instructions, see [Create a Backup](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/rackspace-cloud-backup-create-a-backup).
 
 **Note:** You cannot back up or restore a system that is offline. If the system status displays ``offline`` and your server is active, contact support.
 
@@ -101,4 +101,4 @@ The **Delete** option permanently deletes all backups and any data
 associated with this system. A confirmation prompt requires you to
 verify that this is your intention.
 
-**Next steps:** [Cloud Backup preferences](/support/how-to/rackspace-cloud-backup-preferences)
+**Next steps:** [Cloud Backup preferences](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/rackspace-cloud-backup-preferences)

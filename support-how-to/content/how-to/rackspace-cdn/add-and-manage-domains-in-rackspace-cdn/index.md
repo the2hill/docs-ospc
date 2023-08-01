@@ -32,7 +32,7 @@ enter the **Domain Name** of the domain that you want to add. For secure
 domains, the name must be a single word and cannot contain periods (.),
 but can contain hyphens (-).
 
-  {{<image src="ScreenShot2015-12-16at3.28.18PM.png" alt="" title="">}}
+  <img src="ScreenShot2015-12-16at3.28.18PM.png" alt="" title="">
 
 5. Click **Add Domain**.  In the **Domains** section, you can see the
 Domain Name, along with the **Certificate Type**, and the **Status** of
@@ -44,11 +44,11 @@ get instructions and to see the Rackspace CDN URL that you need for the CNAME re
 The instructions that see see when you click on **Domain Not
 Configured** are similar to those in the following figure:
 
-{{<image src="ScreenShot2015-12-16at3.57.27PM.png" alt="" title="">}}
+<img src="ScreenShot2015-12-16at3.57.27PM.png" alt="" title="">
 
 It might take some time for your DNS change to propagate across the
 internet. After this has happened (based on the TTL you have set with
 your DNS provider), you will be able to access your website via the CDN
 edge.
 
-For more information, see [Change DNS to enable Rackspace CDN](/support/how-to/change-dns-to-enable-rackspace-cdn).
+For more information, see [Change DNS to enable Rackspace CDN](https://docs-ospc.rackspace.com/support/how-to/rackspace-cdn/change-dns-to-enable-rackspace-cdn).

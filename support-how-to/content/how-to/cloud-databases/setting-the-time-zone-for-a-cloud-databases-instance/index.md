@@ -16,14 +16,14 @@ by using the configuration groups feature of Cloud Databases. You can use either
 the [Cloud Databases
 API](https://docs.rackspace.com/docs/cloud-databases/v1/getting-started/manage-tz-ovw/)
 or the [trove command line
-tool](https://docs.rackspace.com/support/how-to/managing-configuration-groups-for-cloud-databases-with-the-trove-command-line-tool)
+tool](https://docs-ospc.rackspace.com/support/how-to/cloud-databases/managing-configuration-groups-for-cloud-databases-with-the-trove-command-line-tool)
 to make the configuration changes. The examples in this article use the trove
 command line tool.
 
 ### Prerequisites
 
 - [Trove command line
-  tool](https://docs.rackspace.com/support/how-to/managing-configuration-groups-for-cloud-databases-with-the-trove-command-line-tool)
+  tool](https://docs-ospc.rackspace.com/support/how-to/cloud-databases/managing-configuration-groups-for-cloud-databases-with-the-trove-command-line-tool)
 
 ### Setting the server time zone
 
@@ -47,7 +47,7 @@ configuration group.
 ### Create a new configuration group
 
 To create a new configuration group for custom time zone information, run the
-[configuration-create](https://docs.rackspace.com/support/how-to/managing-configuration-groups-for-cloud-databases-with-the-trove-command-line-tool#create-a-new-configuration-group)
+[configuration-create](https://docs-ospc.rackspace.com/support/how-to/cloud-databases/managing-configuration-groups-for-cloud-databases-with-the-trove-command-line-tool#create-a-new-configuration-group)
 command with `trove`.
 
 The following example creates a configuration group named TimeConfig that sets
@@ -68,7 +68,7 @@ To create the configuration group using the offset of IST from UTC, which is
 
 To apply the configuration group to an existing Cloud Databases instance, run
 the
-[configuration-attach](https://docs.rackspace.com/support/how-to/managing-configuration-groups-for-cloud-databases-with-the-trove-command-line-tool#apply-a-configuration-group-to-an-existing-instance)
+[configuration-attach](https://docs-ospc.rackspace.com/support/how-to/cloud-databases/managing-configuration-groups-for-cloud-databases-with-the-trove-command-line-tool#apply-a-configuration-group-to-an-existing-instance)
 command with `trove`, as follows:
 
     trove configuration-attach aab79bba-9eaa-4ac3-94fc-e4aaf46b4efb 26f6f753-3853-4bf5-9bfe-1765966ad2f6
@@ -88,7 +88,7 @@ must be restarted.
 
 You can set the `default_time_zone` parameter can be set on an existing
 configuration group by running the
-[configuration-patch](https://docs.rackspace.com/support/how-to/managing-configuration-groups-for-cloud-databases-with-the-trove-command-line-tool#modify-configuration-groups)
+[configuration-patch](https://docs-ospc.rackspace.com/support/how-to/cloud-databases/managing-configuration-groups-for-cloud-databases-with-the-trove-command-line-tool#modify-configuration-groups)
 command with `trove`.
 
 The following example adds the India Standard Time (IST) time zone to a
@@ -102,7 +102,7 @@ configuration group:
 
 You can check the current time zone setting for an instance by [logging in to
 the mysql
-console](https://docs.rackspace.com/support/how-to/connect-to-a-cloud-databases-instance)
+console](https://docs-ospc.rackspace.com/support/how-to/cloud-databases/connect-to-a-cloud-databases-instance)
 and querying the value of global.time\_zone parameter.
 
     SELECT @@global.time_zone;

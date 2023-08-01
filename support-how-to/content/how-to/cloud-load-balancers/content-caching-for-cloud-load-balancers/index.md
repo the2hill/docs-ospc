@@ -17,7 +17,7 @@ recently-accessed files for web clients to retrieve.
 ### Enable content caching
 
 You can enable content caching through the [Cloud Load Balancers
-API](https://docs.rackspace.com/docs/cloud-load-balancers/v1/developer-guide/)
+API](https://docs.rackspace.com/docs/cloud-load-balancers/v1/api-reference/)
 or the [Cloud Control Panel](https://login.rackspace.com).
 
 1. Log in to [Cloud Control Panel](https://login.rackspace.com).
@@ -102,6 +102,6 @@ following example:
 **Note**: Replace **ico|flv|jpg|jpeg** with the desired extensions you want to
 bypass, making sure to put a **\|** character between them.
 
-    <FilesMatch ".(ico|flv|jpg|jpeg" alt="" title="">}}$">
+    <FilesMatch ".(ico|flv|jpg|jpeg" alt="" title="">$">
         Header set Cache-Control "no-cache"
     </FilesMatch>

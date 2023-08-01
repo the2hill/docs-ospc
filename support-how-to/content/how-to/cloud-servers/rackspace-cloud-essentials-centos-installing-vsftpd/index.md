@@ -11,7 +11,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-**Previous section:** [Create a Cloud Server](/support/how-to/create-a-cloud-server)
+**Previous section:** [Create a Cloud Server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/create-a-cloud-server)
 
 By following the previous articles in this series, you should now have an
 active cloud server that is secured and has scheduled backups configured.
@@ -141,7 +141,7 @@ Use one of the following methods to access the server.
 Enter the name of your FTP site into a browser address bar, as shown in the
 following screenshot, and supply the login credentials when prompted.
 
-{{<image src="ftp.png" alt="" title="">}}
+<img src="ftp.png" alt="" title="">
 
 #### Using an FTP client
 
@@ -157,4 +157,4 @@ Use the following syntax to open an FTP session from the command line, where
 
 To close the FTP session, type **exit** in the session window.
 
-**Next section:** [Rackspace Cloud Essentials - Configure a user in vsftpd](/support/how-to/rackspace-cloud-essentials-centos-configuring-a-user-in-vsftpd)
+**Next section:** [Rackspace Cloud Essentials - Configure a user in vsftpd](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/rackspace-cloud-essentials-centos-configuring-a-user-in-vsftpd)

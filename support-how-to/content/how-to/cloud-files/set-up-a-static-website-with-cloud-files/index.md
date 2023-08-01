@@ -58,7 +58,7 @@ URL.
 2.  Click the gear icon next to the name of your container and select
     **View All Links**.
 
-    {{<image src="set-up-static-view-all-links.png" alt="" title="">}}
+    <img src="set-up-static-view-all-links.png" alt="" title="">
 
     **Note**: All of the CDN URLs for your container display. For HTML pages
     and pictures, use the **HTTP** link to access your static website. If
@@ -86,6 +86,6 @@ website container. To find your target, perform the following steps:
     - [CloudFlare](https://support.cloudflare.com/hc/en-us/articles/200168706-How-do-I-do-CNAME-setup-)
 
 You can also create your own CNAME by using the Rackspace DNS service. For
-instructions, see [Create DNS Records for cloud servers with the Control Panel](/support/how-to/create-dns-records-for-cloud-servers-with-the-control-panel).
+instructions, see [Create DNS Records for cloud servers with the Control Panel](https://docs.rackspace.com/docs/rackspace-name-servers#related-information).
 
 Use the Feedback tab to make any comments or ask questions. You can also [start a conversation with us](https://www.rackspace.com/contact). 

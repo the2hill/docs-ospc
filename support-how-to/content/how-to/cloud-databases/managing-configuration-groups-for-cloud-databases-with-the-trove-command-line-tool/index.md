@@ -13,7 +13,7 @@ product_url: cloud-databases
 
 You can save and manage the settings for Cloud Databases instances in
 configuration groups by using the [Cloud Databases
-API](https://docs.rackspace.com/docs/cloud-databases/v1/developer-guide/#document-developer-guide)
+API](https://docs.rackspace.com/docs/cloud-databases/v1/api-reference/#document-api-reference)
 or the
 [python-troveclient](https://pypi.python.org/pypi/python-troveclient)
 command-line interface for the API.
@@ -31,7 +31,7 @@ parameters_, which represent the options that can be applied to a datastore.
 (A _datastore_ is a database running in an instance.) For example, a
 configuration group might have a configuration parameter of `max_connections`
 set to `80`, or [set the default time zone for the
-instance](/support/how-to/setting-the-time-zone-for-a-cloud-databases-instance)
+instance](https://docs-ospc.rackspace.com/support/how-to/cloud-databases/setting-the-time-zone-for-a-cloud-databases-instance)
 with the `default_time_zone` parameter.
 
 ### Install the trove client
@@ -166,7 +166,7 @@ properties:
 
 For a detailed example that shows how to create and apply a configuration
 group, see [setting the time zone for a Cloud Databases
-instance](/support/how-to/setting-the-time-zone-for-a-cloud-databases-instance).
+instance](https://docs-ospc.rackspace.com/support/how-to/cloud-databases/setting-the-time-zone-for-a-cloud-databases-instance).
 
 #### Delete a configuration group
 

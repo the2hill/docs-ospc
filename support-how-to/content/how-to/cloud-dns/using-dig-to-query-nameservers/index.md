@@ -143,4 +143,4 @@ server is listed on the "SERVER" line close to the end of the output.
 
     dig
 
-{{<image src="dig-response-no-query.png" alt="" title="">}}
+<img src="dig-response-no-query.png" alt="" title="">

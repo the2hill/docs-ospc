@@ -73,4 +73,4 @@ In the Cloud Control Panel, run the **Reboot** command.
 
 After the VM is in **Active** status, you can
 log in to the VM again by using SSH and RDP or the [Emergency
-Console](/support/how-to/start-a-console-session/).
+Console](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/start-a-console-session/).

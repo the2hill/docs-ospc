@@ -40,7 +40,7 @@ to move to the Server Roles selection tab.
 dropdown and place a check in the box for **FTP Server**. Click
 **Next** to move to the Features selection tab.
 
-   {{<image src="server_roles_ftp.png" alt="" title="">}}
+   <img src="server_roles_ftp.png" alt="" title="">
 
 6. Select any additional features desired for your IIS deployment and
 click **Next.**

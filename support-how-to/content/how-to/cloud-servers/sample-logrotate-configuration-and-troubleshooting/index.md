@@ -13,7 +13,7 @@ product_url: cloud-servers
 
 ### Applying knowledge
 
-A previous article [Understanding the logrotate utility](/support/how-to/understanding-logrotate-utility) described what
+A previous article [Understanding the logrotate utility](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/understanding-logrotate-utility) described what
 logrotate does and how you can configure it. This article applies this
 knowledge to creating a log-rotation solution for one or more custom virtual hosts.
 It also identifies some options for testing and troubleshooting logrotate.

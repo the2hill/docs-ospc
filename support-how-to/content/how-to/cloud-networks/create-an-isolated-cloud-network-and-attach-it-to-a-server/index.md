@@ -49,7 +49,7 @@ Server separate from the Rackspace network, the Internet, or both.
 
     **Warning:** Before you remove ServiceNet or PublicNet from your
     Cloud Server, read [Removing Networks from a Cloud
-    Server](/support/how-to/removing-networks-from-a-cloud-server "Disabling Networks from a Cloud Server")
+    Server](https://docs-ospc.rackspace.com/support/how-to/cloud-networks/removing-networks-from-a-cloud-server "Disabling Networks from a Cloud Server")
     for a complete description of the limitations that the system places on
     your new server.
 
@@ -65,15 +65,15 @@ attached to with the corresponding IP address. Following is an example
 ServiceNet (the Rackspace data center network), and an isolated Cloud
 Network named **My Private Network**:
 
-{{<image alt="Cloud Networks List" src="CloudNetworksList.png" title="Cloud Networks List">}}
+<img alt="Cloud Networks List" src="CloudNetworksList.png" title="Cloud Networks List">}}
 
 ### More information about Cloud Networks
 
-[Attach an Isolated Network to an Existing Cloud Server](/support/how-to/attach-a-cloud-network-to-an-existing-cloud-server)
+[Attach an Isolated Network to an Existing Cloud Server](https://docs-ospc.rackspace.com/support/how-to/cloud-networks/attach-a-cloud-network-to-an-existing-cloud-server)
 
-[Removing Networks from a Cloud Server](/support/how-to/removing-networks-from-a-cloud-server)
+[Removing Networks from a Cloud Server](https://docs-ospc.rackspace.com/support/how-to/cloud-networks/removing-networks-from-a-cloud-server)
 
-[CIDR Notation](/support/how-to/using-cidr-notation-in-cloud-networks "CIDR Notation")
+[CIDR Notation](https://docs-ospc.rackspace.com/support/how-to/cloud-networks/using-cidr-notation-in-cloud-networks "CIDR Notation")
 
 [Cloud Networks](https://docs.rackspace.com/docs/cloud-networks/v2/)
 

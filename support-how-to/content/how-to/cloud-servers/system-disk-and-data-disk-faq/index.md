@@ -26,7 +26,7 @@ located on the data disks.
 You can retain the operating system and configuration information from
 your system disk by using our Cloud Servers imaging feature. However, this
 process does not save any information from the data disks. To save your
-data disks, you can use [Rackspace Cloud Backup](/support/how-to/cloud-backup),
+data disks, you can use [Rackspace Cloud Backup](https://docs-ospc.rackspace.com/support/how-to/cloud-backup),
 which is a granular file-level backup system that you can configure to save
 the files and folders you want to keep.
 {{</accordion>}}
@@ -45,7 +45,7 @@ server with a different server flavor.
 Horizontal scaling is the most flexible approach, but
 your application must work in a clustered environment. With
 horizontal scaling in place, you can add and remove servers on-demand,
-either manually or with our [Auto Scale features](/support/how-to/rackspace-auto-scale).
+either manually or with our [Auto Scale features](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale).
 
 To recreate the server, you can take an image of your server and build a new
 server with a different size. Alternately, you can migrate data to a new server
@@ -53,7 +53,7 @@ by using a tool like `rsync`. If you use a Cloud Block Storage volume as your
 server's boot device, you can also clone your boot volume and use the
 clone to create a new server (see [Boot a server from a Cloud Block
 Storage
-volume](/support/how-to/boot-a-server-from-a-cloud-block-storage-volume)).
+volume](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/boot-a-server-from-a-cloud-block-storage-volume)).
 Note that none of these approaches preserves the server IP address.
 If you require a persistent IP address, consider a load balancer or other
 proxying solution that maintains the IP address separately from your

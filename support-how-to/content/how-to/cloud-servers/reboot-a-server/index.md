@@ -11,7 +11,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-**Previous section:** [Create a Cloud Server](/support/how-to/create-a-cloud-server)
+**Previous section:** [Create a Cloud Server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/create-a-cloud-server)
 
 You can reboot a server in one of two ways. A *soft reboot* uses the
 operating system's reboot process so that applications shut down
@@ -28,7 +28,7 @@ that there are no tasks pending that could slow the reboot process.
 
 To perform a soft reboot of a server, you must be logged in to the
 server using an account with superuser or administrator permissions. For
-information about logging in to a cloud server, see [Connect to a cloud server](/support/how-to/connect-to-a-cloud-server).
+information about logging in to a cloud server, see [Connect to a cloud server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/connect-to-a-cloud-server).
 
 For the command you should use to soft reboot your server, see the
 appropriate section for your server operating system:
@@ -81,7 +81,7 @@ reboot using the Cloud Control Panel.
 To halt a server, you need remote access to the server using an
 account with superuser or administrator
 permissions. For information about logging in to a cloud
-server, see [Connect to a cloud server](/support/how-to/connect-to-a-cloud-server).
+server, see [Connect to a cloud server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/connect-to-a-cloud-server).
 
 **Note:** Shutting down a server does *not* stop billing for the server
 because the server still has resources allocated to the server instance. Billing
@@ -108,6 +108,6 @@ entering the following command:
 
 #### Using API
 
-You can also [use an API to stop a cloud server](https://docs.rackspace.com/support/how-to/use-an-api-call-to-stop-a-cloud-server).
+You can also [use an API to stop a cloud server](https://docs.rackspace.comhttps://docs-ospc.rackspace.com/support/how-to/cloud-servers/use-an-api-call-to-stop-a-cloud-server).
 
-**Next section:** [Rescue mode](/support/how-to/rescue-mode)
+**Next section:** [Rescue mode](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/rescue-mode)

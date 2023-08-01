@@ -94,5 +94,5 @@ granularity, from the entire site to a specific file.
 
 ### Additional resources
 
-- [Rackspace CDN overview](/support/how-to/rackspace-cdn-overview)
-- [Uses of Rackspace CDN](/support/how-to/uses-of-rackspace-cdn)
+- [Rackspace CDN overview](https://docs-ospc.rackspace.com/support/how-to/rackspace-cdn/rackspace-cdn-overview)
+- [Uses of Rackspace CDN](https://docs-ospc.rackspace.com/support/how-to/rackspace-cdn/uses-of-rackspace-cdn)

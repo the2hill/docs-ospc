@@ -11,16 +11,16 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Before you can install a [Secure Socket Layer (SSL) certificate](/support/how-to/install-an-ssl-certificate), you must first generate a certificate signing request (CSR). You can do this by using one of the following methods:
+Before you can install a [Secure Socket Layer (SSL) certificate](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/install-an-ssl-certificate), you must first generate a certificate signing request (CSR). You can do this by using one of the following methods:
 
-- [(Linux&reg; server) OpenSSL](#openssl)
-- [(Microsoft&reg; Windows&reg; server) Internet Information Services (IIS) Manager](#windows-iis-manager)
-- [(Cloud customers) Cloud Control Panel](#cloud-control-panel)
-- [(Managed customers) MyRackspace Portal](#myrackspace-portal)
+- [(Linux&reg; server) OpenSSL](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/generate-a-csr/#openssl)
+- [(Microsoft&reg; Windows&reg; server) Internet Information Services (IIS) Manager](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/generate-a-csr/#windows-iis-manager)
+- [(Cloud customers) Cloud Control Panel](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/generate-a-csr/#cloud-control-panel)
+- [(Managed customers) MyRackspace Portal](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/generate-a-csr/#myrackspace-portal)
 
 ### OpenSSL
 
-The following sections describe how to use OpenSSL to generate a CSR for a single host name. If you want to generate a CSR for multiple host names, we recommend using the [Cloud Control Panel](#cloud-control-panel) or the [MyRackspace Portal](#myrackspace-portal).
+The following sections describe how to use OpenSSL to generate a CSR for a single host name. If you want to generate a CSR for multiple host names, we recommend using the [Cloud Control Panel](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/generate-a-csr/#cloud-control-panel) or the [MyRackspace Portal](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/generate-a-csr/#myrackspace-portal).
 
 #### Install OpenSSL
 
@@ -210,8 +210,8 @@ If you are a Managed or Dedicated customer, you can request a CSR through the My
 
 ### Next steps
 
-- [Purchase or renew an SSL certificate](/support/how-to/purchase-or-renew-an-ssl-certificate)
-- [Install an SSL certificate](/support/how-to/install-an-ssl-certificate)
+- [Purchase or renew an SSL certificate](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/purchase-or-renew-an-ssl-certificate)
+- [Install an SSL certificate](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/install-an-ssl-certificate)
 
 ### Reference
 

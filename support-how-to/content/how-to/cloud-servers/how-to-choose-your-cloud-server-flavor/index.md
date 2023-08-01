@@ -15,6 +15,6 @@ Each flavor class is designed for a specific workload range. Review the
 following list of workloads to identify which flavor class fits your
 current needs.
 
-{{<image src="FlavorClassesTable.jpg" alt="" title="">}}
+<img src="FlavorClassesTable.jpg" alt="" title="">
 
 To find further information check our [servers](https://www.rackspace.com/openstack/public/servers) website.

@@ -32,7 +32,7 @@ $ sudo cp /etc/apache2/httpd.conf /etc/apache2/httpd-backup.conf
 ```
 
 ### Install the EPEL repository.
-Follow this guide for you to install the EPEL repository. See [Install EPEL and IUS repositories on CentOS and Red Hat](https://docs.rackspace.com/support/how-to/install-epel-and-additional-repositories-on-centos-and-red-hat/) for follow steps
+Follow this guide for you to install the EPEL repository. See [Install EPEL and IUS repositories on CentOS and Red Hat](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/install-epel-and-additional-repositories-on-centos-and-red-hat/) for follow steps
 
 **Note:** This step only applies for CentOS and RedHat based distributions.
 

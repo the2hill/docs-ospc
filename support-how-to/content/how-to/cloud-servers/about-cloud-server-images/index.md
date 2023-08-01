@@ -83,7 +83,7 @@ documentation for the recommended backup and restore procedures.
 
 For Fortinet&reg; Fortigate-VM, see the following references:
 
-- [Back up the Fortinet Fortigate-VM (Rackspace Guide)](/support/how-to/back-up-the-fortinet-fortigate-vm/)
+- [Back up the Fortinet Fortigate-VM (Rackspace Guide)](https://docs-ospc.rackspace.com/support/how-to/cloud-networks/back-up-the-fortinet-fortigate-vm/)
 - [How to download a FortiGate configuration file and upload firmware file using secure file copy (Vendor doc)](https://kb.fortinet.com/kb/microsites/search.do?cmd=displayKC&docType=kc&externalId=FD43754)
 
 ### Considerations for Windows servers
@@ -102,6 +102,6 @@ demote it from being a DC before performing the image creation process.
 
 -   To be successful, images imported to Rackspace must conform to the general
     requirements described in
-    [Preparing an image for import into the Rackspace OpenCloud](/support/how-to/preparing-an-image-for-import-into-the-rackspace-opencloud).
+    [Preparing an image for import into the Rackspace OpenCloud](https://docs-ospc.rackspace.com/support/how-to/cloud-images/preparing-an-image-for-import-into-the-rackspace-opencloud).
 
 Use the Feedback tab to make any comments or ask questions. You can also [start a conversation with us](https://www.rackspace.com/contact).    

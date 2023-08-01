@@ -12,7 +12,7 @@ product_url: cloud-databases
 ---
 
 The Rackspace [Support
-network](/support/how-to/) provides how-to articles, code samples, security best
+network](https://docs-ospc.rackspace.com/support/how-to/) provides how-to articles, code samples, security best
 practices, and hundreds of tips for getting the most out of your
 Cloud Databases.
 
@@ -21,9 +21,9 @@ Cloud Databases.
 The following documentation and binding are available for Cloud Databases:
 
 -   [API Developer
-    Guide](https://docs.rackspace.com/docs/cloud-databases/v1/developer-guide/)
+    Guide](https://docs.rackspace.com/docs/cloud-databases/v1)
 -   [Getting Started
-    Guide](https://docs.rackspace.com/docs/cloud-databases/v1/developer-guide/#getting-started)
+    Guide](https://docs.rackspace.com/docs/cloud-databases/v1/getting-started)
 -   [Release
     notes](https://docs.rackspace.com/docs/cloud-databases/v1/release-notes/)
 -   [Fog Binding](https://github.com/rackspace/fog) (replaces Ruby
@@ -34,17 +34,17 @@ The following documentation and binding are available for Cloud Databases:
 The following popular how-to articles are available for Cloud Databases:
 
 -   [Rackspace Cloud Databases
-    FAQ](/support/how-to/cloud-databases-faq)
+    FAQ](https://docs-ospc.rackspace.com/support/how-to/cloud-databasescloud-databases-faq)
 -   [Public and private access for Cloud
-    Databases](/support/how-to/public-and-private-access-for-cloud-databases)
+    Databases](https://docs-ospc.rackspace.com/support/how-to/cloud-databases/public-and-private-access-for-cloud-databases)
 -   [Connect to a Cloud Databases
-    instance](/support/how-to/connect-to-a-cloud-databases-instance)
+    instance](https://docs-ospc.rackspace.com/support/how-to/cloud-databases/connect-to-a-cloud-databases-instance)
 -   [Import
-    data into Cloud Databases](/support/how-to/importing-data-into-cloud-databases)
+    data into Cloud Databases](https://docs-ospc.rackspace.com/support/how-to/cloud-databases/importing-data-into-cloud-databases)
 -   [Managing
-    users for Cloud Databases](/support/how-to/managing-users-for-cloud-databases)
+    users for Cloud Databases](https://docs-ospc.rackspace.com/support/how-to/cloud-databases/managing-users-for-cloud-databases)
 -   [Cloud Databases instance
-    parameters](/support/how-to/cloud-database-instance-parameters)
+    parameters](https://docs-ospc.rackspace.com/support/how-to/cloud-databases/cloud-database-instance-parameters)
 
 ### Trove: the OpenStack Database-as-a-Service Project
 

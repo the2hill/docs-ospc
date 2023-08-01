@@ -51,13 +51,13 @@ against your RackConnect v3.0 environment.
 
 Your authentication token ID is sent within an `X-Auth-Token` header in
 your API calls. Details about obtaining your authentication token ID are
-located in the [Quickstart Guide](https://docs.rackspace.com/docs/cloud-identity/v2/developer-guide/#document-quickstart-guide) section of the Identity API 2.0 documentation.
+located in the [Quickstart Guide](https://docs.rackspace.com/docs/cloud-identity/v2/api-reference/#document-quickstart-guide) section of the Identity API 2.0 documentation.
 
 You can use either one of the following combinations of credentials to
 obtain your authentication token ID:
 
 -   Your Rackspace cloud account username and API key. (For information
-    about how to find your API key, see [your API key](/support/how-to/view-and-reset-your-api-key).)
+    about how to find your API key, see [your API key](https://support.rackspace.com/how-to/view-and-reset-your-api-key).)
 -   Your Rackspace cloud account username and password.
 
 Insert your cloud account's values in the following requests where
@@ -157,7 +157,7 @@ Note the following important points about this request:
 -   You can obtain the UUID (universally unique identifier) of your
     cloud server from within its server details page in the [Cloud
     Control Panel](https://login.rackspace.com) or via the [Cloud
-    Servers API get server details](https://docs.rackspace.com/docs/cloud-servers/v2/developer-guide/#show-server-details)
+    Servers API get server details](https://docs.rackspace.com/docs/cloud-servers/v2/api-reference/#show-server-details)
     operation. The UUID is a 32-character entry with four hyphens in the
     **ID** or **id** section of the server details page.
 -   The ``--include`` option is used to display the HTTP response status code in the response. Status code 200 is returned when the request is successful. If a cloud

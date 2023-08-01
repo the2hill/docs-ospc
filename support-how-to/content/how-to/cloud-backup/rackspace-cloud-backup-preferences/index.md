@@ -11,7 +11,7 @@ product: Cloud Backup
 product_url: cloud-backup
 ---
 
-**Previous section:** [Cloud Backup System Actions](/support/how-to/rackspace-cloud-backup-system-actions)
+**Previous section:** [Cloud Backup System Actions](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/rackspace-cloud-backup-system-actions)
 
 When you create Cloud Backups, you can choose how the system informs you about individual
 backup activities. Use the following steps to select email frequency on the **Preferences** page:
@@ -30,4 +30,4 @@ backup activities. Use the following steps to select email frequency on the **Pr
 To cancel this setting, uncheck the respective boxes and click **Save
 Preferences**.
 
-**Next steps:** [Cloud Backup Troubleshooting](/support/how-to/cloud-backup-troubleshooting)
+**Next steps:** [Cloud Backup Troubleshooting](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/cloud-backup-troubleshooting)

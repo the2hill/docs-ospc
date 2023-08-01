@@ -23,7 +23,7 @@ domains that point to the load balancer.
 
 This article describes how to point an existing domain to a Cloud Load Balancer.
 For instructions on creating a new Load Balancer, see [Configure a Load
-Balancer](/support/how-to/configure-a-load-balancer).
+Balancer](https://docs-ospc.rackspace.com/support/how-to/cloud-load-balancers/configure-a-load-balancer).
 
 ### Point an existing domain to a load balancer
 

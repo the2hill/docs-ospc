@@ -21,7 +21,7 @@ future security updates and handles dependencies.
 **NOTE**: This guide enables the Inline with Upstream Stable (IUS) repository, which provides
 newer versions of some software found in the official CentOS and Red Hat&reg; repositories.
 For more information about the IUS repository, see the 
-[Install EPEL and IUS repositories on CentOS and Red Hat] (/support/how-to/install-epel-and-additional-repositories-on-centos-and-red-hat/)
+[Install EPEL and IUS repositories on CentOS and Red Hat] (https://docs-ospc.rackspace.com/support/how-to/cloud-servers/install-epel-and-additional-repositories-on-centos-and-red-hat/)
 article.
 
 ### Install Apache

@@ -26,8 +26,8 @@ following issues:
 
 The following articles offer help with related topics:
 
-[File permissions](/support/how-to/linux-file-permission-concepts/)
+[File permissions](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/linux-file-permission-concepts/)
 
-[Server logs](/support/how-to/using-server-logs/)
+[Server logs](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/using-server-logs/)
 
-[HTTP response status codes](/support/how-to/http-response-status-codes/)
+[HTTP response status codes](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/http-response-status-codes/)

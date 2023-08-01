@@ -18,7 +18,7 @@ This article describes how to remotely manage a Rackspace Cloud Server by using 
 
 The [Cloud Control Panel](https://login.rackspace.com) isn't the only way to
 manage Cloud Servers. If you're running a script or program, you can use the
-[Cloud Servers API](https://docs.rackspace.com/docs/cloud-servers/v2/developer-guide/),
+[Cloud Servers API](https://docs.rackspace.com/docs/cloud-servers/v2/api-reference/),
 but that involves some coding effort.
 
 If you want to manage your servers from the command line and not deal directly with the
@@ -131,7 +131,7 @@ The following table describes the required variable names and values:
 <td valign="top" headers="d26e245" class="stentry proptype">OS_PASSWORD</td>
 <td valign="top" headers="d26e248" class="stentry propvalue">password or API key</td>
 <td valign="top" headers="d26e251" class="stentry propdesc">Set this value to your Rackspace Cloud API key. You can retrieve your API key in
-          the Cloud Control Panel. For information about how to find your API key, see <a href="/support/how-to/view-and-reset-your-api-key">View and reset your API key</a>. With a non-Rackspace Openstack cloud, you usually put the account password in this variable.</td>
+          the Cloud Control Panel. For information about how to find your API key, see <a href="https://support.rackspace.com/how-to/view-and-reset-your-api-key">View and reset your API key</a>. With a non-Rackspace Openstack cloud, you usually put the account password in this variable.</td>
 </tr>
 <tr class="strow property">
 <td valign="top" headers="d26e245" class="stentry proptype">OS_AUTH_URL</td>
@@ -209,4 +209,4 @@ By following the instructions in this article, you can set up the nova client
 so that you can access it and it can talk to your Rackspace Cloud account.
 To look at some common operations, you can perform with the client, such as creating
 servers and taking snapshots, see
-[Useful python-novaclient commands](/support/how-to/useful-python-novaclient-commands).
+[Useful python-novaclient commands](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/useful-python-novaclient-commands).

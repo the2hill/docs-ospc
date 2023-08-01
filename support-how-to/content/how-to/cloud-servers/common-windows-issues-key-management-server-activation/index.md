@@ -67,7 +67,7 @@ Locate the appropriate KMS server in the following list:
    **Note**: If there is a reply, continue to step 3. No reply means that there
    is an interface, hardware, or routing issue. We recommend the following
    article for help resolving the issue: [Update ServiceNet routes on cloud
-   servers](/support/how-to/updating-servicenet-routes-on-cloud-servers/)
+   servers](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/updating-servicenet-routes-on-cloud-servers/)
 
 3. Set the KMS manually within the registry:
 
@@ -92,11 +92,11 @@ Locate the appropriate KMS server in the following list:
 
     **KMS activation output**:
 
-     {{<image src="kms.jpg" alt="" title="">}}
+     <img src="kms.jpg" alt="" title="">
 
     **MAK activation output**:
 
-     {{<image src="mak.png" alt="" title="">}}
+     <img src="mak.png" alt="" title="">
 
 6. If your device uses **MAK activation**, then you should set the device back to **KMS activation**.
     First, find and take note of the appropriate KMS client setup key from Microsoft: [KMS Client Setup Keys](https://docs.microsoft.com/en-us/windows-server/get-started/kmsclientkeys)

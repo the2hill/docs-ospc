@@ -27,7 +27,7 @@ The Rackspace Cloud contains the following networks:
     able to access to operating system updates, and Cloud Monitoring remote checks
     and so on might not work. For more information about the limitations of not
     having a public network, see
-    [Removing Networks from a Cloud Server](/support/how-to/removing-networks-from-a-cloud-server).
+    [Removing Networks from a Cloud Server](https://docs-ospc.rackspace.com/support/how-to/cloud-networks/removing-networks-from-a-cloud-server).
 
     **Note**: RackConnect and Managed Operations service level customers must use
     PublicNet.
@@ -43,7 +43,7 @@ The Rackspace Cloud contains the following networks:
     We recommend that you connect cloud servers to ServiceNet and that you configure
     a software firewall, such as iptables or Windows Firewall, to deny all new inbound
     connections to the server. For more information, see
-    [Removing Networks from a Cloud Server](/support/how-to/removing-networks-from-a-cloud-server).
+    [Removing Networks from a Cloud Server](https://docs-ospc.rackspace.com/support/how-to/cloud-networks/removing-networks-from-a-cloud-server).
 
     **Note**: RackConnect and Managed Operations service level customers must use
     ServiceNet.
@@ -65,7 +65,7 @@ Nova-Network API. This version of the service is now superseded by the current
 networking API, based on OpenStack Neutron, which offers a richer suite of
 networking services. Both APIs continue to function, but the Neutron API is
 the base for all new networking services that Rackspace offers. For more information,
-see [Networking: Neutron versus Nova-Network](https://docs.rackspace.com/docs/cloud-networks/v2/developer-guide/#networking-neutron-versus-nova-network)
+see [Networking: Neutron versus Nova-Network](https://docs.rackspace.com/docs/cloud-networks/v2/networking-neutron-versus-nova-network)
 in the Cloud Networks Developer Guide.
 {{</accordion>}}
 {{<accordion title="How many cloud networks can I create?" col="in" href="accordion3">}}
@@ -103,9 +103,9 @@ make networking changes to your existing deployments without having to rebuild
 Cloud Servers.
 
 For more information, see the
-[Virtual Interfaces extension](https://docs.rackspace.com/docs/cloud-servers/v2/developer-guide/#virtual-interfaces-extension)
+[Virtual Interfaces extension](https://docs.rackspace.com/docs/cloud-servers/v2/virtual-interfaces-extension)
 in the Cloud Servers Developer Guide (using the nova-network API) or
-[Boot a new server with your cloud network](https://docs.rackspace.com/docs/cloud-networks/v2/developer-guide/#document-getting-started/managing-networks/boot-server)
+[Boot a new server with your cloud network](https://docs.rackspace.com/docs/cloud-networks/v2/document-getting-started/managing-networks/boot-server)
 in the Cloud Networks Getting Started Guide (using the neutron API).
 
 **Note**: Be aware that removing PublicNet or ServiceNet interfaces might impact
@@ -149,9 +149,9 @@ ports on that instance.
 {{</accordion>}}
 {{<accordion title="Where is the documentation?" col="in" href="accordion11">}}
 
-[Cloud Networks Developer Guide](https://docs.rackspace.com/docs/cloud-networks/v2/developer-guide/#document-api-operations/floating-ip-address-operations)
+[Cloud Networks Developer Guide](https://docs.rackspace.com/docs/cloud-networks/v2/document-api-operations/floating-ip-address-operations)
 
-[Cloud Networks API Reference](https://docs.rackspace.com/docs/cloud-networks/v2/developer-guide/#document-api-operations/sec-group-operations)
+[Cloud Networks API Reference](https://docs.rackspace.com/docs/cloud-networks/v2/document-api-operations/sec-group-operations)
 {{</accordion>}}
 {{<accordion title="What are the benefits of using security groups?" col="in" href="accordion12">}}
 
@@ -294,15 +294,15 @@ applications can then achieve full redundancy in our cloud.
 {{</accordion>}}
 {{<accordion title="Where is the documentation?" col="in" href="accordion28">}}
 
-[Cloud Networks API Guide](https://docs.rackspace.com/docs/cloud-networks/v2/developer-guide/)
+[Cloud Networks API Guide](https://docs.rackspace.com/docs/cloud-networks/v2/api-reference/)
 
 The Shared IP sections are:
 
-- [Concepts](https://docs.rackspace.com/docs/cloud-networks/v2/developer-guide/#shared-ip-addresses)
+- [Concepts](https://docs-ospc.rackspace.com/cloud-networks/v2/api-reference/shared-ip-address-operations)
 
-- [API operations](https://docs.rackspace.com/docs/cloud-networks/v2/developer-guide/#document-api-operations/shared-ip-address-operations)
+- [API operations](https://docs-ospc.rackspace.com/cloud-networks/v2/api-reference/shared-ip-address-operations)
 
-- [Getting started](https://docs.rackspace.com/docs/cloud-networks/v2/developer-guide/#sharing-ip-address-between-servers)
+- [Getting started](https://docs-ospc.rackspace.com/cloud-networks/v2/api-reference/shared-ip-address-operations)
 {{</accordion>}}
 {{<accordion title="What features are supported?" col="in" href="accordion29">}}
 

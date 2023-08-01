@@ -15,28 +15,28 @@ Are you looking for information about Cloud Servers? The following sections cont
 
 ### The basics
 
-[About regions](/support/how-to/about-regions): Explains the concept of regions as they relate to Cloud Servers.
+[About regions](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/about-regions): Explains the concept of regions as they relate to Cloud Servers.
 
-[Private and Public Access](/support/how-to/private-and-public-access-to-your-cloud-server): Provides details about public and private IP addresses assigned to cloud servers.
+[Private and Public Access](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/private-and-public-access-to-your-cloud-server): Provides details about public and private IP addresses assigned to cloud servers.
 
-[Connect to a cloud server](/support/how-to/connect-to-a-cloud-server): Explains how to log in to your server remotely.
+[Connect to a cloud server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/connect-to-a-cloud-server): Explains how to log in to your server remotely.
 
-[Manage a cloud server](/support/how-to/manage-a-cloud-server): Describes tasks that you can perform on servers by using the Cloud Control Panel.
+[Manage a cloud server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/manage-a-cloud-server): Describes tasks that you can perform on servers by using the Cloud Control Panel.
 
 ### Best practices
 
-[Choosing the Right Size Server](/support/how-to/rackspace-cloud-essentials-choosing-the-right-size-cloud-server): Explains how to determine the right size and operating system image for a new server.
+[Choosing the Right Size Server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/rackspace-cloud-essentials-choosing-the-right-size-cloud-server): Explains how to determine the right size and operating system image for a new server.
 
-[Using Cloud Servers Tags](/support/how-to/using-cloud-servers-tags): Explains how to use tags to organize your cloud infrastructure.
+[Using Cloud Servers Tags](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/using-cloud-servers-tags): Explains how to use tags to organize your cloud infrastructure.
 
-[Configuring basic security](/support/how-to/configuring-basic-security): Provides information about how to secure your new server.
+[Configuring basic security](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/configuring-basic-security): Provides information about how to secure your new server.
 
-[Rebuild a Cloud Server](/support/how-to/rebuild-a-cloud-server): Describes how to rebuild a server by using the Cloud Control Panel.
+[Rebuild a Cloud Server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/rebuild-a-cloud-server): Describes how to rebuild a server by using the Cloud Control Panel.
 
 ### Additional resources
 
-[Cloud Servers FAQ](/support/how-to/cloud-servers-faq): Answers frequently asked questions about Cloud Servers.
+[Cloud Servers FAQ](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/cloud-servers-faq): Answers frequently asked questions about Cloud Servers.
 
 [Cloud Servers Product Page](https://www.rackspace.com/cloud/servers): Provides product information about Cloud Servers.
 
-[API Documentation](https://docs.rackspace.com/docs/): Provides documentation for using the Cloud Servers API.
+[API Documentation](https://docs-ospc.rackspace.com/): Provides documentation for using the Cloud Servers API.

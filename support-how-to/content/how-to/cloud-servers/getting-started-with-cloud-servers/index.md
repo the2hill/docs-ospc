@@ -39,30 +39,30 @@ The following concepts will help you to get started quickly:
 
 ### Introduction
 
--   [Cloud Servers](/support/how-to/cloud-servers)
--   [Cloud Servers FAQ](/support/how-to/cloud-servers-faq)
+-   [Cloud Servers](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/cloud-servers)
+-   [Cloud Servers FAQ](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/cloud-servers-faq)
 -   [Cloud SLA](https://www.rackspace.com/information/legal/cloud/sla)
 
 ### Cloud Servers usage scenarios
 
--   [Basic Cloud Server use scenarios](/support/how-to/basic-cloud-server-use-scenarios)
--   [Other Cloud Server use scenarios](/support/how-to/other-cloud-server-use-scenarios)
+-   [Basic Cloud Server use scenarios](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/basic-cloud-server-use-scenarios)
+-   [Other Cloud Server use scenarios](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/other-cloud-server-use-scenarios)
 
 ### Basic Cloud Server operations
 
--   [Create a Cloud Server](/support/how-to/create-a-cloud-server)
--   [Create an image of a server and restore a server from a saved image](/support/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
--   [Create DNS records](/support/how-to/creating-dns-records-with-cloud-dns)
--   [Managing your server](/support/how-to/managing-your-server-resizing-standard-and-general-purpose-servers)
--   [Reboot your server](/support/how-to/reboot-your-server)
+-   [Create a Cloud Server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/create-a-cloud-server)
+-   [Create an image of a server and restore a server from a saved image](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
+-   [Create DNS records](https://docs-ospc.rackspace.com/support/how-to/cloud-dns/creating-dns-records-with-cloud-dns)
+-   [Managing your server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/managing-your-server-resizing-standard-and-general-purpose-servers)
+-   [Reboot your server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/reboot-your-server)
 
 ### Advanced Cloud Server operations
 
--   [Cloud Servers Developer Guide](https://docs.rackspace.com/docs/cloud-servers/v2/developer-guide/)
--   [Cloud Servers API Reference](https://docs.rackspace.com/docs/cloud-servers/v2/developer-guide/#document-api-reference)
+-   [Cloud Servers Developer Guide](https://docs.rackspace.com/docs/cloud-servers/v2/api-reference/)
+-   [Cloud Servers API Reference](https://docs.rackspace.com/docs/cloud-servers/v2/api-reference/#document-api-reference)
 
 ### Managed Services Cloud Server operations
 
--   [Cloud Server configuration options](/support/how-to/cloud-server-configuration-options)
--   [Linux spheres of support for Dedicated and Managed operations](/support/how-to/linux-spheres-of-support-for-dedicated-and-managed-ops)
--   [Cloud Servers with Managed operations support for Windows](/support/how-to/cloud-servers-with-managed-operations-support-for-windows)
+-   [Cloud Server configuration options](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/cloud-server-configuration-options)
+-   [Linux spheres of support for Dedicated and Managed operations](https://docs.rackspace.com/docs/linux-spheres-of-support-for-dedicated-and-managed-ops)
+-   [Cloud Servers with Managed operations support for Windows](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/cloud-servers-with-managed-operations-support-for-windows)

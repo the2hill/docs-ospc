@@ -24,7 +24,7 @@ cloud account administration tasks from the MyRackspace Portal, you must
 A RackConnect v3.0 *configuration* represents a single deployment of a
 RackConnect solution. A configuration is normally associated with one or
 more cloud accounts. For more information about configurations, see
-[RackConnect key terms](/support/how-to/rackconnect-key-terms).
+[RackConnect key terms](https://docs-ospc.rackspace.com/support/how-to/rackconnect/rackconnect-key-terms).
 
 After you link your cloud accounts with your dedicated account, you can
 then *associate* a cloud account with a particular RackConnect v3.0
@@ -32,7 +32,7 @@ configuration from within the MyRackspace Portal. After you associate a
 cloud account with a configuration, a ticket is automatically generated
 for us, and we work with you to fully configure the cloud account for
 use with RackConnect v3.0. See the
-[RackConnect v3.0 requirements](/support/how-to/rackconnect-v30-requirements)
+[RackConnect v3.0 requirements](https://docs-ospc.rackspace.com/support/how-to/rackconnect/rackconnect-v30-requirements)
 article for more details.
 
 The following sections provide steps for linking and associating a
@@ -47,7 +47,7 @@ cloud account.
    The **Link Cloud Account** and **Create Cloud Account** options are
    near the top of the screen.
 
-   {{<image src="RCv3-link-create-cloud-account_2.png" alt="" title="">}}
+   <img src="RCv3-link-create-cloud-account_2.png" alt="" title="">
 
 4. Click the appropriate option and follow the guide to complete the
    process.
@@ -67,4 +67,4 @@ cloud account.
     with one of your RackConnect configurations. In most cases, you have
     only one RackConnect configuration.
 
-    {{<image src="RCv3-associate-to-RCv3-config_1.png" alt="" title="">}}
+    <img src="RCv3-associate-to-RCv3-config_1.png" alt="" title="">

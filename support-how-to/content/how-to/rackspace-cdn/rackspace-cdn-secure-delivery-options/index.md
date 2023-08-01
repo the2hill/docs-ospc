@@ -133,9 +133,9 @@ To use the Rackspace shared domain certificate, create a CDN service in
 the Cloud Control Panel, select **HTTPS** in **Choose Traffic Type**,
 and select **Shared Rackspace Domain Certificate** in **Choose
 Certificate Type**. For more information, see [Create a Rackspace CDN
-service](/support/how-to/create-a-rackspace-cdn-service).
+service](https://docs-ospc.rackspace.com/support/how-to/rackspace-cdn/create-a-rackspace-cdn-service).
 
-{{<image src="ScreenShot2015-12-17at9.49.51AM.png" alt="" title="">}}
+<img src="ScreenShot2015-12-17at9.49.51AM.png" alt="" title="">
 
 In the **Domain Name** field, enter the domain that you want to use in the
 shared domain URL. This name must be unique across all Rackspace CDN
@@ -164,21 +164,21 @@ under **Choose Traffic Type** and **Shared SAN Certificate** selected
 under **Choose Certificate Type**. Make sure that you enter a **Domain
 Name** with a subdomain and also enter an **Origin**. Then click **Create
 Service**. For more information, see [Create a Rackspace CDN
-service](/support/how-to/create-a-rackspace-cdn-service).
+service](https://docs-ospc.rackspace.com/support/how-to/rackspace-cdn/create-a-rackspace-cdn-service).
 
-{{<image src="ScreenShot2015-12-17at10.28.59AM.png" alt="" title="">}}
+<img src="ScreenShot2015-12-17at10.28.59AM.png" alt="" title="">
 
 When you click **Create Service**, the process is started to create the
 SAN certificate. You can follow the process on the CDN Service
 page in the **Domains** section. In the following example, you see that the **Status** is
 ``Certificate Pending``.
 
-{{<image src="ScreenShot2015-12-17at10.13.35AM.png" alt="" title="">}}
+<img src="ScreenShot2015-12-17at10.13.35AM.png" alt="" title="">
 
 The CA contacts the administrator of the domain to confirm that Rackspace has the right to 
 add the domain to a shared SAN certificate. The CA uses the domain's WHOIS information to
 determine who to contact.  For more information about WHOIS information,
-see the previous section on [Organizational validation](#Organizationalvalidation).
+see the previous section on [Organizational validation](https://docs-ospc.rackspace.com/support/how-to/cloud-cdn/rackspace-cdn-secure-delivery-options/#Organizationalvalidation).
 
 **Note**:  It might take up to three business days to fully complete
 your request for a SAN certificate.
@@ -213,20 +213,20 @@ wildcard, or standard certificate.
 
 To get a Custom certificate for your domain or domains, start by
 creating a CDN service with HTTPS enabled, as described in the
-[Rackspace shared domain](#Rackspaceshareddomain)  and [SAN
-certificate](#SANcertificate) sections.  After your service is
+[Rackspace shared domain](https://docs-ospc.rackspace.com/support/how-to/cloud-cdn/rackspace-cdn-secure-delivery-options/#Rackspaceshareddomain)  and [SAN
+certificate](https://docs-ospc.rackspace.com/support/how-to/cloud-cdn/rackspace-cdn-secure-delivery-options/#SANcertificate) sections.  After your service is
 deployed, you can request a certificate by clicking the **Request a
 Secure Certificate** link in **CUSTOM SECURE CERTIFICATES** in the
 sidebar, which is shown in the following figure.
 
-{{<image src="ScreenShot2015-12-17at10.35.08AM.png" alt="" title="">}}
+<img src="ScreenShot2015-12-17at10.35.08AM.png" alt="" title="">
 
 This link routes you to a page to create a ticket. When you request a
 Custom certificate, you need to supply multiple types of information.
 Fill in all bolded items in the **Custom** section of the ticket
 message.
 
-{{<image src="CustomCertificateTicket.png" alt="" title="">}}
+<img src="CustomCertificateTicket.png" alt="" title="">
 
 After you submit the ticket, a support technician contacts you to
 verify your information and sends your request to a CA to be processed.
@@ -235,7 +235,7 @@ verify your information and sends your request to a CA to be processed.
 confirm that Rackspace has the right to request a certificate on your
 behalf. The CA uses the domain's WHOIS information to determine who to
 contact. For more information about WHOIS information, see the previous
-section on [Organizational validation](#Organizationalvalidation).
+section on [Organizational validation](https://docs-ospc.rackspace.com/support/how-to/cloud-cdn/rackspace-cdn-secure-delivery-options/#Organizationalvalidation).
 
 **Note:**  It might take up to five business days to fully complete your
 request for a Custom certificate.

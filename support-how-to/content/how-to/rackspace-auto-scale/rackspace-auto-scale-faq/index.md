@@ -63,7 +63,7 @@ this endpoint to bring Auto Scale back in sync with the correct number
 of servers in a group when a server has been deleted through the API or
 the Cloud Control Panel. For more information, see the Rackspace Auto
 Scale Developer's Guide [Delete server from scaling
-group](https://docs.rackspace.com/docs/autoscale/v1/developer-guide/#delete-server-from-scaling-group)
+group](https://docs.rackspace.com/docs/autoscale/v1/api-reference/#delete-server-from-scaling-group)
 section.
 {{</accordion>}}
 
@@ -127,14 +127,14 @@ policy, which is a unique URL endpoint you call to invoke the policy execution.
 {{<accordion title="What are the different configuration parameters for scaling groups?" col="in" href="accordion16">}}
 For information on the parameters used with the Auto Scale API, see the
 [Scaling group
-configurations](https://docs.rackspace.com/docs/autoscale/v1/developer-guide/#document-api-operations/autoscale-groups)
+configurations](https://docs.rackspace.com/docs/autoscale/v1/api-reference/#document-api-operations/autoscale-groups)
 and [Launch
-configuration](https://docs.rackspace.com/docs/autoscale/v1/developer-guide/#document-api-operations/configurations)
+configuration](https://docs.rackspace.com/docs/autoscale/v1/api-reference/#document-api-operations/configurations)
 sections in the Auto Scale API Developer's Guide.
 
 For information on the parameters used with the Auto Scale Control
 Panel, see the [Create a scaling
-group](/support/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group)
+group](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group)
 section in the Rackspace Auto Scale Control Panel User Guide.
 {{</accordion>}}
 
@@ -142,7 +142,7 @@ section in the Rackspace Auto Scale Control Panel User Guide.
 No. There are no specific rules within Auto Scale for monitoring
 specific servers. However, you can do this through Monitoring
 configurations, which are documented in the [Cloud Monitoring API
-Developer's Guide](https://docs.rackspace.com/docs/cloud-monitoring/v1/developer-guide/).
+Developer's Guide](https://docs.rackspace.com/docs/cloud-monitoring/v1/api-reference/).
 {{</accordion>}}
 
 {{<accordion title="Can I have multiple load balancers in a scaling group?" col="in" href="accordion18">}}
@@ -163,7 +163,7 @@ multiple scaling groups and a tree of load balancers to service requests
 or using RackConnect to use a higher capacity hardware load balancer
 solution. For more information on RackConnect, see [How do I get started
 with
-RackConnect?](/support/how-to/introducing-rackconnect-v30/)
+RackConnect?](https://docs-ospc.rackspace.com/support/how-to/rackconnect/introducing-rackconnect-v30/)
 {{</accordion>}}
 
 {{<accordion title="Do the servers that I'm going to automatically scale up have to be associated with a group? If so, why?" col="in" href="accordion20">}}

@@ -11,7 +11,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-**Previous section:** [Resize standard and general purpose servers](/support/how-to/resize-standard-and-general-purpose-servers/)
+**Previous section:** [Resize standard and general purpose servers](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/resize-standard-and-general-purpose-servers/)
 
 This article shows you how to use the Cloud Control Panel to resize up a
 compute or memory server. Resizing a server changes the RAM and disk space
@@ -59,7 +59,7 @@ Control Panel:
    For a Windows&reg; server, additional steps are required to use additional
    space after resizing up. For more information, see [Adding Disk Space After
    Resizing a Windows Server 2012 Cloud
-   Server](/support/how-to/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server).
+   Server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server).
 
 7. After you have verified the system resources and checked your file systems,
    select **Confirm** to confirm the resize or **Revert** to revert to the
@@ -91,7 +91,7 @@ Use the following steps to resize up your server by using Pitchfork:
 4. Scroll down to **List Flavors** and click **Details**. Enter
    **limit=100** for the **Filter** parameter, and then click **Send API Call**.
 
-   {{<image src="pitchfork-list-flavors.png" alt="" title="">}}
+   <img src="pitchfork-list-flavors.png" alt="" title="">
 
 5. Find the server that you want to resize and take note of the server
    **UUID** and **flavor_id**. You need these values for the **Resize Server** API call.
@@ -100,13 +100,13 @@ Use the following steps to resize up your server by using Pitchfork:
    the **server_id (UUID)** and **flavor_id** that you gathered in the previous
    step, and then click **Send API Call**.
 
-   {{<image src="pitchfork-resize-server.png" alt="" title="">}}
+   <img src="pitchfork-resize-server.png" alt="" title="">
 
 The server status in the Cloud Control Panel should change to **Resizing**.
 After the operation is complete, you must verify the server resize by
 navigating to the **Server Details** page for the server that you resized.
 
-{{<image src="pitchfork-verify-resize.png" alt="" title="">}}
+<img src="pitchfork-verify-resize.png" alt="" title="">
 
 
 ### Additional resources
@@ -114,9 +114,9 @@ navigating to the **Server Details** page for the server that you resized.
 For more information, see the following resources:
 
 - [Cloud Servers API reference: Resize specified server](https://docs.rackspace.com/docs/cloud-servers/v2/api-reference/svr-basic-operations/#resize-specified-server)
-- [Pitchfork - the Rackspace Cloud API web application](/support/how-to/pitchfork-the-rackspace-cloud-api-web-application)
-- [Reset a server password](/support/how-to/reset-a-server-password)
-- [Basic Cloud Server security](/support/how-to/basic-cloud-server-security)
-- [Reboot a server](/support/how-to/reboot-a-server)
-- [Rebuild a Cloud Server](/support/how-to/rebuild-a-cloud-server)
-- [Delete a server](/support/how-to/delete-a-server)
+- [Pitchfork - the Rackspace Cloud API web application](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/pitchfork-the-rackspace-cloud-api-web-application)
+- [Reset a server password](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/reset-a-server-password)
+- [Basic Cloud Server security](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/configuring-basic-security)
+- [Reboot a server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/reboot-a-server)
+- [Rebuild a Cloud Server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/rebuild-a-cloud-server)
+- [Delete a server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/delete-a-server)

@@ -72,4 +72,4 @@ $ sudo service apache2 restart
 After following the instructions above, you will be able to user cURL on an Ubuntu LAMP stack.
 
 ## Related Articles
-- [Installing a LAMP stack on Ubuntu 18.04](https://docs.rackspace.com/support/how-to/install-a-lamp-stack-on-ubuntu-1804/)
+- [Installing a LAMP stack on Ubuntu 18.04](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/install-a-lamp-stack-on-ubuntu-1804/)

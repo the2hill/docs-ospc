@@ -69,7 +69,7 @@ Customer Portal as described in the following section.
 At this time, initiating your own live migration is not possible, but you can
 initiate a reboot migration on your server at any time. For more
 information on how to migrate your server, see
-[Migrate a cloud server to a new physical host](/support/how-to/migrate-a-cloud-server-to-a-new-physical-host/).
+[Migrate a cloud server to a new physical host](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/migrate-a-cloud-server-to-a-new-physical-host/).
 
 #### Why didn't I receive advanced notice of a live migration?
 

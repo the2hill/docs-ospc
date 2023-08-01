@@ -47,7 +47,7 @@ all servers.
 
 1. Log in to the new primary server via SSH either as `root` by using the SSH key provided or as `parse` by using the password provided.
 
-   For more information about logging in to a server, see [Connect to a cloud server](/support/how-to/connect-to-a-cloud-server/).
+   For more information about logging in to a server, see [Connect to a cloud server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/connect-to-a-cloud-server/).
 
 2. Edit the **/home/parse/parse.json** configuration file to add the following values:
 

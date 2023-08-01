@@ -18,4 +18,4 @@ you interact with a specialist trained to support our products.
 
 ### Additional resources
 
-- [Create a support ticket in the Cloud Control Panel](/support/how-to/create-a-support-ticket-in-the-cloud-control-panel)
+- [Create a support ticket in the Cloud Control Panel](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/create-a-support-ticket-in-the-cloud-control-panel)

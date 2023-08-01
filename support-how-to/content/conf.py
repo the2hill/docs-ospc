@@ -45,6 +45,8 @@ extensions = [
     'sphinx.ext.extlinks'
 ]
 
+myst_enable_extensions = ['html_image']
+
 if spelling is not None:
     extensions.append('sphinxcontrib.spelling')
 
@@ -135,7 +137,7 @@ extlinks = {
     'rax-git': ('https://github.com/rackspace/%s', ''),
     'mycloud': ('https://login.rackspace.com/%s', ''),
     'rax-glossary': ('https://developer.rackspace.com/docs/glossary/%s', ''),
-    'how-to': ('https://support.rackspace.com/how-to/%s', ''),
+    'how-to': ('https://docs-ospc.rackspace.com/%s', ''),
     'os': ('https://www.openstack.org/%s', ''),
     'os-docs': ('https://docs.openstack.org/%s', ''),
     'os-wiki': ('https://wiki.openstack.org/%s', ''),
@@ -193,7 +195,7 @@ import sphinx_rtd_theme
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
-# "<project> v<release> documentation".
+# "<project<img v<release> documentation".
 # html_title = 'OSPC How-To Articles'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.

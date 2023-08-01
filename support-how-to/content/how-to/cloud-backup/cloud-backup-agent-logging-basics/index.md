@@ -50,9 +50,9 @@ similar to the following example of a Windows configuration file:
 
 For information about locating the Linux **log4cxx.xml** configuration file,
 see **Agent file locations on Linux** in
-[Update or install the Cloud Backup agent on Linux&reg;](/how-to/update-or-install-the-cloud-backup-agent-on-linux).
+[Update or install the Cloud Backup agent on Linux&reg;](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/update-or-install-the-cloud-backup-agent-on-linux).
 For the same information for Windows, see **Agent file locations on Windows** in
-[Install the Cloud Backup agent on Windows&reg;](/how-to/rackspace-cloud-backup-install-the-agent-on-windows).
+[Install the Cloud Backup agent on Windows&reg;](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/rackspace-cloud-backup-install-the-agent-on-windows).
 
 ### Agent logging operations
 

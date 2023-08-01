@@ -64,6 +64,6 @@ WordPress installation does not have a corrupted core or corrupted configuration
 
 ### Related articles
 
-- [WordPress security best practices on Linux](https://docs.rackspace.com/support/how-to/wordpress-security-best-practices-linux/)
+- [WordPress security best practices on Linux](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/wordpress-security-best-practices-linux/)
 
 Use the Feedback tab to make any comments or ask questions. You can also [start a conversation with us](https://www.rackspace.com/contact).

@@ -24,7 +24,7 @@ When you create a load balancer by using the [Cloud Control
 Panel](https://login.rackspace.com), you see the **Add Nodes** is part of the
 configuration process, as shown in the following image:
 
-{{<image alt="add nodes to load balancer in control panel" src="load-balancer-add-nodes.png" title="add nodes to load balancer in control panel">}}
+<img alt="add nodes to load balancer in control panel" src="load-balancer-add-nodes.png" title="add nodes to load balancer in control panel">}}
 
 Here, you specify the product you want to load balance. You can add an
 existing Rackspace Cloud Server or an external IP address.
@@ -34,4 +34,4 @@ the load balancer can impact the performance of the load balancer. We recommend
 creating the load balancer in the region that is closest to your external nodes.
 
 For more information, see [Load Balancing Internal IPs in the same
-region](/support/how-to/load-balancing-internal-ips-in-the-same-region).
+region](https://docs-ospc.rackspace.com/support/how-to/cloud-load-balancers/load-balancing-internal-ips-in-the-same-region).

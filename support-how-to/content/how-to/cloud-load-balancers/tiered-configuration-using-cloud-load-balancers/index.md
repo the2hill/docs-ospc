@@ -11,7 +11,7 @@ product: Cloud Load Balancers
 product_url: cloud-load-balancers
 ---
 
-You can configure your [deployment environment](/support/how-to/rackspace-open-cloud-reference-architecture/) at Rackspace in many ways. However, if your configuration uses a single cloud server and your server fails, your application also fails.
+You can configure your [deployment environment](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/rackspace-open-cloud-reference-architecture/) at Rackspace in many ways. However, if your configuration uses a single cloud server and your server fails, your application also fails.
 
 You can optimize your infrastructure by splitting your single server into a tiered configuration. A tiered configuration can reduce potential downtime caused by server failure while balancing traffic to your application.
 
@@ -19,12 +19,12 @@ You can optimize your infrastructure by splitting your single server into a tier
 
 Tiered configurations augment a single server with a cloud load balancer and at least one web server. The following diagram provides an example of a tiered configuration:
 
-{{<image alt="Tiered configuration diagram" src="tiered-config.svg" title="Tiered configuration diagram">}}
+<img alt="Tiered configuration diagram" src="tiered-config.svg" title="Tiered configuration diagram">}}
 
 The size of both general purpose servers are half the size of the single server. For example, if your single server is 4 GB, the size of your web servers is 2 GB.
 
 ### Set up a tiered configuration
 
-You can set up a tiered configuration with [Cloud Orchestration](/support/how-to/cloud-orchestration/).
+You can set up a tiered configuration with [Cloud Orchestration](https://docs-ospc.rackspace.com/support/how-to/cloud-load-balancers/cloud-orchestration/v1/cloud-orchestration/).
 
 For an example of how to set up a tiered configuration, watch the [Rackspace Cloud Servers - Building a LAMP using Orchestration](https://www.youtube.com/watch?v=9tk7NrR7tYo&feature=youtu.be) tutorial.

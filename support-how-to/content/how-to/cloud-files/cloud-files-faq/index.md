@@ -58,7 +58,7 @@ you can use either the Cloud Files user interface in the Rackspace [Cloud
 Control Panel](https://login.rackspace.com/) or one of our programming
 interfaces.
 
-See [Cloud Files and CDN](/support/how-to/getting-started-with-cloud-files-and-cdn/) for more details.
+See [Cloud Files and CDN](https://docs-ospc.rackspace.com/support/how-to/cloud-files/getting-started-with-cloud-files-and-cdn/) for more details.
 {{< /accordion >}}
 
 {{< accordion title="What does *eventual consistency* mean in Cloud Files?" col="in" href="accordion5" >}}
@@ -85,8 +85,8 @@ update and allows the object write to succeed. This sort of consistency model is
 
 Find Cloud Files documentation in the following locations:
 
--   [Cloud Files Developer Guide](https://docs.rackspace.com/docs/cloud-files/v1/developer-guide/)
--   [Cloud Files Getting Started Guide](https://docs.rackspace.com/docs/cloud-files/v1/developer-guide/#document-getting-started)
+-   [Cloud Files Developer Guide](https://docs.rackspace.com/docs/cloud-files/v1/api-reference/)
+-   [Cloud Files Getting Started Guide](https://docs.rackspace.com/docs/cloud-files/v1/api-reference/#document-getting-started)
 
 ------------------------------------------------------------------------
 {{< /accordion >}}
@@ -204,7 +204,7 @@ When you create a container in Cloud Files and make that container
 public, the files within that container have a designated time to live (TTL). The
 TTL is the time interval after which the CDN rereads the contents of the
 container. For more information on managing the TTL attribute, see
-[Manage Time to Live (TTL) in a Cloud Files Container](/support/how-to/manage-ttl-in-a-cloud-files-container).
+[Manage Time to Live (TTL) in a Cloud Files Container](https://docs-ospc.rackspace.com/support/how-to/cloud-files/manage-ttl-in-a-cloud-files-container).
 {{< /accordion >}}
 
 {{< accordion title="What is the CDN?" col="in" href="accordion16" >}}
@@ -212,7 +212,7 @@ container. For more information on managing the TTL attribute, see
 By using the Akamai content delivery network (CDN) service, Cloud Files
 brings you a powerful and easy way to publish content over a world-class,
 industry-leading CDN. For more information on using CDN with Cloud Files, see
-[Getting Started with Cloud Files and CDN](/support/how-to/getting-started-with-cloud-files-and-cdn).
+[Getting Started with Cloud Files and CDN](https://docs-ospc.rackspace.com/support/how-to/cloud-files/getting-started-with-cloud-files-and-cdn).
 {{< /accordion >}}
 
 {{< accordion title="What is Akamai?" col="in" href="accordion17" >}}
@@ -337,7 +337,7 @@ the segments for you, deleting and updating them as needed. You can get
 If you want to develop against the Rackspace Large File
 Support code to incorporate into your application, you should work
 directly with the Cloud Files API. For more information, see
-[Use the API to manage large files](/support/how-to/use-the-api-to-manage-large-files).
+[Use the API to manage large files](https://docs-ospc.rackspace.com/support/how-to/cloud-files/use-the-api-to-manage-large-files).
 {{< /accordion >}}
 
 {{< accordion title="When should I use the Swift tool instead of the API, and what is the process?" col="in" href="accordion29" >}}
@@ -345,7 +345,7 @@ directly with the Cloud Files API. For more information, see
 If you want to upload large files but do not want to incorporate our
 code into an application, you might find it easier to use the
 [Swift tool](https://swiftstack.com/docs/integration/python-swiftclient.html) for
-your uploads and management. For more information, see [Use Swift to manage large files](/support/how-to/use-swift-to-manage-large-files).
+your uploads and management. For more information, see [Use Swift to manage large files](https://docs-ospc.rackspace.com/support/how-to/cloud-files/use-swift-to-manage-large-files).
 {{< /accordion >}}
 
 {{< accordion title="What is the download experience like?" col="in" href="accordion30" >}}
@@ -390,8 +390,8 @@ Rackspace Cloud Control Panel.
 
 Developer guides are available on the Rackspace API documentation site.
 
--   [Cloud Files API Getting Started Guide](https://docs.rackspace.com/docs/cloud-files/v1/developer-guide/#document-getting-started)
--   [Cloud Files Developers Guide](https://docs.rackspace.com/docs/cloud-files/v1/developer-guide/)
+-   [Cloud Files API Getting Started Guide](https://docs.rackspace.com/docs/cloud-files/v1/api-reference/#document-getting-started)
+-   [Cloud Files Developers Guide](https://docs.rackspace.com/docs/cloud-files/v1/api-reference/)
 {{< /accordion >}}
 
 {{< accordion title="Why does one of my Cloud Files scheduled tasks get terminated abruptly?" col="in" href="accordion35" >}}

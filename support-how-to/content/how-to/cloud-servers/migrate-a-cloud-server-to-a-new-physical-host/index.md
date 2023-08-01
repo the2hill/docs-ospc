@@ -56,7 +56,7 @@ task outside of your normal business hours.
 ### Next steps
 
 After the migration has completed, log in to your server to verify the server is
-up and start any processes not set to start on boot. See [Ensure servers reboot successfully](/how-to/ensure-servers-reboot-successfully/) for some things to
+up and start any processes not set to start on boot. See [Ensure servers reboot successfully](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/ensure-servers-reboot-successfully/) for some things to
 check.
 
 You can also verify the performance on your server to see if the migration

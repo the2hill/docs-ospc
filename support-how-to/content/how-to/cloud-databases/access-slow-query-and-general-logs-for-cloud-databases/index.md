@@ -23,16 +23,16 @@ group or create a new one. A MySQL configuration group holds the values for
 MySQL options used at startup. To learn more about MySQL configuration groups,
 see [Manage configuration groups for cloud databases with the Trove command
 line
-tool](/support/how-to/managing-configuration-groups-for-cloud-databases-with-the-trove-command-line-tool).
+tool](https://docs-ospc.rackspace.com/support/how-to/cloud-databasesmanaging-configuration-groups-for-cloud-databases-with-the-trove-command-line-tool).
 
 The examples use trove to make changes to configuration groups. You can find instructions for
 installing and configuring trove in [Managing configuration groups
 for cloud databases with the Trove command-line
-tool](/support/how-to/managing-configuration-groups-for-cloud-databases-with-the-trove-command-line-tool).
+tool](https://docs-ospc.rackspace.com/support/how-to/cloud-databasesmanaging-configuration-groups-for-cloud-databases-with-the-trove-command-line-tool).
 
 To apply configuration groups, you need to enable root access to the
 database instance. You can do this by using the [Cloud Databases
-API](https://docs.rackspace.com/docs/cloud-databases/v1/developer-guide/) or
+API](https://docs.rackspace.com/docs/cloud-databases/v1/api-reference/) or
 with a `trove` command:
 
         trove root-enable instanceID

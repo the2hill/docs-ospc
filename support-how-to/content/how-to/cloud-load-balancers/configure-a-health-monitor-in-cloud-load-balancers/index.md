@@ -35,7 +35,7 @@ functional.
         post-processing or protocol-specific health checks. Required information
         for this monitor includes the following details:
 
-        {{<image src="1492-confighealthmon-3.png" alt="" title="">}}
+        <img src="1492-confighealthmon-3.png" alt="" title="">
 
         - **Interval**: Minimum number of seconds to wait before executing the
             health monitor. Must be between 1 and 3600.
@@ -47,7 +47,7 @@ functional.
         monitor. It can process an HTTP response to determine the actual
         condition of a node. Provide the required information for this monitor.
 
-        {{<image src="1492-confighealthmon-4.png" alt="" title="">}}
+        <img src="1492-confighealthmon-4.png" alt="" title="">
 
         - **Interval**: Minimum number of seconds to wait before executing the
             health monitor. Must be between 1 and 3600.

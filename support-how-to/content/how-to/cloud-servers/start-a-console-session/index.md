@@ -53,4 +53,4 @@ button to end the session.
 
 ### Related article
 
-[Reboot your server](/support/how-to/reboot-your-server)
+[Reboot your server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/reboot-your-server)

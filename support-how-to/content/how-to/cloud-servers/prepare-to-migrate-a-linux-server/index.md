@@ -15,15 +15,15 @@ This article provides recommended actions from Rackspace support technicians tha
 you migrate your Linux&reg; server to mitigate occurrences and optimize your server for a faster transition.
 Some of these recommendations can cause significant downtime, so schedule them accordingly.
 
-For Windows&reg; migration preparation, see [Prepare to migrate a Windows server](/support/how-to/prepare-to-migrate-a-windows-server).
+For Windows&reg; migration preparation, see [Prepare to migrate a Windows server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/prepare-to-migrate-a-windows-server).
 
 ### Back up your data
 
 Before you perform any migration, create a backup of important data. You can use Rackspace Cloud Backup to
 automate storing and retrieving backup data from Cloud Files or `rsync` to copy your data to another server.
 
--   [Rackspace Cloud Backup - Install the agent on Linux](/support/how-to/rackspace-cloud-backup-install-the-agent-on-linux)
--   [Backing up your files with rsync](/support/how-to/backing-up-your-files-with-rsync)
+-   [Rackspace Cloud Backup - Install the agent on Linux](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/update-or-install-the-cloud-backup-agent-on-linux)
+-   [Backing up your files with rsync](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/backing-up-your-files-with-rsync)
 
 ### Prepare for a system reboot
 
@@ -42,7 +42,7 @@ Set up and configure Network Time Protocol (NTP) on your server to avoid migrati
 server date or file timestamps. Some older cloud servers pull time from their host machine and don't keep
 time independently from the host. This might lead to inaccuracies.
 
-For details on setting up NTP on your server, see [Using NTP to sync time](/support/how-to/using-ntp-to-sync-time).
+For details on setting up NTP on your server, see [Using NTP to sync time](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/using-ntp-to-sync-time).
 
 #### Reduce the number and size of files
 

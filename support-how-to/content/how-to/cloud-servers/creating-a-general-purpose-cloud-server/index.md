@@ -13,7 +13,7 @@ product_url: cloud-servers
 
 This article explains how to set up a general purpose Cloud Server
 through the Cloud Control Panel. For more information about General Purpose
-servers, see [New Features in General Purpose and Work-Optimized Cloud Servers](/support/how-to/new-features-in-general-purpose-and-work-optimized-cloud-servers).
+servers, see [New Features in General Purpose and Work-Optimized Cloud Servers](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/new-features-in-general-purpose-and-work-optimized-cloud-servers).
 
 1.  Log in to the [Cloud Control Panel](https://login.rackspace.com).
 
@@ -25,7 +25,7 @@ servers, see [New Features in General Purpose and Work-Optimized Cloud Servers](
         next to the image that you want to use to create the server, and
         select **Create Server with Image**. Skip to step 3.
 
-        {{<image src="SavedImages.png" alt="" title="">}}
+        <img src="SavedImages.png" alt="" title="">
 
     -   To create a new server, select **Servers > Cloud Servers**, and then
         click **Create Server**.
@@ -49,7 +49,7 @@ servers, see [New Features in General Purpose and Work-Optimized Cloud Servers](
 8.  In the **Flavor** section, select the flavor class and specific
     flavor for your server.
 
-    {{<image src="FlavorImg.png" alt="" title="">}}
+    <img src="FlavorImg.png" alt="" title="">
 
 9.  In the **Advanced Options** section, click **Select Networks** and
     choose the networks to which your server will be connected.

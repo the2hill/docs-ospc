@@ -11,11 +11,11 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-**Note:** The commands and utilities in this article have been tested on a Debian cloud server and are not guaranteed to function correctly on other distributions. However, the [General Package Installation Guidelines](/support/how-to/general-package-installation-guidelines) article might assist in "porting" this article to another distribution.
+**Note:** The commands and utilities in this article have been tested on a Debian cloud server and are not guaranteed to function correctly on other distributions. However, the [General Package Installation Guidelines](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/general-package-installation-guidelines) article might assist in "porting" this article to another distribution.
 
 ### Prerequisites
 
-[VNC Install](/support/how-to/vnc-install "VNC Install")
+[VNC Install](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/vnc-install "VNC Install")
 
 Fwbuilder is an advanced graphical firewall configuration tool. You can use it to establish complex firewall policies in situations where command-line scripting tools are too slow.
 

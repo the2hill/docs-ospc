@@ -32,7 +32,7 @@ In Windows, use PuTTYgen to generate your public and private keys.
 3.  Enter a unique key passphrase in the **Key passphrase** and
     **Confirm passphrase** fields.
     For additional information about using passphrases,
-    see [Log in with a SSH Private Key on Windows](/support/how-to/logging-in-with-an-ssh-private-key-on-windows).
+    see [Log in with a SSH Private Key on Windows](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/logging-in-with-an-ssh-private-key-on-windows).
 4.  Save the public and private keys by clicking the **Save public key**
     and **Save private key** buttons.
 5.  From the **Public key for pasting into OpenSSH authorized\_keys** file
@@ -94,15 +94,15 @@ use it when connecting to your cloud server.
 
 5.  Browse to the location of the key file, and load the private key.
 
-    {{<image src="PuTTY_Configuration3.png" alt="" title="">}}
+    <img src="PuTTY_Configuration3.png" alt="" title="">
 6.  Go to the Session page, and save the session. This saves the configuration
     so that PuTTY uses the key every time that you connect to your cloud
     server.
 
-    {{<image src="PuTTY_Configuration4.png" alt="" title="">}}
+    <img src="PuTTY_Configuration4.png" alt="" title="">
 After you save your session, your key is loaded automatically when you
 connect to your server.
 
 ### Related article
 
--   [Connecting to a server using SSH on Linux or Mac OS](/support/how-to/connecting-to-a-server-using-ssh-on-linux-or-mac-os)
+-   [Connecting to a server using SSH on Linux or Mac OS](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/connecting-to-a-server-using-ssh-on-linux-or-mac-os)

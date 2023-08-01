@@ -23,6 +23,6 @@ The following links provide installation instructions for Windows&reg;, macOS X&
 -   [Install python-novaclient on Linux by using yum](https://access.redhat.com/documentation/en-us/red_hat_openstack_platform/10/html/command-line_interface_reference_guide/install_clients)
 
 Find a list of common operations that you can perform with the
-client in [Useful python-novaclient commands](/support/how-to/useful-python-novaclient-commands).
+client in [Useful python-novaclient commands](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/useful-python-novaclient-commands).
 
 Use the Feedback tab to make any comments or ask questions. You can also [start a conversation with us](https://www.rackspace.com/contact).

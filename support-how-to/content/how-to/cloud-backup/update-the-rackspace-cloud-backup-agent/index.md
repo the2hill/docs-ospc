@@ -12,8 +12,8 @@ product_url: cloud-backup
 ---
 
 If the Cloud Backup updater, described in
-[Install or update the Cloud Backup agent on Linux&reg;](/support/how-to/rackspace-cloud-backup-install-the-agent-on-linux)
-or [Install the Cloud Backup agent on Windows&reg;](/how-to/rackspace-cloud-backup-install-the-agent-on-windows),
+[Install or update the Cloud Backup agent on Linux&reg;](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/rackspace-cloud-backup-install-the-agent-on-linux)
+or [Install the Cloud Backup agent on Windows&reg;](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/rackspace-cloud-backup-install-the-agent-on-windows),
 failed, use the steps in this article to manually update the Rackspace Cloud
 Backup agent.
 
@@ -28,7 +28,7 @@ features, and bug fixes in Cloud Backup.
 ### Update the agent for Linux-based systems
 
 For Linux-based systems, you might want to review
-[Install or update the Cloud Backup agent on Linux](/support/how-to/rackspace-cloud-backup-install-the-agent-on-linux)
+[Install or update the Cloud Backup agent on Linux](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/rackspace-cloud-backup-install-the-agent-on-linux)
 before performing these steps.
 
 1. Use SSH to log in to your server as a user with sudo or superuser privileges.
@@ -57,7 +57,7 @@ before performing these steps.
         /usr/local/bin/driveclient --daemon
 
 For more detailed information on these configuration settings, see
-[Update or install the Cloud Backup agent on Linux](/how-to/update-or-install-the-cloud-backup-agent-on-linux/).
+[Update or install the Cloud Backup agent on Linux](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/update-or-install-the-cloud-backup-agent-on-linux/).
 
 **Warning:** This assumes that you are manually installing the agent because the
 current updater does not yet support the system you are installing it on.
@@ -69,7 +69,7 @@ every time you restart the server.
 
 Run the steps in this section as Administrator or as a user with Administrator
 privileges. You might want to review
-[Install the Cloud Backup agent on Windows](/support/how-to/rackspace-cloud-backup-install-the-agent-on-windows)
+[Install the Cloud Backup agent on Windows](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/rackspace-cloud-backup-install-the-agent-on-windows)
 before performing these steps.
 
 Because the Windows agent includes an automated updater, you should rarely need
@@ -111,4 +111,4 @@ without APIUSER and APIKEY.
 Otherwise, updating the agent by using the MSI is the same as a fresh
 installation. You have all the same MSI options available. For the verification
 steps to test the update, see
-[Test the Windows installation or update](/support/how-to/rackspace-cloud-backup-install-the-agent-on-windows#test-the-windows-installation-or-update).
+[Test the Windows installation or update](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/rackspace-cloud-backup-install-the-agent-on-windows#test-the-windows-installation-or-update).

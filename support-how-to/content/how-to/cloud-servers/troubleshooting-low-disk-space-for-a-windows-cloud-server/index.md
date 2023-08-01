@@ -34,7 +34,7 @@ The following troubleshooting steps are described in detail in this article:
 #### Log in to the device
 
 Log in to your server by opening a remote desktop connection.  For instructions,
-see [Log in to your server via RDP](/support/how-to/log-in-to-your-server-via-rdp-windows/).
+see [Log in to your server via RDP](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/log-in-to-your-server-via-rdp-windows/).
 
 #### Check support tickets
 

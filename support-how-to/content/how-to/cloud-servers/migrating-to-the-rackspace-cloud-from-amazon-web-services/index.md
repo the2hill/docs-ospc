@@ -22,14 +22,14 @@ as seamless as possible.
 The guide has the following organization:
 
 - Overview (this document)
-- [Mapping of Amazon Web Services resources to Rackspace resources](/support/how-to/mapping-of-amazon-web-services-resources-to-rackspace-resources)
-- [High-level steps for migrating from Amazon Web Services](/support/how-to/high-level-steps-for-migrating-from-amazon-web-services)
-- [Provision cloud resources when migrating from Amazon Web Services](/support/how-to/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
-  - [Migrate a .NET application](/support/how-to/migrating-a-net-application-from-amazon-web-services)
-  - [Migrate a Java web application](/support/how-to/migrating-a-java-web-application-from-amazon-web-services)
-  - [Migrate an application based on Backbone.js, Node.js, and MongoDB from Amazon Web Services](/support/how-to/migrating-an-application-based-on-backbonejs-nodejs-and-mongodb-from-amazon-web-services)
-- [Post-migration considerations when migrating from Amazon Web Services](/support/how-to/post-migration-considerations-when-migrating-from-amazon-web-services)
+- [Mapping of Amazon Web Services resources to Rackspace resources](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/mapping-of-amazon-web-services-resources-to-rackspace-resources)
+- [High-level steps for migrating from Amazon Web Services](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/high-level-steps-for-migrating-from-amazon-web-services)
+- [Provision cloud resources when migrating from Amazon Web Services](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
+  - [Migrate a .NET application](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/migrating-a-net-application-from-amazon-web-services)
+  - [Migrate a Java web application](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/migrating-a-java-web-application-from-amazon-web-services)
+  - [Migrate an application based on Backbone.js, Node.js, and MongoDB from Amazon Web Services](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/migrating-an-application-based-on-backbonejs-nodejs-and-mongodb-from-amazon-web-services)
+- [Post-migration considerations when migrating from Amazon Web Services](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/post-migration-considerations-when-migrating-from-amazon-web-services)
 
 ### Next section
 
-[Mapping of Amazon Web Services resources to Rackspace resources](/support/how-to/mapping-of-amazon-web-services-resources-to-rackspace-resources)
+[Mapping of Amazon Web Services resources to Rackspace resources](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/mapping-of-amazon-web-services-resources-to-rackspace-resources)

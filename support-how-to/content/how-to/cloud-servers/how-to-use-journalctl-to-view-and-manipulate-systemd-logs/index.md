@@ -21,7 +21,7 @@ journalctl can be used in a lot of interesting ways, but one of the most used on
 
 The output that we get is the logs of all the deamons, services, units etc that we have in our system as represented in the image below.
 
-{{<image src="journanlctl-1.png" width="800">}}
+<img src="journanlctl-1.png" width="800">}}
 
 This can be a lot of information that we don't really need, so a more simple way to view the logs that we really need is to use some filters.
 
@@ -45,7 +45,7 @@ journalctl --since "2022-02-28  18:00:00"
 ```
 The output will look as follows:
 
-{{<image src="journanlctl-2.png" width="800">}}
+<img src="journanlctl-2.png" width="800">}}
 
 We can also use, two dates to filter in a range style for example.
 ```sh 
@@ -54,7 +54,7 @@ journalctl --since "2022-02-28 00:00:00" --until "2022-02-28 23:00:00"
 
 The output will look as follows:
 
-{{<image src="journanlctl-3.png" width="800">}}
+<img src="journanlctl-3.png" width="800">}}
 
 With the previous command we could filter the logs that were captured by the system in between 12:00 AM and 11:00 PM on the 28th of february.
 
@@ -72,7 +72,7 @@ journalctl -u cronie.service
 
 The output will look as follows:
 
-{{<image src="journanlctl-4.png" width="800">}}
+<img src="journanlctl-4.png" width="800">}}
 
 After we issue this command we will get the output with the logs of that particular unit.
 
@@ -82,7 +82,7 @@ journalctl -u cronie.service --since yesterday
 ```
 The output will look as follows:
 
-{{<image src="journanlctl-5.png" width="800">}}
+<img src="journanlctl-5.png" width="800">}}
 
 ### Getting kernel logs.
 
@@ -92,13 +92,13 @@ Getting kernel logs is very straight forward, we would use journalctl plus the -
 
 The output will look as follows:
 
-{{<image src="journanlctl-6.png" width="800">}}
+<img src="journanlctl-6.png" width="800">}}
 
 We can also use the -b option  to get only information about the most recent start of the kernel, or we can get information of previous starts with: journalctl -b -1,-2,-3 etc.
 
 The output will look as follows:
 
-{{<image src="journanlctl-7.png" width="800">}}
+<img src="journanlctl-7.png" width="800">}}
 
 ### Notes:
 
@@ -106,7 +106,7 @@ The service that stores the log information is systemd-journal, and we can see h
 
 The output will look as follows:
 
-{{<image src="journanlctl-8.png" width="800">}}
+<img src="journanlctl-8.png" width="800">}}
 
 ## Conclusions: 
 As we can see, journalctl is a must know command that can come in handy to solve problems or just get information on the system that we are working on.

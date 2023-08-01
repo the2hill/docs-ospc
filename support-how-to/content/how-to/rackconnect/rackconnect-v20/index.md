@@ -11,7 +11,7 @@ product: RackConnect
 product_url: rackconnect
 ---
 
-**Previous section:** [Getting RackConnect support](/support/how-to/getting-rackconnect-support)
+**Previous section:** [Getting RackConnect support](https://docs-ospc.rackspace.com/support/how-to/rackconnect/getting-rackconnect-support)
 
 **Applies to:** RackConnect v2.0
 
@@ -29,7 +29,7 @@ interested in using RackConnect, contact your account manager for information
 about deploying RackConnect v3.0.
 
 For a collection of recommendations for using RackConnect, see
-[RackConnect best practices](/support/how-to/rackconnect-v20-best-practices).
+[RackConnect best practices](https://docs-ospc.rackspace.com/support/how-to/rackconnect/rackconnect-v20-best-practices).
 
 ### Associating your Cloud account with your RackConnect configuration
 
@@ -44,14 +44,14 @@ RackConnect configuration:
     Accounts**. From that screen, you can either link an existing
     account or sign up for a new account.
 
-    {{<image src="MyRack_Link_Cloud_Account.png" alt="" title="">}}
+    <img src="MyRack_Link_Cloud_Account.png" alt="" title="">
 
 2.  After you have linked an account, you can click the plus
     sign (+) at the right of the account's row to associate the
     account with one of your RackConnect configurations. In most
     cases, you have only one RackConnect configuration.
 
-    {{<image src="MyRack_Associate_with_RC.png" alt="" title="">}}
+    <img src="MyRack_Associate_with_RC.png" alt="" title="">
 
 3.  After establishing the association, Rackspace begins the process of
     validating the provisioning region for both Cloud Servers and Cloud
@@ -84,4 +84,4 @@ from your cloud servers before creating new cloud servers.
 ### Next step
 
 [Access the RackConnect Management
-Interface](/support/how-to/access-the-rackconnect-management-interface)
+Interface](https://docs-ospc.rackspace.com/support/how-to/rackconnect/access-the-rackconnect-management-interface)

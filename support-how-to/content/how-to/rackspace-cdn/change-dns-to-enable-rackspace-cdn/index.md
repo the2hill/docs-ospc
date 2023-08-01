@@ -26,7 +26,7 @@ Use the following steps to get the URL for your CDN:
 5. On the **CDN Service** page, in the **Domains** section, click on **Domain Not Configured** under **Status**.
 6. Use the URL and the instructions in the box that opens, which is similar to the following figure, to configure your service:
 
-   {{<image src="ScreenShot2015-12-16at4.56.08PM.png" alt="" title="">}}
+   <img src="ScreenShot2015-12-16at4.56.08PM.png" alt="" title="">
 
 ### Create a CNAME record with your DNS provider
 
@@ -40,7 +40,7 @@ record that points your domain to the CDN domain URL that you retrieved from the
 by hovering over each domain name for your CDN service.
 
 If you host your domain with Rackspace, you can manage your DNS records by following the instructions at
-[Create DNS Records for cloud servers with the Control Panel](/support/how-to/create-dns-records-for-cloud-servers-with-the-control-panel).
+[Create DNS Records for cloud servers with the Control Panel](https://docs-ospc.rackspace.com/support/how-to/cloud-dns/creating-dns-records-with-cloud-dns).
 
 **Note:** Some DNS providers allow for a CNAME of the root of your domain. Do not use this because it breaks the geolocation
 of the CDN service. These types of DNS services do the DNS lookup and return the A record (IP address) to which to connect.

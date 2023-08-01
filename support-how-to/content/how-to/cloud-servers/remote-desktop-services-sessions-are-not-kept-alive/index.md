@@ -42,7 +42,7 @@ Perform the following steps to troubleshoot Remote Desktop Services sessions tha
 
 4. In the **Cloud Servers** section, you can see all the Cloud Servers in your account. Click **Windows Server 2008 R2**
    and log in to the server. If you need more information on how to log in, review this article:
-   [Log in to your server via RDP (Windows)](https://docs.rackspace.com/support/how-to/log-in-to-your-server-via-rdp-windows).
+   [Log in to your server via RDP (Windows)](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/log-in-to-your-server-via-rdp-windows).
 
 5. Microsoft has a supported hotfix available, but it applies only to systems that are experiencing the problem
    described in this article.
@@ -76,7 +76,7 @@ To obtain this hotfix, contact [Microsoft Customer Service and Support](https://
 
 ### Related articles 
 
-- [How to Log in to your Server Via RDP Windows](https://docs.rackspace.com/support/how-to/log-in-to-your-server-via-rdp-windows)
+- [How to Log in to your Server Via RDP Windows](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/log-in-to-your-server-via-rdp-windows)
 
 Use the Feedback tab to make any comments or ask questions. You can also click **Sales Chat** to [chat now](https://www.rackspace.com/) and start the conversation.
 

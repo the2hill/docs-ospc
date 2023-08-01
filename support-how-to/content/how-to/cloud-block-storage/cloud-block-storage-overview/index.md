@@ -22,7 +22,7 @@ server, keeping your data intact and ready for the next time you need it. And
 because you're leveraging the power of the Cloud, you only pay for what you use.
 Cloud Block Storage offers you power and ease with the kind of storage that
 works for you. For information on Cloud Block Storage, see
-[Best Practices for Backing Up Your Data: Cloud Block Storage versus Cloud Backup](/support/how-to/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
+[Best Practices for Backing Up Your Data: Cloud Block Storage versus Cloud Backup](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storagebest-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
 
 You can attach the folowing types of volumes to your server:
 
@@ -54,7 +54,7 @@ Access Cloud Block Storage through either the [Cloud Control Panel](https://logi
 GUI interface or the API. This product
 introduction walks you through Cloud Control Panel access. If you prefer to
 interact with Cloud Block Storage programmatically, see the
-[Developer Guide](https://docs.rackspace.com/docs/cloud-block-storage/v1/developer-guide/).
+[Developer Guide](https://docs.rackspace.com/docs/cloud-block-storage/v1/api-reference/).
 
 ### Limits of Cloud Block Storage
 
@@ -90,10 +90,10 @@ following list gives definitions for common Cloud Block Storage terms:
 
 In this product overview, you learn how to perform the following tasks:
 
-- [Create and attach a volume](/support/how-to/create-and-attach-a-cloud-block-storage-volume).
-- [Prepare your volume for use with a server (Linux or Windows)](/support/how-to/create-and-attach-a-cloud-block-storage-volume).
-- [Take snapshots of your volume](/support/how-to/create-and-use-cloud-block-storage-snapshots).
-- [Detach and delete a volume](/support/how-to/detach-and-delete-cloud-block-storage-volumes).
-- [Attach a Cloud Block Storage volume to an OnMetal server](/support/how-to/attach-a-cloud-block-storage-volume-to-an-onmetal-server-through-the-cloud-control-panel/).
+- [Create and attach a volume](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/create-and-attach-a-cloud-block-storage-volume).
+- [Prepare your volume for use with a server (Linux or Windows)](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/create-and-attach-a-cloud-block-storage-volume).
+- [Take snapshots of your volume](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/create-and-use-cloud-block-storage-snapshots).
+- [Detach and delete a volume](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/detach-and-delete-cloud-block-storage-volumes).
+- [Attach a Cloud Block Storage volume to an OnMetal server](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/attach-a-cloud-block-storage-volume-to-an-onmetal-server-through-the-cloud-control-panel/).
 
-Let's get started and [create your first volume](/support/how-to/create-and-attach-a-cloud-block-storage-volume).
+Let's get started and [create your first volume](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/create-and-attach-a-cloud-block-storage-volume).

@@ -19,7 +19,7 @@ using the Pitchfork tool.
 To start using Pitchfork, navigate to the [API tool Pitchfork](https://pitchfork.rax.io/).
 
 To learn how to log in and use Pitchfork, see
-[Pitchfork—the Rackspace Cloud API web application](/support/how-to/pitchfork-the-rackspace-cloud-api-web-application).
+[Pitchfork—the Rackspace Cloud API web application](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/pitchfork-the-rackspace-cloud-api-web-application).
 
 ### Make DNS API calls with Pitchfork
 

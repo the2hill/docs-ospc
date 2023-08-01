@@ -85,4 +85,4 @@ Here is an example log message using the default format. It’s from the sshd da
 Many Linux distributions contain a system that is a process and service manager. Systemd implements its own logging service called journald that can replace or complement syslog.
 
 ### Related articles
-- [Linux log files](https://docs.rackspace.com/support/how-to/linux-log-files/)
+- [Linux log files](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/linux-log-files/)

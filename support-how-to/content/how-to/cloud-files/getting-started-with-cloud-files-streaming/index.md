@@ -55,7 +55,7 @@ The following example shows the CDN links that display:
 The following list includes several different tools that you can use to stream
 your content with Cloud Files:
 
--   [JW Player](/support/how-to/streaming-cloud-files-with-jw-player)
--   [FlowPlayer](/support/how-to/cloud-files-streaming-with-flowplayer-plugins)
+-   [JW Player](https://docs-ospc.rackspace.com/support/how-to/cloud-files/streaming-cloud-files-with-jw-player)
+-   [FlowPlayer](https://docs-ospc.rackspace.com/support/how-to/cloud-files/cloud-files-streaming-with-flowplayer-plugins)
 -   [OSMF (Open Source Media
-    Framework)](/support/how-to/cloud-files-streaming-with-osmf-plugins)
+    Framework)](https://docs-ospc.rackspace.com/support/how-to/cloud-files/cloud-files-streaming-with-osmf-plugins)

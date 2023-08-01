@@ -25,7 +25,7 @@ Courier or Dovecot provide IMAP and POP3.
 
 Perform the following steps to modify your email service:
 
-1. Log in to Plesk. See [Plesk: Introduction](/support/how-to/plesk-introduction) for these steps.
+1. Log in to Plesk. See [Plesk: Introduction](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/plesk-introduction) for these steps.
 2. Navigate to **Domains** listed on the left-hand panel.
 3. Select a domain.
 4. Click **Mail Accounts**.

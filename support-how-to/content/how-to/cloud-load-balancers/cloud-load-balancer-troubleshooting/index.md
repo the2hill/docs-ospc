@@ -28,7 +28,7 @@ To enable health monitoring for your load balancer, use the following steps:
 
 ### Use Cloud Monitoring
 
-You might also want to install the Cloud Monitoring service, which is provided at no cost to monitor the health of the nodes (or virtual instances) that are attached to Cloud Load Balancers. For more information, see [Install and configure the Rackspace Monitoring Agent](/support/how-to/install-and-configure-the-rackspace-monitoring-agent/) and [Rackspace Monitoring checks and alarms](/support/how-to/rackspace-monitoring-checks-and-alarms/).
+You might also want to install the Cloud Monitoring service, which is provided at no cost to monitor the health of the nodes (or virtual instances) that are attached to Cloud Load Balancers. For more information, see [Install and configure the Rackspace Monitoring Agent](https://docs-ospc.rackspace.com/support/how-to/rackspace-monitoring/install-and-configure-the-rackspace-monitoring-agent/) and [Rackspace Monitoring checks and alarms](https://docs-ospc.rackspace.com/support/how-to/rackspace-monitoring/rackspace-monitoring-checks-and-alarms/).
 
 ### Keep Cloud Load Balancers resources in the same data center
 
@@ -36,7 +36,7 @@ For the most part, Cloud Load Balancers communicate to attached nodes by using t
 
 ### Use Cloud Load Balancers with RackConnect
 
-RackConnect v2 and v3 are compatible with Cloud Load Balancers but require special setup considerations. For more information, see [Use Cloud Load Balancers with RackConnect](/support/how-to/using-cloud-load-balancers-with-rackconnect).
+RackConnect v2 and v3 are compatible with Cloud Load Balancers but require special setup considerations. For more information, see [Use Cloud Load Balancers with RackConnect](https://docs-ospc.rackspace.com/support/how-to/rackconnect/using-cloud-load-balancers-with-rackconnect).
 
 
 ### Have you made recent changes to the Cloud Load Balancers configuration?
@@ -48,7 +48,7 @@ If a load balancer suddenly stops working, it might be due to changes on the nod
 
  Pitchfork is a valuable tool that you can use to view different statistics concerning the Cloud Load Balancers in an account.
 
- To learn more, see [Pitchfork - the Rackspace Cloud API web application](/support/how-to/pitchfork-the-rackspace-cloud-api-web-application).
+ To learn more, see [Pitchfork - the Rackspace Cloud API web application](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/pitchfork-the-rackspace-cloud-api-web-application).
 
 ### Cloud Load Balancers issues
 

@@ -16,9 +16,9 @@ servers, you can change the size of your local system storage space by using the
 following methods: 
 
 -   [Increase available storage with Cloud Block
-    Storage](/support/how-to/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers)
+    Storage](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers)
 -   [Create a new server with more
-    resources](/support/how-to/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers)
+    resources](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers)
 
 **Note.** These instructions apply to General Purpose and I/O optimized
 servers with local system disks only. The boot volume allows you to create a new server and to change resource allocation.
@@ -29,7 +29,7 @@ You can expand the available data storage space of your server by adding
 Cloud Block Storage volumes. Cloud Block Storage volumes come in two
 types: Serial Advanced Technology Attachment (SATA) for standard performance
 and Solid State Drive (SSD) for high performance. For more information about Cloud Block Storage,
-see [Create and Attach a Cloud Block StorageVolume](/support/how-tocreate-and-attach-a-cloud-block-storage-volume).
+see [Create and Attach a Cloud Block StorageVolume](https://docs-ospc.rackspace.com/support/how-to/cloud/cloud-block-storage/create-and-attach-a-cloud-block-storage-volume).
 
 ### Create a new server with more resources
 
@@ -43,14 +43,14 @@ To migrate your data to a new server, perform the following steps:
 
 1.  Create an image of your system disk. See [Create an image or
     restore a Cloud Server from an
-    image](/support/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image) for
+    image](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image) for
     more information.
 2.  Back up your data disk, either to a [Cloud Block Storage
-    volume](/support/how-to/create-and-attach-a-cloud-block-storage-volume)
+    volume](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/create-and-attach-a-cloud-block-storage-volume)
     or with [Cloud
-    Backup](/support/how-to/cloud-backup).
+    Backup](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/cloud-backup).
     **Notes**:
-    -   Consider your need to decide between these options. For information about the advantages of each, see [Best practices for backing up your data: Cloud Block Storage versus Cloud Backup](/support/how-to/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
+    -   Consider your need to decide between these options. For information about the advantages of each, see [Best practices for backing up your data: Cloud Block Storage versus Cloud Backup](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
     -    If you have `rsync` (Linux&reg;), `xcopy`, or `robocopy` (Microsoft&reg; Windows&reg;)
         installed on your server, you can use the tool to migrate data from
         your data disks after you have created the new server in step 3.
@@ -69,4 +69,4 @@ To migrate your data to a new server, perform the following steps:
 You can use Auto Scale to resize your server, keep your IP
 address, and have it happen dynamically in response to load. For
 details, see [How to use Auto Scale to change the size of your General Purpose or
-optimized servers](/support/how-to/rackspace-auto-scale-tips-and-how-tos).
+optimized servers](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale/rackspace-auto-scale-tips-and-how-tos).

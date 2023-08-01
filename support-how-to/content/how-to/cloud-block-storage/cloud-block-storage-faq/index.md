@@ -168,7 +168,7 @@ application is time-sensitive, consider using volume cloning.
 
 For instructions on volume cloning, see [How to create a clone of a
 Cloud Block Storage
-volume](/support/how-to/create-a-clone-of-a-cloud-block-storage-volume).
+volume](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storagecreate-a-clone-of-a-cloud-block-storage-volume).
 {{< /accordion >}}
 
 {{< accordion title="What can I do if I need to change volume types (SATA vs. SSD)?" col="in" href="accordion18" >}}
@@ -179,9 +179,9 @@ switch volume types by using the cloning or snapshot method outlined in
 the following articles:
 
 -   [How to create a clone of a Cloud Block Storage
-    volume](/support/how-to/create-a-clone-of-a-cloud-block-storage-volume) .
+    volume](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storagecreate-a-clone-of-a-cloud-block-storage-volume) .
 -   [Create and use Cloud Block Storage
-    snapshots](/support/how-to/create-and-use-cloud-block-storage-snapshots)
+    snapshots](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storagecreate-and-use-cloud-block-storage-snapshots)
 {{< /accordion >}}
 
 {{< accordion title="How can I make a copy of a Cloud Block Storage volume?" col="in" href="accordion19" >}}
@@ -247,7 +247,7 @@ Cloud Block Storage provides persistent data storage for Cloud Servers. Persiste
 server, even after you delete the server. The local storage bundled with Cloud Servers is ephemeral and exists only as long
 as the Cloud Server exists. When you delete the server, you also delete the local storage.
 
-We recommend that you [unmount and detach Cloud Block Storage](/support/how-to/detach-and-delete-cloud-block-storage-volumes)
+We recommend that you [unmount and detach Cloud Block Storage](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storagedetach-and-delete-cloud-block-storage-volumes)
 volumes before deleting the server.
 {{< /accordion >}}
 

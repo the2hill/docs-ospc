@@ -20,29 +20,29 @@ common Rackspace operating systems.
 
 ### Table of contents
 
-* [Find the OS that your server is running](#find-the-os-that-your-server-is-running)
+* [Find the OS that your server is running](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/paypal-requires-tls-12/#find-the-os-that-your-server-is-running)
 
 **Red Hat&reg; Enterprise Linux&reg; (RHEL) and CentOS&reg;**
 
-* [RHEL and CentOS 7](#rhel-and-centos-7)
-* [RHEL and CentOS 6](#rhel-and-centos-6)
-* [RHEL and CentOS 5](#rhel-and-centos-5)
+* [RHEL and CentOS 7](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/paypal-requires-tls-12/#rhel-and-centos-7)
+* [RHEL and CentOS 6](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/paypal-requires-tls-12/#rhel-and-centos-6)
+* [RHEL and CentOS 5](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/paypal-requires-tls-12/#rhel-and-centos-5)
 
 **Ubuntu&reg; operating system**
 
-* [Ubuntu 14.04 LTS](#ubuntu-1404-lts)
-* [Ubuntu 12.04 LTS](#ubuntu-1204-lts)
+* [Ubuntu 14.04 LTS](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/paypal-requires-tls-12/#ubuntu-1404-lts)
+* [Ubuntu 12.04 LTS](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/paypal-requires-tls-12/#ubuntu-1204-lts)
 
 **Debian&reg;**
 
-* [Debian 8](#debian-8)
-* [Debian 7](#debian-7)
+* [Debian 8](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/paypal-requires-tls-12/#debian-8)
+* [Debian 7](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/paypal-requires-tls-12/#debian-7)
 
 **Windows&reg; Server&reg;**
 
-* [Windows Server 2012](#windows-server-2012)
-* [Windows Server 2008 R2](#windows-server-2008-r2)
-* [Windows Server 2003 and 2008](#windows-server-2003-and-2008)
+* [Windows Server 2012](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/paypal-requires-tls-12/#windows-server-2012)
+* [Windows Server 2008 R2](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/paypal-requires-tls-12/#windows-server-2008-r2)
+* [Windows Server 2003 and 2008](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/paypal-requires-tls-12/#windows-server-2003-and-2008)
 
 ### Find the OS that your server is running
 

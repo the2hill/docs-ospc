@@ -20,7 +20,7 @@ Controller (DC) to an already existing Active Directory Forest
 infrastructure.
 
 **Note**: For information about setting up the Active Directory Role
-on a cloud server running Windows Server 2012, see [Install Active Directory on Windows Server 2012](/support/how-to/installing-active-directory-on-windows-server-2012).
+on a cloud server running Windows Server 2012, see [Install Active Directory on Windows Server 2012](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/installing-active-directory-on-windows-server-2012).
 
 ### Prepare for AD DS
 
@@ -62,7 +62,7 @@ server address of the same private network adapter, as follows:
     box and paste it in the **Preferred DNS server** box. Then, click
     **OK**.
 
-    {{<image alt="edit IPv4 properties" src="2K8_64R2_ADDS.jpg" title="">}}
+    <img alt="edit IPv4 properties" src="2K8_64R2_ADDS.jpg" title="">
 
 6.  Click **OK** in the Properties dialog box, and close the
     Network Connections window.

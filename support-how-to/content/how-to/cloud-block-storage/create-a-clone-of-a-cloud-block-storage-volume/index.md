@@ -44,10 +44,10 @@ It is a good idea to detach your volume from your server before you take a
 volume clone. This is the safest method to prevent your server from writing
 information while you are backing it up. That could get your data out of sync
 and could create a problem. To detach your volume, see
-[Detach and delete Cloud Block Storage volumes](/support/how-to/detach-and-delete-cloud-block-storage-volumes/).
+[Detach and delete Cloud Block Storage volumes](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/detach-and-delete-cloud-block-storage-volumes/).
 You can always re-attach the volume by following
 the attach steps in
-[Create and attach a Cloud Block Storage volume](/support/how-to/create-and-attach-a-cloud-block-storage-volume).
+[Create and attach a Cloud Block Storage volume](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/create-and-attach-a-cloud-block-storage-volume).
 
 More advanced users might sync the file system to ensure the integrity of
 the data on your snapshots. Performing a sync flushes file system buffers and

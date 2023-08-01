@@ -22,22 +22,22 @@ writes to the device until the maintenance is complete.
 
 #### Clone and replace
 
-After you [clone your Cloud Block Storage volume](/support/how-to/create-a-clone-of-a-cloud-block-storage-volume/),
+After you [clone your Cloud Block Storage volume](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storagecreate-a-clone-of-a-cloud-block-storage-volume/),
 the resulting clone should land on an unaffected host server.
 
 **Non-system disk Cloud Block Storage volumes:**
 
 - Stop all writes to your current Cloud Block Storage volume before initiating
   the clone. After all writes to the current Cloud Block Storage volume stop,
-  clone the volume. After the clone completes, [unmount and detach](/support/how-to/detach-and-delete-cloud-block-storage-volumes/) the
-  current Cloud Block Storage volume. Then [attach the new volume](/support/how-to/create-and-attach-a-cloud-block-storage-volume/) (the clone).
+  clone the volume. After the clone completes, [unmount and detach](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/detach-and-delete-cloud-block-storage-volumes/) the
+  current Cloud Block Storage volume. Then [attach the new volume](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/create-and-attach-a-cloud-block-storage-volume) (the clone).
 
 **Note:** Clones are not verified. Ensure the newly-cloned volume is working
 before deleting your current Cloud Block Storage volume.
 
 **System disk Cloud Block Storage volumes (Boot from volume servers):**
 
-- [Replace your current system disk with a clone.](/support/how-to/increase-size-of-cloud-boot-from-volume-server-system-disk/)
+- [Replace your current system disk with a clone.](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storageincrease-size-of-cloud-boot-from-volume-server-system-disk/)
 
 **Note:** Clones are not verified. Ensure the newly-cloned volume is working
 before deleting your current Cloud Block Storage volume.
@@ -46,7 +46,7 @@ before deleting your current Cloud Block Storage volume.
 
 **Non-system disk Cloud Block Storage volumes:**
 
-- [Unmount and detach](/support/how-to/detach-and-delete-cloud-block-storage-volumes/) any Cloud Block Storage volume
+- [Unmount and detach](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storagedetach-and-delete-cloud-block-storage-volumes/) any Cloud Block Storage volume
 impacted by the maintenance. (The link includes instructions to delete Cloud Block Storage volumes&mdash;you should
 complete only the unmount and detach sections.)
 
@@ -63,8 +63,8 @@ complete only the unmount and detach sections.)
 
 **Volume not appearing inside server:**
 
-- Shut the server down, [detach](/support/how-to/detach-and-delete-cloud-block-storage-volumes/) the Cloud Block
-  Storage volume, and [attach it back](/support/how-to/create-and-attach-a-cloud-block-storage-volume/) to the
+- Shut the server down, [detach](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/detach-and-delete-cloud-block-storage-volumes/) the Cloud Block
+  Storage volume, and [attach it back](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/create-and-attach-a-cloud-block-storage-volume/) to the
   server. Then you can start your server back up either through a reboot through the Control Panel or by issuing a
   start call by using the API. 
 

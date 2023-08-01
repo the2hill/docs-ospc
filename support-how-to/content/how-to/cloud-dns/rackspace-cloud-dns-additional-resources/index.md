@@ -11,7 +11,7 @@ product: Cloud DNS
 product_url: cloud-dns
 ---
 
-**Previous section:** [Rackspace Cloud DNS - API Example](/support/how-to/rackspace-cloud-dns-api-example)
+**Previous section:** [Rackspace Cloud DNS - API Example](https://docs-ospc.rackspace.com/support/how-to/cloud-dns/rackspace-cloud-dns-api-example)
 
 For more information about our API, we encourage you to review the [Rackspace Cloud DNS API documentation](https://docs.rackspace.com/docs/cloud-dns/v1/).
 
@@ -45,4 +45,4 @@ For more information about our API, we encourage you to review the [Rackspace Cl
 - **SRV**: Used to define the location (hostname and port) of servers used
     for a specific service.
 
-**Next steps:** [Cloud DNS FAQ](/support/how-to/cloud-dns-faq)
+**Next steps:** [Cloud DNS FAQ](https://docs-ospc.rackspace.com/support/how-to/cloud-dns/cloud-dns-faq)

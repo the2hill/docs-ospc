@@ -47,7 +47,7 @@ To use MySQLTuner just run the following command:
 
 This is an example:
 
-{{<image src="mysqltuner.png" width="800">}}
+<img src="mysqltuner.png" width="800">}}
 
 
 ### Warning

@@ -13,7 +13,7 @@ product_url: cloud-servers
 
 This article describes the procedure to set up a Secure Shell (SSH) public key authentication.
 
-1. [Log in to](/how-to/connecting-to-a-server-using-ssh-on-linux-or-mac-os/) the server.
+1. [Log in to](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/connecting-to-a-server-using-ssh-on-linux-or-mac-os/) the server.
 
 2. Verify that the user exists:
 
@@ -33,7 +33,7 @@ This article describes the procedure to set up a Secure Shell (SSH) public key a
 
     **Note**: Substitute **directory-path** with user's home directory path.
 
-5. [Check permission](/how-to/changing-linux-permissions/) levels for the **.ssh/** directory. It should have `0700`
+5. [Check permission](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/changing-linux-permissions/) levels for the **.ssh/** directory. It should have `0700`
    permissions and be owned by the user.
 
         `ls .ssh`

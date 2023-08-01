@@ -15,8 +15,8 @@ If you want to upload large files but don't want to incorporate our
 code into an application, you might find it easier to use the [Swift&reg; tool](https://swiftstack.com/docs/integration/python-swiftclient.html) for
 your uploads and management.
 
-**Note:** If you prefer to use the API to manage large files, see [Use the API to manage large files](/support/how-to/use-the-api-to-manage-large-files),
-and if you prefer Swiftly, see [Use Swiftly to upload an image](/support/how-to/use-swiftly-to-upload-an-image).
+**Note:** If you prefer to use the API to manage large files, see [Use the API to manage large files](https://docs-ospc.rackspace.com/support/how-to/cloud-files/use-the-api-to-manage-large-files),
+and if you prefer Swiftly, see [Use Swiftly to upload an image](https://docs-ospc.rackspace.com/support/how-to/cloud-files/use-swiftly-to-upload-an-image).
 
 This article describes the upload process if you are using the tool.
 

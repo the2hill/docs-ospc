@@ -39,7 +39,7 @@ In the following cases, scheduled images might not be the best choice:
     a working DBMS when you boot a server from the image. Consult your
     DBMS vendor for more information. If you have such a DBMS and
     want to create an image of the server, read [Using task states with
-    server imaging](/support/how-to/using-task-states-with-server-imaging).
+    server imaging](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/using-task-states-with-server-imaging).
 -   Both manual and scheduled images are images of the system disk only.
 {{</accordion>}}
 {{<accordion title="How do I use scheduled images?" col="in" href="accordion3">}}
@@ -54,7 +54,7 @@ and API users:
     the image creation. Finally, specify the number of images you
     want to retain and then click **Create Schedule**. To learn more about
     the Cloud Control Panel, see
-    [Introducing the Rackspace Cloud Control Panel](/support/how-to/introducing-the-rackspace-cloud-control-panel).
+    [Introducing the Rackspace Cloud Control Panel](https://docs.rackspace.com/docs/introducing-the-rackspace-cloud-control-panel).
 -   **API users**: See the Cloud Servers [API documentation for the Scheduled Images
     extension](https://docs.rackspace.com/docs/cloud-servers/v2/api-reference/svr-images-operations#enable-scheduled-images).
 

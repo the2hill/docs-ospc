@@ -13,11 +13,11 @@ product_url: cloud-backup
 
 This article describes how to install the Rackspace Cloud Backup agent on your
 Windows&reg; server. If you are using a Linux&reg; server, see
-[Install the Cloud Backup agent (Linux)](/support/how-to/rackspace-cloud-backup-install-the-agent-on-linux)
+[Install the Cloud Backup agent (Linux)](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/rackspace-cloud-backup-install-the-agent-on-linux)
 for the parallel instructions.
 
 To update the agent, see the instructions in
-[Update the Rackspace Cloud Backup agent](/support/how-to/update-the-rackspace-cloud-backup-agent).
+[Update the Rackspace Cloud Backup agent](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/update-the-rackspace-cloud-backup-agent).
 
 ### Requirements
 
@@ -67,7 +67,7 @@ installation and configuration.
 
 2.  Start the Client Registration process by selecting the API Key or
     Password option. For information about viewing your Rackspace API key, see
-    [View and reset your API key](/support/how-to/view-and-reset-your-api-key).
+    [View and reset your API key](https://support.rackspace.com/how-to/view-and-reset-your-api-key).
 
     To use the API Key option, you must install the Cloud Backup agent
     as the administrator account of your cloud server. If you use
@@ -76,7 +76,7 @@ installation and configuration.
     Enter the User ID and the API Key or Password, depending on which
     option you choose. Click **Next**.
 
-    {{<image src="api-key-or-password.png" title=""  alt="">}}
+    <img src="api-key-or-password.png" title=""  alt="">
 
 3.  Select the Datacenter and Flavor for your server.
 
@@ -86,7 +86,7 @@ installation and configuration.
     In this case, you would need to look up the data center
     for that server (typically IAD). Click **Next**.
 
-    {{<image src="select-datacenter-flavor.png" alt="" title="">}}
+    <img src="select-datacenter-flavor.png" alt="" title="">
 
     **Note**: It is possible to install Rackspace Cloud Backup on non-Rackspace assets, as long
     as the server has access to the public Internet, and the Cloud Backup agent supports the
@@ -104,7 +104,7 @@ steps to test the installation.
 
 #### Silent installation
 
-See [Install the agent on Windows by using silent installation](/support/how-to/rackspace-cloud-backup-install-the-agent-on-windows-by-using-silent-installation)
+See [Install the agent on Windows by using silent installation](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/rackspace-cloud-backup-install-the-agent-on-windows-by-using-silent-installation)
 to learn how to perform a silent installation.
 
 **Note:** The silent installation works only when you run it from the
@@ -113,7 +113,7 @@ administrator account of the server.
 #### Update Cloud Backup agent on Windows
 
 For instructions to update the agent on Windows, see
-[Update the Rackspace Cloud Backup agent](/support/how-to/update-the-rackspace-cloud-backup-agent).
+[Update the Rackspace Cloud Backup agent](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/update-the-rackspace-cloud-backup-agent).
 
 
 ### Test the Windows installation or update
@@ -253,7 +253,7 @@ installation, look at **C:\ProgramData\Driveclient\log\driveclient.log**.
 We recommend that you enable TRACE logging as part of the
 troubleshooting process. If you need to call the Support team, TRACE
 logging helps them identify the problem. For more information about
-TRACE logging, see [Cloud Backup agent logging basics](/support/how-to/cloud-backup-agent-logging-basics).
+TRACE logging, see [Cloud Backup agent logging basics](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/cloud-backup-agent-logging-basics).
 
 If the agent fails to start up, due to registration failure, for example, the
 most effective log setting is to edit the **log4cxx.xml** file directly.
@@ -275,7 +275,7 @@ The backup statuses are defined below:
 -   **Failed:** A serious problem occurred, and the backup job did not run.
 
 To troubleshoot these error statuses, see
-[Cloud Backup Troubleshooting](/support/how-to/cloud-backup-troubleshooting/).
+[Cloud Backup Troubleshooting](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/cloud-backup-troubleshooting/).
 
 ### Uninstall Cloud Backup agent on Windows
 
@@ -384,4 +384,4 @@ The following changes should occur:
 
         The specified service does not exist as an installed service.
 
-**Next steps:** [Create a backup](/support/how-to/rackspace-cloud-backup-create-a-backup)
+**Next steps:** [Create a backup](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/rackspace-cloud-backup-create-a-backup)

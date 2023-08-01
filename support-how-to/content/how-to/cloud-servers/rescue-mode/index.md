@@ -50,18 +50,18 @@ networking enabled.
 
 The following sections provide instructions for using rescue mode:
 
-- [Start your server in rescue mode](#start-your-server-in-rescue-mode)
+- [Start your server in rescue mode](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/rescue-mode/#start-your-server-in-rescue-mode)
 
 - [Connect to your server in rescue
-  mode](#connect-to-your-server-in-rescue-mode)
+  mode](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/rescue-mode/#connect-to-your-server-in-rescue-mode)
 
 - [Troubleshoot a Linux server in rescue
-  mode](#troubleshoot-a-linux-server-in-rescue-mode)
+  mode](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/rescue-mode/#troubleshoot-a-linux-server-in-rescue-mode)
 
 - [Troubleshoot a Windows server in rescue
-  mode](#troubleshoot-a-windows-server-in-rescue-mode)
+  mode](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/rescue-mode/#troubleshoot-a-windows-server-in-rescue-mode)
 
-- [Exit rescue mode](#exit-rescue-mode)
+- [Exit rescue mode](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/rescue-mode/#exit-rescue-mode)
 
 ### Start your server in rescue mode
 
@@ -122,7 +122,7 @@ After you log in to your server in rescue mode, run the following command:
 
 Your output should look similar to the following example:
 
-{{<image src="fdisk.png" alt="" title="">}}
+<img src="fdisk.png" alt="" title="">
 
 Several disks appear in the output. A disk entry looks similar to the
 following example:
@@ -187,7 +187,7 @@ the file system.
     When the program is running, the output should resemble the following
     image, which shows the device and the size of the disk:
 
-    {{<image src="diskmgmtoutput.png" alt="" title="">}}
+    <img src="diskmgmtoutput.png" alt="" title="">
 
     The image shows the following disks:
 
@@ -200,7 +200,7 @@ the file system.
      Your system disk is set as drive **D**, and you can now access your data,
      as shown in the following image:
 
-     {{<image src="ddrive.png" alt="" title="">}}
+     <img src="ddrive.png" alt="" title="">
 
 #### Revert a Windows server from rescue mode
 
@@ -218,7 +218,7 @@ disk is brought online. Due to this issue, the OS rewrites the ID of the disk.
 After this takes place the boot loader can no longer find the boot disk. This
 problem is what causes the server to crash.
 
-{{<image src="boot-fail-message.png" alt="" title="">}}
+<img src="boot-fail-message.png" alt="" title="">
 
 ##### Resolve the ID conflict
 
@@ -241,7 +241,7 @@ Use the following steps to resolve the ID conflict on your Windows server.
 
     The Boot Configuration Data (BCD) output should look like the following example:
 
-    {{<image src="goodBCD.png" alt="" title="">}}
+    <img src="goodBCD.png" alt="" title="">
 
 4. If the objects do not point to drive **C**, run the following commands:
 
@@ -327,10 +327,10 @@ Cloud Control Panel and click **Exit Rescue Mode**.
 
 ### Next steps
 
-- [Host key fingerprints](/support/how-to/rackspace-cloud-essentials-checking-a-server-s-ssh-host-fingerprint-with-the-web-console)
+- [Host key fingerprints](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/rackspace-cloud-essentials-checking-a-server-s-ssh-host-fingerprint-with-the-web-console)
 
 ### Related articles
 
 For more information, see the following article:
 
-- [Rebuild a Cloud Server](/support/how-to/rebuild-a-cloud-server)
+- [Rebuild a Cloud Server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/rebuild-a-cloud-server)

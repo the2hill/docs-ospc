@@ -11,7 +11,7 @@ product: RackConnect
 product_url: rackconnect
 ---
 
-**Previous section:** [RackConnect key terms](/support/how-to/rackconnect-key-terms)
+**Previous section:** [RackConnect key terms](https://docs-ospc.rackspace.com/support/how-to/rackconnect/rackconnect-key-terms)
 
 **Applies to:** RackConnect v2.0
 
@@ -58,14 +58,14 @@ automation features are enabled, performs the following actions:
 **Without RackConnect**, traffic is routed out through the Internet when
 connecting from Dedicated to Cloud.
 
-{{<image src="Without.RC_.png" alt="" title="">}}
+<img src="Without.RC_.png" alt="" title="">
 
 **With RackConnect**, traffic is routed via your dedicated network
 device to the cloud. RackConnect automation keeps your dedicated
 configuration and cloud servers secure.
 
-{{<image src="With.RC_.png" alt="" title="">}}
+<img src="With.RC_.png" alt="" title="">
 
 ### Next step
 
-[Getting RackConnect support](/support/how-to/getting-rackconnect-support)
+[Getting RackConnect support](https://docs-ospc.rackspace.com/support/how-to/rackconnect/getting-rackconnect-support)

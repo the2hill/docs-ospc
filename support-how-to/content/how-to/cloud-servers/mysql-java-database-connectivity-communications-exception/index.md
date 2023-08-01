@@ -21,7 +21,7 @@ The `Communications link failure` error occurs when the database cannot be reach
 ### The IP address or hostname in _JDBC URL_ is wrong.
 
 Verify and test that the hostname or the IP address can answer back by using
-[`ping`](/support/how-to/common-network-troubleshooting-tools/#ping "Commno Network Troubleshooting Tools - Rackspace").
+[`ping`](https://docs-ospc.rackspace.com/support/how-to/cloud-networks/common-network-troubleshooting-tools/#ping "Commno Network Troubleshooting Tools - Rackspace").
 
 ### The local DNS server does not recognise the hostname in the _JDBC URL_  
 
@@ -30,7 +30,7 @@ Refresh your DNS or use the IP address in _JDBC URL_ instead.
 ### The port number is missing or incorrect in _JDBC URL_
 
 Verify that the IP is well configured in the MySQL&reg; database **_my.cnf_** file by using your favorite
-[text editor](/support/how-to/command-line-text-editors-in-linux/).
+[text editor](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/command-line-text-editors-in-linux/).
 
 To find the **my.cnf** file, run the following command to check your MySQL settings:
 
@@ -87,4 +87,4 @@ Restart the database and see if your code is having an issue when closing the co
 ### Connections between Java and DB are blocking the communication
 
 Disable the firewall or proxy. Alternately, configure them to allow or forward the port. If you are using CentOS 6/RHEL 6,
-review the [iptables article](https://docs.rackspace.com/support/how-to/basic-iptables-firewall-management/ "Basic iptables firewall management").
+review the [iptables article](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/basic-iptables-firewall-management/ "Basic iptables firewall management").

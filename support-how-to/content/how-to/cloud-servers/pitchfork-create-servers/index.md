@@ -12,14 +12,14 @@ product_url: cloud-servers
 ---
 
 Use the following steps to set up a cloud server using Pitchfork. If you want to create  a new server from
-the Cloud Control Panel interface, use the [Create a server article](/support/how-to/create-a-cloud-server). 
+the Cloud Control Panel interface, use the [Create a server article](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/create-a-cloud-server). 
 
 ### Create server
 
 1. Log in to the [API tool Pitchfork](https://pitchfork.rax.io/). 
 
    **Note**: To learn more about the Pitchfork login instructions and uses, refer to
-   [Pitchfork—the Rackspace Cloud API web application](/support/how-to/pitchfork-the-rackspace-cloud-api-web-application). 
+   [Pitchfork—the Rackspace Cloud API web application](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/pitchfork-the-rackspace-cloud-api-web-application). 
 
 2. Click on the **Servers** section to pull up the Servers API calls.
 

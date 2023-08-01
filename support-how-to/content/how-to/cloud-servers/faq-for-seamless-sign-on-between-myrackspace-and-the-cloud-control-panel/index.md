@@ -29,7 +29,7 @@ When you navigate Cloud accounts in the MyRackspace Portal, hyperlinks for
 products such as Cloud Servers, Cloud Networks, and Cloud DNS take you
 to the Cloud Control Panel, where you are logged in automatically.
 
-{{<image alt="MyRackspace screenshot - Access SSO from the cog next to the user name" src="sso_howto_use.png" title="MyRackspace screenshot - Access SSO from the cog next to the user name">}}
+<img alt="MyRackspace screenshot - Access SSO from the cog next to the user name" src="sso_howto_use.png" title="MyRackspace screenshot - Access SSO from the cog next to the user name">}}
 
 #### How do I disable seamless SSO?
 
@@ -43,7 +43,7 @@ Assign by Product**.
 Your permissions are based on your access level for the Cloud account that you
 are trying to access.
 
-{{<image alt="MyRackspace screenshot - layout of permissions screen" src="sso_permissions_layout.png" title="MyRackspace screenshot - layout of permissions screen">}}
+<img alt="MyRackspace screenshot - layout of permissions screen" src="sso_permissions_layout.png" title="MyRackspace screenshot - layout of permissions screen">}}
 
 #### How do MyRackspace permissions map to Cloud Control Panel permissions?
 
@@ -106,13 +106,13 @@ permissions by user or by product.
 
 The following image shows how to view permissions by user in MyRackspace:
 
-{{<image alt="MyRackspace screenshot - Assign SSO permissions by user" src="sso_permissions_by_user.png"title="MyRackspace screenshot - Assign SSO permissions by user">}}
+<img alt="MyRackspace screenshot - Assign SSO permissions by user" src="sso_permissions_by_user.png"title="MyRackspace screenshot - Assign SSO permissions by user">}}
 
 **View permissions by product**
 
 The following image shows how to view permissions by product in MyRackspace:
 
-{{<image alt="MyRackspace screenshot - Assign SSO permissions by product" src="sso_permission_by_product.png" title="MyRackspace screenshot - Assign SSO permissions by product">}}
+<img alt="MyRackspace screenshot - Assign SSO permissions by product" src="sso_permission_by_product.png" title="MyRackspace screenshot - Assign SSO permissions by product">}}
 
 #### Can I link back to MyRackspace from the Cloud Control Panel?
 
@@ -137,7 +137,7 @@ functionality, the following options are available:
 
 1.  Use the Nova Client to issue these commands. The Nova Client allows you to
     provision and delete servers, work with metadata, and more. See the
-    [python nova client command reference](/support/how-to/useful-python-novaclient-commands)
+    [python nova client command reference](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/useful-python-novaclient-commands)
     for more information.
 2.  Use the Cloud Servers API to specify your server's metadata. The
     [Cloud Servers Developer Guide](https://bit.ly/2tKspm2) provides

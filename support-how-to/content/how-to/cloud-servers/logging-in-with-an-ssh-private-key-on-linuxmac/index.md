@@ -18,8 +18,8 @@ terminal software on Linux.
 
 **Note:** For information about using Secure Shell (SSH) private keys on Microsoft&reg; 
 Windows&reg; operating systems, see 
-[Logging in with an SSH Private Key on Windows](/support/how-to/logging-in-with-an-ssh-private-key-on-windows)
-and [Generate RSA keys with SSH by using PuTTYgen](/support/how-to/generating-rsa-keys-with-ssh-puttygen/).
+[Logging in with an SSH Private Key on Windows](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/logging-in-with-an-ssh-private-key-on-windows)
+and [Generate RSA keys with SSH by using PuTTYgen](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/generating-rsa-keys-with-ssh-puttygen/).
 
 ### Prerequisites
 
@@ -28,7 +28,7 @@ To complete this process, you need the following software applications:
  - SSH client software that is installed on your Linux or macOS operating system by default.
  - Your favorite text editor. This example uses the **vim** text editor.
  - Your private key.  For more information about generating a key on Linux or macOS, see 
- [Connect to a server by using SSH on Linux or Mac OS X](/support/how-to/connecting-to-a-server-using-ssh-on-linux-or-mac-os/).
+ [Connect to a server by using SSH on Linux or Mac OS X](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/connecting-to-a-server-using-ssh-on-linux-or-mac-os/).
 
 ### Log in with a private key
 
@@ -44,7 +44,7 @@ the file **deployment_key.txt**.
 4. Paste your private key, such as the one in the following image, into the file.
 Be sure to include the **BEGIN** and **END** lines.
         
-     {{<image src="Linux2.png" alt="" title="">}}
+     <img src="Linux2.png" alt="" title="">
 
 5. To save your changes, press **Esc**. 
 

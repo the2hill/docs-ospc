@@ -18,7 +18,7 @@ Cloud Servers images listed as available in your RackConnect v3.0-enabled
 cloud account are compatible with RackConnect v3.0. You can see the list
 of images available for your cloud account by using the
 [Cloud Servers
-API](https://docs.rackspace.com/docs/cloud-servers/v2/developer-guide/#document-getting-started/create-server/list-images),
+API](https://docs.rackspace.com/cloud-servers/v2/api-reference/#document-getting-started/create-server/list-images),
 or when you build a new cloud server in the [Cloud Control
 Panel](https://login.rackspace.com/). RackConnect v3.0 is also
 compatible with the following Cloud Servers flavor types: Standard, General Purpose, and I/O, Compute, and Memory optimized.
@@ -28,7 +28,7 @@ RackConnect v3.0 leverages the same underlying technology as Cloud
 Networks. As a result, RackConnect v3.0 can support all cloud servers
 that Cloud Networks supports. This also means that RackConnect v3.0 does
 not currently support OnMetal servers. You can view the [RackConnect
-v3.0 compatibility matrix](/support/how-to/rackconnect-v30-compatibility)
+v3.0 compatibility matrix](https://docs-ospc.rackspace.com/support/how-to/rackconnect/rackconnect-v30-compatibility)
 for a list of all products with which RackConnect v3.0 is compatible.
 
 To provide you with the best experience possible, we recommend that you
@@ -54,7 +54,7 @@ you build a cloud server via the Cloud Control Panel, unless you select
 the **RackConnect IP** option to provision a public IP address. The
 access IP is also updated when you add and remove a public IP address
 from your cloud servers with the [RackConnect v3.0
-API](/support/how-to/getting-started-with-the-rackconnect-v30-api).
+API](https://docs-ospc.rackspace.com/support/how-to/rackconnect/getting-started-with-the-rackconnect-v30-api).
 
 **Note:** Both `access_ip_v4` and `access_ip_v6` values are listed via
 the Cloud Servers API, but because RackConnect v3.0 is currently an

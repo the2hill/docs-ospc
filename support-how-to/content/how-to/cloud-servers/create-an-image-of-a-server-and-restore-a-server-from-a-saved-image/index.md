@@ -14,11 +14,11 @@ product_url: cloud-servers
 This article describes how to create an image of a cloud server (also known as
 cloning a server) and restore a server from a saved image in the Cloud Control
 Panel. For information about using the Cloud Servers API to create an image from
-a server, see the [Create Image section in the Cloud Servers Developer Guide](https://docs.rackspace.com/docs/cloud-servers/v2/developer-guide/#create-image-of-specified-server).
+a server, see the [Create Image section in the Cloud Servers Developer Guide](https://docs.rackspace.com/docs/cloud-servers/v2/api-reference/#create-image-of-specified-server).
 
 ### Prerequisites
 
-- [Create a cloud server](/support/how-to/create-a-cloud-server)
+- [Create a cloud server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/create-a-cloud-server)
 
 #### Notes
 
@@ -27,17 +27,17 @@ to accommodate the data in the image.
 
 - Servers that boot from a Cloud Block Storage volume cannot be imaged. Use
 Cloud Block Storage snapshots to copy the boot volume instead. For more
-information, see [Create and use Cloud Block Storage snapshots](/support/how-to/create-and-use-cloud-block-storage-snapshots).
+information, see [Create and use Cloud Block Storage snapshots](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/create-and-use-cloud-block-storage-snapshots).
 
 - Images do not include attached data disks or Cloud Block Storage volumes,
 only a local system disk. Data disks must be backed up using a Cloud Block
 Storage volume, Cloud Backup, or another backup solution. For more information
-about Cloud Backup, see [Getting started with Rackspace Cloud Backup](/support/how-to/cloud-backup).
+about Cloud Backup, see [Getting started with Rackspace Cloud Backup](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/cloud-backup).
 
 -  Image backups are designed primarily to speed deployment of new servers and
 not as a robust backup solution. As such, there are a number of practical
 limitations in place. You can find a list of these limitations in the next
-article in the series [Cloud Server image limitations](/support/how-to/rackspace-cloud-essentials-cloud-server-image-limitations).
+article in the series [Cloud Server image limitations](https://docs-ospc.rackspace.com/support/how-to/cloud-images/rackspace-cloud-essentials-cloud-server-image-limitations).
 
 ### Create an image backup
 
@@ -56,7 +56,7 @@ Use the following steps to create an image backup:
 
 5. After the **Server Information** page loads, click **Actions** and select **Create Image**.
 
-    {{<image src="ScreenShot2015-01-12at5.25.09AM.png" alt="" title="">}}
+    <img src="ScreenShot2015-01-12at5.25.09AM.png" alt="" title="">
 
 6. Enter a name for the image and click **Create Image**.
 
@@ -88,7 +88,7 @@ Use the following steps to restore a server from a saved image:
 
 8. When presented with your root admin password, copy the password to a secure location and then click **Dismiss Password**.
 
-	{{<image src="1405-7.png" alt="" title="">}}
+	<img src="1405-7.png" alt="" title="">
 
 While your server goes through the build process, a **Building** notification
 is displayed.
@@ -99,4 +99,4 @@ Linux&reg;, depending on your server's operating system.
 
 ### Next section
 
-[Snapshot limitations](/support/how-to/rackspace-cloud-essentials-cloud-server-image-limitations)
+[Snapshot limitations](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/rackspace-cloud-essentials-cloud-server-image-limitations)

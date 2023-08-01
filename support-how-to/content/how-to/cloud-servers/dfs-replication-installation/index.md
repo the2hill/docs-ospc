@@ -21,7 +21,7 @@ servers called a replication group. This enables data to stay synchronized on mu
 DFSR uses remote differential compression (RDC), which uses an algorithm to detect data changes in a file to
 compress and replicate the changes, allowing for smaller and quicker transfers.
 
-**Note**: The [staging area quota](/support/how-to/determine-dfsr-staging-quota/) must be as large as the 32
+**Note**: The [staging area quota](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/determine-dfsr-staging-quota/) must be as large as the 32
 largest files in the replicated folder.
 
 ### Requirements

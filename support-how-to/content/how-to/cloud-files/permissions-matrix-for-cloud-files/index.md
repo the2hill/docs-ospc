@@ -38,4 +38,4 @@ Create or update object metadata | `POST /v1/{account}/{container}/{object}` |  
 
 ### Related article
 
-[Role-Based Access Control (RBAC) permissions matrix for Cloud Hosting](/support/how-to/permissions-matrix-for-role-based-access-control-rbac)
+[Role-Based Access Control (RBAC) permissions matrix for Cloud Hosting](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/permissions-matrix-for-role-based-access-control-rbac)

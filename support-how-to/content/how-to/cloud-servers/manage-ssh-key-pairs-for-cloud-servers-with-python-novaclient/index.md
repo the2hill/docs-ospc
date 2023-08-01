@@ -26,11 +26,11 @@ For more information about using SSH to connect to servers, see the following
 articles:
 
  - For information on connecting and generating keys on the Linux&reg; command line
-   or macOS&reg; X Terminal, see: [Connecting to a server using SSH on Linux or Mac OS](/support/how-to/connecting-to-a-server-using-ssh-on-linux-or-mac-os).
+   or macOS&reg; X Terminal, see: [Connecting to a server using SSH on Linux or Mac OS](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/connecting-to-a-server-using-ssh-on-linux-or-mac-os).
  - For information on using PuTTY&reg; on Microsoft&reg; Windows&reg; to make SSH connections,
-   see: [Connecting to Linux from Windows by using PuTTY](/support/how-to/connecting-to-linux-from-windows-by-using-putty).
+   see: [Connecting to Linux from Windows by using PuTTY](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/connecting-to-linux-from-windows-by-using-putty).
  - For information on using PuTTYgen&reg; on Windows to generate key pairs, see:
-   [Generating RSA Keys With SSH - PuTTYgen](/support/how-to/generating-rsa-keys-with-ssh-puttygen)
+   [Generating RSA Keys With SSH - PuTTYgen](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/generating-rsa-keys-with-ssh-puttygen)
 
 This article discusses using the python-novaclient command-line tool to
 generate a key pair and assign its public key to a Linux&reg; server when you
@@ -42,7 +42,7 @@ You can also manage key pairs directly by using the
 ### Prerequisites
 
 Install **python-nova client** on the client computer. To find detailed instructions to configure the client, see
-[Using python-novaclient with the Rackspace Cloud](/support/how-to/using-python-novaclient-with-the-rackspace-cloud).
+[Using python-novaclient with the Rackspace Cloud](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/using-python-novaclient-with-the-rackspace-cloud).
 
 ### Create a key pair
 

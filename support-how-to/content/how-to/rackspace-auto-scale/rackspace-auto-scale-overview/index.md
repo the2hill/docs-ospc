@@ -68,7 +68,7 @@ following items:
 ### Additional resources
 
 - To learn about using Auto Scale in the Cloud Control Panel, see the [Rackspace
-    Auto Scale Getting Started page](/support/how-to/rackspace-auto-scale).
+    Auto Scale Getting Started page](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale/rackspace-auto-scale).
 - To learn more about the Rackspace Auto Scale API, see the [Rackspace Auto
     Scale API Getting Started
-    Guide](https://docs.rackspace.com/docs/autoscale/v1/developer-guide/#document-getting-started).
+    Guide](https://docs.rackspace.com/docs/autoscale/v1/api-reference/#document-getting-started).

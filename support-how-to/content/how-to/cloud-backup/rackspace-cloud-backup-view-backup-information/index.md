@@ -11,7 +11,7 @@ product: Cloud Backup
 product_url: cloud-backup
 ---
 
-**Previous section:** [Create a backup](/support/how-to/rackspace-cloud-backup-create-a-backup).
+**Previous section:** [Create a backup](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/rackspace-cloud-backup-create-a-backup).
 
 This article describes how to confirm your backup settings, ensure that a cleanup or restore action finished
 successfully, manually start a job before you schedule it, and quickly view all of your backup activity at once.
@@ -27,7 +27,7 @@ Use the following steps to view information for a single backup:
 A list of all of the backup processes that you currently have on your account
 displays, as shown in the following image:
 
-{{<image src="1842-2039-IMG-1.png" alt="" title="">}}
+<img src="1842-2039-IMG-1.png" alt="" title="">
 
 The list of backups has three columns: **Name**, **System**, and **Last Run**. You can sort by each clicking on its title.
 
@@ -35,7 +35,7 @@ If you have a long list of backups, you can search for the one that you want in 
 
 To view the settings for a particular backup, click its name in the list of backups. The **Backup details** page displays.
 
-{{<image src="1842-2039-IMG-2.png" alt="" title="">}}
+<img src="1842-2039-IMG-2.png" alt="" title="">
 
 - The **Configuration Details** section displays the configuration details for the backup.
 
@@ -63,7 +63,7 @@ You can view the backup activity for all of your systems by selecting the **Back
 navigation bar of the **Cloud Control Panel**. The **Activity** list displays all the actions the backups have
 performed (such as Backup, Cleanup, and Restore) listed historically. The most recent actions are at the  top.
 
-{{<image src="1842-2039-IMG-3.png" alt="" title="">}}
+<img src="1842-2039-IMG-3.png" alt="" title="">
 
 If the list of activities is long, you can limit your list by performing a search. Enter your search term in the
 Search box. You can search by using the following terms:
@@ -80,4 +80,4 @@ You can view the details of a backup's activity by clicking **View Details** in 
 You can also view the server details by clicking the server's name, or you can display the **Details** page for
 the backup by clicking the backup's name in the activity entry.
 
-**Next steps:** [Cloud Backup actions](/support/how-to/rackspace-cloud-backup-backup-actions)
+**Next steps:** [Cloud Backup actions](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/rackspace-cloud-backup-backup-actions)

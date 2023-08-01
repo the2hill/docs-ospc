@@ -37,6 +37,6 @@ region. To accomplish this, RackConnect relies on Rackspace Cloud
 Networks on the cloud side and dedicated network devices on the
 dedicated side of your environment. For a basic introduction to Cloud
 Networks, see [Getting Started with Cloud
-Networks](/support/how-to/cloud-networks).
+Networks](https://docs-ospc.rackspace.com/support/how-to/cloud-networks).
 For a complete list of dedicated network devices currently supported by
-RackConnect, see [RackConnect network device comparison](/support/how-to/rackconnect-network-device-comparison).
+RackConnect, see [RackConnect network device comparison](https://docs-ospc.rackspace.com/support/how-to/rackconnect/rackconnect-network-device-comparison).

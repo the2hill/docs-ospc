@@ -60,7 +60,7 @@ connectivity on your RackConnect servers.
 
 You can detach a network from the server on the same page under the
 **Networks** section. Refer to the
-[Cloud Networks Developer Guide](https://docs.rackspace.com/docs/cloud-networks/v2/developer-guide/#document-overview/consequences-of-detaching)
+[Cloud Networks Developer Guide](https://docs.rackspace.com/docs/cloud-networks/v2/api-reference/#document-overview/consequences-of-detaching)
 before you detach Public or ServiceNet interfaces from cloud servers.
 
 1.  Log in to the Cloud Control Panel at

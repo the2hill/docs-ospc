@@ -38,7 +38,7 @@ Use the following steps to add MX records to a domain:
 
 5. In the pop-up dialog box, select **MX Record** as the record type.
 
-    {{<image src="addrecord.png" alt="" title="">}}
+    <img src="addrecord.png" alt="" title="">
 
 6. Enter the following information:
 

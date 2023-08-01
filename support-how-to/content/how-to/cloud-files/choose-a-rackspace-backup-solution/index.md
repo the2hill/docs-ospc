@@ -103,7 +103,7 @@ that also runs the agent.
 
 For more information about using Cloud Backup, see the [Cloud Backup API
 Developer
-Guide](https://docs.rackspace.com/docs/cloud-backup/v1/developer-guide/).
+Guide](https://docs.rackspace.com/docs/cloud-backup/v1/api-reference/).
 
 ### Cloud Images
 
@@ -146,7 +146,7 @@ before you rely on it.
 
 For more information about using Cloud Images, see the [Cloud Images API
 developer
-guide](https://docs.rackspace.com/docs/cloud-images/v2/developer-guide/).
+guide](https://docs.rackspace.com/docs/cloud-images/v2/api-reference/).
 
 ### Rackspace Cloud Files
 
@@ -219,7 +219,7 @@ and Node.js.
 
 For more information about using Cloud Files, see the [Cloud Files API
 developer
-guide](https://docs.rackspace.com/docs/cloud-files/v1/developer-guide/).
+guide](https://docs.rackspace.com/docs/cloud-files/v1/api-reference/).
 
 ### Cloud Block Storage
 
@@ -246,4 +246,4 @@ using Cloud Block Storage is its very fast speed and suitability for many small,
 files.
 
 For more information, see the [Cloud Block Storage API developer
-guide](https://docs.rackspace.com/docs/cloud-block-storage/v1/developer-guide/).
+guide](https://docs.rackspace.com/docs/cloud-block-storage/v1/api-reference/).

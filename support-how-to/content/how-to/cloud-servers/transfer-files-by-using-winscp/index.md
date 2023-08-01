@@ -30,7 +30,7 @@ This article describes how to download, install, and use WinSCP to transfer file
     * PuTTYgen (key generator)
     * Translations
 
-    {{<image src="install-type.png" alt="" title="">}}
+    <img src="install-type.png" alt="" title="">
 
 4. Choose the interface type with which you want to work and click **Next**.
 
@@ -38,7 +38,7 @@ This article describes how to download, install, and use WinSCP to transfer file
 
     We recommend starting with the **Commander** interface. You can change the default style later in the **Preferences** menu.
 
-    {{<image src="interface-type.png" alt="" title="">}}
+    <img src="interface-type.png" alt="" title="">
 
 5. Configure `sshd` (the ssh/sftp server) to listen to a port that is different from the default.
 
@@ -58,13 +58,13 @@ This article describes how to download, install, and use WinSCP to transfer file
 
     WinSCP stores configurations in **Stored Sessions**. Use a different name for each server.
 
-    **Note**: You can use a private key to log in to the cloud server. See [Generate RSA keys with SSH by using PuTTYgen](/support/how-to/generating-rsa-keys-with-ssh-puttygen) for information about setting up public and private keys.
+    **Note**: You can use a private key to log in to the cloud server. See [Generate RSA keys with SSH by using PuTTYgen](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/generating-rsa-keys-with-ssh-puttygen) for information about setting up public and private keys.
 
 9. If this is the first time you have used WinSCP, and you are sure you've entered the correct configuration details, click **Yes** on the **Warning** dialog box.
 
     This warning is not shown during subsequent connections to this server.
 
-    {{<image src="accept-key.png" alt="" title="">}}
+    <img src="accept-key.png" alt="" title="">
 
 ### Transfer files
 
@@ -78,7 +78,7 @@ This article describes how to download, install, and use WinSCP to transfer file
 
     If you use WinSCP to connect an ftp server, the lock icon does not appear because ftp doesn't provide secure (encrypted) communication.
 
-    {{<image src="transfer-files.png" alt="" title="">}}
+    <img src="transfer-files.png" alt="" title="">
 
 ### Create files and directories
 
@@ -86,7 +86,7 @@ This article describes how to download, install, and use WinSCP to transfer file
 
 2. Enter a file name and click **OK**.
 
-    {{<image src="file-name.png" alt="" title="">}}
+    <img src="file-name.png" alt="" title="">
 
 3. In the text editor, enter the contents of the new file and click the **Save** icon.
 
@@ -102,6 +102,6 @@ This article describes how to download, install, and use WinSCP to transfer file
 
     You can also see the equivalent octal value for your settings. The user you used to login via sftp owns new directory.
 
-    {{<image src="permissions.png" alt="" title="">}}
+    <img src="permissions.png" alt="" title="">
 
 7. To change permissions, right-click the file or directory and select **Properties**.

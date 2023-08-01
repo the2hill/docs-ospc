@@ -34,7 +34,7 @@ first level of network security. For example, if you're not expecting external
 traffic to your Cloud Servers, you can create a firewall around them and reduce
 their exposure to outside threats. Note that while Rackspace creates all new servers
 with basic security settings, you should follow the instructions
-in [Configuring Basic Security](/support/how-to/configuring-basic-security) to
+in [Configuring Basic Security](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/configuring-basic-security) to
 protect your data further.
 
 ### Finding a Rackspace IP address
@@ -46,4 +46,4 @@ You can find all of the IP addresses for a Cloud Server, Cloud Load Balancer, or
 #### Related Information
 
 - [Learn More About Cloud
-  Servers](/support/how-to/learn-more-about-cloud-servers)
+  Servers](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/learn-more-about-cloud-servers)

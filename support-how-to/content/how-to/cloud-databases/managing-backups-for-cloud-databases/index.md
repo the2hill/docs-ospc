@@ -20,7 +20,7 @@ files, which are automatically deleted based on a set retention period.
 This article describes how to create a backup for your database, view details
 about a backup, and delete or restore a backup. You can also schedule
 automatic backups of your databases. For more information, see
-[Scheduled backups for Cloud Databases](/support/how-to/scheduled-backups-for-cloud-databases).
+[Scheduled backups for Cloud Databases](https://docs-ospc.rackspace.com/support/how-to/cloud-databases/scheduled-backups-for-cloud-databases).
 
 ### Create a Backup
 
@@ -88,7 +88,7 @@ steps:
    You can hover over the backup name for additional details or click the
    gear icon to copy, restore, or delete the backup.
 
-{{<image src="ListDetailsInstance.png" alt="" title="">}}
+<img src="ListDetailsInstance.png" alt="" title="">
 
 ### Delete a backup
 

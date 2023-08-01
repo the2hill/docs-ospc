@@ -12,7 +12,7 @@ product_url: rackspace-auto-scale
 ---
 
 The
-[Concepts](/support/how-to/rackspace-auto-scale-control-panel-user-guide-concepts
+[Concepts](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-concepts
 "Concepts") article reviews what Auto Scale is and the core concepts that
 drive it. This article discusses how to set the parameters for scaling policies
 through the scaling group configuration.
@@ -69,7 +69,7 @@ through the scaling group configuration.
     
 11. Select a scaling policy. If no scaling policies exist, check the following
     article: [Create a scaling
-    policy](/support/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-policy).
+    policy](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-policy).
 
 12. When you are done, click **Create Scaling Group**. When the scaling group
     is created, the status changes to **Active**.
@@ -99,7 +99,7 @@ Following are a couple of things you should know about Auto Scale control panel:
 
 ### User Guide sections
 
--   [Rackspace Auto Scale Control Panel User Guide - Introduction](/support/how-to/rackspace-auto-scale-control-panel-user-guide-introduction "Introduction")
--   [Rackspace Auto Scale Control Panel User Guide - Concepts](/support/how-to/rackspace-auto-scale-control-panel-user-guide-concepts "Concepts")
--   [Rackspace Auto Scale Control Panel User Guide - Create a scaling group](/support/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group "Creating Scaling Groups")
--   [Rackspace Auto Scale Control Panel User Guide - Create a scaling policy](/support/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-policy "Creating Scaling Policies")
+-   [Rackspace Auto Scale Control Panel User Guide - Introduction](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-introduction "Introduction")
+-   [Rackspace Auto Scale Control Panel User Guide - Concepts](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-concepts "Concepts")
+-   [Rackspace Auto Scale Control Panel User Guide - Create a scaling group](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group "Creating Scaling Groups")
+-   [Rackspace Auto Scale Control Panel User Guide - Create a scaling policy](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-policy "Creating Scaling Policies")

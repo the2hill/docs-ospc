@@ -12,9 +12,9 @@ product_url: cloud-block-storage
 ---
 
 **Previous section:** [Create and attach a Cloud Block Storage
-volume](/support/how-to/create-and-attach-a-cloud-block-storage-volume)
+volume](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/create-and-attach-a-cloud-block-storage-volume)
 
-After you have [created and attached](/support/how-to/create-and-attach-a-cloud-block-storage-volume)
+After you have [created and attached](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/create-and-attach-a-cloud-block-storage-volume)
 your Cloud Block Storage volume, you must prepare it for use on your server. To
 prepare the volume, you must partition, format, and mount it.  After you have
 completed these steps, your volume is usable like a drive on your server.
@@ -48,7 +48,7 @@ server name and select **Change Password**.
         
 5. After you log in, list the disks on your server. Your volume typically
     displays as the last drive in this list. In the following example,
-    the 100 GB volume created in the [Create and Attach a Cloud Block Storage Volume](/support/how-to/create-and-attach-a-cloud-block-storage-volume)
+    the 100 GB volume created in the [Create and Attach a Cloud Block Storage Volume](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/create-and-attach-a-cloud-block-storage-volume)
     article is attached to **/dev/xvdb**.
 
     **Note**: It displays as 107.4 GB because of the way that the system counts megabytes.
@@ -310,4 +310,4 @@ terminology, is required before running this wizard.
 
    Your volume is now ready for use.
 
-**Next steps**: [Create and use Cloud Block Storage snapshots](/support/how-to/create-and-use-cloud-block-storage-snapshots)
+**Next steps**: [Create and use Cloud Block Storage snapshots](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storagecreate-and-use-cloud-block-storage-snapshots)

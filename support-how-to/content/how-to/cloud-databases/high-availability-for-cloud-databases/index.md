@@ -65,7 +65,7 @@ by using a virtual IP (VIP). Figure 1 provides an overview of a Cloud Databases
 HA setup.
 
 **Figure 1. Cloud Databases HA setup**
-{{<image src="HighAvailabilityforCloudDatabases1b.png" alt="" title="">}}
+<img src="HighAvailabilityforCloudDatabases1b.png" alt="" title="">
 
 The MHA Manager lives within the source HAProxy node and monitors the
 source database instance. If the source database instance becomes
@@ -82,10 +82,10 @@ seconds.
 
 You can create new HA instance groups and convert from a replica set to an HA
 group by using the [Cloud Control
-Panel](/support/how-to/manage-cloud-databases-ha-groups-in-the-cloud-control-panel)
+Panel](https://docs-ospc.rackspace.com/support/how-to/cloud-databases/manage-cloud-databases-ha-groups-in-the-cloud-control-panel)
 and the API. For more information about HA-related API calls, see the [Cloud
 Databases Developer
-Guide](https://docs.rackspace.com/docs/cloud-databases/v1/developer-guide/#high-availability-instance-group).
+Guide](https://docs.rackspace.com/docs/cloud-databases/v1/api-reference/#high-availability-instance-group).
 
 **Notes:**
 
@@ -132,7 +132,7 @@ We recommend that you take the following steps:
 -   Monitor and set up alarms for the replicas to ensure that they are
     in a healthy state. For more information about monitoring replicas, see
     [Database replication with Cloud
-    Databases](/support/how-to/database-replication-with-cloud-databases).
+    Databases](https://docs-ospc.rackspace.com/support/how-to/cloud-databases/database-replication-with-cloud-databases).
 
 ### Limitations
 

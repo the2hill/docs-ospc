@@ -11,7 +11,7 @@ product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
 
-**Previous section:** [Create and use Cloud Block Storage snapshots](/support/how-to/create-and-use-cloud-block-storage-snapshots)
+**Previous section:** [Create and use Cloud Block Storage snapshots](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storagecreate-and-use-cloud-block-storage-snapshots)
 
 Detaching a Cloud Block Storage volume is useful and necessary when you want to
 perform the following tasks:
@@ -42,11 +42,11 @@ boot-from-volume functionality* section at the end of this article.
 
 3. On your server, use the `df -h` command to see how the volume is mounted.
 
-   {{<image src="mount_point.png" alt="" title="">}}
+   <img src="mount_point.png" alt="" title="">
 
 4. Use the value under **Mounted on** in the `unmount` command.
 
-   {{<image src="fstab2_0.png" alt="" title="">}}
+   <img src="fstab2_0.png" alt="" title="">
 
 5. Comment out the second line (highlighted in the screenshot) in the
     **/etc/fstab** file to prevent the volume from trying to mount on the next
@@ -72,7 +72,7 @@ boot-from-volume functionality* section at the end of this article.
 
 5. If the **Take Disk Offline** warning window appears, click **Yes**.
 
-    {{<image src="win_bringoffline_0.jpeg" alt="" title="">}}
+    <img src="win_bringoffline_0.jpeg" alt="" title="">
 
 The Cloud Block Storage volume no longer displays as a drive under **Computer**.
 

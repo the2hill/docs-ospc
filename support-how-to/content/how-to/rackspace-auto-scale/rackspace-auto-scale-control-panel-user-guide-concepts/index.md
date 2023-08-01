@@ -12,7 +12,7 @@ product_url: rackspace-auto-scale
 ---
 
 The [Introduction to Rackspace Auto
-Scale](/support/how-to/rackspace-auto-scale-control-panel-user-guide-introduction
+Scale](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-introduction
 "Introduction") article outlines what you can do with Auto Scale and its setup
 requirements. This article discusses what Auto Scale does and the core
 concepts that drive it.
@@ -99,7 +99,7 @@ cooldown period. Schedule-based policies that conflict with a cooldown period
 are not executed.
 
 For more information about cooldowns, see [How Auto Scale cooldowns
-work](/support/how-to/how-auto-scale-cooldowns-work).
+work](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale/how-auto-scale-cooldowns-work).
 
 ### Scaling policies
 
@@ -118,7 +118,7 @@ And, you can use a webhook to respond to an event and trigger a policy. You can
 create the policy with the webhook by using the **Cloud Control Panel**, but you have to
 use the Auto Scale API to create and configure the webhook. You can learn more
 about webhooks in the **Auto Scale API Developers Guide** section on
-[Webhooks](https://docs.rackspace.com/docs/autoscale/v1/developer-guide/#webhooks-and-capability-urls).
+[Webhooks](https://docs.rackspace.com/docs/autoscale/v1/api-reference/#webhooks-and-capability-urls).
 
 The following diagrams illustrate some of the principles governing scaling
 policies.
@@ -129,21 +129,21 @@ The following diagram illustrates how a percentage scale-up policy translates
 into a different scaling amount each time it is invoked and changes the
 total number of servers.
 
-{{<image src="image003_3.png" alt="" title="">}}
+<img src="image003_3.png" alt="" title="">
 
 #### Schedule scale-up policy
 
 The following diagram illustrates how you can configure a scheduled scale-up policy
 to respond to anticipated increases in traffic.
 
-{{<image src="image005_3.png" alt="" title="">}}
+<img src="image005_3.png" alt="" title="">
 
 #### Scaling policies restricted by minimum and maximum values
 
 The following diagram illustrates how the configured minimum and maximum number
 of servers in the scaling group restricts scale-ups and scale-downs.
 
-{{<image src="image007_3.png" alt="" title="">}}
+<img src="image007_3.png" alt="" title="">
 
 #### Delete servers policy
 
@@ -151,7 +151,7 @@ The following diagram illustrates how a scale-down policy operates first on
 pending servers (servers in the process of being added) and then on the scaling
 group's oldest servers.
 
-{{<image src="image009_1.png" alt="" title="">}}
+<img src="image009_1.png" alt="" title="">
 
 ### Load balancers
 
@@ -163,7 +163,7 @@ traffic to your cloud servers on the node port you configured.
 
 ### User Guide sections
 
-- [Rackspace Auto Scale Control Panel User Guide - Introduction](/support/how-to/rackspace-auto-scale-control-panel-user-guide-introduction "Introduction")
-- [Rackspace Auto Scale Control Panel User Guide - Concepts](/support/how-to/rackspace-auto-scale-control-panel-user-guide-concepts "Concepts")
-- [Rackspace Auto Scale Control Panel User Guide - Create a scaling group](/support/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group "Creating Scaling Groups")
-- [Rackspace Auto Scale Control Panel User Guide - Create a scaling policy](/support/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-policy "Crating Scaling Policies")
+- [Rackspace Auto Scale Control Panel User Guide - Introduction](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-introduction "Introduction")
+- [Rackspace Auto Scale Control Panel User Guide - Concepts](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-concepts "Concepts")
+- [Rackspace Auto Scale Control Panel User Guide - Create a scaling group](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group "Creating Scaling Groups")
+- [Rackspace Auto Scale Control Panel User Guide - Create a scaling policy](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-policy "Crating Scaling Policies")

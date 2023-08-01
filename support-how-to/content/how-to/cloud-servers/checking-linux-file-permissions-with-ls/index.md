@@ -18,7 +18,7 @@ or examine a directory structure to ensure that users can follow the hierarchy t
 the files that they need.
 
 For a more in depth discussion on Linux file permissions, see
-[Linux file permission concepts](/support/how-to/linux-file-permission-concepts/).
+[Linux file permission concepts](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/linux-file-permission-concepts/).
 
 ### ls command
 

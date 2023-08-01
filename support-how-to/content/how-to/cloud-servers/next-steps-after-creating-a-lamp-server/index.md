@@ -11,7 +11,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 You can use [Cloud
-Orchestration](/support/how-to/quick-set-up-with-rackspace-cloud-orchestration/) to
+Orchestration](https://docs-ospc.rackspace.com/support/how-to/cloud-orchestration/quick-set-up-with-rackspace-cloud-orchestration/) to
 set up a Linux&reg; Apache&reg; MySQL&reg; PHP&reg; (LAMP) server. The
 resulting server has a baseline setup, but you can use it to host many 
 PHP-based websites. The LAMP Cloud Orchestration template is built to host

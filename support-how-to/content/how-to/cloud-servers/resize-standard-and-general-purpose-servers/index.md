@@ -11,7 +11,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-**Previous section:** [Create a Cloud Server](/support/how-to/create-a-cloud-server)
+**Previous section:** [Create a Cloud Server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/create-a-cloud-server)
 
 This article describes how to resize your server in the [Cloud Control Panel](https://login.rackspace.com). The process changes the virtual processor (vCPU), random access memory (RAM), and might also change disk size.
 
@@ -54,7 +54,7 @@ Use the following steps to resize a server:
 
    **Note**: Servers booted from a Cloud Block Storage volume don't gain disk space after a resize.
 
-   With a Windows server, you must complete additional steps to use the additional space after a resize. For more information, see [Adding Disk Space After Resizing a Windows Server 2012 Cloud Server](/support/how-to/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server).
+   With a Windows server, you must complete additional steps to use the additional space after a resize. For more information, see [Adding Disk Space After Resizing a Windows Server 2012 Cloud Server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server).
 
 9. Click **Confirm** to verify the resize or **Revert** to go back to the original size.
 
@@ -62,8 +62,8 @@ Confirming the resize changes the server's status. The process is complete when 
 
 ### Additional resources
 
-- [Reset your server password](/support/how-to/reset-your-server-password)
-- [Basic Cloud Server security](/support/how-to/basic-cloud-server-security)
-- [Reboot your server](/support/how-to/reboot-your-server)
-- [Rebuild a Cloud Server](/support/how-to/rebuild-a-cloud-server)
+- [Reset your server password](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/reset-your-server-password)
+- [Basic Cloud Server security](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/configuring-basic-security)
+- [Reboot your server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/reboot-your-server)
+- [Rebuild a Cloud Server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/rebuild-a-cloud-server)
 

@@ -92,7 +92,7 @@ You can generate a CSR in the following ways:
 
   - If you have a Cloud account, use our [CSR Generator](https://csrgenerator.rackspace.com).
 
-  - If you want to generate the CSR, use [this guide](https://docs.rackspace.com/support/how-to/generate-a-csr).
+  - If you want to generate the CSR, use [this guide](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/generate-a-csr).
   
   - If you want Rackspace to generate an SSL certificate for you, log a ticket with
     the following details: 
@@ -109,7 +109,7 @@ The CSR generates a key. ***Ensure that you save the key*** because you can't
 retrieve it later. SSL doesn't work without it. Use the CSR to purchase your
 SSL certificate.
 
-For more information, see [Purchase or renew an SSL certification](https://docs.rackspace.com/support/how-to/purchase-or-renew-an-ssl-certificate).
+For more information, see [Purchase or renew an SSL certification](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/purchase-or-renew-an-ssl-certificate).
 
 ### Verify the SSL components
 
@@ -156,7 +156,7 @@ $ curl -vI https://example.com 2>&1 | egrep 'start|expire|common|issuer|OK'
 
 Further references: 
 
-- [How to install an SSL on your server.](https://docs.rackspace.com/support/how-to/install-an-ssl-certificate)
-- [How to install a new SSL on a Cloud Load Balancer.](https://support.rackspace.com/how-to/configure-SSL-certificates-on-cloud-load-balancers)
-- [How to configure multiple SSLs on a Cloud Load Balancer.](https://support.rackspace.com/how-to/configure-multiple-SSL-certificates-on-cloud-load-balancers)
-- [How to force web traffic to SSL with HTTPS Redirect.](https://docs.rackspace.com/support/how-to/configure-a-load-balancer#additional-configuration-options)
+- [How to install an SSL on your server.](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/install-an-ssl-certificate)
+- [How to install a new SSL on a Cloud Load Balancer.](https://docs-ospc.rackspace.com/support/how-to/cloud-load-balancers/configure-SSL-certificates-on-cloud-load-balancers)
+- [How to configure multiple SSLs on a Cloud Load Balancer.](https://docs-ospc.rackspace.com/support/how-to/cloud-load-balancers/configure-multiple-SSL-certificates-on-cloud-load-balancers)
+- [How to force web traffic to SSL with HTTPS Redirect.](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/configure-a-load-balancer#additional-configuration-options)

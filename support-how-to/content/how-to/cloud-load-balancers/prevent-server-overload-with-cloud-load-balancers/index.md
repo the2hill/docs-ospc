@@ -20,7 +20,7 @@ your server and its installed applications.
 ### Prerequisites
 
 You need an existing load balancer. If you don't have a load balancer yet, create one by following the
-instructions in the article, [Configure a load balancer](/support/how-to/configure-a-load-balancer/).
+instructions in the article, [Configure a load balancer](https://docs-ospc.rackspace.com/support/how-to/cloud-load-balancers/configure-a-load-balancer/).
 
 ### Configure connection throttling
 

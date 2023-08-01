@@ -26,7 +26,7 @@ The following screenshot shows the three IP addresses in the **Networks and
 Security Groups** section in the
 [Cloud Control Panel](https://login.rackspace.com):
 
-{{<image alt="Server Details" src="IPs.png" title="Server Details">}}
+<img alt="Server Details" src="IPs.png" title="Server Details">}}
 
 ### Use regions and the Rackspace Network to manage bandwidth charges
 
@@ -47,7 +47,7 @@ need to match the location of your Cloud Load Balancer with the node.
 The following screenshot shows you **Configuration** area of the **Create Load
 Balancer** page in the Cloud Control Panel.
 
-{{<image alt="Cloud Load Balancer creation" src="clb-create.png" title="Cloud Load Balancer creation">}}
+<img alt="Cloud Load Balancer creation" src="clb-create.png" title="Cloud Load Balancer creation">}}
 
 Select the region in the **Identification** section of the **Create Load Balancer**
 screen in the [Cloud Control Panel](https://login.rackspace.com).

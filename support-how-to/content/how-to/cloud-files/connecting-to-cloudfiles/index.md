@@ -40,6 +40,6 @@ ways:
 -   **Through the API**: You can find your Cloud Files data center in
     the storage URL that is part of the response when you authenticate to
     Cloud Files. For more information, see
-    [Retrieving the Authentication Token](https://docs.rackspace.com/docs/cloud-files/v1/developer-guide/#document-getting-started/authenticate).
+    [Retrieving the Authentication Token](https://docs.rackspace.com/docs/cloud-files/v1/api-reference/#document-getting-started/authenticate).
 
 Use the Feedback tab to make any comments or ask questions. You can also [start a conversation with us](https://www.rackspace.com/contact). 

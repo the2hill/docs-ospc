@@ -29,7 +29,7 @@ Cloud Servers, Cloud Load Balancers, and Cloud Databases.
 ### Connect using an ssh tunnel (public access)
 
 You can create a secure connection to a Cloud Server by using an [SSH
-tunnel](/support/how-to/connecting-to-a-server-using-ssh-on-linux-or-mac-os). 
+tunnel](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/connecting-to-a-server-using-ssh-on-linux-or-mac-os). 
 After you connect to your server, you can use the MySQL&reg; client, or
 a similar tool, to manage your database. This method lets you connect external,
 non-Rackspace resources to your Cloud Database.
@@ -44,10 +44,10 @@ Any data sent outside of the data center incurs normal bandwidth charges.
 Here's a visual representation of how you connect to your Cloud Database. Choose
 the connection method that works best for your implementation.
 
-{{<image src="cloud-databases-network-illustration-rev2.png" title="Accessing a Cloud Database">}}
+<img src="cloud-databases-network-illustration-rev2.png" title="Accessing a Cloud Database">}}
 
 ### Related Information
 
 [Connecting to Your Cloud
-Database](/support/how-to/connect-to-a-cloud-databases-instance "Connecting to
+Database](https://docs-ospc.rackspace.com/support/how-to/cloud-databases/connect-to-a-cloud-databases-instance "Connecting to
 Your Cloud Database")

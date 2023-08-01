@@ -15,7 +15,7 @@ product_url: cloud-servers
 
 ### Using Netcat
 
-If your network service is malfunctioning but you know the service is [listening to a network port](/support/how-to/checking-listening-ports-with-netstat), you can verify the program connection to troubleshoot the problem. 
+If your network service is malfunctioning but you know the service is [listening to a network port](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/checking-listening-ports-with-netstat), you can verify the program connection to troubleshoot the problem. 
 
 Use the Netcat command, `nc`, to access the service. If you are running a Red Hat&reg;-based distribution and you don't have `nc` installed, type the following command on the command line:
 
@@ -54,7 +54,7 @@ The following examples show the possible output messages:
 
 #### Connection refused
 
-The service isn't running, or a firewall is rejecting the connection. Verify the process status by running `ps` on the command line. See [Checking running services on Linux](/support/how-to/checking-running-services-on-linux) for more options.
+The service isn't running, or a firewall is rejecting the connection. Verify the process status by running `ps` on the command line. See [Checking running services on Linux](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/checking-running-services-on-linux) for more options.
 
 **Note:** If your service is running, your firewall might reject the connection. Read the **connection timed out** section for instructions on firewall troubleshooting.
 

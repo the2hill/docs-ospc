@@ -98,13 +98,13 @@ on the server on which the plug-in resides. If there is more than 100 MB,
 the check receives an `OK` response and no alert triggers.
 
 To learn more about alarm language, see [Alarm language in Rackspace
-Monitoring](/support/how-to/alarm-language-in-rackspace-monitoring/).
+Monitoring](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/alarm-language-in-rackspace-monitoring/).
 
 After you have created your alarm language, you need to add the alarm to the entity
 by using one of the following methods:
 
-- The [Cloud Control Panel](/support/how-to/working-with-alarms/)
-- A [cURL POST command](https://docs.rackspace.com/docs/rackspace-monitoring/v1/api-reference/alarms-operations/#create-an-alarm)
+- The [Cloud Control Panel](https://docs.rackspace.com/docs/working-with-alarms)
+- A [cURL POST command](https://docs.rackspace.com/docs/working-with-alarms)
 
 ### Use an Ansible playbook to install plug-ins
 

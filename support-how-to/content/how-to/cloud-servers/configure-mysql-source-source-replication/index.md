@@ -25,7 +25,7 @@ This article shows you how to set up
 between two Cloud Servers. Source-Source data replication enables replicated
 data, stored on multiple computers, to be updated by any authorized contributing
 member of the group. This enables more open collaboration than
-[source-replica replication](/support/how-to/set-up-mysql-source-replica-replication) where
+[source-replica replication](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/set-up-mysql-source-replica-replication) where
 any needed changes identified by a group member must to be submitted to the
 designated source of the node.
 

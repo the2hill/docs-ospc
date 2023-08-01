@@ -14,7 +14,7 @@ product_url: cloud-block-storage
 In Cloud Block Storage, you both attach and mount a volume to a server. The
 following information explains these concepts:
 
-For more information about how to mount your volume, see [Create and attach a Cloud Block Storage volume](/support/how-to/create-and-attach-a-cloud-block-storage-volume/)
+For more information about how to mount your volume, see [Create and attach a Cloud Block Storage volume](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/create-and-attach-a-cloud-block-storage-volume/)
 
 **Attach**: When you attach a Cloud Block Storage Volume to a server, a
 logical connection is created from a Cloud Block Storage node to the
@@ -30,4 +30,4 @@ You can mount your volume after you attach and format it for use by a
 server's operating system. You can only mount a volume through the computer's
 operating system.
 
-For more information about how to mount your volume, see [Prepare your volume](/support/how-to/prepare-your-cloud-block-storage-volume).
+For more information about how to mount your volume, see [Prepare your volume](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storageprepare-your-cloud-block-storage-volume).

@@ -21,7 +21,7 @@ controller for an existing Active Directory forest.
 Services (AD DS) role on Microsoft Windows Server 2008 R2 Enterprise 64-bit
 (W2K8), see [Install Active Directory Domain Services on Windows Server 2008
 R2 Enterprise
-64-bit](/support/how-to/installing-active-directory-domain-services-on-windows-server-2008-r2-enterprise-64-bit).
+64-bit](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/installing-active-directory-domain-services-on-windows-server-2008-r2-enterprise-64-bit).
 
 ### Install Active Directory
 
@@ -57,7 +57,7 @@ Use the following steps to install Active Directory on the server:
    features that you want to install during the AD DS installation process and
    click **Next**.
 
-    {{<image src="features_0.png" alt="" title="">}}
+    <img src="features_0.png" alt="" title="">
 
 7. Review the information on the **AD DS** tab, then click **Next**.
 
@@ -98,7 +98,7 @@ for your domain by using the following steps:
     Configuration** notification. Click the **Promote this server to a domain
     controller** link that appears in the notification.
 
-    {{<image src="promote.png" alt="" title="">}}
+    <img src="promote.png" alt="" title="">
 
 3. From the **Deployment Configuration** tab, select **Radial options > Add a
    new forest**. Enter your root domain name in the **Root domain name** field

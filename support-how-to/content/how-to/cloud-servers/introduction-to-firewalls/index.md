@@ -106,6 +106,6 @@ allow. You should usually place this line at the bottom.
 
 You might also find the following resources helpful:
 
-- [Best practices for firewall rules configuration](/support/how-to/best-practices-for-firewall-rules-configuration/)
+- [Best practices for firewall rules configuration](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/best-practices-for-firewall-rules-configuration/)
 
-- [Introduction to iptables](/support/how-to/introduction-to-iptables/)
+- [Introduction to iptables](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/introduction-to-iptables/)

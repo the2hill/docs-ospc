@@ -55,7 +55,7 @@ like on the system.
 To make matters simpler, here is a graph showing the basic Linux users you can
 have, scaled from least permissions to all permissions:
 
-{{<image src="Picture1.png" alt="" title="">}}
+<img src="Picture1.png" alt="" title="">
 
 </br>
 

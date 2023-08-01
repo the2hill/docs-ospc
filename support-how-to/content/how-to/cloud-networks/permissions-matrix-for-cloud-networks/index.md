@@ -82,4 +82,4 @@ Delete association between IP address and server | `DELETE /v2/servers/{serverID
 
 ### Related article
 
-[Role-based Access Control (RBAC) permissions matrix for Cloud Hosting](/support/how-to/permissions-matrix-for-role-based-access-control-rbac)
+[Role-based Access Control (RBAC) permissions matrix for Cloud Hosting](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/permissions-matrix-for-role-based-access-control-rbac)

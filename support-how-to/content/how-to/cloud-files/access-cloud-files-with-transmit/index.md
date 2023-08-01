@@ -31,7 +31,7 @@ To use Transmit 5 with Cloud Files, you need to have the following items:
    - Rackspace Cloud account application programmer interface (API) key
  
 If you are unsure how to find your API key, follow
-[these instructions](https://docs.rackspace.com/support/how-to/view-and-reset-your-api-key/).
+[these instructions](https://support.rackspace.com/how-to/view-and-reset-your-api-key).
 
 ### Connection procedure
 

@@ -13,7 +13,7 @@ product_url: rackconnect
 
 **Applies to**: RackConnect v2.0
 
-**Previous section:** [Accessing RackConnected cloud servers](/support/how-to/accessing-rackconnect-cloud-servers)
+**Previous section:** [Accessing RackConnected cloud servers](https://docs-ospc.rackspace.com/support/how-to/rackconnect/accessing-rackconnect-cloud-servers)
 
 Load balancers distribute workloads across two or more servers, network
 links, or other resources. This distribution maximizes throughput,
@@ -43,11 +43,11 @@ When creating a cloud server, use the metadata option to specify the pool or poo
 - **Metadata Value:** The exact name of the pool as defined on the load
 balancer. Use a semicolon separated list for more than one pool.
 
-You can specify the metadata values when you use the Cloud Servers API to create new cloud servers. View the [API documentation](https://docs.rackspace.com/docs/cloud-servers/v2/developer-guide/#set-server-metadata) for details
+You can specify the metadata values when you use the Cloud Servers API to create new cloud servers. View the [API documentation](https://docs.rackspace.com/docs/cloud-servers/v2/api-reference/#set-server-metadata) for details
 about how to use the API to enter metadata information for a cloud server.
 
 This is the method to use if you want Auto Scale to use RackConnect with
-F5 load balancers. Read more about this on the [Auto Scale tips and how-to's](/support/how-to/rackspace-auto-scale-tips-and-how-tos)
+F5 load balancers. Read more about this on the [Auto Scale tips and how-to's](https://docs-ospc.rackspace.com/support/how-to/rackconnect/rackspace-auto-scale-tips-and-how-tos)
 page about cloud bursting.
 
 **Note:** If you are using next generation Cloud Servers, you can now
@@ -97,7 +97,7 @@ The following diagram shows the path that inbound (and return) load
 balancer pool traffic follows to your cloud servers when you use an F5
 BIG-IP load balancer with RackConnect:
 
-{{<image src="RackConnect.F5.TrafficFlow.png" alt="" title="">}}
+<img src="RackConnect.F5.TrafficFlow.png" alt="" title="">
 
 
 ### Brocade load balancers
@@ -145,11 +145,11 @@ The following diagram shows the path that inbound and return load
 balancer pool traffic follows to your cloud servers when you use a
 Brocade ADX load balancer with RackConnect:
 
-{{<image src="RackConnect.Brocade.TrafficFlow.png" alt="" title="">}}
+<img src="RackConnect.Brocade.TrafficFlow.png" alt="" title="">
 
 If you have any questions about using Dedicated load balancers with
 RackConnect, contact your Support team.
 
 ### Next section
 
-[Using Cloud Load Balancers with RackConnect](/support/how-to/using-cloud-load-balancers-with-rackconnect)
+[Using Cloud Load Balancers with RackConnect](https://docs-ospc.rackspace.com/support/how-to/rackconnect/using-cloud-load-balancers-with-rackconnect)

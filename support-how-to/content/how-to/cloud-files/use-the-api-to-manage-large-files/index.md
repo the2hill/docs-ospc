@@ -15,8 +15,8 @@ If you are interested in developing by using the Rackspace Large File
 Support code to incorporate into your application, you should work
 directly with the Cloud Files API.
 
-**Note:** If you prefer to use the Swift tool, see [Use Swift to manage large files](/support/how-to/use-swift-to-manage-large-files),
-and if you prefer Swiftly, see [Use Swiftly to upload an image](/support/how-to/use-swiftly-to-upload-an-image).
+**Note:** If you prefer to use the Swift tool, see [Use Swift to manage large files](https://docs-ospc.rackspace.com/support/how-to/cloud-files/use-swift-to-manage-large-files),
+and if you prefer Swiftly, see [Use Swiftly to upload an image](https://docs-ospc.rackspace.com/support/how-to/cloud-files/use-swiftly-to-upload-an-image).
 
 Use the following steps:
 

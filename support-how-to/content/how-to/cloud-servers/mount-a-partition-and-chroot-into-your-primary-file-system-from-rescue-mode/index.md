@@ -12,7 +12,7 @@ product_url: cloud-servers
 ---
 
 This article shows how to mount a partition and use the `chroot` command to access your
-primary file system from [rescue mode](https://docs.rackspace.com/support/how-to/rescue-mode/).
+primary file system from [rescue mode](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/rescue-mode/).
 
 ### Begin an investigation of a server in rescue mode
 

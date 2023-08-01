@@ -22,7 +22,7 @@ volume to a server, and connecting the volume in a Microsoft&reg; Windows&reg;
 server.
 
 **Note**: Before you can delete an OnMetal server, you must detach the volume.
-See [Detach and delete Cloud Block Storage volumes](/support/how-to/detach-and-delete-cloud-block-storage-volumes/) for instructions.
+See [Detach and delete Cloud Block Storage volumes](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/detach-and-delete-cloud-block-storage-volumes/) for instructions.
 
 ### Create a new Cloud Block Storage volume
 
@@ -89,7 +89,7 @@ With the preceding information noted, perform the following steps:
 
 3. Set the service to start automatically, and then start the service.
 
-   {{<image src="attach-cbs-to-win-onmetal-1.png" alt="" title="">}}
+   <img src="attach-cbs-to-win-onmetal-1.png" alt="" title="">
 
 4. Next, open the Administrator control panel by selecting **Start** ->
    **Control Panel** -> **Administrator Tools**.
@@ -97,21 +97,21 @@ With the preceding information noted, perform the following steps:
 5. Open the iSCSI initiator, click on the second tab, **Discovery**, and then
    click **Discover Portal**.
 
-   {{<image src="attach-cbs-to-win-onmetal-2.png" alt="" title="">}}
+   <img src="attach-cbs-to-win-onmetal-2.png" alt="" title="">
 
    A window opens where you can enter the Cloud Block Storage node address.
 
 6. Enter the IP address (the `portal` IP address and port, which you noted
    earlier), and click **OK**.
 
-   {{<image src="attach-cbs-to-win-onmetal-3.png" alt="" title="">}}
+   <img src="attach-cbs-to-win-onmetal-3.png" alt="" title="">
 
    The target server appears in the list on the **Discovery** page.
 
 7. Click the **Targets** page, and enter the target ICQ (the `targetname`, which
    you noted earlier).
 
-   {{<image src="attach-cbs-to-win-onmetal-4.png" alt="" title="">}}
+   <img src="attach-cbs-to-win-onmetal-4.png" alt="" title="">
 
 8. In the **Target** field, enter the **target IQN** value (the `targetname` value, which
    you noted earlier), starting with `iqn`. Then click **Quick Connect**.
@@ -124,5 +124,5 @@ With the preceding information noted, perform the following steps:
     Because the Cloud Block Storage volume is attached, a second disk, the target, is
     listed and can then be prepared and brought online.
 
-   {{<image src="attach-cbs-to-win-onmetal-5.png" alt="" title="">}}
+   <img src="attach-cbs-to-win-onmetal-5.png" alt="" title="">
 

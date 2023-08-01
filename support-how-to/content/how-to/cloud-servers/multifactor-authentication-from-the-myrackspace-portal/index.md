@@ -38,7 +38,7 @@ The system logs current users out as soon as it applies the account-wide require
 ### Considerations
 
 - You must log in to the [MyRackspace Portal](https://my.rackspace.com) and use these
-  [instructions](/support/how-to/multifactor-authentication-from-the-my-rackspace-portal/)
+  [instructions](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/multifactor-authentication-from-the-my-rackspace-portal/)
   to set up your users for the Rackspace Dedicated.
 
 - Administrators cannot set up devices for users. Users must configure their own devices. To change MFA settings, users must log in to the MyRackspace Portal with the user credentials they want to modify.

@@ -67,10 +67,10 @@ necessary changes, and click **Apply**.
 
 ### Related articles
 
-- [Manage the Windows Server 2012 Firewall](/support/how-to/managing-the-windows-server-2012-firewall/)
+- [Manage the Windows Server 2012 Firewall](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/managing-the-windows-server-2012-firewall/)
 
-- [Windows Server Security Best Practices](/support/how-to/windows-server-security-best-practices/)
+- [Windows Server Security Best Practices](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/windows-server-security-best-practices/)
 
-- [Best Practices for Firewall Rules Configuration](/support/how-to/best-practices-for-firewall-rules-configuration/)
+- [Best Practices for Firewall Rules Configuration](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/best-practices-for-firewall-rules-configuration/)
 
-- [Using Security Groups](/support/how-to/using-security-groups/)
+- [Using Security Groups](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/using-security-groups/)

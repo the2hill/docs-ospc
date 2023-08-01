@@ -13,7 +13,7 @@ product_url: rackspace-cdn
 
 [Rackspace CDN](https://www.rackspace.com/cloud/cdn-content-delivery-network)
 enables you to create rules for content that is served over the content delivery
-network (or CDN). You create the rules after you [create the Rackspace CDN service](/support/how-to/create-a-rackspace-cdn-service).
+network (or CDN). You create the rules after you [create the Rackspace CDN service](https://docs-ospc.rackspace.com/support/how-to/rackspace-cdn/create-a-rackspace-cdn-service).
 
 *Edge rules* are a set of policies that tell the CDN how to handle your
 traffic. They are called edge rules because these policies are applied
@@ -41,7 +41,7 @@ You can still set a higher TTL for your static content while setting the
 rest of your content's TTL to 0. For sites with dynamic content, your
 rules might be set up as shown in the following image:
 
-{{<image src="CachingRulesExample_2_0.png" alt="" title="">}}
+<img src="CachingRulesExample_2_0.png" alt="" title="">
 
 #### Default TTL values
 
@@ -73,7 +73,7 @@ To setup a new origin, perform the following steps:
 
    Rackspace recommends that you specify a domain name because an IP address can change over time. When entering the domain name or IP address, do *not* enter **https://**.
 
-   {{<image src="ScreenShot2015-10-02at1.43.49PM.png" alt="" title="">}}
+   <img src="ScreenShot2015-10-02at1.43.49PM.png" alt="" title="">
 
    **Note**: Verify that the origin can accept traffic from the domain listed in your CDN service. For example, if your CDN service has a domain of **cdn.customer1.com**, you might need to alter your origin server's **.htaccess** file to allow traffic for that domain.
 
@@ -129,7 +129,7 @@ To implement multiple referrer domains to a single path, you can use a
 space to separate the list of domains that you want to have access in
 the **Referrer** field. Following is an example:
 
-{{<image src="ScreenShot2015-10-02at1.46.58PM.png" alt="" title="">}}
+<img src="ScreenShot2015-10-02at1.46.58PM.png" alt="" title="">
 
 **Note**: Rackspace does not recommend implementing referrer
 restrictions for an entire domain.
@@ -149,7 +149,7 @@ into the **Referrer** field.
 #### Geography restrictions
 
 You can restrict content based on geographical
-regions. For a list of the Rackspace CDN geographical regions and the countries and territories within them, see [Rackspace CDN geography mapping](/support/how-to/rackspace-cdn-geography-mapping).
+regions. For a list of the Rackspace CDN geographical regions and the countries and territories within them, see [Rackspace CDN geography mapping](https://docs-ospc.rackspace.com/support/how-to/rackspace-cdn/rackspace-cdn-geography-mapping).
 
 #### Client IP address restrictions
 

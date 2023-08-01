@@ -178,7 +178,7 @@ NTP site. The site has a description of the servers available, and
 the sidebar has links to three levels of NTP servers: Primary,
 secondary, and pool.
 
-{{<image src="usingntp_0.png" alt="" title="">}}
+<img src="usingntp_0.png" alt="" title="">
 
 Deciding what type of server to sync from depends on how accurate
 you need your servers to be.

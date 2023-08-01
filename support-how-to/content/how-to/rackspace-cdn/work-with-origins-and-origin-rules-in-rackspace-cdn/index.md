@@ -28,7 +28,7 @@ defined for the **Add Rule** button to be shown in the dialog.
 If you create multiple origin rules, you must order the rules from least
 specific to most specific. For more information about rules, see the
 following sections and [Rackspace CDN edge
-rules](/support/how-to/rackspace-cdn-edge-rules).
+rules](https://docs-ospc.rackspace.com/support/how-to/rackspace-cdn/rackspace-cdn-edge-rules).
 
 ### Add an origin
 
@@ -41,7 +41,7 @@ resides.
 
 3. Enter the path for the origin. You can use a wildcard for the path.
 
-   {{<image src="AddOrigin.png" alt="" title="">}}
+   <img src="AddOrigin.png" alt="" title="">
 
 4. Click **Save Origin**.
 
@@ -93,7 +93,7 @@ follow these steps to create an origin rule:
 
    The **Add Rule** button appears only if you have multiple origins for the service. A popup dialog box appears.
 
-   {{<image src="createOriginRule.png" alt="" title="">}}
+   <img src="createOriginRule.png" alt="" title="">
 
 2. Enter the following information to define the rule:
 
@@ -139,5 +139,5 @@ the rule is deleted, it is removed from the **Origin Rules** list.
 
 ### Additional resources
 
-- [Add and manage domains with Rackspace CDN](/support/how-to/add-and-manage-domains-in-rackspace-cdn)
-- [Create and manage caching rules in Rackspace CDN](/support/how-to/create-and-manage-caching-rules-in-rackspace-cdn)
+- [Add and manage domains with Rackspace CDN](https://docs-ospc.rackspace.com/support/how-to/rackspace-cdn/add-and-manage-domains-in-rackspace-cdn)
+- [Create and manage caching rules in Rackspace CDN](https://docs-ospc.rackspace.com/support/how-to/rackspace-cdn/create-and-manage-caching-rules-in-rackspace-cdn)

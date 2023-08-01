@@ -73,7 +73,7 @@ Permissions | User Owner | Group Owner | Size in bits. Use -h to convert to KB/G
 **Permissions note**: If there is a *d* at the beginning, it's a directory, not
 a file.
 
-Here is a [more in depth guide for how to use the `ls` command](/how-to/checking-linux-file-permissions-with-ls/).
+Here is a [more in depth guide for how to use the `ls` command](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/checking-linux-file-permissions-with-ls/).
 
 #### User, group, other
 
@@ -137,7 +137,7 @@ This user can do anything | This user can look at and execute the file. But not 
 
 The following image provides an easy way to visualize this:
 
-{{<image src="image_1.png" alt="" title="">}}
+<img src="image_1.png" alt="" title="">
 
 ### How to change permissions with letters
 
@@ -211,7 +211,7 @@ Use the following command:
 directories within that directory. As before, proceed with caution as there is
 no undo option.
 
-Here is a [more in depth guide for how to use chmod](/how-to/changing-linux-permissions/)
+Here is a [more in depth guide for how to use chmod](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/changing-linux-permissions/)
 
 **WARNING:** Do not use `chmod 777` unless you are positive it's okay. Linux, by
 default, has strong security measures in place. However, some configuration

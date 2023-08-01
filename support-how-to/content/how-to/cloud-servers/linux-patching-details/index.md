@@ -137,7 +137,7 @@ Any support Rackspace provides for servers running an EOL operating system falls
 
 [LPatch]: <https://docs.rackspace.com/support/how-to/linux-patching-for-cloud-servers-managed-operations-service-level/>
 [PImg]: <https://docs.rackspace.com/docs/user-guides/infrastructure/cloud-config/compute/cloud-images-product-concepts/base-images/patching-base-images>
-[LSph]: <https://docs.rackspace.com/support/how-to/linux-spheres-of-support-for-dedicated-and-managed-ops>
+[LSph]: <https://docs.rackspace.com/docs/linux-spheres-of-support-for-dedicated-and-managed-ops>
 [rhel]: <https://access.redhat.com/support/policy/updates/errata>
 [centos]: <https://wiki.centos.org/FAQ/General>
 [ubuntu]: <https://wiki.debian.org/UnattendedUpgrades>

@@ -45,7 +45,7 @@ To shut down a Windows server, open a command prompt and run the following comma
 ### Shut down a Cloud Server by using an API call.
 
 You can also use our Application Programmer Interface (API) by using a cURL® command
-via Pitchfork using [these instructions](https://docs.rackspace.com/support/how-to/use-an-api-call-to-stop-a-cloud-server)
+via Pitchfork using [these instructions](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/use-an-api-call-to-stop-a-cloud-server)
 
 ### Next steps
 
@@ -53,10 +53,10 @@ If the server is not in use, you can remove it. If you want to save the content 
 Cloud Images and Cloud Backups to back up your content into Cloud Files before removing the server from the
 account.  
 
-To retain data for possible future needs, create a [Cloud Server Image](/support/how-to/creating-an-image-backup-cloning/). 
+To retain data for possible future needs, create a [Cloud Server Image](https://docs-ospc.rackspace.com/support/how-to/cloud-images/creating-an-image-backup-cloning/). 
 
 For boot-from-volume servers, and servers where only specific files need to be saved, follow
-[these instructions](https://docs.rackspace.com//support/how-to/rackspace-cloud-backup-create-a-backup).
+[these instructions](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/rackspace-cloud-backup-create-a-backup).
 
 Both Cloud Server images and Cloud Backups are stored in Cloud Files with associated storage costs, but for
 individuals who want to minimize their costs, these two options are likely much cheaper than running an idle server.

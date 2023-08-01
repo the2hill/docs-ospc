@@ -28,7 +28,7 @@ maintenance plan depends on this service to run.
 4. Click the **General** tab, select **Automatic** as the startup type, and
     then start the service by clicking on **Start**.
 
-    {{<image src="CheckSQLServerAgent3.png" alt="" title="">}}
+   <img src="CheckSQLServerAgent3.png" alt="" title="">
 
 ### Create the maintenance plan
 
@@ -37,7 +37,7 @@ maintenance plan depends on this service to run.
 2. In the **Object Explorer** pane, expand the **Management** folder,
    right-click on **Maintenance Plans**, and select **Maintenance Plan Wizard**.
 
-    {{<image src="CreatingtheMaintenancePlan1_0.png" alt="" title="">}}
+   <img src="CreatingtheMaintenancePlan1_0.png" alt="" title="">
 3. On the welcome page of the wizard, click **Next**.
 4. On the **Select Plan Properties** page, specify a name for the plan, select
     **Separate schedules for each task**, and then click **Next**.
@@ -46,7 +46,7 @@ maintenance plan depends on this service to run.
     (Full)**, **Back Up Database (Differential)**, and **Back Up Database
     (Transaction Log)** checkboxes, and then click **Next**.
 
-    {{<image src="Creatingthemaintenanceplan4.png" alt="" title="">}}
+   <img src="Creatingthemaintenanceplan4.png" alt="" title="">
 
 6. On the **Select Maintenance Task Order** page, leave the order as shown, and
     then click **Next**.
@@ -74,7 +74,7 @@ according to the following instructions.
 6. To configure the scheduling options for this task, click **Change** near the
     bottom of the page.
 
-    {{<image src="fullbackupsetttings1.png" alt="" title="">}}
+   <img src="fullbackupsetttings1.png" alt="" title="">
 
 7. In the **Job Schedule Properties** dialog box, select **Recurring** for the
     Schedule type.
@@ -88,7 +88,7 @@ according to the following instructions.
 10. Under **Duration**, adjust the **Start** and **End** dates. The example
     selects **No end date**.
 
-    {{<image src="fullbackupsetttings2.png" alt="" title="">}}
+    <img src="fullbackupsetttings2.png" alt="" title="">
 
 11. Click **OK**.
 
@@ -173,7 +173,7 @@ transaction log backup according to the following instructions.
 
 11. Under **Duration**, adjust the **Start date** and **End date** fields.
 
-    {{<image src="TransactionLogBackupSettings2.png" alt="" title="">}}
+    <img src="TransactionLogBackupSettings2.png" alt="" title="">
 
 12. Click **OK**.
 
@@ -228,7 +228,7 @@ have enough transaction log backups between the full and differential backups.
 10. Select the **Delete files based on the age of the file at task run time**
     check box, and set the file age to **3 Days**.
 
-    {{<image src="TransactionLogCleanupTask3.png" alt="" title="">}}
+    <img src="TransactionLogCleanupTask3.png" alt="" title="">
 
 11. Click **OK** to return to the Management Studio main window.
 
@@ -237,7 +237,7 @@ have enough transaction log backups between the full and differential backups.
 
 13. Double-click the connected green line.
 
-    {{<image src="TransactionLogCleanupTask4.png" alt="" title="">}}
+    <img src="TransactionLogCleanupTask4.png" alt="" title="">
 
 14. In the Precedence Constraint Editor, set **Value** to Completion.
 
@@ -245,12 +245,12 @@ have enough transaction log backups between the full and differential backups.
     differential backup did not run, then the transaction cleanup task is not
     run, or if the backup did run, the cleanup task runs.
 
-    {{<image src="TransactionLogCleanupTask5.png" alt="" title="">}}
+    <img src="TransactionLogCleanupTask5.png" alt="" title="">
 
 15. Click **OK** to return to the Management Studio main window. The line should
     now appear blue.
 
-    {{<image src="TransactionLogCleanupTask6.png" alt="" title="">}}
+    <img src="TransactionLogCleanupTask6.png" alt="" title="">
 
 16. Save your work by selecting **Save All** from the File menu. You have
     finished setting up your maintenance backup plan. You can adjust your backup
@@ -286,7 +286,7 @@ to see what failed.
 
     The Log File Viewer window, which shows the job history, is displayed.
 
-    {{<image src="Errors2_0.png" alt="" title="">}}
+   <img src="Errors2_0.png" alt="" title="">
 
     If the job failed, a red X icon is displayed next to the time that you ran
     the job.
@@ -296,7 +296,7 @@ to see what failed.
     Details about the error appear below the table. Scroll or expand the pane to
     see more information.
 
-    {{<image src="Errors3.png" alt="" title="">}}
+   <img src="Errors3.png" alt="" title="">
 
 3. Troubleshoot the error and repeat the test job.
 

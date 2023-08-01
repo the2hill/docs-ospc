@@ -19,16 +19,16 @@ easy-to-use control panel, for a Fanatical Experience&trade; from day one.
 
 ###  Cloud Files basics
 
-- [Cloud Files and CDN](/support/how-to/getting-started-with-cloud-files-and-cdn/)
-- [Key Concepts of Cloud Files](/support/how-to/cloud-files-key-concepts)
-- [Why Should I Use Cloud Files?](/support/how-to/why-choose-cloud-files)
-- [Best practices for using Cloud Files](/support/how-to/best-practices-for-using-cloud-files)
-- [Using CNAMEs with Cloud Files containers](/support/how-to/using-cnames-with-cloud-files-containers)
-- [Cloud Files delete and purge requests](/support/how-to/cloud-files-deletion-and-purge-requests)
-- [Getting started with Cloud Files streaming](/support/how-to/getting-started-with-cloud-files-streaming/) **(Note: Streaming will be discontinued on July 31, 2022)**
-- [Set up a static website with Cloud Files](/support/how-to/set-up-a-static-website-with-cloud-files/)
-- [Back up data with Cloud Files](/support/how-to/back-up-data-with-cloud-files/)
-- [Secure Cloud Files and CDN](/support/how-to/secure-cloud-files-and-cdn-urls/)
+- [Cloud Files and CDN](https://docs-ospc.rackspace.com/support/how-to/cloud-files/getting-started-with-cloud-files-and-cdn/)
+- [Key Concepts of Cloud Files](https://docs-ospc.rackspace.com/support/how-to/cloud-files/cloud-files-key-concepts)
+- [Why Should I Use Cloud Files?](https://docs-ospc.rackspace.com/support/how-to/cloud-files/why-choose-cloud-files)
+- [Best practices for using Cloud Files](https://docs-ospc.rackspace.com/support/how-to/cloud-files/best-practices-for-using-cloud-files)
+- [Using CNAMEs with Cloud Files containers](https://docs-ospc.rackspace.com/support/how-to/cloud-files/using-cnames-with-cloud-files-containers)
+- [Cloud Files delete and purge requests](https://docs-ospc.rackspace.com/support/how-to/cloud-files/cloud-files-deletion-and-purge-requests)
+- [Getting started with Cloud Files streaming](https://docs-ospc.rackspace.com/support/how-to/cloud-files/getting-started-with-cloud-files-streaming/) **(Note: Streaming will be discontinued on July 31, 2022)**
+- [Set up a static website with Cloud Files](https://docs-ospc.rackspace.com/support/how-to/cloud-files/set-up-a-static-website-with-cloud-files/)
+- [Back up data with Cloud Files](https://docs-ospc.rackspace.com/support/how-to/cloud-files/back-up-data-with-cloud-files/)
+- [Secure Cloud Files and CDN](https://docs-ospc.rackspace.com/support/how-to/cloud-files/secure-cloud-files-and-cdn-urls/)
 
 ###  Cloud Files API and developer guides
 

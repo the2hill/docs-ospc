@@ -24,7 +24,7 @@ release](https://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 **Note**: These instructions apply to using PuTTY on the Windows&reg; operating system.
 For information about using SSH private keys on Linux and OS X&reg;
 operating systems, see [Log in with an SSH Private Key on Linux and
-Mac](/support/how-to/logging-in-with-an-ssh-private-key-on-linuxmac).
+Mac](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/logging-in-with-an-ssh-private-key-on-linuxmac).
 
 ### Save your private SSH key to a text file
 
@@ -37,7 +37,7 @@ Open a text editor, paste your SSH private key, and save the file.
 
 Your SSH private key should look similar to the key in the following image:
 
-{{<image src="Windows1.png" alt="" title="">}}
+<img src="Windows1.png" alt="" title="">
 You need to include all of the text that appears in the image in your key file.
 
 ### Load your SSH private key in PuTTY Key Generator
@@ -74,7 +74,7 @@ Use the following steps to log in to PuTTY by using your SSH private key:
     session based on the Internet Protocol (IP) address of the server to which
     the user is connecting.
 
-   {{<image src="Windows9.png" alt="" title="">}}
+   <img src="Windows9.png" alt="" title="">
 
 2. Click **Connection > Data** in the left navigation pane and set the
    **Auto-login username** to root.

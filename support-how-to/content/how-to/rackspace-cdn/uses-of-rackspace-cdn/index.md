@@ -50,5 +50,5 @@ your web servers.
 
 ### Additional resources
 
-- [Features of Rackspace CDN](/support/how-to/features-of-rackspace-cdn)
-- [Limits for Rackspace CDN](/support/how-to/limits-for-rackspace-cdn)
+- [Features of Rackspace CDN](https://docs-ospc.rackspace.com/support/how-to/rackspace-cdn/features-of-rackspace-cdn)
+- [Limits for Rackspace CDN](https://docs-ospc.rackspace.com/support/how-to/rackspace-cdn/limits-for-rackspace-cdn)

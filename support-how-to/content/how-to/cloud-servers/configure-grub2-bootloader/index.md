@@ -73,7 +73,7 @@ Reboot the server and you will be able to see the image that was selected in the
  or
 # systemctl reboot
 ```
-{{<image src="grub1.png" alt="" title="">}}
+<img src="grub1.png" alt="" title="">
     
     
 ### How to configure GRUB2 in CentOS/RHEL based distributions in Rackspace Servers
@@ -134,7 +134,7 @@ Update the GRUB configuration file in order to changes take effect.
  
 After reboot the server could be necessary click on emergency console several times until you see something like Image 3.
 
-{{<image src="grub3.png" alt="" title="">}}
+<img src="grub3.png" alt="" title="">
 
 ### How to configure GRUB2 in Ubuntu/Debian based distributions
 
@@ -172,7 +172,7 @@ After reboot the machine you will see something like Image 2.
 ```sh
 # shutdown -r now
 ```
-{{<image src="grub2.png" alt="" title="">}}
+<img src="grub2.png" alt="" title="">
 
 ### How to configure GRUB2 in Ubuntu/Debian based distributions in Rackspace Cloud Servers
 
@@ -243,7 +243,7 @@ After reboot the machine you will see something like Image 4.
 # shutdown -r now
 ```
 
-{{<image src="grub4.png" alt="" title="">}}
+<img src="grub4.png" alt="" title="">
 
 Consider as rule of thumb to be already logged into your Rackspace portal for those 15 seconds to be enough to check the emergency console, also be aware that after the reboot, it may be necessary three attempts to see the emergency console.
 

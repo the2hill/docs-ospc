@@ -31,8 +31,8 @@ For more information about Cloud Files Large Objects, see the
 [Cloud Files Developer documentation](https://docs.rackspace.com/docs/cloud-files/v1/).
 
 **Note:** If you prefer to use the API to manage large files, see
-[Use the API to manage large files](/support/how-to/use-the-api-to-manage-large-files),
-and if you prefer Swift, see [Use Swift to manage large files](/support/how-to/use-swift-to-manage-large-files).
+[Use the API to manage large files](https://docs-ospc.rackspace.com/support/how-to/cloud-files/use-the-api-to-manage-large-files),
+and if you prefer Swift, see [Use Swift to manage large files](https://docs-ospc.rackspace.com/support/how-to/cloud-files/use-swift-to-manage-large-files).
 
 ### Prerequisites
 
@@ -40,8 +40,8 @@ This article assumes you have already properly prepared an image for import into
 the public cloud and have already installed the Swiftly client. If you need help
 with either of these prerequisites, see the following articles:
 
-- [Preparing an image for import into the Rackspace open cloud](/support/how-to/preparing-an-image-for-import-into-the-rackspace-opencloud)
-- [Install the Swiftly client for Cloud Files](/support/how-to/install-the-swiftly-client-for-cloud-files)
+- [Preparing an image for import into the Rackspace open cloud](https://docs-ospc.rackspace.com/support/how-to/cloud-files/preparing-an-image-for-import-into-the-rackspace-opencloud)
+- [Install the Swiftly client for Cloud Files](https://docs-ospc.rackspace.com/support/how-to/cloud-files/install-the-swiftly-client-for-cloud-files)
 
 ### Set environment variables
 
@@ -57,7 +57,7 @@ In a Bash shell, set the following environment variables:
     SWFLY_CONCURRENCY=20
 
 To view information about viewing your Rackspace API key, see
-[View and reset your API key](/support/how-to/view-and-reset-your-api-key).
+[View and reset your API key](https://support.rackspace.com/how-to/view-and-reset-your-api-key).
 
 Ensure that the container into which you want to upload your object
 already exists in the appropriate region in Cloud Files. (You can create
@@ -87,7 +87,7 @@ line to perform the upload, as shown in the following example:
 
 **Note**: Consider using a screen session to perform this task. If
 you're not familiar with the GNU Screen program, you can find an
-introduction in [Install the Swiftly client for Cloud Files](/support/how-to/install-the-swiftly-client-for-cloud-files).
+introduction in [Install the Swiftly client for Cloud Files](https://docs-ospc.rackspace.com/support/how-to/cloud-files/install-the-swiftly-client-for-cloud-files).
 
     swiftly
       --auth-url=https://identity.api.rackspacecloud.com/v2.0
@@ -196,7 +196,7 @@ Alternatively, you can look at your Cloud Files account in the [Cloud Control Pa
 The following example shows the Containers page in the
 Control Panel, which displays the containers in the DFW region.
 
-{{<image src="swiftly-containers-list.png" alt="" title="">}}
+<img src="swiftly-containers-list.png" alt="" title="">
 
 The `uploaded-images` container existed before the upload, and
 the invocation to Swiftly identified it as the container to hold the

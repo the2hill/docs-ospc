@@ -18,7 +18,7 @@ factors. Cloud Orchestration provides templates for a LAMP stack (to get your
 web server set up and running quickly), a Minecraft server, and a WordPress
 blog, just to name a few. For the complete list of options, see
 [Available templates for Cloud
-Orchestration](/support/how-to/available-templates-for-cloud-orchestration).
+Orchestration](https://docs-ospc.rackspace.com/support/how-to/cloud-orchestration/available-templates-for-cloud-orchestration).
 
 ### Create a stack
 

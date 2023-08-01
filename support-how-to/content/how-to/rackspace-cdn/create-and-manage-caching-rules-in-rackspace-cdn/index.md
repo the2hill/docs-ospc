@@ -23,7 +23,7 @@ to most specific.
 
 For more information about rules, see the following sections and
 [Rackspace CDN edge
-rules](/support/how-to/rackspace-cdn-edge-rules).
+rules](https://docs-ospc.rackspace.com/support/how-to/rackspace-cdn/rackspace-cdn-edge-rules).
 
 After you create your service, you enter caching rules in the **Caching
 Rules** section of the CDN service page.
@@ -37,7 +37,7 @@ caching rule:
 
    A popup dialog box appears.
 
-   {{<image src="ScreenShot2015-10-02at11.22.58AM.png" alt="" title="">}}
+   <img src="ScreenShot2015-10-02at11.22.58AM.png" alt="" title="">
 
 2. Enter the following information to define the rule:
 
@@ -60,7 +60,7 @@ To edit a caching rule, follow these steps:
 
 2. Edit the name, the TTL, or the path for the rule.
 
-   {{<image src="ScreenShot2015-10-02at11.39.23AM.png" alt="" title="">}}
+   <img src="ScreenShot2015-10-02at11.39.23AM.png" alt="" title="">
 
 3. Click **Save Rule**.
 
@@ -83,5 +83,5 @@ list.
 
 ### Additional resources
 
-- [Work with origins and origin rules in Rackspace CDN](/support/how-to/work-with-origins-and-origin-rules-in-rackspace-cdn)
-- [Create and manage restrictions in Rackspace CDN](/support/how-to/create-and-manage-restrictions-in-rackspace-cdn)
+- [Work with origins and origin rules in Rackspace CDN](https://docs-ospc.rackspace.com/support/how-to/rackspace-cdn/work-with-origins-and-origin-rules-in-rackspace-cdn)
+- [Create and manage restrictions in Rackspace CDN](https://docs-ospc.rackspace.com/support/how-to/rackspace-cdn/create-and-manage-restrictions-in-rackspace-cdn)

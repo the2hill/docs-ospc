@@ -18,9 +18,9 @@ available for RackConnect v3.0, Cloud Load Balancer traffic is blocked by defaul
 For more details about the offerings that are support by RackConnect v3.0 and the differences between RackConnect
 v3.0 and v2.0, see the following articles:
 
--   [RackConnect v3.0 compatibility](/support/how-to/rackconnect-v30-compatibility)
+-   [RackConnect v3.0 compatibility](https://docs-ospc.rackspace.com/support/how-to/rackconnect/rackconnect-v30-compatibility)
 
--   [Comparing RackConnect v3.0 and RackConnect v2.0](/support/how-to/comparing-rackconnect-v30-and-rackconnect-v20)
+-   [Comparing RackConnect v3.0 and RackConnect v2.0](https://docs-ospc.rackspace.com/support/how-to/rackconnect/comparing-rackconnect-v30-and-rackconnect-v20)
 
 **Note:** The rest of this article applies only to RackConnect v2.0.
 
@@ -108,7 +108,7 @@ RackConnect:
 -   Use RackConnect to provide back-end connectivity to dedicated
     database servers from your cloud servers.
 
-{{<image src="RC.CLB_.png" alt="" title="">}}
+<img src="RC.CLB_.png" alt="" title="">
 
 In this example, a cloud load balancer balances traffic between cloud
 web servers, and RackConnect provides connectivity from the web servers
@@ -131,9 +131,9 @@ To reiterate, RackConnect *cannot* be used to balance traffic between
 cloud and dedicated servers, or to protect your inbound cloud load
 balancer Internet connections.
 
-{{<image src="How.CLB_.RC_.Do_.Not_.Work_.png" alt="" title="">}}
+<img src="How.CLB_.RC_.Do_.Not_.Work_.png" alt="" title="">
 
 The following image shows some use cases that further illustrate the
 limitations of using cloud load balancers:
 
-{{<image src="CLB.Use_.Cases__0.png" alt="" title="">}}
+<img src="CLB.Use_.Cases__0.png" alt="" title="">

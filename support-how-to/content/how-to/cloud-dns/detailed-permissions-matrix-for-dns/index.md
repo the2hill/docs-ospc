@@ -86,5 +86,5 @@ View Jobs Status | <code>GET /status/{jobId}?showDetails=[true&#124;false]<br />
 
 ### Related articles
 
-- [Role-Based Access Control (RBAC) permissions matrix for Cloud Hosting](/support/how-to/permissions-matrix-for-role-based-access-control-rbac)
+- [Role-Based Access Control (RBAC) permissions matrix for Cloud Hosting](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/permissions-matrix-for-role-based-access-control-rbac)
 - [API documentation for RBAC in Cloud DNS](https://docs.rackspace.com/docs/cloud-dns/v1/general-api-info/role-based-access-control/)

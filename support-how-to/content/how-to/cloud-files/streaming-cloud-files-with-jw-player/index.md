@@ -19,8 +19,8 @@ browsers block Flash and cannot play it. Only IE11, niche browser forks,
 and some browsers built for China plan to continue support.
 
 Cloud Files supports the JW Player for streaming video files. It also
-supports [FlowPlayer](/support/how-to/cloud-files-streaming-with-flowplayer-plugins)
-and [OSMF](/support/how-to/cloud-files-streaming-with-osmf-plugins).
+supports [FlowPlayer](https://docs-ospc.rackspace.com/support/how-to/cloud-files/cloud-files-streaming-with-flowplayer-plugins)
+and [OSMF](https://docs-ospc.rackspace.com/support/how-to/cloud-files/cloud-files-streaming-with-osmf-plugins).
 
 The JW Player has a commercial license, which means you must purchase it
 from [Longtail Video](https://www.longtailvideo.com/order).

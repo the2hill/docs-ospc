@@ -14,7 +14,7 @@ product_url: rackspace-cdn
 To delete a CDN service, follow these steps:
 
 1. Access CDN as described in [Access Rackspace
-CDN](/support/how-to/access-rackspace-cdn).
+CDN](https://docs-ospc.rackspace.com/support/how-to/access-rackspace-cdn).
 
 2. In the list of CDN services, click the gear icon beside the service
 that you want to delete and select **Delete Service**.
@@ -22,8 +22,8 @@ that you want to delete and select **Delete Service**.
 3. In the popup dialog box, note the warning and then click **Delete
 Service**.
 
-{{<image src="DeleteService.png" alt="" title="">}}
+<img src="DeleteService.png" alt="" title="">
 
 ### Additional resources
 
-- [Rackspace CDN User Guide](/support/how-to/rackspace-cdn)
+- [Rackspace CDN User Guide](https://docs-ospc.rackspace.com/support/how-to/rackspace-cdn)

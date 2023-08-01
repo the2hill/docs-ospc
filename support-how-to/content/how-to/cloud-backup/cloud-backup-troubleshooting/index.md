@@ -11,7 +11,7 @@ product: Cloud Backup
 product_url: cloud-backup
 ---
 
-**Previous section**: [Rackspace Cloud Backup - Preferences](/support/how-to/rackspace-cloud-backup-preferences)
+**Previous section**: [Rackspace Cloud Backup - Preferences](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/rackspace-cloud-backup-preferences)
 
 If you encounter issues when working with Cloud Backup, use the information in
 this article to help you troubleshoot.
@@ -87,7 +87,7 @@ one or more files. The most common issues that cause this status are as follows:
   current version of Cloud Backup supports only UTF-8 characters. When you use
   non-UTF-8 characters, a `Path Not Found` message displays.
 
-For more information, see [Back up databases with Cloud Backup](/support/how-to/rackspace-cloud-backup-backing-up-databases/).
+For more information, see [Back up databases with Cloud Backup](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/rackspace-cloud-backup-backing-up-databases/).
 
 #### Backup status: Failed
 
@@ -103,7 +103,7 @@ can't connect to the agent APIs.
 Rackspace Support must review the **driveclient.log** file to determine the
 cause. If the agent is not connected, attach the **driveclient.log** file to a
 ticket so that Support can review it. For more information, see 
-[Cloud Backup agent logging basics - Where to store saved logs](/support/how-to/cloud-backup-agent-logging-basics/).
+[Cloud Backup agent logging basics - Where to store saved logs](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/cloud-backup-agent-logging-basics/).
 
 Following are some of the issues and some possible fixes:
 
@@ -138,7 +138,7 @@ include but are not limited to the following issues:
 If disk space is so low that any of the preceding issues occur, move as many
 extraneous files as possible off of the local system drive. For possible ways
 to do this with Cloud Backup files, see
-[Conserving resources with Cloud Backup](/support/how-to/best-practices-for-cloud-backup/).
+[Conserving resources with Cloud Backup](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/best-practices-for-cloud-backup/).
 
 ##### Container does not exist
 
@@ -244,7 +244,7 @@ The agent logs are stored, by default, in the following directories:
     edit in this file are the size of the **driveclient.log** file (`MaxFileSize`)
     and how many previous versions (`MaxBackupIndex`) to save before deletion.
     For more information about how to configure this file,
-    see [Cloud Backup agent logging basics](/support/how-to/cloud-backup-agent-logging-basics).  
+    see [Cloud Backup agent logging basics](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/cloud-backup-agent-logging-basics).  
 
 #### Format of log lines
 
@@ -317,7 +317,7 @@ The amount of resources (memory, CPU, and load) used by the DriveClient is
 directly related to how many files the system backs up in each backup
 configuration. An increased number of files (or the size of files) can cause the
 agent to consume more resources. For best practice suggestions, see 
-[Best practices for Cloud Backup](/support/how-to/best-practices-for-cloud-backup).
+[Best practices for Cloud Backup](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/best-practices-for-cloud-backup).
 
 ### Other errors and problems
 
@@ -368,7 +368,7 @@ backed up data.
 
 Suppose you have reregistered a DriveClient agent and are unintentionally
 disassociated from your backups. In that case, you can use the
-[Migrate vault API operation](https://docs.rackspace.com/docs/cloud-backup/v1/developer-guide/#migrate-vault)
+[Migrate vault API operation](https://docs.rackspace.com/docs/cloud-backup/v1/api-reference/#migrate-vault)
 to migrate the previous backup vault from the previous agent to a new agent that
 has no backup configurations or previous backups run against it.
 
@@ -396,7 +396,7 @@ If you need to back up these types of files, we recommend the following
 workarounds:
 
 - For databases, take a snapshot of the database (for example, a database dump)
-  and back up the dump. See [Back up databases with Cloud Backup](/support/how-to/rackspace-cloud-backup-backing-up-databases) for full
+  and back up the dump. See [Back up databases with Cloud Backup](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/rackspace-cloud-backup-backing-up-databases) for full
   instructions.
 - For log files, take snapshots of your log files and back them up. To avoid
   running out of disk space, rotate your log files periodically.

@@ -38,7 +38,7 @@ The following diagram shows the path that inbound (and return) load balancer
 pool traffic follows to your cloud servers when you use Auto Scale with an F5
 BIG-IP load balancer and RackConnect.
 
-{{<image src="F5_AS-5-13-14B1D.jpg" alt="" title="">}}
+<img src="F5_AS-5-13-14B1D.jpg" alt="" title="">
 [View image at full
 resolution](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/F5_AS-5-13-14%5B1%5D.jpg)
 
@@ -62,7 +62,7 @@ example shows a RackConnect metadata key/value pair for Auto Scale:
      }
 
 For more information, see the [Auto Scale API Developer Guide: Set Launch
-Configuration.](https://docs.rackspace.com/docs/autoscale/v1/developer-guide/#document-api-operations/configurations)
+Configuration.](https://docs.rackspace.com/docs/autoscale/v1/api-reference/#document-api-operations/configurations)
 
 ### Important notes
 
@@ -80,6 +80,6 @@ requirements:
   always have at least one member in the pool. If the system cannot determine a common
   service port, it routes a notification to your Support team for manual intervention.
 - To learn more about cloud bursting, see [Using Dedicated Load Balancers with
-  RackConnect](/support/how-to/using-dedicated-load-balancers-with-rackconnect-v20).
+  RackConnect](https://docs-ospc.rackspace.com/support/how-to/rackconnect/using-dedicated-load-balancers-with-rackconnect-v20).
 
 To get the name of one or more load balancer pools, contact your Support team.

@@ -241,7 +241,7 @@ You can use the following documents to download and use FileZilla:
 
 - [FileZilla](https://filezilla-project.org/download.php?type=client)
   
-- [Install and configure FTP and SFTP by using FileZilla](support/how-to/install-and-configure-ftp-and-sftp-by-using-filezilla)
+- [Install and configure FTP and SFTP by using FileZilla](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/install-and-configure-ftp-and-sftp-by-using-filezilla)
    
 
  Use the Feedback tab to make any comments or ask questions. You can also [start a conversation with us](https://www.rackspace.com/contact).

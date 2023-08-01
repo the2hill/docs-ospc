@@ -12,7 +12,7 @@ product_url: cloud-backup
 ---
 
 
-**Previous section**: [View backup information with Cloud Backup](/support/how-to/rackspace-cloud-backup-view-backup-information)
+**Previous section**: [View backup information with Cloud Backup](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/rackspace-cloud-backup-view-backup-information)
 
 This article describes the actions that you can perform during a single backup.
 
@@ -24,12 +24,12 @@ You can access the **Backup Actions** menu in the following ways:
     on the gear icon next to the backup name on the **Configured Backups**
     page.
 
-    {{<image src="CloudBackupSystemList.png" alt="" title="">}}
+    <img src="CloudBackupSystemList.png" alt="" title="">
 
 -   Click on the **Actions** menu at the top of the **Configuration Details**
     page for a configured backup.
 
-    {{<image src="CloudServerDetail.png" alt="" title="">}}
+    <img src="CloudServerDetail.png" alt="" title="">
 
 From the **Actions** menu, you can perform the following actions:
 
@@ -47,23 +47,24 @@ system, based on the configurations that are currently set for that configured b
 If you are looking at the **Configuration Details** page, the backup
 progress bar is displayed until the backup is completed.
 
-{{<image src="ScreenShot2015-10-15at4.29.20PM.png" alt="" title="">}}
+<img src="ScreenShot2015-10-15at4.29.20PM.png" alt="" title="">
 
 ### Restore a snapshot
 
-1.  From the **Actions** menu, select **Restore snapshot**.
+1. From the **Actions** menu, select **Restore snapshot**.
 
-2.  On the first page of the **Restore a snapshot** wizard, select the
+2. On the first page of the **Restore a snapshot** wizard, select the
+3. 
     backup date to restore from, and then click **Next Step**.
 
-3.  On the next page, select the destination system, and then click
+4. On the next page, select the destination system, and then click
     **Next Step**.
 
     -   You can limit the list of systems by using the search box.
     -   You can restore your backup to the system that was backed up, or to
     another system.
 
-4.  On the next page, select the folders and files to restore.
+5. On the next page, select the folders and files to restore.
 
     1.  On the **Browse Files & Folders** tab, select the check boxes of the
     files and folders that you want to restore. You can move through your folders by clicking **Up** or an individual folder name at the top of the file or folder list.
@@ -71,13 +72,13 @@ progress bar is displayed until the backup is completed.
     by clicking the **Selected & Excluded Items** tab. The files included in the restore and specifically excluded are listed.
     3. When you are done, click **Next Step**.
 
-    {{<image src="RestoreSnapshotBrowseFilesFolder.png" alt="" title="">}}
+    <img src="RestoreSnapshotBrowseFilesFolder.png" alt="" title="">
 
-5.  On the next page, select the destination folder.
+6. On the next page, select the destination folder.
 
     You can choose to restore the files to their original folder or to restore to a selected restore destination. You can also select whether to overwrite files with the same name. Then, click **Next Step**.
 
-6.  Confirm your restore settings and then click **Start Restore**.
+7. Confirm your restore settings and then click **Start Restore**.
 
     The **Activity** page is displayed when the restore is complete.
 
@@ -87,7 +88,7 @@ You can change the name, recurrence, and notifications for your backup job.
 
 From the **Actions** menu, select **Configure Backup**.
 
-{{<image src="ScreenShot2015-10-16at1.23.19PM.png" alt="" title="">}}
+<img src="ScreenShot2015-10-16at1.23.19PM.png" alt="" title="">
 
 1.  Enter a new name for your backup job, and under **Schedule**, select
     how often you want to run the backup. All times are Central Time.
@@ -139,7 +140,7 @@ You can change the files and folders that are saved in your backup.
 You can prevent a backup from running by selecting **Disable Backup**
 from the **Actions** menu.
 
-{{<image src="ConfiguredBackups.png" alt="" title="">}}
+<img src="ConfiguredBackups.png" alt="" title="">
 
 When you disable a backup, the following actions occur:
 
@@ -159,4 +160,4 @@ Confirm that you want to delete the backup.
 
 After a backup is deleted, it cannot be recovered.
 
-**Next step**: [Cloud Backup system actions](/support/how-to/rackspace-cloud-backup-system-actions)
+**Next step**: [Cloud Backup system actions](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/rackspace-cloud-backup-system-actions)

@@ -33,7 +33,7 @@ assigned to a cloud server at build time.
     to enter the metadata information required to assign an Auto NAT IP address
     to a cloud server at build time. For details about how to use the API to
     enter metadata information for a cloud server, see the [Cloud
-    Servers API documentation](https://docs.rackspace.com/docs/cloud-servers/v2/developer-guide/#set-server-metadata) .
+    Servers API documentation](https://docs.rackspace.com/docs/cloud-servers/v2/api-reference/#set-server-metadata) .
 - When creating a new cloud server that you want to configure with an
     Auto NAT Public IP address, you must enter the following metadata
     values to assign that IP address to the cloud server:
@@ -70,4 +70,4 @@ that is still active.
 ### Additional information
 
 For details about the RackConnect automation features, see the
-[RackConnect v2.0 automation features FAQ](/support/how-to/rackconnect-v20-automation-features-faq).
+[RackConnect v2.0 automation features FAQ](https://docs-ospc.rackspace.com/support/how-to/rackconnect/rackconnect-v20-automation-features-faq).

@@ -24,12 +24,12 @@ Use the following steps to attach a Cloud Network to an existing Fortigate&reg;-
 4. Navigate to the **Server Details** page for your Fortigate-VM as shown in the
    following image:
 
-   {{<image src="cloud_servers_details.png" alt="" title="">}}
+   <image src="cloud_servers_details.png" alt="" title="">
 
 5. In **Networks and Security Groups**, click **Add Network** and choose the
    Cloud Network that you want to attach as shown in the following image:
 
-   {{<image src="add_network.png" alt="" title="">}}
+   <img src="add_network.png" alt="" title="">
 
 
 6. Click **Add Network** in the dialog box.
@@ -43,7 +43,7 @@ Use the following steps to attach a Cloud Network to an existing Fortigate&reg;-
 2. Find the Cloud Network that you attached previously and record its CIDR,
 which is usually `ip-address/24`) as shown in the following image.
 
-{{<image src="cloud_networks.png" alt="" title="">}}
+<img src="cloud_networks.png" alt="" title="">
 
 ### Set the IP address in the Fortigate-VM GUI
 
@@ -58,12 +58,12 @@ click **Edit**.
 4. In the **Address** section, fill in the Cloud Network IP address and CIDR
 that you recorded earlier and click **OK** as shown in the following images.
 
-{{<image src="display_fgvm.png" alt="" title="">}}
+<img src="display_fgvm.png" alt="" title="">
 
-{{<image src="ipset.png" alt="" title="">}}
+<img src="ipset.png" alt="" title="">
 
 ### (Optional) Backup the new configuration
 
 Because you just changed its configuration, we recommend that you
-[back up the Fortigate-VM](/support/how-to/back-up-the-fortinet-fortigate-vm/).
+[back up the Fortigate-VM](https://docs-ospc.rackspace.com/support/how-to/cloud-networks/back-up-the-fortinet-fortigate-vm/).
 

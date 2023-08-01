@@ -13,7 +13,7 @@ product_url: rackspace-cdn
 
 To refresh the content in a Rackspace CDN service, follow these steps:
 
-1. Access CDN as described in [Access Rackspace CDN](/support/how-to/access-rackspace-cdn).
+1. Access CDN as described in [Access Rackspace CDN](https://docs-ospc.rackspace.com/support/how-to/rackspace-cdn/access-rackspace-cdn).
 
 2. In the list of CDN services, click the gear icon beside the service
 and select **Refresh Content**.
@@ -26,12 +26,12 @@ Files** or **Refresh Files By Path**.
 4. Click **Refresh Content** to activate the refresh action.
 
 For information about handling a content refresh via the API, see the
-[purge a cached asset](https://docs.rackspace.com/docs/cdn/v1/developer-guide/#purge-a-cached-asset)
+[purge a cached asset](https://docs.rackspace.com/docs/cdn/v1/api-reference/#purge-a-cached-asset)
 operation.
 
 
 
 ### Additional resources
 
--  [Rename a Rackspace CDN service](/support/how-to/rename-a-rackspace-cdn-service)
-- [Delete a Rackspace CDN Service](/support/how-to/delete-a-rackspace-cdn-service)
+-  [Rename a Rackspace CDN service](https://docs-ospc.rackspace.com/support/how-to/rackspace-cdn/rename-a-rackspace-cdn-service)
+- [Delete a Rackspace CDN Service](https://docs-ospc.rackspace.com/support/how-to/rackspace-cdn/delete-a-rackspace-cdn-service)

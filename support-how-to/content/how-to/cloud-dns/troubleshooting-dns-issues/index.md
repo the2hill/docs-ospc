@@ -48,7 +48,7 @@ To check the name servers, open Terminal and run the following command:
 The output displays the name servers that are being used at the far right of
 the window under `ANSWER SECTION`, as shown in the following image:
 
-{{<image src="picture1.png" alt="" title="">}}
+<img src="picture1.png" alt="" title="">
 The two name servers that should appear for Rackspace Cloud are
 `dns1.stabletransit.com` and `dns2.stabletransit.com`.
 
@@ -60,9 +60,9 @@ note that it can take up to 48 hours for the name servers to propagate fully.
 You might need to wait for propagation to occur.
 
 **Note**: For more information about DNS lookups, see [Using dig to query name
-servers](/support/how-to/using-dig-to-query-nameservers) (for Linux&reg; and
+servers](https://docs-ospc.rackspace.com/support/how-to/cloud-dns/using-dig-to-query-nameservers) (for Linux&reg; and
 macOS&reg;) and [Check DNS records on Windows with
-nslookup](/support/how-to/nslookup-checking-dns-records-on-windows) (for Windows&reg;).
+nslookup](https://docs-ospc.rackspace.com/support/how-to/cloud-dns/nslookup-checking-dns-records-on-windows) (for Windows&reg;).
 
 ### Check the Time to Live
 

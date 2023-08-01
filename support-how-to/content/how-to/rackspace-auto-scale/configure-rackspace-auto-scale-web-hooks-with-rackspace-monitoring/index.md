@@ -21,7 +21,7 @@ source site makes an HTTP request to the URI configured for the webhook.
 ### Before you begin
 
 Before you can configure the webhooks, you must [create an Auto Scale
-group](/support/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group).
+group](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group).
 
 ### Create Auto Scale policies
 
@@ -54,13 +54,13 @@ policies created.
 
     **Note**: You can execute a POST request on the URL to use your webhook
     manually via cURL. For more information, see the [Auto Scale Developer
-    Guide](https://docs.rackspace.com/docs/autoscale/v1/developer-guide/#webhooks-and-capability-urls).
+    Guide](https://docs.rackspace.com/docs/autoscale/v1/api-reference/#webhooks-and-capability-urls).
 
 ### Set up Rackspace Monitoring
 
 1. On the **Scaling group details** page, select the cloud server.
 2. Log in to the server and [install the Rackspace Monitoring
-   Agent](/support/how-to/install-and-configure-the-rackspace-monitoring-agent).
+   Agent](https://docs-ospc.rackspace.com/support/how-to/rackspace-monitoring/install-and-configure-the-rackspace-monitoring-agent).
 3. Open **Rackspace  Intelligence** > **Notify**.
 4. Create a new **Notification Plan** called **AutoScale**.
 5. Select a notification plan from the list and select **Add Notifications >

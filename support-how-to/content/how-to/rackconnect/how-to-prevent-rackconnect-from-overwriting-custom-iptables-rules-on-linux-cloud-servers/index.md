@@ -33,14 +33,14 @@ own iptables rules.
 This article is for advanced Linux users who are familiar with the
 iptables software firewall and who have a need to create custom iptables
 rules to perform tasks that are beyond the scope of [network
-policies](/support/how-to/managing-rackconnect-v20-network-policies).
+policies](https://docs-ospc.rackspace.com/support/how-to/rackconnect/managing-rackconnect-v20-network-policies).
 
 If you are unfamiliar with iptables syntax or how to write custom
 iptables rules in Linux, or if you do not have a pressing need to create
 and maintain your own iptables rules, we recommend that you do not
 modify the default behavior of RackConnect Automation. [RackConnect
 network
-policies](/support/how-to/managing-rackconnect-v20-network-policies)
+policies](https://docs-ospc.rackspace.com/support/how-to/rackconnect/managing-rackconnect-v20-network-policies)
 provide a friendlier and more scalable solution for software firewall
 management than writing your own custom iptables rules on each
 individual cloud server.
@@ -71,13 +71,13 @@ merge method on a particular server, perform the following steps:
     all cloud servers (the indicator to the left of the policy changes
     from yellow to green), you should delete it.
 
-    {{<image alt="Add Network Policy Screenshot; Name TempPolicy, Access Scenario Dedicated to Cloud Server, Source 1.1.1.1, Destination All, Destination Protocol All" src="framed-netpolicy_0.jpg" title="Add Network Policy Screenshot; Name TempPolicy, Access Scenario Dedicated to Cloud Server, Source 1.1.1.1, Destination All, Destination Protocol All">}}
+    <img alt="Add Network Policy Screenshot; Name TempPolicy, Access Scenario Dedicated to Cloud Server, Source 1.1.1.1, Destination All, Destination Protocol All" src="framed-netpolicy_0.jpg" title="Add Network Policy Screenshot; Name TempPolicy, Access Scenario Dedicated to Cloud Server, Source 1.1.1.1, Destination All, Destination Protocol All>
 
-    {{<image alt="Network Policy Indicator Screenshot; Yellow, still syncing" src="framed-netpolicy-syncing_0.jpg" title="Network Policy Indicator Screenshot; Yellow, still syncing">}}
+    <img alt="Network Policy Indicator Screenshot; Yellow, still syncing" src="framed-netpolicy-syncing_0.jpg" title="Network Policy Indicator Screenshot; Yellow, still syncing>
 
-    {{<image alt="Network Policy Indicator Screenshot; Green, sync complete" src="framed-netpolicy-synced_0.jpg" title="Network Policy Indicator Screenshot; Green, sync complete">}}
+    <img alt="Network Policy Indicator Screenshot; Green, sync complete" src="framed-netpolicy-synced_0.jpg" title="Network Policy Indicator Screenshot; Green, sync complete>
 
-    {{<image alt="Network Policy Delete Screenshot; Check TempPolicy, Click Delete Policy" src="framed-netpolicy-delete_0.jpg" title="Network Policy Delete Screenshot; Check TempPolicy, Click Delete Policy">}}
+    <img alt="Network Policy Delete Screenshot; Check TempPolicy, Click Delete Policy" src="framed-netpolicy-delete_0.jpg" title="Network Policy Delete Screenshot; Check TempPolicy, Click Delete Policy>
 
 3.  Verify that RackConnect Automation is using the merge method
     by looking at the last iptables rule in the `RS-RackConnect-INBOUND`

@@ -38,13 +38,13 @@ ServiceNet from your Cloud Server, it cannot access certain Rackspace
 products and services. The following image depicts the services that are
 not available when you remove these networks from a Cloud Server:
 
-{{<image alt="Removing Networks from a Cloud Server" src="cloud-networks-infographic-revised4.png" title="Removing Networks from a Cloud Server">}}
+<img alt="Removing Networks from a Cloud Server" src="cloud-networks-infographic-revised4.png" title="Removing Networks from a Cloud Server">}}
 
 ### More information on Cloud Networks
 
--  [Create an isolated network and attach it to a server](/support/how-to/create-an-isolated-cloud-network-and-attach-it-to-a-server)
--  [Attach a Cloud Network to an Existing Cloud Server](/support/how-to/attach-a-cloud-network-to-an-existing-cloud-server)
--  [Using CIDR notation in Cloud Networks](/support/how-to/using-cidr-notation-in-cloud-networks)
+-  [Create an isolated network and attach it to a server](https://docs-ospc.rackspace.com/support/how-to/cloud-networks/create-an-isolated-cloud-network-and-attach-it-to-a-server)
+-  [Attach a Cloud Network to an Existing Cloud Server](https://docs-ospc.rackspace.com/support/how-to/cloud-networks/attach-a-cloud-network-to-an-existing-cloud-server)
+-  [Using CIDR notation in Cloud Networks](https://docs-ospc.rackspace.com/support/how-to/cloud-networks/using-cidr-notation-in-cloud-networks)
 -  [Cloud Networks Developer Guide]( https://docs.rackspace.com/docs/cloud-networks/v2/)
 
 Use the Feedback tab to make any comments or ask questions. You can also [start a conversation with us](https://www.rackspace.com/contact). 

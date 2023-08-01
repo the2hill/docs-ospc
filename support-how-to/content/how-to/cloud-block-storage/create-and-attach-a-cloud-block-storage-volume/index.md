@@ -65,7 +65,7 @@ Volumes** list.
 
 The next step is to attach your volume, as described below.
 
-To detach and delete the volume, see [Detach and delete Cloud Block Storage volumes](/support/how-to/detach-and-delete-cloud-block-storage-volumes).
+To detach and delete the volume, see [Detach and delete Cloud Block Storage volumes](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storagedetach-and-delete-cloud-block-storage-volumes).
 
 ### View volume details
 
@@ -101,7 +101,7 @@ are:
   - Detach Volume... -- Volume is attached; click this link to detach it.
         Note: you should make sure the volume is unmounted before you detach it.
         See [Detach and Delete Cloud Block Storage
-        Volumes](/support/how-to/detach-and-delete-cloud-block-storage-volumes)
+        Volumes](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storagedetach-and-delete-cloud-block-storage-volumes)
         for details.
 - `path`: If your volume is attached to a Linux server, its path (`/dev/XXXX`)
     displays here.
@@ -119,7 +119,7 @@ are:
     Performance (an SSD drive).
 - `Snapshots`: This section displays how many snapshots you have of the
 volume. There is also a link which allows you to create a snapshot.
-Snapshots are described [later in this product overview](/support/how-to/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
+Snapshots are described [later in this product overview](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storagebest-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
 
 ### Attach the volume to a server
 
@@ -130,7 +130,7 @@ same for all servers. After you attach the volume, you must partition, format,
 and mount it, which we cover on the next page.
 
 If you'd like to know more about the differences between attaching and
-mounting a volume, read the article [attaching versus mounting](/support/how-to/cloud-block-storage-attaching-vs-mounting).
+mounting a volume, read the article [attaching versus mounting](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storagecloud-block-storage-attaching-vs-mounting).
 
 1. Display the **Select a Server** window by one of two methods:
 
@@ -149,4 +149,4 @@ Storage Volumes list. When it is done attaching, its status bar will turn green
 and the name of the server it is attached to displays under the heading
 **Attached to**.
 
-**Next steps:** [Prepare your Cloud Block Storage volume](/support/how-to/prepare-your-cloud-block-storage-volume)
+**Next steps:** [Prepare your Cloud Block Storage volume](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storageprepare-your-cloud-block-storage-volume)

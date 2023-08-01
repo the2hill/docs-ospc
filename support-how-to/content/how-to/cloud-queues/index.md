@@ -14,20 +14,20 @@ Cloud Queues is an open-source messaging system, designed to help customers buil
 
 ###  Overview
 
-- [Cloud Queues Overview](/support/how-to/cloud-queues-overview)
-- [Cloud Queues message patterns](/support/how-to/cloud-queues-message-patterns)
+- [Cloud Queues Overview](https://docs-ospc.rackspace.com/support/how-to/cloud-queues/cloud-queues-overview)
+- [Cloud Queues message patterns](https://docs-ospc.rackspace.com/support/how-to/cloud-queues/cloud-queues-message-patterns)
 
 ###  Working with queues
 
-- [Creating Cloud Queues](/support/how-to/creating-cloud-queues)
-- [Listing Cloud Queues](/support/how-to/listing-cloud-queues)
-- [Tips for Monitoring Your Queues in Cloud Queues](/support/how-to/tips-for-monitoring-your-queues-in-cloud-queues)
+- [Creating Cloud Queues](https://docs-ospc.rackspace.com/support/how-to/cloud-queues/creating-cloud-queues)
+- [Listing Cloud Queues](https://docs-ospc.rackspace.com/support/how-to/cloud-queues/listing-cloud-queues)
+- [Tips for Monitoring Your Queues in Cloud Queues](https://docs-ospc.rackspace.com/support/how-to/cloud-queues/tips-for-monitoring-your-queues-in-cloud-queues)
 
 ###  API access
 
-- [Cloud Queues cURL Cookbook](/support/how-to/cloud-queues-curl-cookbook)
+- [Cloud Queues cURL Cookbook](https://docs-ospc.rackspace.com/support/how-to/cloud-queues/cloud-queues-curl-cookbook)
 
 ### Additonal resources
 
-- [Cloud Queues Developer Guide](https://docs.rackspace.com/docs/cloud-queues/v1/developer-guide/)
-- [Cloud Queues Getting Started Guide](https://docs.rackspace.com/docs/cloud-queues/v1/developer-guide/#getting-started)
+- [Cloud Queues Developer Guide](https://docs.rackspace.com/docs/cloud-queues/v1/api-reference/)
+- [Cloud Queues Getting Started Guide](https://docs.rackspace.com/docs/cloud-queues/v1/api-reference/#getting-started)

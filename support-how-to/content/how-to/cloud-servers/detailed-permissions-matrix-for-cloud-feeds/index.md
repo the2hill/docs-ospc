@@ -36,5 +36,5 @@ The following permissions matrix displays specific permissions for the roles in 
 
 ### Related articles
 -  [API Documentation](https://docs.rackspace.com/docs/)
--  [Cloud Feeds FAQ](/support/how-to/cloud-feeds-faq)
--  [Permission Matrices for RBAC](/support/how-to/permissions-matrix-for-role-based-access-control-rbac)
+-  [Cloud Feeds FAQ](https://docs.rackspace.com/docs/cloud-feeds-faq)
+-  [Permission Matrices for RBAC](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/permissions-matrix-for-role-based-access-control-rbac)

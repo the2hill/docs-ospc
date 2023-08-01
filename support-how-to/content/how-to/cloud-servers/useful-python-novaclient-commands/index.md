@@ -16,7 +16,7 @@ This article shows some `python-novaclient` commands.
 ### Nova client operations
 
 This article assumes that you have installed the 
-[python-novaclient](/support/how-to/using-python-novaclient-with-the-rackspace-cloud),
+[python-novaclient](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/using-python-novaclient-with-the-rackspace-cloud),
 and that the client works with your Cloud Servers account.
 
 #### nova help command
@@ -142,7 +142,7 @@ second argument is the flavor name or ID.
 Rackspace Standard servers with manual disk allocation enabled. For more
 information on changing the size of a virtual cloud server, see
 [Changing the Size of Your Performance Cloud
-Server](/support/how-to/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers).
+Server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers).
 
 You cannot resize a server to a smaller flavor if it has more allocated disk space
 than the smaller flavor can use.

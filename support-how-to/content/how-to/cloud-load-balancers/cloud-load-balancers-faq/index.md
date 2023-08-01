@@ -29,7 +29,7 @@ avoid network overload.
 The connection's `X-Forwarded-For` HTTP header stores a visitor's
 originating Internet Protocol (IP) address by default. For more information,
 see [the API documentation for creating a Cloud Load
-Balancer](https://docs.rackspace.com/docs/cloud-load-balancers/v1/developer-guide/#creating-a-load-balancer).
+Balancer](https://docs-ospc.rackspace.com/docs/cloud-load-balancers/v1/api-reference/creating-a-load-balancer).
 {{< /accordion >}}
 {{< accordion title="Do Cloud Load Balancers support SSL termination?" col="in" href="accordion3" >}}
 
@@ -43,13 +43,13 @@ service has the following features:
 -   HTTP and HTTPS session persistence
 
 Both [the
-API](https://docs.rackspace.com/docs/cloud-load-balancers/v1/developer-guide/#document-api-operations/ssl-termination) and the [Cloud Control
+API](https://docs-ospc.rackspace.com/cloud-load-balancers/v1/api-reference/ssl-termination) and the [Cloud Control
 Panel](https://login.rackspace.com/) support SSL termination on Cloud Load
 Balancers.
 
 **Note**: You should not use SSL termination when you are transferring certain
 types of [Personally Identifiable Information
-(PII)](/support/how-to/definition-of-personally-identifiable-information-pii).
+(PII)](https://docs-ospc.rackspace.com/support/how-to/cloud-load-balancers/definition-of-personally-identifiable-information-pii).
 {{< /accordion >}}
 {{< accordion title="How do I configure SSL termination by using the Cloud Control Panel?" col="in" href="accordion4" >}}
 
@@ -99,7 +99,7 @@ take no more than a few minutes to complete the provisioning process.
 
 You should not use SSL termination when transferring certain types of
 sensitive customer data classified as [Personally Identifiable Information
-(PII)](/support/how-to/definition-of-personally-identifiable-information-pii).
+(PII)](https://docs-ospc.rackspace.com/support/how-to/cloud-load-balancers/definition-of-personally-identifiable-information-pii).
 Examples of PII include information protected by the Health Insurance
 Portability and Accountability Act of 1996 (HIPAA) and
 Gramm-Leach-Bliley acts, credit card information, or any personal data
@@ -207,7 +207,7 @@ If you filter traffic to your servers by using a firewall, the best
 practice is to allow the subnet range in which your load balancer
 resides. For more information about how to filter traffic from
 a load balancer on your servers, see [Using Cloud Load Balancers with
-RackConnect](/support/how-to/using-cloud-load-balancers-with-rackconnect).
+RackConnect](https://docs-ospc.rackspace.com/support/how-to/rackconnect/using-cloud-load-balancers-with-rackconnect).
 {{< /accordion >}}
 {{< accordion title="What are the security concerns with SSL termination?" col="in" href="accordion18" >}}
 

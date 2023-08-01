@@ -39,7 +39,7 @@ Use the following steps to create the server:
 
 9. Click the gear icon next to the name of the new image, and select **Create Server with Image** from the menu.
 
-    {{<image src="cpviewimage.png" alt="" title="">}}
+    <img src="cpviewimage.png" alt="" title="">
 
 10. On the server creation page, enter a name for the new server, and select the region where it will be created.
 
@@ -57,7 +57,7 @@ Use the following steps to prepare the new server:
 
 1. From the server details page, note the ServiceNet IP address of the new server. You will need this information in a later step.
 
-    {{<image src="cpservicenet.png" alt="" title="">}}
+    <img src="cpservicenet.png" alt="" title="">
 
 2. Click the **Orchestration** link at the top of the page, and return to the stack that you are scaling out.
 
@@ -67,7 +67,7 @@ Use the following steps to prepare the new server:
 
    If you do not have the stack's private key, you can reset the primary server's root password.
 
-   For help using the SSH key with your server, see the How-To articles for [Mac and Linux](/support/how-to/logging-in-with-an-ssh-private-key-on-linuxmac) or [Windows](/support/how-to/logging-in-with-an-ssh-private-key-on-windows).
+   For help using the SSH key with your server, see the How-To articles for [Mac and Linux](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/logging-in-with-an-ssh-private-key-on-linuxmac) or [Windows](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/logging-in-with-an-ssh-private-key-on-windows).
 
 5. After you have logged in to the primary server, change the directory to **/etc/lsyncd**, and open the **lsyncd.conf.lua** file with `nano`.
 

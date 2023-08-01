@@ -15,7 +15,7 @@ Source-replica data replication enables you to copy replicated data to
 multiple computers for backup and analysis by multiple parties. You should submit
 necessary changes identified by a group member to the
 designated primary of the node. This differs from [source-source
-replication](/support/how-to/configure-mysql-source-source-replication),
+replication](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/configure-mysql-source-source-replication),
 in which any authorized contributor of the group can update data.
 
 This article provides steps for setting up MySQL&reg; source-replica database
@@ -38,7 +38,7 @@ and restore into the replica node is required before configuring
 replication between them. You use the `mysqldump` command to dump a
 database into a file, then transfer it and restore it to the replica.
 After the necessary configuration has been performed, replication is in
-effect. For more information, see the [Configure replication](#configure-replication)
+effect. For more information, see the [Configure replication](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/set-up-mysql-source-replica-replication/#configure-replication)
 section.
 
 ### Create the Cloud Servers

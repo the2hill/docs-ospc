@@ -37,10 +37,10 @@ content for optimizing delivery. Given the complexity of the CDN, you might have
 of choices, such as the number of servers to use before obtaining the service. After making the
 choices, you must ensure that the usage bills are accurate. Cloud Files handles these issues for
 you. CDNs have, in the past, been the prerogative of companies with more money, but Cloud Files
-has changed that. For more information, see [How do I use Cloud Files and CDN?](/support/how-to/getting-started-with-cloud-files-and-cdn).
+has changed that. For more information, see [How do I use Cloud Files and CDN?](https://docs-ospc.rackspace.com/support/how-to/cloud-files/getting-started-with-cloud-files-and-cdn).
 
 Cloud Files is a user- and developer-friendly service. Security mechanisms, described in more
-detail in the [Security](/support/how-to/why-choose-cloud-files) section, are simple to use.
+detail in the [Security](https://docs-ospc.rackspace.com/support/how-to/cloud-files/why-choose-cloud-files) section, are simple to use.
 Third-party tools that further simplify the use of the storage service are available. Developers
 can use language-specific application programming interfaces (APIs) to develop utilities or
 applications. The APIs are easy to use and present you with examples to get started quickly.
@@ -99,7 +99,7 @@ after 24 hours, forcing clients to resend their credentials.
 
 The API Access Key is only available from within the Rackspace Technology Cloud Control Panel. Users must enter
 a valid Rackspace Cloud account username and password to access the API Access Key or generate a new key. For
-information about how to find your API key, see [View and reset your API key](/support/how-to/view-and-reset-your-api-key).
+information about how to find your API key, see [View and reset your API key](https://support.rackspace.com/how-to/view-and-reset-your-api-key).
 
 It is important to note that Cloud Files does not apply any transformations to data before storing it. This means
 that Cloud Files *does not* store data in an encrypted form unless the client encrypts it before transmission.

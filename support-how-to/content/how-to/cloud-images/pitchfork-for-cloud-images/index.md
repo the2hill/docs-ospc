@@ -19,7 +19,7 @@ using Pitchfork:
 
 Log in to the API tool [Pitchfork](https://pitchfork.rax.io/).
 
-To learn how to log in to and use Pitchfork, see [Pitchfork—the Rackspace Cloud API web application](https://docs.rackspace.com/support/how-to/pitchfork-the-rackspace-cloud-api-web-application).
+To learn how to log in to and use Pitchfork, see [Pitchfork—the Rackspace Cloud API web application](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/pitchfork-the-rackspace-cloud-api-web-application).
 
 ### Using cloud images
 

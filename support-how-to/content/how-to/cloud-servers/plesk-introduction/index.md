@@ -46,8 +46,8 @@ Enter a connection string similar to the following examples in a browser:
 You can also generate a single-use login link. You must generate a new login link each time.
 
 1. Connect to the server through SecureShell (SSH). For help connecting, see 
-   [the Mac OS X article](https://docs.rackspace.com/support/how-to/connecting-to-linux-from-mac-os-x-by-using-terminal)
-   or [the Windows article](https://docs.rackspace.com/support/how-to/connecting-to-linux-from-windows-by-using-putty).
+   [the Mac OS X article](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/connecting-to-linux-from-mac-os-x-by-using-terminal)
+   or [the Windows article](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/connecting-to-linux-from-windows-by-using-putty).
 2. Run the following command to create a single-use login link, substituting your IP address or hostname:
 
         # plesk login
@@ -61,8 +61,8 @@ You can also generate a single-use login link. You must generate a new login lin
 
 ### Related articles (optional)
 
-- [Create an image from a server and restore a server from a saved image](/how-to/create-an-image-from-a-server-and-restore-a-server-from-a-saved-image)
-- [About Cloud Server images](/how-to/about-cloud-server-images)
+- [Create an image from a server and restore a server from a saved image](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
+- [About Cloud Server images](https://docs-ospc.rackspace.com/support/how-to/cloud-images/about-cloud-server-images)
 
 
 Use the Feedback tab to make any comments or ask questions. You can also [start a conversation with us](https://www.rackspace.com/contact). 

@@ -54,7 +54,7 @@ Cloud Files:
       copied. Use the following instructions that correspond to the service
       that you are using:
 
-        - [Rackspace Cloud DNS](/support/how-to/using-cnames-with-cloud-files-containers/)
+        - [Rackspace Cloud DNS](https://docs-ospc.rackspace.com/support/how-to/cloud-files/using-cnames-with-cloud-files-containers/)
 
         - [GoDaddy&reg;](https://www.godaddy.com/help/add-a-cname-record-19236)
 

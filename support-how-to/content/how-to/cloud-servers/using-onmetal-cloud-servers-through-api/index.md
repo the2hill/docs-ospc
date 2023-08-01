@@ -14,7 +14,7 @@ product_url: cloud-servers
 You can use OnMetal Cloud Servers to start bare metal servers by using the Rackspace Cloud Servers API. Follow these
 steps to set up an OnMetal server through the API.
 
-**Note:** For the parallel steps in the Cloud Control Panel, see [Create OnMetal Cloud Servers](/support/how-to/create-onmetal-cloud-servers).
+**Note:** For the parallel steps in the Cloud Control Panel, see [Create OnMetal Cloud Servers](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/create-onmetal-cloud-servers).
 
 ### Set up the API client
 
@@ -50,7 +50,7 @@ parameters:
 **IMPORTANT:** Use a Secure Shell (SSH) key pair to create OnMetal servers. Ignore the administrator password returned by the `create
 server` operation because it does not allow access to the OnMetal server.
 For information about generating SSH Keys, see [Manage SSH Key Pairs for
-Cloud Servers with python-novaclient](/support/how-to/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
+Cloud Servers with python-novaclient](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
 
 ### Upload an SSH key pair
 
@@ -64,7 +64,7 @@ For example:
     supernova iad keypair-add --pub-key ~/.ssh/id_rsa.pub Russell
 
 For information on generating SSH key pairs, see [Manage SSH Key Pairs for
-Cloud Servers with python-novaclient](/support/how-to/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
+Cloud Servers with python-novaclient](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
 
 ### Start your server
 
@@ -82,7 +82,7 @@ To start your OnMetal server, choose an operating system (image) and a server si
 
 #### Supported Flavors
 
-{{<image src="SupportedFlavors_0.png" alt="" title="">}}
+<img src="SupportedFlavors_0.png" alt="" title="">
 
 -   All flavors have a 32 GB system disk.
 -   All flavors include dual 10 GigE NICs in a high availability bonded
@@ -201,4 +201,4 @@ If you need to, you can also delete or cancel the server following these command
 ### Using OnMetal
 
 The flashcards included with the OnMetal I/O flavor are unformatted, but you can format them. For more information, see [Configure flash drives in High I/O instances as Data
-drives](/support/how-to/configure-flash-drives-in-high-io-instances-s-data-drives).
+drives](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/configure-flash-drives-in-high-io-instances-s-data-drives).

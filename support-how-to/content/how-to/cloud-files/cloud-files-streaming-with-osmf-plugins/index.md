@@ -31,11 +31,11 @@ Because OSMF plugins enable you to develop your own Flash video player and
 embed it as needed into your website, Rackspace does not have
 step-by-step instructions. If you are looking for a player that does
 not require development by your team, try our
-[FlowPlayer plugins for Streaming over the Akamai CDN](/support/how-to/cloud-files-streaming-with-flowplayer-plugins).
+[FlowPlayer plugins for Streaming over the Akamai CDN](https://docs-ospc.rackspace.com/support/how-to/cloud-files/cloud-files-streaming-with-flowplayer-plugins).
 
 For more resources on OSMF, visit
 <http://players.edgesuite.net/flash/landing/aasp/current/>.
 
-For more information on streaming, visit the [Cloud Files FAQ](/support/how-to/cloud-files-faq).
+For more information on streaming, visit the [Cloud Files FAQ](https://docs-ospc.rackspace.com/support/how-to/cloud-files/cloud-files-faq).
 
 Use the Feedback tab to make any comments or ask questions. You can also [start a conversation with us](https://www.rackspace.com/contact).

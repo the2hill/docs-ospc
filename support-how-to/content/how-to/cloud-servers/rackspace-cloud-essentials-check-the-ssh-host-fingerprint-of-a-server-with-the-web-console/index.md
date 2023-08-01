@@ -11,7 +11,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-[Secure Shell (SSH)](/support/how-to/connecting-to-linux-from-windows-by-using-putty)
+[Secure Shell (SSH)](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/connecting-to-linux-from-windows-by-using-putty)
 uses a *fingerprint* generated with the unique server host key so that a client can
 identify the server. Whenever the host fingerprint changes, SSH issues the following
 warning: *The host fingerprint can't be verified or it has changed*.
@@ -70,7 +70,7 @@ If you don't have the host fingerprint, you can use the web console in the
 The web console lets you connect to your server as if you were connecting from the
 serial console. Something that prevents you from connecting with SSH does not
 interfere with the serial console connection. If you need assistance opening the web
-console, review this [console session article](/support/how-to/start-a-console-session).
+console, review this [console session article](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/start-a-console-session).
 
 If you don't have a username and password to use (if you've disabled passwords for
 all accounts, for example), you can use the **Cloud Control Panel** to reset the
@@ -196,7 +196,7 @@ console match before you accept the connection.
 This article describes how to obtain the host key fingerprint of a server. Consider keeping
 the host key fingerprints of the servers you connect to in a safe place. You can refer to
 those keys anytime you need to rule out a *man-in-the-middle* attack, especially when
-using multiple clients. See [Basics of security in a Linux system](/support/how-to/basic-cloud-server-security)
+using multiple clients. See [Basics of security in a Linux system](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/configuring-basic-security)
 for further reference.
 
 Use the Feedback tab to make any comments or ask questions. You can also [start a conversation with us](https://www.rackspace.com/contact).

@@ -11,7 +11,7 @@ product: Cloud Databases
 product_url: cloud-databases
 ---
 
-A [high availability \(HA\) instance group](/support/how-to/high-availability-for-cloud-databases/) is a Cloud Databases option that provides better performance and reliability, and reduces downtime by providing automatic failover to a replica instance.
+A [high availability \(HA\) instance group](https://docs-ospc.rackspace.com/support/how-to/cloud-databases/high-availability-for-cloud-databases/) is a Cloud Databases option that provides better performance and reliability, and reduces downtime by providing automatic failover to a replica instance.
 
 This article describes how to create and manage HA instance groups by using the Cloud Control Panel.
 
@@ -62,7 +62,7 @@ Use the following steps to create a new HA instance group:
    **Note:** You can specify networks only when you are creating the HA group. You can't enable public network access after the HA group is created.
 
 9.  In the **Advanced Options** section, specify settings for [scheduled
-    backups](/support/how-to/scheduled-backups-for-cloud-databases/).
+    backups](https://docs-ospc.rackspace.com/support/how-to/cloud-databases/scheduled-backups-for-cloud-databases/).
 
     We recommend that you schedule regular backups by selecting the **Protect your data with Daily Scheduled Backups** check box and then clicking **Specify Scheduled Backup Settings** to specify the schedule. You can enter a day of the week for a full backup and the time of day when that backup and daily incremental backups will occur. Alternatively, you can select **Random** for one or both options, and a random time or day will be selected during creation that will then be used for all subsequent backups.
 
@@ -70,7 +70,7 @@ Use the following steps to create a new HA instance group:
 
    You can't connect to your HA instance group without first setting up the allowed IP addresses or ranges. HA groups sit behind a load balancer with a firewall, and that firewall blocks all connections by default. Both single IP addresses and IP address ranges in CIDR format are allowed.
 
-   {{<image src="advanced-settings-with-backups.png" alt="" title="">}}
+   <img src="advanced-settings-with-backups.png" alt="" title="">
 
    **Note:** You can't connect to your HA instance group without first setting up the allowed IP addresses or ranges here. You can also add or remove addresses and ranges after you have created the HA group.
 
@@ -108,7 +108,7 @@ The hostnames stay the same regardless of failovers and which instance is the pr
 
 The following image shows an example of a completed build:
 
-{{<image src="details-page-with-schedule.png" alt="" title="">}}
+<img src="details-page-with-schedule.png" alt="" title="">
 
 Farther down the details page, more information about the HA group primary instance is displayed. This information  is similar to what's shown on the **Instance Details** page for a single instance or replica set. The **Increase Volume**, **Resize RAM**, and other instance modification options are dimmed because modifications to an HA group must be made to the group rather than to individual instances.
 
@@ -130,6 +130,6 @@ Use the following steps to modify an HA instance group:
 
    All actions that you perform on the HA group apply to all instances in the group. Resizes occur on all instances. Backups are performed against a replica of the HA group.
 
-   {{<image src="managing-cloud-databases-instance-details-built-7.png" alt="" title="">}}
+   <img src="managing-cloud-databases-instance-details-built-7.png" alt="" title="">
 
 **Tip:** You can also perform these actions by using the **Actions** menu in the upper-right corner of the details page. From this menu, you can also choose to delete the HA group.

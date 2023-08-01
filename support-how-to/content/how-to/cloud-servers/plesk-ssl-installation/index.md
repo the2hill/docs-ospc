@@ -24,7 +24,7 @@ address by using the Plesk panel.
 
 ### Add an SSL to a domain name 
 
-1. Log in to Plesk. See [Plesk: Introduction](/support/how-to/plesk-introduction) for these steps.
+1. Log in to Plesk. See [Plesk: Introduction](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/plesk-introduction) for these steps.
 
 2. Navigate to **Domains** on the left-hand panel and select the domain to which you want to 
    add the SSL.
@@ -42,7 +42,7 @@ address by using the Plesk panel.
 
 ### Add an SSL to an IP Address
 
-1. Log in to Plesk. See [Plesk: Introduction](support/how-to/plesk-introduction) for these steps.
+1. Log in to Plesk. See [Plesk: Introduction](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/plesk-introduction) for these steps.
 
 2. Navigate to **Tools & Settings** on the left-hand panel.
 

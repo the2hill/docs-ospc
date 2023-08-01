@@ -10,7 +10,7 @@ last_modified_by: Stephanie Fillmon
 
 ---
 
-**Previous section** - [GlusterFS troubleshooting](/support/how-to/glusterfs-troubleshooting)
+**Previous section** - [GlusterFS troubleshooting](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/glusterfs-troubleshooting)
 
 In its native form, GlusterFS gives you redundancy and high availability (HA). However,
 the clients that connect to your GlusterFS volumes by using its NFS or Samba exports need

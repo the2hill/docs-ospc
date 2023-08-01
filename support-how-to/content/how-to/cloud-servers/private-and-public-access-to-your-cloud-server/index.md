@@ -21,7 +21,7 @@ All Cloud Servers automatically receive the following static Internet Protocol
 -   A ServiceNet IP address that you lets you access the server from
     other Cloud Servers or Cloud Load Balancers in the same region over
     the Rackspace data center network. Read more about
-    [Regions](/support/how-to/about-regions).
+    [Regions](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/about-regions).
 
 To locate the IP addresses for your Cloud Server, execute the following steps:
 
@@ -33,8 +33,8 @@ To locate the IP addresses for your Cloud Server, execute the following steps:
 
 Following is a sample **Networks** table:
 
-{{<image alt="Networks Table" src="NetworksTable.png" title="Networks Table">}}
+<img alt="Networks Table" src="NetworksTable.png" title="Networks Table">}}
 
 ### Related Information
 
-[Learn More About Cloud Servers](/support/how-to/learn-more-about-cloud-servers)
+[Learn More About Cloud Servers](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/learn-more-about-cloud-servers)

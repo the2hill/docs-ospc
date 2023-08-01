@@ -69,9 +69,9 @@ Scale group.
 This tip shows you how to use a webhook to trigger an Auto Scale policy. It does
 not explain how to create a check or an Auto Scale group.  For information about
 creating checks and alarms, see the [Rackspace Monitoring Developer
-Guide](https://docs.rackspace.com/docs/cloud-monitoring/v1/developer-guide/) or
+Guide](https://docs.rackspace.com/docs/cloud-monitoring/v1/api-reference/) or
 the [Rackspace Monitoring Checks and
-Alarms](/support/how-to/rackspace-monitoring-checks-and-alarms) article.
+Alarms](https://docs-ospc.rackspace.com/support/how-to/rackspace-monitoring/rackspace-monitoring-checks-and-alarms) article.
 
 Modify the example values used for the configurations to meet your needs. These
 values use the Auto Scale API to first create a webhook policy with the desired
@@ -148,7 +148,7 @@ You can do steps 3-5 through the [Rackspace Intelligence](https://intelligence.r
 To quickly add servers to or remove servers from a scaling group, send a request
 to change the value of the **minEntities** or **maxEntities** parameter, as
 documented in the [Update scaling group
-configuration](https://docs.rackspace.com/docs/autoscale/v1/developer-guide/#update-scaling-group-configuration)
+configuration](https://docs.rackspace.com/docs/autoscale/v1/api-reference/#update-scaling-group-configuration)
 section of the *Rackspace Auto Scale API Developer Guide.*
 
 Following is an example request:
@@ -165,7 +165,7 @@ Following is an example request:
 
 You can remove a specific server from a scaling group by using the **delete server**
 operation. For more information, see the [Delete server from scaling
-group](https://docs.rackspace.com/docs/autoscale/v1/developer-guide/#delete-server-from-scaling-group)
+group](https://docs.rackspace.com/docs/autoscale/v1/api-reference/#delete-server-from-scaling-group)
 section of the *Rackspace Auto Scale API Developer Guide.*
 
 ### maxEntities and minEntities settings affect scaling
@@ -337,7 +337,7 @@ go into the Active state. Then, the system deletes the two servers.
 
 You can remove a specific server from a scaling group by using the delete server
 operation. For more information, see the [Delete server from scaling
-group](https://docs.rackspace.com/docs/autoscale/v1/developer-guide/#delete-server-from-scaling-group)
+group](https://docs.rackspace.com/docs/autoscale/v1/api-reference/#delete-server-from-scaling-group)
 section *Rackspace Auto Scale API Developer Guide.*
 
 ### Choose the flavor of a server for a scaling group
@@ -359,7 +359,7 @@ scales up a group, RackConnnect modifies the new server to disable its
 public interface, and it begins receiving Private Cloud traffic from
 the RackConnect load balancer. For more details, see
 [Cloud Bursting using Auto Scale RackConnect and F5 Load
-Balancers](/support/how-to/cloud-bursting-using-auto-scale-rackconnect-and-f5-load-balancers).
+Balancers](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale/cloud-bursting-using-auto-scale-rackconnect-and-f5-load-balancers).
 
 Example RackConnect metadata key and value pair for Auto Scale:
 
@@ -372,7 +372,7 @@ Example RackConnect metadata key and value pair for Auto Scale:
 General Purpose and work-optimized servers do not resize as simply as Standard
 servers. You have to go through a process to resize, detailed in [Upgrading
 resources for General Purpose or I/O optimized Cloud
-Servers](/support/how-to/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers),
+Servers](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers),
 to resize, and your server does not keep its IP address. You can use
 Auto Scale to accomplish server resizing, keeping your IP address, and have it
 happen dynamically in response to load. You pay for the higher-flavor servers

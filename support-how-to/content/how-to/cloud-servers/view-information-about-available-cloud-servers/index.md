@@ -20,7 +20,7 @@ or the [Cloud Control Panel](https://login.rackspace.com) interface.
 ### View server information through novaclient
 
 For information about installing the nova client on Windows, Linux, or
-Mac systems, see [Using python-novaclient with Rackspace Cloud Servers](/support/how-to/using-python-novaclient-with-the-rackspace-cloud).
+Mac systems, see [Using python-novaclient with Rackspace Cloud Servers](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/using-python-novaclient-with-the-rackspace-cloud).
 
 On the command line, run the following command:
 
@@ -42,7 +42,7 @@ All available server configurations are displayed. The list contains the followi
 Copy the ID of the configuration that you want to use from the ID field. You need it to create your server.
 
 For instructions on creating a cloud server through the nova client, see the
-[Cloud Servers API guide](https://docs.rackspace.com/docs/cloud-servers/v2/developer-guide/).
+[Cloud Servers API guide](https://docs.rackspace.com/docs/cloud-servers/v2/api-reference/).
 
 ### View server information through the Cloud Control Panel
 
@@ -76,4 +76,4 @@ You can view all the available information for your cloud server through the
    link to see a comparison chart for all the configurations in each class.
 
 For instructions on creating a cloud server through the Cloud Control Panel,
-see [Create a cloud server](/support/how-to/create-a-cloud-server).
+see [Create a cloud server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/create-a-cloud-server).

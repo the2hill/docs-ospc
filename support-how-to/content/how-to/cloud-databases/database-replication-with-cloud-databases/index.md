@@ -16,7 +16,7 @@ Database instance. Replication is available for MySQL&reg; 5.6, Percona&reg;
 5.6, and MariaDB&reg; 10 databases. If you are using MySQL 5.1, you must upgrade
 to MySQL 5.6. For instructions on upgrading on how to migrate MySQL 5.1 to MySQL
 5.6, see [Upgrade a Cloud Databases instance from MySQL 5.1 to MySQL
-5.6](/support/how-to/upgrade-a-cloud-databases-instance-from-mysql-51-to-mysql-56).
+5.6](https://docs-ospc.rackspace.com/support/how-to/cloud-databases/upgrade-a-cloud-databases-instance-from-mysql-51-to-mysql-56).
 
 ### Replication overview
 
@@ -57,7 +57,7 @@ replica for your database instance:
    for the database instance that you want to replicate, as shown in the
    following image:
 
-    {{<image src="create_replica-4_0.png" alt="" title="">}}
+    <img src="create_replica-4_0.png" alt="" title="">
 
     **Tip:** You can also click the gear icon next to the instance and select
     **Create Replica**, or click the instance and then click **Add Replica** in
@@ -71,7 +71,7 @@ replica for your database instance:
 After you have created a replica, you can visualize it as shown in the following
 image:
 
-{{<image src="view_replica-1.png" alt="" title="">}}
+<img src="view_replica-1.png" alt="" title="">
 
 View the replica by clicking on it in the **Name** column or the **Replicas**
 column. The replication instance details page is displayed.

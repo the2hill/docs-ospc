@@ -16,7 +16,7 @@ at the command line. After creating the Queue, you can use the
 Control Panel for viewing Queue details or deleting the Queue as
 needed. All other Queue commands will be completed through the command line.
 
-**Note:** Be sure to [set up your authentication token](/support/how-to/cloud-queues-curl-cookbook)
+**Note:** Be sure to [set up your authentication token](https://docs-ospc.rackspace.com/support/how-to/cloud-queues/cloud-queues-curl-cookbook)
 before creating a queue by using the command line.
 
 ### Create a queue in the control panel
@@ -31,7 +31,7 @@ before creating a queue by using the command line.
 
 When the queue is finished building, you will see the details for your
 queue listed in the Control Panel. You will then need to complete the
-steps under [Testing Your Queue](/support/how-to/cloud-queues-curl-cookbook)
+steps under [Testing Your Queue](https://docs-ospc.rackspace.com/support/how-to/cloud-queues/cloud-queues-curl-cookbook)
 in your terminal to begin posting messages to your Queue.
 
 ### Create a queue from the command line
@@ -39,7 +39,7 @@ in your terminal to begin posting messages to your Queue.
 You can create a queue from the command line by submitting a request to the Rackspace Cloud
 Queues API. You need to provide the following values in your request:
 
--  `$TOKEN` - [valid Rackspace Cloud authentication token](https://docs.rackspace.com/docs/cloud-queues/v1/developer-guide/#document-getting-started/authenticate)
+-  `$TOKEN` - [valid Rackspace Cloud authentication token](https://docs.rackspace.com/docs/cloud-queues/v1/api-reference/#document-getting-started/authenticate)
 -  `$ENDPOINT` -  the Cloud Queues API endpoint returned in the service catalog
 
 Use the following cURL command to create a queue using the Cloud Queues API:

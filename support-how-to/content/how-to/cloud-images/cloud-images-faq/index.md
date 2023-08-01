@@ -20,7 +20,7 @@ The following types of documentation are available:
 -   The [Cloud Images 2.0 Getting started guide](https://docs.rackspace.com/docs/cloud-images/v2/getting-started/)
     walks you through the basics of using the Images API for all of your
     image-related needs.
--   The [Rackspace Cloud Images Developer guide](https://docs.rackspace.com/docs/cloud-images/v2/developer-guide/)
+-   The [Rackspace Cloud Images Developer guide](https://docs.rackspace.com/docs/cloud-images/v2/api-reference/)
     provides detailed information about the Cloud Images v2 API.
 -   At the appropriate places in this article, there are links to Rackspace
     How-To articles that provide step-by-step instructions for using Cloud Images operations.
@@ -76,13 +76,13 @@ responses in XML.
 
 {{< accordion title="Can I share or accept images in the Cloud Control Panel?" col="in" href="accordion7" >}}
 
-Yes, image sharing is available in the Cloud Control Panel. For detailed instructions, see [Sharing images in the Cloud Control Panel](/support/how-to/sharing-images-in-the-cloud-control-panel).
+Yes, image sharing is available in the Cloud Control Panel. For detailed instructions, see [Sharing images in the Cloud Control Panel](https://docs-ospc.rackspace.com/support/how-to/cloud-images/sharing-images-in-the-cloud-control-panel).
 {{< /accordion >}}
 
 {{< accordion title="" col="in" href="accordion8" >}}
  Where can I read a quick summary about image sharing?
 
-For a brief overview of this functionality, see _[Image sharing](https://docs.rackspace.com/docs/cloud-images/v2/developer-guide/#image-sharing)_ in the Cloud Images API documentation.
+For a brief overview of this functionality, see _[Image sharing](https://docs.rackspace.com/docs/cloud-images/v2/api-reference/#image-sharing)_ in the Cloud Images API documentation.
 {{< /accordion >}}
 
 {{< accordion title="Does it cost anything to share images?" col="in" href="accordion9" >}}
@@ -134,7 +134,7 @@ before you can see the image. To do this, you need to
 know the universally unique identifier (UUID) of the image that was shared
 with you. For instructions for accepting an image, consult the [Cloud Images
 v2 API
-documentation](https://docs.rackspace.com/docs/cloud-images/v2/developer-guide/#image-sharing).
+documentation](https://docs.rackspace.com/docs/cloud-images/v2/api-reference/#image-sharing).
 {{< /accordion >}}
 
 {{< accordion title="What if someone shares an image with me that I don't want, or if I don't know the person?" col="in" href="accordion14" >}}
@@ -151,7 +151,7 @@ using the image. Only create servers from images that you trust.
 You can reject the image so that it no longer appears in your
 image list. For instructions on how to reject an image, see the [Cloud Images
 v2 API
-documentation](https://docs.rackspace.com/docs/cloud-images/v2/developer-guide/#image-sharing).
+documentation](https://docs.rackspace.com/docs/cloud-images/v2/api-reference/#image-sharing).
 {{< /accordion >}}
 
 {{< accordion title="What happens if someone accidentally (or intentionally) shares an image with malware, root kits, backdoors, or other vulnerabilities? Who is liable?" col="in" href="accordion16" >}}
@@ -237,7 +237,7 @@ The following product-specific roles are also available:
 {{< accordion title="What are the capabilities of these roles?" col="in" href="accordion25" >}}
 
 For details on Cloud Image roles, see the [Permission matrix for Cloud
-Images](/support/how-to/detailed-permissions-matrix-for-cloud-images).
+Images](https://docs-ospc.rackspace.com/support/how-to/cloud-images/detailed-permissions-matrix-for-cloud-images).
 {{< /accordion >}}
 
 ------------------------------------------------------------------------
@@ -266,7 +266,7 @@ You must have an **Admin** role to create tasks.
 {{< accordion title="Where can I find out more about tasks?" col="in" href="accordion29" >}}
 
 For more information about tasks, see the [Rackspace Cloud Images Developer
-Guide](https://docs.rackspace.com/docs/cloud-images/v2/developer-guide/).
+Guide](https://docs.rackspace.com/docs/cloud-images/v2/api-reference/).
 {{< /accordion >}}
 
 ------------------------------------------------------------------------
@@ -309,7 +309,7 @@ format](https://en.wikipedia.org/wiki/VHD_(file_format)). The image
 must also follow Rackspace open cloud bootstrapping practices. For
 details about these practices, see [Preparing an image for import into the
 Rackspace open
-cloud](/support/how-to/preparing-an-image-for-import-into-the-rackspace-opencloud).
+cloud](https://docs-ospc.rackspace.com/support/how-to/cloud-images/preparing-an-image-for-import-into-the-rackspace-opencloud).
 {{< /accordion >}}
 
 {{< accordion title="Are there any limitations on the operating system that is installed on an image?" col="in" href="accordion34" >}}
@@ -382,7 +382,7 @@ export the image.
 
 Detailed instructions for exporting an image are available in the example at
 [Transfer images between regions of the Rackspace open
-cloud](/support/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud).
+cloud](https://docs-ospc.rackspace.com/support/how-to/cloud-images/transferring-images-between-regions-of-the-rackspace-open-cloud).
 
 {{< /accordion >}}
 {{< accordion title="Where is my exported image?" col="in" href="accordion40" >}}
@@ -395,7 +395,7 @@ object follows the format `{image_uuid}.vhd`.) Cloud Files streams all of the
 segments in the correct order. The following image shows what displays in the
 Cloud Control Panel when you download an image:
 
-<img class="fig-img" src="/support/how-to/cloud-images-faq/file-listing_0.png" alt="">
+<img class="fig-img" src="https://docs-ospc.rackspace.com/support/how-to/cloud-images/cloud-images-faq/file-listing_0.png" alt="">
 
 In the image, the manifest objects are contained in red boxes.
 Note that each object is zero bytes in size and has a filename that follows
@@ -412,7 +412,7 @@ The corruption occurs because part of the image is missing.
 
 We recommend using the **Swiftly** Cloud Files client to download your
 exported image. For more information, see [Use Swiftly to download an exported
-image](/support/how-to/use-swiftly-to-download-an-exported-image).
+image](https://docs-ospc.rackspace.com/support/how-to/cloud-images/use-swiftly-to-download-an-exported-image).
 
 {{< /accordion >}}
 {{< accordion title="If I have cloud servers in multiple regions, is the image that I import available in all regions?" col="in" href="accordion60" >}}
@@ -428,7 +428,7 @@ region B to import the image into region B.
 
 For instructions on transferring an image to another region, see [Transfer
 images between regions of the Rackspace Open
-Cloud](/support/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud).
+Cloud](https://docs-ospc.rackspace.com/support/how-to/cloud-images/transferring-images-between-regions-of-the-rackspace-open-cloud).
 
 {{< /accordion >}}
 {{< accordion title="Can I use image export and import to move between Infrastructure and Managed accounts?" col="in" href="accordion43" >}}
@@ -436,7 +436,7 @@ Cloud](/support/how-to/transferring-images-between-regions-of-the-rackspace-open
 Yes. It is possible to move images between Infrastructure and
 Managed accounts by following the steps in the article [Transfer images
 between regions of the Rackspace Open
-Cloud](/support/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud)
+Cloud](https://docs-ospc.rackspace.com/support/how-to/cloud-images/transferring-images-between-regions-of-the-rackspace-open-cloud)
 to export the required image, then import it into the account that the
 customer requires. Any images that are shared, imported, or exported are
 deemed to be non-standard. Therefore the *Infrastructure* service level
@@ -450,21 +450,21 @@ upon successful import or share.
 
 To learn how to prepare an image for import, see [Preparing an image for
 import into the Rackspace open
-cloud](/support/how-to/preparing-an-image-for-import-into-the-rackspace-opencloud).
+cloud](https://docs-ospc.rackspace.com/support/how-to/cloud-images/preparing-an-image-for-import-into-the-rackspace-opencloud).
 
 {{< /accordion >}}
 {{< accordion title="Can you recommend a way to upload my image to Cloud Files so that I can import it?" col="in" href="accordion45" >}}
 
 We recommend using the **Swiftly** Cloud Files client to upload your image to
 Cloud Files. For more information on using Swiftly, see [Use Swiftly to upload
-an image](/support/how-to/use-swiftly-to-upload-an-image).
+an image](https://docs-ospc.rackspace.com/support/how-to/cloud-images/use-swiftly-to-upload-an-image).
 
 {{< /accordion >}}
 {{< accordion title="Can you give me step-by-step instructions for importing an image?" col="in" href="accordion46" >}}
 
 Detailed instructions for importing an image are available in the example at
 [Transfer images between regions of the Rackspace Open
-Cloud](/support/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud).
+Cloud](https://docs-ospc.rackspace.com/support/how-to/cloud-images/transferring-images-between-regions-of-the-rackspace-open-cloud).
 
 {{< /accordion >}}
 {{< accordion title=" Why is the checksum on my imported or exported image different from the one that the API shows?" col="in" href="accordion47" >}}
@@ -577,7 +577,7 @@ the pages linked above.
 
 Imported and shared images are considered non-standard images. Learn more
 about [Rackspace standard and non-standard
-images](/support/how-to/rackspace-standard-and-non-standard-images).
+images](https://docs-ospc.rackspace.com/support/how-to/cloud-images/rackspace-standard-and-non-standard-images).
 
 For servers booted from non-standard images, we ensure that the host servers
 are functioning properly and that API availability meets the Service Level

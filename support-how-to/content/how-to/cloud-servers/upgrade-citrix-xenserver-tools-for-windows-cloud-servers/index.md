@@ -44,17 +44,17 @@ Before you begin, perform the following actions:
 #### Create a backup by using Cloud Backup
 
 Use the Cloud Backup product to back up all user data. This
-[Cloud Backup instruction](/support/how-to/rackspace-cloud-backup-create-a-backup/)
+[Cloud Backup instruction](https://docs-ospc.rackspace.com/support/how-to/cloud-backup/rackspace-cloud-backup-create-a-backup/)
 covers the installation of the Cloud Backup agent and the configuration of the
 backup.
 
 #### Create an image of the production server
 
-1. [Create an image](/support/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image/)
+1. [Create an image](https://docs-ospc.rackspace.com/support/how-to/cloud-images/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image/)
 of the production server that needs the upgrades. This can take less than an
 hour or multiple hours, depending on the size of your server's virtual hard
 drive. You can find more information about images on the
-[Cloud Images FAQ](/support/how-to/cloud-images-faq/).
+[Cloud Images FAQ](https://docs-ospc.rackspace.com/support/how-to/cloud-images/cloud-images-faq/).
 
 2. Create a new server by using the image that you created.
 
@@ -221,9 +221,9 @@ and then attach the volume to the new server where the ephemeral drive had been
 mounted before, for example, **D:**. The following articles can help you get
 started:
 
-- [Overview of Cloud Block Storage](/support/how-to/cloud-block-storage-overview)
-- [Prepare your Cloud Block Storage Volume](/support/how-to/prepare-your-cloud-block-storage-volume)
-- [Cloud Block Storage FAQ](/support/how-to/cloud-block-storage-faq)
+- [Overview of Cloud Block Storage](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/cloud-block-storage-overview)
+- [Prepare your Cloud Block Storage Volume](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/prepare-your-cloud-block-storage-volume)
+- [Cloud Block Storage FAQ](https://docs-ospc.rackspace.com/support/how-to/cloud-block-storage/cloud-block-storage-faq)
 
 If you decide to use this option one, we recommend taking a final image of the
 server that you can use as a base image to create new servers or rebuild

@@ -11,7 +11,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-[The article,](/support/how-to/install-mysql-server-on-the-ubuntu-operating-system), covered a basic MySQL&reg;
+[The article,](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/install-mysql-server-on-the-ubuntu-operating-system), covered a basic MySQL&reg;
 server setup on the Ubuntu&reg; operating system. It described how to set the root password, create a database,
 and add a user for the database. This artcile examines MySQL congfiguration in a little more detail so you can
 adjust its configuration and be ready in case something goes wrong.
@@ -248,5 +248,5 @@ experiment with incremental changes over time to improve performance.
 
 ### Related articles
 
-- [Install MySQL&reg; server on the Ubuntu operating system](/support/how-to/install-mysql-server-on-the-ubuntu-operating-system)
-- [Reset a MySQL&reg; root password](/support/how-to/reset-a-mysql-root-password)
+- [Install MySQL&reg; server on the Ubuntu operating system](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/install-mysql-server-on-the-ubuntu-operating-system)
+- [Reset a MySQL&reg; root password](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/reset-a-mysql-root-password)

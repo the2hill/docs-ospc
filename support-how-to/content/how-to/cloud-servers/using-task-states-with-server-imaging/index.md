@@ -96,9 +96,9 @@ line. If you haven't used it before, here are some How-To
 articles to check out:
 
 -   [Installing python-openstackclient on Linux and Mac
-    OS](/support/how-to/installing-python-openstackclient-on-linux-and-mac-os)
+    OS](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/installing-python-openstackclient-on-linux-and-mac-os)
 -   [Installing python-novaclient on
-    Windows](/support/how-to/installing-python-novaclient-on-windows)
+    Windows](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/installing-python-novaclient-on-windows)
 
 These articles provide an overview of `python-novaclient`
 and complete instructions for installing it on your operating system.

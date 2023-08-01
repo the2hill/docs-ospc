@@ -98,7 +98,7 @@ steps:
 4.  Click the action gear next to the name of the domain that you want
     to modify, and select **Add DNS Record**.
 
-     {{<image src="SPFRecordDNS.png" alt="" title="">}}
+     <img src="SPFRecordDNS.png" alt="" title="">
 
 5.  Select **TXT Record** for the record type.
 
@@ -114,6 +114,6 @@ steps:
 
 For more information, see the following resources:
 
-- [Create a DKIM TXT record](/support/how-to/create-a-dkim-txt-record)
+- [Create a DKIM TXT record](https://docs-ospc.rackspace.com/support/how-to/cloud-dns/create-a-dkim-txt-record)
 
 - [SPF Record Testing Tools](https://www.kitterman.com/spf/validate.html)

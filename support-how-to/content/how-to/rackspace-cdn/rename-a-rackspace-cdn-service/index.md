@@ -27,5 +27,5 @@ To rename a service in Rackspace CDN, use the following steps:
 
 ### Additional resources
 
-- [Enable or disable logging in Rackspace CDN](/support/how-to/enable-or-disable-logging-in-rackspace-cdn)
-- [Purge a file from a Rackspace CDN service](/support/how-to/refresh-content-in-a-rackspace-cdn-service)
+- [Enable or disable logging in Rackspace CDN](https://docs-ospc.rackspace.com/support/how-to/rackspace-cdn/enable-or-disable-logging-in-rackspace-cdn)
+- [Purge a file from a Rackspace CDN service](https://docs-ospc.rackspace.com/support/how-to/rackspace-cdn/refresh-content-in-a-rackspace-cdn-service)

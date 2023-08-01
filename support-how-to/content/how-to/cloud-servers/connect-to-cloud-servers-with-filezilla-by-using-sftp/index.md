@@ -26,7 +26,7 @@ the port that SSH listens on, then you must use that new port for SFTP as well.
 
 You can connect to your server by using SFTP with the root user but we recommended creating a new
 system user for security purposes. For more information, see
-[Basic Cloud Server security](/support/how-to/basic-cloud-server-security).
+[Basic Cloud Server security](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/configuring-basic-security).
 
 ### Configure Filezilla
 

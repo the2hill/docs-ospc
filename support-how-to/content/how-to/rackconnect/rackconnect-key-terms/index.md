@@ -12,7 +12,7 @@ product_url: rackconnect
 ---
 
 **Previous section:** [Features introduced in RackConnect
-v2.0](/support/how-to/features-introduced-in-rackconnect-v20)
+v2.0](https://docs-ospc.rackspace.com/support/how-to/rackconnect/features-introduced-in-rackconnect-v20)
 
 **Applies to**: RackConnect v3.0 and RackConnect v2.0
 
@@ -36,7 +36,7 @@ are used if you perform a rebuild or make other changes to your cloud
 server. The following figure shows an example of an automation features
 configuration:
 
-{{<image src="Automation.Features.png" alt="" title="">}}
+<img src="Automation.Features.png" alt="" title="">
 
 **Note:** Currently you cannot adjust automation features settings; they
 are displayed for informational purposes only. If you need to modify
@@ -115,4 +115,4 @@ network. If enabled, it is very important to secure this network because other R
 
 ### Next step
 
-[RackConnect v2.0 requirements](/support/how-to/rackconnect-v20-requirements)
+[RackConnect v2.0 requirements](https://docs-ospc.rackspace.com/support/how-to/rackconnect/rackconnect-v20-requirements)

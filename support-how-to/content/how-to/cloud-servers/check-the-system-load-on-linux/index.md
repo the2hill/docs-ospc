@@ -11,7 +11,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-When the demands of a [running program](/support/how-to/checking-running-services-on-linux)
+When the demands of a [running program](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/checking-running-services-on-linux)
 cause it to request excessive resources from your server, you might experience
 poor performance and system instability.
 
@@ -117,5 +117,5 @@ your requirements better.
 
 If your application runs and looks healthy,  check that it is listening for
 network connections. See if the service is listening on the correct 
-socket by using the `netstat` command. Review [Checking Listening Ports with netstat](/support/how-to/checking-listening-ports-with-netstat)
+socket by using the `netstat` command. Review [Checking Listening Ports with netstat](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/checking-listening-ports-with-netstat)
 for more information.

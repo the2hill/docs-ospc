@@ -45,22 +45,22 @@ prerequisites:
   page](https://cart.rackspace.com/cloud/).
 - A server image or images with all needed applications and settings. You can
   create your images with the
-  [API](https://docs.rackspace.com/docs/cloud-servers/v2/developer-guide/),
+  [API](https://docs.rackspace.com/docs/cloud-servers/v2/api-reference/),
   through the Cloud Control Panel or use external applications such as Chef,
   Puppet, or Salt.
 - *(Optional)* A load balancer. One is allowed per each group of 25
   server images. To create a load balancer with the API or the
   **Cloud Control Panel**, See the [Cloud Load Balancers Developer
-  Guide](https://docs.rackspace.com/docs/cloud-load-balancers/v1/developer-guide/)
+  Guide](https://docs.rackspace.com/docs/cloud-load-balancers/v1/api-reference/)
   for information about using the API.
 
 ### What's next
 
-[Concepts](/support/how-to/rackspace-auto-scale-control-panel-user-guide-concepts).
+[Concepts](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-concepts).
 
 ### User Guide sections
 
-- [Rackspace Auto Scale Control Panel User Guide - Introduction](/support/how-to/rackspace-auto-scale-control-panel-user-guide-introduction)
-- [Rackspace Auto Scale Control Panel User Guide - Concepts](/support/how-to/rackspace-auto-scale-control-panel-user-guide-concepts)
-- [Rackspace Auto Scale Control Panel User Guide - Create a scaling group](/support/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group)
-- [Rackspace Auto Scale Control Panel User Guide - Create a scaling policy](/support/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-policy)
+- [Rackspace Auto Scale Control Panel User Guide - Introduction](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-introduction)
+- [Rackspace Auto Scale Control Panel User Guide - Concepts](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-concepts)
+- [Rackspace Auto Scale Control Panel User Guide - Create a scaling group](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group)
+- [Rackspace Auto Scale Control Panel User Guide - Create a scaling policy](https://docs-ospc.rackspace.com/support/how-to/rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-policy)

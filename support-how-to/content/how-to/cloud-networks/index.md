@@ -14,17 +14,17 @@ Cloud Networks lets you create and manage secure, isolated networks in the cloud
 
 ### Using Cloud Networks
 
-You can use the Cloud Control Panel or the [Cloud Servers API](https://docs.rackspace.com/docs/cloud-networks/v2/developer-guide/#document-api-reference) to manage Cloud Networks. This section provides links to both the Cloud Control Panel How-To articles and API developer resources.
+You can use the Cloud Control Panel or the [Cloud Servers API](https://docs.rackspace.com/docs/cloud-networks/v2/api-reference/#document-api-reference) to manage Cloud Networks. This section provides links to both the Cloud Control Panel How-To articles and API developer resources.
 
 ### Using the Cloud Control Panel with Cloud Networks
 
-- [Attach an isolated network to a new Cloud Server](/support/how-to/create-an-isolated-cloud-network-and-attach-it-to-a-server "Create an isolated Cloud Network")
-- [Removing networks from a Cloud Server](/support/how-to/removing-networks-from-a-cloud-server "Removing networks from a Cloud Server")
-- [Using CIDR notation in Cloud Networks](/support/how-to/using-cidr-notation-in-cloud-networks "CIDR Notation")
+- [Attach an isolated network to a new Cloud Server](https://docs-ospc.rackspace.com/support/how-to/cloud-networks/create-an-isolated-cloud-network-and-attach-it-to-a-server "Create an isolated Cloud Network")
+- [Removing networks from a Cloud Server](https://docs-ospc.rackspace.com/support/how-to/cloud-networks/removing-networks-from-a-cloud-server "Removing networks from a Cloud Server")
+- [Using CIDR notation in Cloud Networks](https://docs-ospc.rackspace.com/support/how-to/cloud-networks/using-cidr-notation-in-cloud-networks "CIDR Notation")
 
 ### Using the Cloud Networks API
 
-- [Cloud Networks Developer Guide](https://docs.rackspace.com/docs/cloud-networks/v2/developer-guide/)
+- [Cloud Networks Developer Guide](https://docs.rackspace.com/docs/cloud-networks/v2/api-reference/)
 
 ### Fortinet Fortigate-VM
 
@@ -34,7 +34,7 @@ The Fortinet Fortigate-VM is a next-generation firewall (NGFW) and unified threa
 - [Launching FortiGate on Rackspace](https://docs2.fortinet.com/vm/rackspace/fortigate/6.0/rackspace-cookbook/6.0.4/962534/launching-fortigate-on-rackspace)
 - [Connecting to the FortiGate](https://docs2.fortinet.com/vm/rackspace/fortigate/6.0/rackspace-cookbook/6.0.4/956706/connecting-to-the-fortigate)
 - [Building a server behind the FortiGate](https://docs2.fortinet.com/vm/rackspace/fortigate/6.0/rackspace-cookbook/6.0.4/57735/building-a-server-behind-the-fortigate)
-- [Attach a Cloud Network to an Existing Fortigate-VM](/support/how-to/attach-a-cloud-network-to-an-existing-fortigate-vm/ "Attach a Cloud Network to an Existing Fortigate-VM")
-- [Back up the Fortinet Fortigate-VM](/support/how-to/back-up-the-fortinet-fortigate-vm/ "Back up the Fortinet Fortigate-VM")
-- [Using Configure as Gateway for virtual net devices](/support/how-to/using-configure-as-a-gateway-for-virtual-net-devices/ "Using Configure as Gateway for virtual net devices")
-- [Rackspace Cloud Servers features that are not available on the Fortigate-VM](/support/how-to/rackspace-cloud-servers-features-that-are-not-available-on-the-fortigate-vm/ "Rackspace Cloud Servers features that are not available on the Fortigate-VM")
+- [Attach a Cloud Network to an Existing Fortigate-VM](https://docs-ospc.rackspace.com/support/how-to/cloud-networks/attach-a-cloud-network-to-an-existing-fortigate-vm/ "Attach a Cloud Network to an Existing Fortigate-VM")
+- [Back up the Fortinet Fortigate-VM](https://docs-ospc.rackspace.com/support/how-to/cloud-networks/back-up-the-fortinet-fortigate-vm/ "Back up the Fortinet Fortigate-VM")
+- [Using Configure as Gateway for virtual net devices](https://docs-ospc.rackspace.com/support/how-to/cloud-networks/using-configure-as-a-gateway-for-virtual-net-devices/ "Using Configure as Gateway for virtual net devices")
+- [Rackspace Cloud Servers features that are not available on the Fortigate-VM](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/rackspace-cloud-servers-features-that-are-not-available-on-the-fortigate-vm/ "Rackspace Cloud Servers features that are not available on the Fortigate-VM")

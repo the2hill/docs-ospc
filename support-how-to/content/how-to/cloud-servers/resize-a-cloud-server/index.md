@@ -11,7 +11,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-**Previous section:** [Create a Cloud Server](/support/how-to/create-a-cloud-server)
+**Previous section:** [Create a Cloud Server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/create-a-cloud-server)
 
 This article describes how to resize your server in the [Cloud Control Panel](https://login.rackspace.com). The process changes the virtual processor (vCPU), random access memory (RAM), and might also change disk size.
 
@@ -53,9 +53,9 @@ A notification displays prompting you to verify the changes that you made to you
 
    **Note**: Servers booted from a Cloud Block Storage volume don't gain disk space after a resize.
 
-   With a Windows server, you must complete additional steps to use the additional space after a resize. For more information, see [Adding Disk Space After Resizing a Windows Server 2012 Cloud Server](/support/how-to/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server).
+   With a Windows server, you must complete additional steps to use the additional space after a resize. For more information, see [Adding Disk Space After Resizing a Windows Server 2012 Cloud Server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server).
 
-   If a Linux device does not show the correct disk space after a resize [follow these instructions](https://docs.rackspace.com/support/how-to/linux-device-does-not-show-the-correct-disk-space-after-a-resize/)
+   If a Linux device does not show the correct disk space after a resize [follow these instructions](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/linux-device-does-not-show-the-correct-disk-space-after-a-resize/)
 
 9. Click **Confirm** to verify the resize or **Revert** to go back to the original size.
 
@@ -78,7 +78,7 @@ Use the following steps to resize up your server by using Pitchfork:
 4. Scroll down to **List Flavors** and click **Details**. Enter
    **limit=100** for the **Filter** parameter, and then click **Send API Call**.
 
-   {{<image src="pitchfork-list-flavors.png">}}
+   <img src="pitchfork-list-flavors.png">}}
 
 5. Find the server that you want to resize and take note of the server
    **UUID** and **flavor_id**. You need these values for the **Resize Server** API call.
@@ -87,22 +87,22 @@ Use the following steps to resize up your server by using Pitchfork:
    the **server_id (UUID)** and **flavor_id** that you gathered in the previous
    step, and then click **Send API Call**.
 
-   {{<image src="pitchfork-resize-server.png">}}
+   <img src="pitchfork-resize-server.png">}}
 
 The server status in the Cloud Control Panel should change to **Resizing**.
 After the operation is complete, you must verify the server resize by
 navigating to the **Server Details** page for the server that you resized.
 
-{{<image src="pitchfork-verify-resize.png">}}
+<img src="pitchfork-verify-resize.png">}}
 
 ### Additional resources
 
-- [Rebuild a Cloud Server](/support/how-to/rebuild-a-cloud-server)
-- [Reset your server password](/support/how-to/reset-your-server-password)
-- [Reboot your server](/support/how-to/reboot-your-server)
-- [Basic Cloud Server security](/support/how-to/basic-cloud-server-security)
+- [Rebuild a Cloud Server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/rebuild-a-cloud-server)
+- [Reset your server password](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/reset-your-server-password)
+- [Reboot your server](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/reboot-your-server)
+- [Basic Cloud Server security](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/configuring-basic-security)
 - [Cloud Servers API reference: Resize specified server](https://docs.rackspace.com/docs/cloud-servers/v2/api-reference/svr-basic-operations/#resize-specified-server)
-- [Pitchfork - the Rackspace Cloud API web application](/support/how-to/pitchfork-the-rackspace-cloud-api-web-application)
+- [Pitchfork - the Rackspace Cloud API web application](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/pitchfork-the-rackspace-cloud-api-web-application)
 
 <br>
    

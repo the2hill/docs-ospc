@@ -19,9 +19,9 @@ Networking operations.
 
 {{<accordion title="Where are the docs?" col="in" href="accordion1">}}
 
--  [Security Groups concepts and introduction](https://docs.rackspace.com/docs/cloud-networks/v2/developer-guide/#document-concepts/concepts-security-groups)
--  [Cloud Networks Developer Guide](https://docs.rackspace.com/docs/cloud-networks/v2/developer-guide)
--  [Cloud Networks Getting Started Guide](https://docs.rackspace.com/docs/cloud-networks/v2/developer-guide/#document-getting-started)
+-  [Security Groups concepts and introduction](https://docs.rackspace.com/docs/cloud-networks/v2/api-reference/#document-concepts/concepts-security-groups)
+-  [Cloud Networks Developer Guide](https://docs.rackspace.com/docs/cloud-networks/v2/api-reference)
+-  [Cloud Networks Getting Started Guide](https://docs.rackspace.com/docs/cloud-networks/v2/api-reference/#document-getting-started)
 {{</accordion>}}
 {{<accordion title="Why are you introducing Rackspace Networking based on the OpenStack Neutron API?" col="in" href="accordion2">}}
 
@@ -74,7 +74,7 @@ receive responses in XML.
 You need to create a network and add a subnet to that network. This is
 different from the older way of creating networks, which was a one-step
 process. See the
-[Cloud Networks Getting Started Guide](https://docs.rackspace.com/docs/cloud-networks/v2/developer-guide/#document-getting-started)
+[Cloud Networks Getting Started Guide](https://docs.rackspace.com/docs/cloud-networks/v2/api-reference/#document-getting-started)
 for examples.
 {{</accordion>}}
 {{<accordion title="How many subnets can I provision on a network" col="in" href="accordion10">}}

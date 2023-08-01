@@ -15,13 +15,13 @@ Cloud Orchestration automates the creation of application environments on the Ra
 
 ###  Setting Up Rackspace Cloud Orchestration
 
-- [Quick set up with Cloud Orchestration](/support/how-to/quick-set-up-with-rackspace-cloud-orchestration)
-- [Cloud Orchestration FAQ](/support/how-to/cloud-orchestration-faq)
-- [Available templates for Cloud Orchestration](/support/how-to/available-templates-for-cloud-orchestration)
+- [Quick set up with Cloud Orchestration](https://docs-ospc.rackspace.com/support/how-to/cloud-orchestration/quick-set-up-with-rackspace-cloud-orchestration)
+- [Cloud Orchestration FAQ](https://docs-ospc.rackspace.com/support/how-to/cloud-orchestration/cloud-orchestration-faq)
+- [Available templates for Cloud Orchestration](https://docs-ospc.rackspace.com/support/how-to/cloud-orchestration/available-templates-for-cloud-orchestration)
 
 ### Using Cloud Orchestration
 
-- [Add another WordPress site to an existing Cloud Orchestration stack](/support/how-to/add-another-wordpress-site-to-an-existing-cloud-orchestration-stack)
-- [Building Cloud Orchestration templates](/support/how-to/building-cloud-orchestration-templates)
-- [Deploy WordPress packages by using Rackspace Cloud Orchestration](/support/how-to/deploy-wordpress-packages-by-using-rackspace-cloud-orchestration)
-- [Use Swift signal resources to determine status for Cloud Orchestration user data scripts](/support/how-to/using-swift-signal-resources-to-determine-status-for-cloud-orchestration-user-data-scripts)
+- [Add another WordPress site to an existing Cloud Orchestration stack](https://docs-ospc.rackspace.com/support/how-to/cloud-orchestration/add-another-wordpress-site-to-an-existing-cloud-orchestration-stack)
+- [Building Cloud Orchestration templates](https://docs-ospc.rackspace.com/support/how-to/cloud-orchestration/building-cloud-orchestration-templates)
+- [Deploy WordPress packages by using Rackspace Cloud Orchestration](https://docs-ospc.rackspace.com/support/how-to/cloud-orchestration/deploy-wordpress-packages-by-using-rackspace-cloud-orchestration)
+- [Use Swift signal resources to determine status for Cloud Orchestration user data scripts](https://docs-ospc.rackspace.com/support/how-to/cloud-orchestration/using-swift-signal-resources-to-determine-status-for-cloud-orchestration-user-data-scripts)

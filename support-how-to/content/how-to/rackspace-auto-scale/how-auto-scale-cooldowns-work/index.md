@@ -65,6 +65,6 @@ scale up fast and scale down slowly.
 
 The following graphs illustrate how cooldowns affect policy execution:
 
-{{<image src="Slide6.png" alt="" title="">}}
+<img src="Slide6.png" alt="" title="">
 
-{{<image src="Slide7.png" alt="" title="">}}
+<img src="Slide7.png" alt="" title="">

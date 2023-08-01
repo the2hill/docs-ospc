@@ -21,18 +21,18 @@ The [Cloud Control Panel](https://login.rackspace.com) helps you manage your clo
 You can also use the Cloud Control Panel to perform the following tasks:
 
 - Assign user permissions with [Role Based Access Control
-  (RBAC)](/support/how-to/getting-started-with-role-based-access-control-rbac/).
+  (RBAC)](https://docs.rackspace.com/docs/getting-started-with-role-based-access-control-rbac).
 
-- Manage your [contact information](/support/how-to/change-to-new-primary-contact/).
+- Manage your [contact information](https://docs.rackspace.com/docs/change-to-new-primary-contact).
 
 - Manage [billing information and view
-  invoices](/support/how-to/billing-services-overview/).
+  invoices](https://docs.rackspace.com/docs/billing-services-overview).
 
 ### Access your cloud servers
 
 Connect to your Rackspace cloud server with the Secure Shell (SSH),
 Remote Desktop (RDP), or the console. For detailed instructions, see [Connect to a
-cloud server](/support/how-to/connect-to-a-cloud-server/).
+cloud server](https://docs.rackspace.com/docs/billing-services-overview).
 
 ### Get a head start with Cloud Orchestration
 
@@ -89,11 +89,11 @@ to secure your application at every level.
 
 Take the following security measure at the account level:
 
-- Set up [RBAC](/support/how-to/getting-started-with-role-based-access-control-rbac/)
+- Set up [RBAC](https://docs.rackspace.com/docs/getting-started-with-role-based-access-control-rbac)
   for your team. Use strong passwords, security questions, and answers for
   each team member.
 - Configure [two-factor
-  authentication](/support/how-to/myrackspace-multi-factor-authentication/).
+  authentication](https://docs.rackspace.com/docs/multifactor-authentication-from-the-myrackspace-portal).
 
 #### Infrastructure level
 
@@ -106,7 +106,7 @@ Take the following security measures at the infrastructure level:
 
 Take the following security measures at the server level:
 
-- Practice [basic server security](/support/how-to/configuring-basic-security/).
+- Practice [basic server security](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/configuring-basic-security/).
 - Lockdown your firewalls manually or by using a service like Dome9 or
   CloudPassage&reg;.
 
@@ -162,7 +162,7 @@ Operations customers automatically dump their databases to this location.
 Managed Infrastructure customers can configure the same backup by using
 the Holland Backup Manager.
 
-[This article](/support/how-to/install-or-update-the-cloud-backup-agent-on-linux/) provides more information about setting up Rackspace Cloud Backup for your Linux system.
+[This article](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/install-or-update-the-cloud-backup-agent-on-linux/) provides more information about setting up Rackspace Cloud Backup for your Linux system.
 
 **Note**: Rackspace recommends that you back up databases often and retain them
 for a long period of time.
@@ -177,7 +177,7 @@ If you are using Windows&reg;, Rackspace recommends that you take the following 
   dumping your database files). You should use frequent backups and
   long retention.
 
-[This article](/support/how-to/rackspace-cloud-backup-install-the-agent-on-windows/) provides more information about setting up Rackspace Cloud Backup for your Windows system.
+[This article](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/rackspace-cloud-backup-install-the-agent-on-windows/) provides more information about setting up Rackspace Cloud Backup for your Windows system.
 
 ### Back up with Cloud Block Storage
 

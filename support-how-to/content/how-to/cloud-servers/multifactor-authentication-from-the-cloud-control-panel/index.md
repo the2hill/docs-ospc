@@ -1,5 +1,5 @@
 ---
-permalink: multifactor-authentication-from-the-cloud-control-panel/
+permalink: multifactor-authentication-from-the-cloud-control-panel
 audit_date: '2020-10-27'
 title: Multifactor-authentication from the Cloud Control Panel
 type: article
@@ -49,7 +49,7 @@ this setting, you need to generate a support ticket.
 ### Considerations 
 
 - MyRackspace also implements MFA. For information, see
-  [Multifactor authentication from the MyRackspace portal](/support/how-to/multifactor-authentication-from-the-myrackspace-portal).
+  [Multifactor authentication from the MyRackspace portal](https://docs-ospc.rackspace.com/support/how-to/cloud-servers/multifactor-authentication-from-the-myrackspace-portal).
 
 - When you enable MFA for an account, you can only authenticate through username
   and password credentials.
@@ -74,7 +74,7 @@ this setting, you need to generate a support ticket.
     OS_AUTH_TOKEN. Then, use the CLI to submit API requests to the Rackspace Cloud.
 
 - You can also manage MFA from the
-[Identity API 2.0 Guide](https://docs.rackspace.com/docs/cloud-identity/v2/developer-guide/#document-authentication-info/use-mfa-ops).
+[Identity API 2.0 Guide](https://docs.rackspace.com/docs/cloud-identity/v2/api-reference/#document-authentication-info/use-mfa-ops).
 
 ### Configure your account to authenticate by using an SMS device
 
